@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-05T16:00:39+00:00",
+ "updated": "2026-10-05T22:44:09+00:00",
  "total": 113,
- "saved": 14,
+ "saved": 24,
  "urls": {
   "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/": {
    "a": "https://web.archive.org/web/20261005063939/https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/?",
@@ -16,9 +16,8 @@
    "at": "2026-10-04"
   },
   "https://gizmodo.com/judge-calls-flock-search-indiscriminate-mass-surveillance-throws-out-evidence-2000821402": {
-   "tries": 1,
-   "err": "URLError: <urlopen error timed out>",
-   "last": "2026-10-05T16:00:39+00:00"
+   "a": "https://web.archive.org/web/20261005224413/https://gizmodo.com/judge-calls-flock-search-indiscriminate-mass-surveillance-throws-out-evidence-2000821402",
+   "at": "2026-10-05"
   },
   "https://oag.ca.gov/news/press-releases/attorney-general-bonta-city-attorneys-san-francisco-san-diego-and-los-angeles": {
    "a": "https://web.archive.org/web/20261002210529/https://oag.ca.gov/news/press-releases/attorney-general-bonta-city-attorneys-san-francisco-san-diego-and-los-angeles",
@@ -63,6 +62,67 @@
   "https://arstechnica.com/ai/2026/09/florida-asks-court-to-put-the-brakes-on-openais-frontier-ai-development/": {
    "a": "https://web.archive.org/web/20260929223221/https://arstechnica.com/ai/2026/09/florida-asks-court-to-put-the-brakes-on-openais-frontier-ai-development/",
    "at": "2026-09-29"
+  },
+  "https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier": {
+   "tries": 1,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-05T22:44:09+00:00"
+  },
+  "https://www.alabamaag.gov/attorney-general-marshall-announces-historic-multi-million-dollar-settlement-with-tiktok/": {
+   "a": "https://web.archive.org/web/20260930144814/https://www.alabamaag.gov/attorney-general-marshall-announces-historic-multi-million-dollar-settlement-with-tiktok/",
+   "at": "2026-09-30"
+  },
+  "https://www.cbsnews.com/news/tiktok-alabama-youth-safety-lawsuit-settlement/": {
+   "a": "https://web.archive.org/web/20261004164350/https://www.cbsnews.com/news/tiktok-alabama-youth-safety-lawsuit-settlement/",
+   "at": "2026-10-04"
+  },
+  "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/": {
+   "a": "https://web.archive.org/web/20261002000825/https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/",
+   "at": "2026-10-02"
+  },
+  "https://calmatters.org/economy/technology/2026/09/new-california-laws-data-centers/": {
+   "a": "https://web.archive.org/web/20260925070606/https://calmatters.org/economy/technology/2026/09/new-california-laws-data-centers/",
+   "at": "2026-09-25"
+  },
+  "https://www.wunc.org/environment/2026-09-21/nc-utilities-commission-denies-duke-energy-gas-plant": {
+   "tries": 1,
+   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
+   "last": "2026-10-05T22:44:09+00:00"
+  },
+  "https://www.canarymedia.com/articles/fossil-fuels/regulators-reject-duke-gas-plant-north-carolina": {
+   "a": "https://web.archive.org/web/20261003232111/https://www.canarymedia.com/articles/fossil-fuels/regulators-reject-duke-gas-plant-north-carolina",
+   "at": "2026-10-03"
+  },
+  "https://nevadacurrent.com/2026/09/18/public-utility-commission-approves-gas-plants-to-power-data-centers/": {
+   "tries": 1,
+   "err": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
+   "last": "2026-10-05T22:44:09+00:00"
+  },
+  "https://www.reviewjournal.com/business/energy/nevada-data-center-growth-drives-approval-of-temporary-gas-plants-3890109/": {
+   "a": "https://web.archive.org/web/20260929123455/https://www.reviewjournal.com/business/energy/nevada-data-center-growth-drives-approval-of-temporary-gas-plants-3890109/",
+   "at": "2026-09-29"
+  },
+  "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement": {
+   "a": "https://web.archive.org/web/20260927024608/https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement",
+   "at": "2026-09-27"
+  },
+  "https://cbsnews.com/news/amazon-prime-ftc-settlement-refunds": {
+   "a": "https://web.archive.org/web/20261004212252/https://www.cbsnews.com/news/amazon-prime-ftc-settlement-refunds/",
+   "at": "2026-10-04"
+  },
+  "https://www.govconwire.com/articles/trss-ice-data-analytic-support-services-bpa-win": {
+   "a": "https://web.archive.org/web/20260921123017/https://www.govconwire.com/articles/trss-ice-data-analytic-support-services-bpa-win",
+   "at": "2026-09-21"
+  },
+  "https://www.biometricupdate.com/202609/ices-125m-thomson-reuters-deal-adds-data-layer-to-identity-targeting-systems": {
+   "tries": 1,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-05T22:44:09+00:00"
+  },
+  "https://www.whas11.com/article/news/politics/commission-opens-ethics-investigation-into-carroll-county-data-center-project/417-2184fd8c-8d0a-4b13-83e3-88612cf6e6e0": {
+   "tries": 1,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-05T22:44:09+00:00"
   }
  }
 }
