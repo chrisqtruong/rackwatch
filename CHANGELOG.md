@@ -2,6 +2,10 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-05 (players: even grid)
+- Players (beta): circles replaced with same-size tiles. Each tile shows the number of verified moves, with shading that darkens as the number rises, and the disclosed amount below; rows and columns now line up evenly. Legend shows the shading scale.
+- The "beta" label stays visible on the selected Players tab (it takes the tab's text color).
+
 ## 2026-10-05 (players: moves view)
 - Players (beta) now sorts each company's verified record into five kinds of moves (Deals, Build, Influence, Scrutiny, Workers) instead of a month-by-month count of mentions. Each cell shows the number of verified posts and the dollar amount disclosed in the confirmed ledger; a summary row shows the totals for the selected sector and where most moves fall. The chart fits the screen at every width (no sideways scrolling). Every number still opens the items behind it with their sources.
 - Fixed the money format: whole amounts lost a zero ($70B showed as $7B, $50B as $5B) on the Ledger, entity pages and diagrams.

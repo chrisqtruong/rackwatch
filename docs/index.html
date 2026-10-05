@@ -165,6 +165,7 @@ figcaption{font-size:12.5px;color:var(--muted)}
 .sec{margin-top:32px}
 .sec>h2{font-size:17px;margin:0 0 12px}
 .chip.beta{color:var(--accent);border-color:var(--accent)}
+.subtabs a[aria-current="true"] .chip.beta{color:currentColor;border-color:currentColor}
 .pl-sum{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:0 0 16px}
 @media(max-width:700px){.pl-sum{grid-template-columns:repeat(2,minmax(0,1fr))}.pl-sum>.stat:last-child{grid-column:1/-1}}
 .pl-sum .k b{color:var(--text);font-weight:600}
@@ -178,13 +179,16 @@ figcaption{font-size:12.5px;color:var(--muted)}
 .pl-nm{padding:8px 14px;min-height:64px;display:flex;flex-direction:column;justify-content:center;gap:2px;min-width:0}
 .pl-nm a{color:var(--text);text-decoration:none;font-weight:600;font-size:15px;line-height:1.25}.pl-nm a:hover{color:var(--accent);text-decoration:underline}
 .pl-nm small{font-size:12px;color:var(--faint);font-family:"JetBrains Mono",monospace}
-.pl-c{appearance:none;border:0;background:none;min-height:64px;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;border-radius:8px;padding:4px 0;color:inherit;font:inherit}
-.pl-c:hover,.pl-c[aria-pressed="true"]{background:var(--accent-soft)}
-.pl-c[disabled]{cursor:default;background:none}
-.pl-n{display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:600;box-shadow:0 0 0 2px var(--panel)}
-.pl-n.z{background:none;color:var(--line2);box-shadow:none;font-weight:400}
+.pl-c{appearance:none;border:1px solid transparent;margin:4px 3px;min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;border-radius:8px;padding:6px 2px;color:var(--text);font:inherit;background:color-mix(in srgb,var(--accent) var(--t,0%),transparent)}
+.pl-c:hover{border-color:var(--accent)}
+.pl-c[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.pl-c[disabled]{cursor:default;background:none;border-color:transparent}
+.pl-n{font-family:"JetBrains Mono",monospace;font-size:15px;font-weight:600;line-height:1}
+.pl-c[disabled] .pl-n{color:var(--line2);font-weight:400}
 .pl-m{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);line-height:1;min-height:11px}
-@media(max-width:700px){.pl-row{grid-template-columns:86px repeat(5,minmax(0,1fr))}.pl-hd{font-size:9.5px;letter-spacing:0}.pl-nm{padding:8px 8px 8px 10px}.pl-nm a{font-size:13px}.pl-nm small{display:none}.pl-m{font-size:10px}}
+.pl-scale{display:inline-flex;gap:3px;vertical-align:middle;margin-right:6px}
+.pl-scale i{display:inline-block;width:18px;height:12px;border-radius:3px;border:1px solid var(--line)}
+@media(max-width:700px){.pl-c{margin:3px 2px;min-height:50px}.pl-n{font-size:14px}.pl-row{grid-template-columns:86px repeat(5,minmax(0,1fr))}.pl-hd{font-size:9.5px;letter-spacing:0}.pl-nm{padding:8px 8px 8px 10px}.pl-nm a{font-size:13px}.pl-nm small{display:none}.pl-m{font-size:10px}}
 .pl-tip{position:absolute;pointer-events:none;background:var(--text);color:var(--bg);font-size:12.5px;line-height:1.35;padding:6px 9px;border-radius:6px;white-space:nowrap;z-index:5;transform:translate(-50%,calc(-100% - 6px))}
 .pl-key{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;font-size:13px;color:var(--muted);margin:12px 0 0}
 .pl-key i{display:inline-block;border-radius:50%;background:var(--accent);vertical-align:middle;margin-right:6px}
@@ -543,22 +547,22 @@ async function vPlayers(r){
  const sum={};LANES.forEach(([k])=>{const ps=new Set(),ls=new Map();shown.forEach(x=>x.L[k].items.forEach(i=>i.kind==="post"?ps.add(i.p.id):ls.set(i.x.id,i.x)));sum[k]={n:ps.size,amt:[...ls.values()].filter(x=>x.amt!=null).reduce((a,x)=>a+ +x.amt,0)}});
  const top=LANES.slice().sort((a,b)=>sum[b[0]].n-sum[a[0]].n)[0];
  const max=Math.max(1,...shown.flatMap(x=>LANES.map(([k])=>x.L[k].n)));
- const size=n=>Math.round(22+16*Math.sqrt(n/max));
+ const tint=n=>n?Math.round(10+30*Math.sqrt(n/max)):0;
  const fmtLast=d=>d?`${MON[+d.slice(5,7)-1]} ${+d.slice(8,10)}`:"";
- const cell=(x,k,lab)=>{const L=x.L[k];if(!L.items.length)return`<button class="pl-c" type="button" disabled aria-label="${esc(x.e.n)}, ${lab}: none recorded"><span class="pl-n z" style="width:22px;height:22px">·</span><span class="pl-m"></span></button>`;
-  const z=size(L.n),tip=`${x.e.n} · ${lab}: ${L.n} move${L.n===1?"":"s"}${L.amt?`, ${money(L.amt)} disclosed`:""}`;
-  return`<button class="pl-c" type="button" data-pl="${esc(x.e.id)}" data-lane="${k}" aria-pressed="false" aria-label="${esc(tip)}. Show them." data-tip="${esc(tip)}"><span class="pl-n${L.n?"":" z"}" style="width:${L.n?z:22}px;height:${L.n?z:22}px">${L.n||"–"}</span><span class="pl-m">${L.amt?money(L.amt):""}</span></button>`};
+ const cell=(x,k,lab)=>{const L=x.L[k];if(!L.items.length)return`<button class="pl-c" type="button" disabled aria-label="${esc(x.e.n)}, ${lab}: none recorded"><span class="pl-n">–</span><span class="pl-m"></span></button>`;
+  const tip=`${x.e.n} · ${lab}: ${L.n} move${L.n===1?"":"s"}${L.amt?`, ${money(L.amt)} disclosed`:""}`;
+  return`<button class="pl-c" type="button" data-pl="${esc(x.e.id)}" data-lane="${k}" aria-pressed="false" aria-label="${esc(tip)}. Show them." data-tip="${esc(tip)}" style="--t:${tint(L.n)}%"><span class="pl-n"${L.n?"":' style="color:var(--faint);font-weight:400"'}>${L.n||"–"}</span><span class="pl-m">${L.amt?money(L.amt):""}</span></button>`};
  const row=x=>`<div class="pl-row"><div class="pl-nm"><a href="#/entity/${encodeURIComponent(x.e.id)}">${esc(x.e.n)}</a><small>${x.moves} move${x.moves===1?"":"s"} · latest ${esc(fmtLast(x.last))}</small></div>${LANES.map(([k,lab])=>cell(x,k,lab)).join("")}</div>`;
  const groups=(sec?[sec]:secs).map(g=>`<div class="pl-sec">${esc(g)}</div>`+shown.filter(x=>x.e.sec===g).sort((a,b)=>b.moves-a.moves||a.e.n.localeCompare(b.e.n)).map(row).join("")).join("");
  $("#main").innerHTML=`<h2>Entities</h2>${entTabs("pl")}
- <p class="muted" style="max-width:780px">What the largest companies and groups are doing, sorted into five kinds of moves. Each number counts verified posts; the dollar figure under it adds the amounts disclosed in the confirmed ledger (money in or out). Select any number to see the items behind it, each with its sources. This reflects what Tracewire has recorded, not everything a company did. <span class="chip beta plain">Beta</span></p>
+ <p class="muted" style="max-width:780px">What the largest companies and groups are doing, sorted into five kinds of moves. Each number counts verified posts, and the shading gets darker as it rises; the dollar figure under it adds the amounts disclosed in the confirmed ledger (money in or out). Select any cell to see the items behind it, each with its sources. This reflects what Tracewire has recorded, not everything a company did. <span class="chip beta plain">Beta</span></p>
  <div class="subtabs" style="margin-top:16px"><a href="#/entities/players" aria-current="${!sec}">All sectors</a>${secs.map(g=>`<a href="#/entities/players?s=${encodeURIComponent(g)}" aria-current="${sec===g}">${esc(g)}</a>`).join("")}</div>
  <div class="pl-sum">${LANES.map(([k,lab,desc])=>`<div class="stat" title="${esc(desc)}"><div class="v">${sum[k].n}</div><div class="k"><b>${lab}</b>${sum[k].amt?` · <span class="mono">${money(sum[k].amt)}</span>`:""}<br>${esc(desc)}</div></div>`).join("")}</div>
  <p class="muted" style="font-size:14px;margin:-4px 0 12px">${sec?esc(sec):"Across all sectors"}, the most recorded moves are in <b style="color:var(--text)">${top[1].toLowerCase()}</b> (${sum[top[0]].n} of ${LANES.reduce((a,[k])=>a+sum[k].n,0)}).</p>
  <div class="pl-wrap" id="pl-wrap"><div class="pl-row pl-hd"><span>Player</span>${LANES.map(([k,lab,desc])=>`<span title="${esc(desc)}">${lab}</span>`).join("")}</div>${groups}<div class="pl-tip" id="pl-tip" hidden></div></div>
- <div class="pl-key"><span>Bigger circle = more verified moves.</span><span><span class="mono">$</span> = disclosed amounts in the confirmed ledger.</span><span><span class="mono" style="color:var(--line2)">·</span> none recorded</span></div>
+ <div class="pl-key"><span><span class="pl-scale" aria-hidden="true">${[1,Math.ceil(max/2),max].filter((v,i,a)=>a.indexOf(v)===i).map(n=>`<i style="background:color-mix(in srgb,var(--accent) ${tint(n)}%,transparent)"></i>`).join("")}</span>Darker = more verified moves</span><span><span class="mono">$</span> = disclosed amounts in the confirmed ledger</span><span><span class="mono" style="color:var(--line2)">–</span> none recorded</span></div>
  <details style="margin-top:8px"><summary style="cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--accent);font-weight:600">Table view</summary><div class="tbl-wrap"><table><thead><tr><th>Player</th><th>Sector</th>${LANES.map(([,lab])=>`<th class="num">${lab}</th>`).join("")}<th>Latest</th></tr></thead><tbody>${shown.map(x=>`<tr><td>${esc(x.e.n)}</td><td>${esc(x.e.sec)}</td>${LANES.map(([k])=>`<td class="num mono">${x.L[k].n||""}${x.L[k].amt?` (${money(x.L[k].amt)})`:""}</td>`).join("")}<td><time datetime="${esc(x.last)}">${esc(x.last)}</time></td></tr>`).join("")}</tbody></table></div></details>
- <section class="pl-detail" id="pl-detail" aria-live="polite"><div class="panel"><p class="empty">Select a number to see the posts and ledger rows behind it, with their sources.</p></div></section>`;
+ <section class="pl-detail" id="pl-detail" aria-live="polite"><div class="panel"><p class="empty">Select a cell to see the posts and ledger rows behind it, with their sources.</p></div></section>`;
  const wrap=$("#pl-wrap"),tip=$("#pl-tip");
  const showTip=b=>{if(!b||!b.dataset.tip){tip.hidden=true;return}const wr=wrap.getBoundingClientRect(),br=b.getBoundingClientRect();tip.textContent=b.dataset.tip;tip.hidden=false;
   let x=br.left-wr.left+br.width/2;const half=tip.offsetWidth/2;x=Math.min(Math.max(x,half+4),wr.width-half-4);tip.style.left=x+"px";tip.style.top=(br.top-wr.top+4)+"px"};
