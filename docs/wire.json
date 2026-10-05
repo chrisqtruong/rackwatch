@@ -1,1 +1,1689 @@
-{"name":"Rackwatch","updated":null,"note":"Unverified headlines collected automatically from public feeds. Filled by the Wire GitHub Action after launch.","items":[]}
+{
+"name": "Rackwatch",
+"updated": "2026-10-05T15:19:45+00:00",
+"note": "Unverified headlines collected automatically from public feeds. Not checked by Rackwatch. Verified items appear in the Feed.",
+"items": [
+{
+"id": "6dd112d1f2bc",
+"t": "FCC Cuts Off 'Digital Solutions' for Violating Robocall Rules",
+"u": "https://www.fcc.gov/edoc/425611",
+"o": "FCC",
+"lane": "agency",
+"at": "2026-10-05T15:19:45+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "71b37e380ca5",
+"t": "Apple’s new M6 Mac Mini is over $100 off",
+"u": "https://www.theverge.com/gadgets/1004772/apple-mac-mini-m6-deal-october-prime-day-deal-sale",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-10-05T15:08:31+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "f8b1e214328b",
+"t": "Hackers steal 8 million citizens’ records from Danish government database",
+"u": "https://techcrunch.com/2026/10/05/hackers-steal-8-million-citizens-records-from-danish-government-database/",
+"o": "TechCrunch",
+"lane": "news",
+"at": "2026-10-05T14:58:42+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "418c16f3ec3a",
+"t": "Applied Digital adds 75MW of capacity at Ellendale data center campus in North Dakota",
+"u": "https://www.datacenterdynamics.com/en/news/applied-digital-adds-75mw-of-capacity-at-ellendale-data-center-campus-in-north-dakota/",
+"o": "DatacenterDynamics",
+"lane": "news",
+"at": "2026-10-05T14:50:53+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "855ad2cbc94a",
+"t": "CNN’s boss will remain as Paramount and WBD merge into Skydance",
+"u": "https://www.theverge.com/entertainment/1004734/cnn-ceo-mark-thompson-paramount-warner-bros",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-10-05T14:42:34+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "465d4f0f0e4c",
+"t": "Schneider agrees purchase of US software company PTC for $22 billion",
+"u": "https://www.datacenterdynamics.com/en/news/schneider-agrees-purchase-of-us-software-company-ptc-for-22-billion/",
+"o": "DatacenterDynamics",
+"lane": "news",
+"at": "2026-10-05T14:39:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "9e34d668a5ca",
+"t": "Researchers are tracking a Chinese AI ‘agent fleet’",
+"u": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
+"o": "TechCrunch",
+"lane": "news",
+"at": "2026-10-05T14:35:09+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "97218d4e91aa",
+"t": "Meet the Startup Battlefield 200 judges who’ll decide the winner at TechCrunch Disrupt 2026",
+"u": "https://techcrunch.com/2026/10/05/meet-the-startup-battlefield-200-judges-wholl-decide-the-winner-at-techcrunch-disrupt-2026/",
+"o": "TechCrunch",
+"lane": "news",
+"at": "2026-10-05T14:30:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "cefaf40e614c",
+"t": "Meta Rushed to Fix Muse ‘VM Escape' Vulnerability Soon Before Launch",
+"u": "https://www.404media.co/meta-rushed-to-fix-muse-vm-escape-vulnerability-immediately-before-launch/",
+"o": "404 Media",
+"lane": "news",
+"at": "2026-10-05T14:13:58+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "b48158e5ab87",
+"t": "Sen. Adam Schiff on AI regulation, free speech, and impeaching Trump one more time",
+"u": "https://www.theverge.com/podcast/1004286/senator-adam-schiff-ai-trump-regulation-corruption",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-10-05T14:05:42+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "be42e063cd73",
+"t": "OpenAI must explain action taken to stop AI hacking Australians’ private data, chair of federal inquiry says",
+"u": "https://www.theguardian.com/australia-news/2026/oct/06/openai-must-explain-action-taken-to-stop-ai-hacking-australians-private-data-chair-of-federal-inquiry-says",
+"o": "The Guardian",
+"lane": "news",
+"at": "2026-10-05T14:00:27+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "951c52bcce30",
+"t": "U.S. B-1 bombers evacuated from UK base after attack threats from Iran",
+"u": "https://www.axios.com/2026/10/04/us-b-1-bombers-evacuated-from-uk-base-after-attack-threats-from-iran",
+"o": "Axios",
+"lane": "news",
+"at": "2026-10-05T13:56:14+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "d0c0677e9fe0",
+"t": "Accept ‘bad things’ in return for benefits of AI, says Sam Altman",
+"u": "https://www.theguardian.com/technology/2026/oct/05/sam-altman-open-ai-chatgpt-benefits-risks",
+"o": "The Guardian",
+"lane": "news",
+"at": "2026-10-05T13:27:45+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "bf069809848b",
+"t": "Former IBM research campus in Silicon Valley set to be acquired by data center firm",
+"u": "https://www.datacenterdynamics.com/en/news/former-ibm-research-campus-in-silicon-valley-set-to-be-acquired-by-data-center-firm/",
+"o": "DatacenterDynamics",
+"lane": "news",
+"at": "2026-10-05T13:25:02+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "3a8630cf48aa",
+"t": "Rethinking power architecture in large-scale data centers",
+"u": "https://www.datacenterdynamics.com/en/whitepapers/rethinking-power-architecture-in-large-scale-data-centers/",
+"o": "DatacenterDynamics",
+"lane": "news",
+"at": "2026-10-05T13:04:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "c9aacf056631",
+"t": "Beyond the Megawatt: Why Data Center Site Selection Is Now a Three-Front Battle",
+"u": "https://www.datacenterknowledge.com/data-center-site-selection/beyond-the-megawatt-why-data-center-site-selection-is-now-a-three-front-battle",
+"o": "Data Center Knowledge",
+"lane": "news",
+"at": "2026-10-05T13:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "7e0c0fdaaefc",
+"t": "Rightfiber finalizes acquisition of Fastwyre's Nebraska business",
+"u": "https://www.datacenterdynamics.com/en/news/rightfiber-finalizes-acquisition-of-fastwyres-nebraska-business/",
+"o": "DatacenterDynamics",
+"lane": "news",
+"at": "2026-10-05T12:18:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "e0c6f6e386e2",
+"t": "Italy PM Meloni seeks EU trademark for her voice amid AI deepfake risks - Reuters",
+"u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPX2xRcUZHLUJybUdWU0hwNHo4emp6NmhObVNRMlFoVE1oaXJCdXFIZEFYY1MxQ0U2dVNOVkV2b0o3dUpzQVYzSEwySFpHOGRmVnZlaVZxdHY3a256Q2gxcW93UHVNT2lSUUVfVmxZdEtHVk91UFh5MXlXWG54Qm5SaFZVcHF5OWJfSVRYSGs5dzh3TE5ybkVxdUJpM0ZVeU51UlRQYmdLTVVDakl6bXBZM3Jrc18?oc=5",
+"o": "Reuters",
+"via": "Google News: reuters.com/technology",
+"lane": "search",
+"at": "2026-10-05T11:56:09+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "7345a0d7fe0d",
+"t": "Google admits not every Android app runs great on Intel Googlebooks",
+"u": "https://www.theverge.com/tech/1004643/google-android-apps-intel-googlebooks-performance",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-10-05T10:58:22+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "75a6578a3374",
+"t": "‘Clearly not working’: Sam Altman hits AI industry over political spending",
+"u": "https://www.politico.com/news/2026/10/05/sam-altman-ai-industry-political-spending-01106527",
+"o": "Politico",
+"lane": "news",
+"at": "2026-10-05T10:56:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "d96f74974132",
+"t": "The AI boom is making the world’s cheapest smartphones disappear",
+"u": "https://restofworld.org/2026/ai-data-center-memory-chip-shortage-cheap-smartphones-digital-divide/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+"o": "Rest of World",
+"lane": "news",
+"at": "2026-10-05T10:00:43+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "a4faf2fd12d9",
+"t": "A Trump-sized shadow looms over the Supreme Court's new term",
+"u": "https://www.axios.com/2026/10/05/supreme-court-new-term-trump-cases",
+"o": "Axios",
+"lane": "news",
+"at": "2026-10-05T09:43:05+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "e88e158301b6",
+"t": "Staples Print and Marketing Services Review: Fast Holiday Gifts",
+"u": "https://www.wired.com/story/staples-print-and-marketing-services/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-05T09:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "f54841473b3f",
+"t": "Sam Altman to Decoded: ‘The world should accept some bad things happening’ for the benefits of AI",
+"u": "https://www.politico.com/news/2026/10/04/sam-altman-decoded-interview-ai-01106217",
+"o": "Politico",
+"lane": "news",
+"at": "2026-10-04T20:55:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "e3b234ade77f",
+"t": "Trump names national intelligence chief Jay Clayton as new AI czar",
+"u": "https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump",
+"o": "NPR",
+"lane": "news",
+"at": "2026-10-04T18:36:48+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "cb4cee0e9eb9",
+"t": "NJ’s former Lt Gov is using AI to say he’s innocent of sexual harassment",
+"u": "https://www.theverge.com/ai-artificial-intelligence/1004549/well-if-ai-said-it-it-must-be-true",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-10-04T18:00:08+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "89559dbdd147",
+"t": "Apple and Google push states to shield app stores from some lawsuits",
+"u": "https://www.politico.com/news/2026/10/04/apple-googlestates-app-stores-lawsuits-01105892",
+"o": "Politico",
+"lane": "news",
+"at": "2026-10-04T17:45:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "43426f0342d7",
+"t": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
+"u": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
+"o": "CNBC",
+"lane": "news",
+"at": "2026-10-04T13:22:39+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "c57ba5323f83",
+"t": "Trump gives spy chief new title: AI czar",
+"u": "https://www.politico.com/news/2026/10/04/jay-clayton-ai-trump-01106137",
+"o": "Politico",
+"lane": "news",
+"at": "2026-10-04T12:54:11+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "43640bf7dbd3",
+"t": "15 Best Office Chairs of 2026—We Tested 70 to Pick Them",
+"u": "https://www.wired.com/gallery/best-office-chairs/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-04T11:03:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "8c78100c992b",
+"t": "Rural Data Centers Are in for a Big Federal Tax Break",
+"u": "https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-04T10:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "a98b446ce15f",
+"t": "Keurig Alta First-Look: No More Plastic K-Cups",
+"u": "https://www.wired.com/story/keurig-alta-coffee-brewer/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-04T09:30:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "a28550ff89d0",
+"t": "Own a smartphone? Then you’re paying the ‘app tax’. It’s a racket and it’s time the UK faced Apple and Google down | Chi Onwurah",
+"u": "https://www.theguardian.com/commentisfree/2026/oct/04/app-tax-google-apple-smartphone-duopoly-cma",
+"o": "The Guardian",
+"lane": "news",
+"at": "2026-10-04T09:00:23+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "8b922f9f58bd",
+"t": "‘We are in a kind of war’: row over viral Amsterdam chip shop lands in court",
+"u": "https://www.theguardian.com/technology/2026/oct/04/viral-amsterdam-chip-shop-court-fabel-friet",
+"o": "The Guardian",
+"lane": "news",
+"at": "2026-10-04T04:00:17+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "6a468f70a022",
+"t": "Federal judge calls Flock ‘indiscriminate mass surveillance’",
+"u": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/",
+"o": "TechCrunch",
+"lane": "news",
+"at": "2026-10-03T19:33:15+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "d442265d4558",
+"t": "Amazon responds to data center backlash, says it no longer uses NDAs",
+"u": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
+"o": "TechCrunch",
+"lane": "news",
+"at": "2026-10-03T18:43:57+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "f12932895df0",
+"t": "The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike",
+"u": "https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-03T18:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "f143fce070e1",
+"t": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+"u": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+"o": "TechCrunch",
+"lane": "news",
+"at": "2026-10-03T16:30:01+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "48e8baf7a496",
+"t": "Vessev built an electric ferry that almost flies",
+"u": "https://techcrunch.com/2026/10/03/vessev-built-an-electric-ferry-that-almost-flies/",
+"o": "TechCrunch",
+"lane": "news",
+"at": "2026-10-03T14:42:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "d91a6926cc0d",
+"t": "Spotify billionaire’s body scan startup has come to America",
+"u": "https://techcrunch.com/2026/10/03/spotify-billionaires-body-scan-startup-has-come-to-america/",
+"o": "TechCrunch",
+"lane": "news",
+"at": "2026-10-03T14:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "dd417ad87f8f",
+"t": "America’s data center fight is a preview of what's to come for the rest of the world",
+"u": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
+"o": "CNBC",
+"lane": "news",
+"at": "2026-10-03T12:39:29+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "8b14dbba3515",
+"t": "Muse Creates Detailed Profiles of All Your Friends and Family",
+"u": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-03T12:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "38c2056e41e7",
+"t": "Trump promises $100 checks for 20 million seniors for Medicare",
+"u": "https://www.axios.com/2026/10/03/trump-medicare-100-seniors-improvement-fund",
+"o": "Axios",
+"lane": "news",
+"at": "2026-10-03T10:58:40+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "0094c6022f24",
+"t": "A police search using Flock was a form of ‘mass surveillance,’ judge rules - The Washington Post",
+"u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPN3hsZXpaVnEwd3A0MFVtT1RhTlBoSTBwdXRHTFJFZzRCRHdZOFR4dDFSVldDSDY3aUdDWkRjcl9mbFNXaGJDbHZjSGxPbDBfQjZzNzlMLVB2Mk5WMkx4V1JoOWhDRkF3TnRleUZWcEEyLWdEeTJMamJNZVVZNjQ5dXhjU3FHUV9YY3E4WkZXbkVuczl6T2FaQi1xNEpJMHdhWXhGSnZQLUVxdlZ3UWJGOW1vV3VhSTh4clE?oc=5",
+"o": "The Washington Post",
+"via": "Google News: washingtonpost.com/technology",
+"lane": "search",
+"at": "2026-10-03T06:37:12+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "ada7859aa45b",
+"t": "Big Bend border wall construction blocked by judge",
+"u": "https://www.axios.com/2026/10/02/judge-blocks-big-bend-border-wall-texas",
+"o": "Axios",
+"lane": "news",
+"at": "2026-10-02T21:24:02+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "2883a767881d",
+"t": "Federal Judge Rules a Flock Search Was ‘Indiscriminate Mass Surveillance’ and Unconstitutional",
+"u": "https://www.404media.co/federal-judge-rules-a-flock-search-was-indiscriminate-mass-surveillance-and-unconstitutional/",
+"o": "404 Media",
+"lane": "news",
+"at": "2026-10-02T20:49:15+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "0ddb54cdbd61",
+"t": "Amazon’s $1B plan to combat data center backlash draws more backlash",
+"u": "https://arstechnica.com/tech-policy/2026/10/amazons-1b-plan-to-combat-data-center-backlash-draws-more-backlash/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-10-02T20:30:27+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "5ea183552225",
+"t": "The New Push for Underwater Data Centers",
+"u": "https://heatmap.news/plus/the-fight/spotlight/data-centers-ocean",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-10-02T20:00:27+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "849de4e052de",
+"t": "ICE Has Been Dumping Protester Photos Into a Palantir Database",
+"u": "https://www.wired.com/story/ice-has-been-dumping-protester-photos-into-a-palantir-database/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-02T19:52:36+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "0080e75ddaca",
+"t": "Lyft settles landmark driver misclassification lawsuit for $272.5M",
+"u": "https://arstechnica.com/tech-policy/2026/10/lyft-settles-landmark-driver-misclassification-lawsuit-for-272-5m/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-10-02T19:09:49+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "dfc71e7095cf",
+"t": "Site-Blocking Will Not Defend IP, No Matter the Bill’s Name",
+"u": "https://www.eff.org/deeplinks/2026/10/site-blocking-will-not-defend-ip-no-matter-bills-name",
+"o": "EFF",
+"lane": "news",
+"at": "2026-10-02T18:59:23+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "1dfc011b6160",
+"t": "US arrests California man for allegedly smuggling $300m worth of computer servers to China",
+"u": "https://www.theguardian.com/us-news/2026/oct/02/arrest-smuggled-computer-servers-china",
+"o": "The Guardian",
+"lane": "news",
+"at": "2026-10-02T18:46:29+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "575ad95effd7",
+"t": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
+"u": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-10-02T18:39:36+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "59ac079a9313",
+"t": "California AG Bonta seeking ‘all material information’ about OpenAI hacks",
+"u": "https://www.politico.com/news/2026/10/02/ag-bonta-seeking-all-material-information-about-openai-hacks-01104667",
+"o": "Politico",
+"lane": "news",
+"at": "2026-10-02T18:32:31+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "a754a1deefed",
+"t": "Congress Has Another Site-Blocking Bill, And This One Targets VPNs",
+"u": "https://www.eff.org/deeplinks/2026/10/congress-has-another-site-blocking-bill-and-one-targets-vpns",
+"o": "EFF",
+"lane": "news",
+"at": "2026-10-02T17:41:08+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "86efbb26a368",
+"t": "Podcast: The FBI Was Hacked. We’ve Seen the Data",
+"u": "https://www.404media.co/podcast-the-fbi-was-hacked-weve-seen-the-data/",
+"o": "404 Media",
+"lane": "news",
+"at": "2026-10-02T17:37:35+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "70d7c8fb68ff",
+"t": "AI campaign deepfakes are starting to draw legal threats",
+"u": "https://www.axios.com/2026/10/02/ai-deepfake-election-campaign-lawsuits",
+"o": "Axios",
+"lane": "news",
+"at": "2026-10-02T16:38:21+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "682fb3684e89",
+"t": "Victory! Court Rejects Government Effort to Dismiss Social Media Surveillance Lawsuit",
+"u": "https://www.eff.org/press/releases/victory-court-rejects-government-effort-dismiss-social-media-surveillance-lawsuit",
+"o": "EFF",
+"lane": "news",
+"at": "2026-10-02T15:54:42+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "e6d98e982c51",
+"t": "‘These guys are just coming from nothing’: questions over multibillion-dollar Firmus float amid datacentre backlash",
+"u": "https://www.theguardian.com/australia-news/2026/oct/03/ai-datacentre-backlash-firmus-asx-float-tasmania-australia",
+"o": "The Guardian",
+"lane": "news",
+"at": "2026-10-02T15:00:12+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "67bff46b5d5d",
+"t": "Trump’s Crazy AI Rebrand Was a Loyalty Test for Tech Execs—and It Worked",
+"u": "https://www.wired.com/story/trumps-crazy-ai-rebrand-was-a-loyalty-test-for-tech-execs-and-it-worked/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-02T15:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "ec5d7c49d638",
+"t": "Facebook whistleblower Frances Haugen questions whether AI companies can police themselves",
+"u": "https://www.cnbc.com/2026/10/02/frances-haugen-ai-self-regulation.html",
+"o": "CNBC",
+"lane": "news",
+"at": "2026-10-02T14:22:39+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "d75d9af8d1c8",
+"t": "Ola Bini Ordered to Leave Ecuador Under Obscure Accusations",
+"u": "https://www.eff.org/deeplinks/2026/10/ola-bini-ordered-leave-ecuador-under-obscure-accusations",
+"o": "EFF",
+"lane": "news",
+"at": "2026-10-02T13:34:01+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "3e6910ea6e27",
+"t": "Five Ways to Assess Your AI Infrastructure Readiness",
+"u": "https://www.datacenterknowledge.com/ai-data-centers/five-ways-to-assess-your-ai-infrastructure-readiness",
+"o": "Data Center Knowledge",
+"lane": "news",
+"at": "2026-10-02T13:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "dfe8ea3ded2c",
+"t": "What to watch in the Supreme Court's big climate case",
+"u": "https://www.axios.com/2026/10/02/supreme-court-state-climate-lawsuits-preemption",
+"o": "Axios",
+"lane": "news",
+"at": "2026-10-02T12:48:26+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "e0cb6723da36",
+"t": "Democratic Texas AG candidate vows to probe Deloitte's role in voter registration delay",
+"u": "https://www.cnbc.com/2026/10/02/texas-ag-deloitte-voter-registration.html",
+"o": "CNBC",
+"lane": "news",
+"at": "2026-10-02T12:25:01+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "af8b9219916c",
+"t": "Amazon Joins Other Hyperscalers in Saving Existing Nuclear",
+"u": "https://heatmap.news/am/amazon-constellation-calvert",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-10-02T12:05:24+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "3ff9fd91892e",
+"t": "Amazon Says It’s No Longer Using NDAs for Data Centers",
+"u": "https://www.wired.com/story/amazon-says-it-is-going-to-stop-using-ndas-for-data-centers/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-02T11:47:58+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "d67ba16d04aa",
+"t": "Transcript: Governor Mikie Sherrill on Electricity Prices, Nuclear Power, and Building in New Jersey",
+"u": "https://heatmap.news/podcast/shift-key-154-mikie-sherrill-transcript",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-10-02T09:10:06+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "09d88af4a4a5",
+"t": "‘It could get an orgasm out of a cabbage’: the best vibrators, tested",
+"u": "https://www.theguardian.com/thefilter/2025/feb/23/best-vibrators-bullet-rabbit-wand",
+"o": "The Guardian",
+"lane": "news",
+"at": "2026-10-02T09:00:50+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "5c9cda860cde",
+"t": "From Opposition to Buy-In: Tactics for Data Center Developers",
+"u": "https://www.datacenterknowledge.com/data-center-site-selection/from-opposition-to-buy-in-tactics-for-data-center-developers",
+"o": "Data Center Knowledge",
+"lane": "news",
+"at": "2026-10-02T09:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "6d70a519e83a",
+"t": "Hawley strikes a different tone from Trump on AI",
+"u": "https://www.politico.com/news/2026/10/02/hawley-tests-trumps-hands-off-approach-to-ai-01104288",
+"o": "Politico",
+"lane": "news",
+"at": "2026-10-02T09:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "519e79f4c9fb",
+"t": "Google launches satellite to test feasibility of building data centers in space",
+"u": "https://www.npr.org/2026/10/02/nx-s1-5988044/google-launches-satellite-to-test-feasibility-of-building-data-centers-in-space",
+"o": "NPR",
+"lane": "news",
+"at": "2026-10-02T08:45:13+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "06f16b899108",
+"t": "The Senate Permitting Deal Contains a Data Center Double Tap",
+"u": "https://heatmap.news/daily/data-center-permitting-deal",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-10-02T01:00:45+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "9ad53ce93950",
+"t": "SpaceX launches Google AI chips into orbit in push toward space-based data centers",
+"u": "https://www.cnbc.com/2026/10/01/spacex-to-launch-google-ai-chips-to-orbit-with-planet-labs-satellites.html",
+"o": "CNBC",
+"lane": "news",
+"at": "2026-10-02T00:06:02+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "1ecdde15091a",
+"t": "House Democrats' behind-the-scenes pitch for dues: Help us take on MAGA Inc.",
+"u": "https://www.axios.com/2026/10/01/maga-inc-trump-house-democrats-midterms-dccc-dues",
+"o": "Axios",
+"lane": "news",
+"at": "2026-10-01T23:43:27+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "bdec1eb7e1b4",
+"t": "We Demand More Information on How Marin Cops Illegally Shared Flock ALPR Data",
+"u": "https://www.eff.org/deeplinks/2026/10/we-demand-more-information-how-marin-cops-illegally-shared-flock-alpr-data",
+"o": "EFF",
+"lane": "news",
+"at": "2026-10-01T21:59:08+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "e82f041bf4db",
+"t": "Challengers Approach: Third Party App Stores Arrive to Google Play",
+"u": "https://www.eff.org/deeplinks/2026/10/challengers-approach-third-party-app-stores-arrive-google-play",
+"o": "EFF",
+"lane": "news",
+"at": "2026-10-01T21:25:19+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "f80a6e05c8e7",
+"t": "Former federal regulator says existing laws already apply to AI",
+"u": "https://www.npr.org/2026/10/01/nx-s1-5987776/former-federal-regulator-says-existing-laws-already-apply-to-ai",
+"o": "NPR",
+"lane": "news",
+"at": "2026-10-01T21:12:39+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "de0a1dfa7625",
+"t": "Judge dismisses Chegg and Penske antitrust lawsuits targeting Google AI search",
+"u": "https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-10-01T20:11:55+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "55c9da1f14cb",
+"t": "How Texas Helped a Private School Chain’s AI Tool Get Into Public School Classrooms",
+"u": "https://www.propublica.org/article/alpha-school-ai-texas-public-schools-mike-morath",
+"o": "ProPublica",
+"lane": "news",
+"at": "2026-10-01T20:10:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "c9ac674b5cf4",
+"t": "Trump’s ‘Morally Binding’ AI ‘Accord,’ the Rise of AI Agents, and Extremists on the Ballot",
+"u": "https://www.wired.com/story/uncanny-valley-podcast-trumps-pinky-swear-ai-safety-accord-an-ai-agent-worth-the-risk/",
+"o": "Wired",
+"lane": "news",
+"at": "2026-10-01T19:58:31+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "3ac5b3360665",
+"t": "Court Agrees with EFF: Utah’s VPN Law Demands a Technical Impossibility",
+"u": "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility",
+"o": "EFF",
+"lane": "news",
+"at": "2026-10-01T19:57:20+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "585b5b1efa86",
+"t": "Former LinkedIn chief Roslansky to leave Microsoft, following other exec departures",
+"u": "https://www.cnbc.com/2026/10/01/linkedin-chief-roslansky-microsoft-exit.html",
+"o": "CNBC",
+"lane": "news",
+"at": "2026-10-01T19:36:42+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "835ce5d8dce2",
+"t": "The Hidden Failure Domain in N+1 Data Center Cooling",
+"u": "https://www.datacenterknowledge.com/cooling/the-hidden-failure-domain-in-n-1-data-center-cooling",
+"o": "Data Center Knowledge",
+"lane": "news",
+"at": "2026-10-01T19:36:06+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "a9c081039517",
+"t": "Happy Opt Out October! Let’s Find Real Alternatives to the Tech Giants",
+"u": "https://www.eff.org/deeplinks/2026/10/happy-opt-out-october-lets-find-real-alternatives-tech-giants",
+"o": "EFF",
+"lane": "news",
+"at": "2026-10-01T19:27:29+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "71a25c98c4a7",
+"t": "Google launches Project Suncatcher, a step towards AI data centers in space",
+"u": "https://www.npr.org/2026/10/01/nx-s1-5983697/project-suncatcher-google-ai-data-center-space",
+"o": "NPR",
+"lane": "news",
+"at": "2026-10-01T18:41:07+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "3b60d491466f",
+"t": "British Iranian arrested in U.K. terror plot probe",
+"u": "https://www.axios.com/2026/10/01/uk-iranian-national-arrested-raf-fairford-terror-plot-probe",
+"o": "Axios",
+"lane": "news",
+"at": "2026-10-01T17:27:58+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "e7f973146b85",
+"t": "Judge dismisses antitrust lawsuits over Google’s AI Overviews",
+"u": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-10-01T17:17:36+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "8ffd9bdf7d9c",
+"t": "Florida cops say they don't know who owns 11 unpermitted Flock cameras",
+"u": "https://arstechnica.com/tech-policy/2026/10/florida-cops-say-they-dont-know-who-owns-11-unpermitted-flock-cameras/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-10-01T16:49:33+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "046eb318fe4b",
+"t": "Trump’s AI rebrand may stop at the White House",
+"u": "https://www.politico.com/news/2026/10/01/trumps-ai-rebrand-may-stop-at-the-white-house-01102545",
+"o": "Politico",
+"lane": "news",
+"at": "2026-10-01T15:31:51+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "7844da18c0e6",
+"t": "Health insurer points finger at AI as nearly $1 billion in questionable hospital charges appear",
+"u": "https://www.cnbc.com/2026/10/01/health-care-costs-insurance-claims-billing-ai.html",
+"o": "CNBC",
+"lane": "news",
+"at": "2026-10-01T15:07:07+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "0347d45ea0b4",
+"t": "California Man Arrested for Smuggling More Than $300 Million in Export-Controlled Computer Servers to China",
+"u": "https://www.justice.gov/opa/pr/california-man-arrested-smuggling-more-300-million-export-controlled-computer-servers-china",
+"o": "DOJ",
+"lane": "agency",
+"at": "2026-10-01T12:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "4dc5457e5492",
+"t": "California Dems seek safeguards against election misinformation",
+"u": "https://www.politico.com/news/2026/10/01/california-dems-election-misinformation-01100554",
+"o": "Politico",
+"lane": "news",
+"at": "2026-10-01T09:45:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "3bc96ec27c59",
+"t": "Trump and CEOs try to shed AI's toxic branding",
+"u": "https://www.axios.com/2026/10/01/superintelligence-si-ai-trump",
+"o": "Axios",
+"lane": "news",
+"at": "2026-10-01T09:35:05+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "18e17d2fc6ef",
+"t": "Despite big Texas solar purchase agreement, Meta still uses lots of gas",
+"u": "https://www.canarymedia.com/articles/corporate-procurement/meta-large-solar-purchase-texas",
+"o": "Canary Media",
+"lane": "news",
+"at": "2026-10-01T07:30:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "31154e013948",
+"t": "New Mexico to jump into frontier AI regulation",
+"u": "https://www.politico.com/news/2026/09/30/new-mexico-ai-regulation-bill-01101379",
+"o": "Politico",
+"lane": "news",
+"at": "2026-10-01T00:26:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "fa3f05d9463c",
+"t": "The AI telling farmers when to harvest",
+"u": "https://www.bbc.co.uk/news/articles/cgk53dkmyxko?at_medium=RSS&at_campaign=rss",
+"o": "BBC",
+"lane": "news",
+"at": "2026-09-30T23:02:21+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "92c0f10b8894",
+"t": "Victory! California Appeals Court Refuses to Revive Surveillance Tech CEO’s Meritless Lawsuit Against Journalist",
+"u": "https://www.eff.org/deeplinks/2026/09/victory-california-appeals-court-refuses-revive-surveillance-tech-ceos-meritless",
+"o": "EFF",
+"lane": "news",
+"at": "2026-09-30T22:38:05+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "e76bbdfc52cd",
+"t": "Inside Zuckerberg, Huang’s push for White House AI pact",
+"u": "https://www.politico.com/news/2026/09/30/zuckerberg-huang-white-house-ai-pact-01101248",
+"o": "Politico",
+"lane": "news",
+"at": "2026-09-30T22:19:53+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "d52eb00ee6c2",
+"t": "Meta's Muse: Killer app? Security nightmare? Both?",
+"u": "https://www.npr.org/2026/09/30/nx-s1-5983755/metas-muse-killer-app-security-nightmare-both",
+"o": "NPR",
+"lane": "news",
+"at": "2026-09-30T21:59:43+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "8fbc7513213e",
+"t": "AI safety fears put OpenAI and Anthropic in the FTC's crosshairs",
+"u": "https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-30T21:31:59+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "a4da034e8427",
+"t": "Someone ‘Torturing’ LLMs in a Robot Prison Has Triggered the Dumbest Debate in AI Yet",
+"u": "https://www.404media.co/someone-torturing-llms-in-a-robot-prison-has-triggered-the-dumbest-debate-in-ai-yet/",
+"o": "404 Media",
+"lane": "news",
+"at": "2026-09-30T21:23:11+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "b9c3043f96b9",
+"t": "Returning from vacation? The government can search your phone without a warrant.",
+"u": "https://arstechnica.com/tech-policy/2026/09/immigration-advocate-sues-border-agents-for-demanding-his-cell-phone/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-09-30T21:19:56+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "7d0b2815c6ca",
+"t": "Ask Trump's AI chatbot who won in 2020. You might not get an answer.",
+"u": "https://www.axios.com/2026/09/30/trump-america-gov-ai-chatbot-conflicting-answers",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-30T20:47:56+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "bc77035e2247",
+"t": "Musk returns to Trump world for Pentagon war study",
+"u": "https://www.axios.com/2026/09/30/pentagon-hegseth-musk-gingrich-anduril",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-30T20:47:18+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "0e71478fb831",
+"t": "Fed watchdog clears former chair Powell in renovation probe",
+"u": "https://www.axios.com/2026/09/30/fed-powell-ig-building",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-30T20:29:23+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "07ae79d44b17",
+"t": "Trump's DOJ takes its fight with federal judges to Minnesota",
+"u": "https://www.axios.com/2026/09/30/doj-misconduct-complaint-minnesota-judges",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-30T20:20:58+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "beee353d4f9f",
+"t": "Trump plan to combat AI risks hinges on Big Tech pals policing themselves",
+"u": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-09-30T18:47:01+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "ca6a33812f10",
+"t": "Jack Smith faces new lawsuit over congressional phone records",
+"u": "https://www.axios.com/2026/09/30/jack-smith-arctic-frost-phone-records-lawsuit-blackburn",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-30T18:43:41+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "bc19c566808a",
+"t": "\"An AI did it\" is no defense, says nonprofit suing OpenAI over Hugging Face hack",
+"u": "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-halt-unsafe-development-that-caused-hugging-face-hack/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-09-30T18:25:04+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "b0bb3163cdf6",
+"t": "Data Center On-Site Power Brings Pollution Risks Closer to Home",
+"u": "https://www.datacenterknowledge.com/compliance/data-center-on-site-power-brings-pollution-risks-closer-to-home",
+"o": "Data Center Knowledge",
+"lane": "news",
+"at": "2026-09-30T18:22:06+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "61b47fb7fcf6",
+"t": "944 children abused by Catholic clergy, Mass. AG says — but no new charges",
+"u": "https://www.axios.com/2026/09/30/massachusetts-catholic-clergy-sex-abuse-report",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-30T17:48:05+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "b3707029996a",
+"t": "Here’s what AI leaders are saying about Trump’s new safety plan",
+"u": "https://www.theverge.com/ai-artificial-intelligence/1002636/ai-execs-trump-self-policing-deal-comments",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-09-30T17:32:07+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "7cdba27893aa",
+"t": "📱 Hey Siri, How Do I Limit AI Data Access? | EFFector 38.17",
+"u": "https://www.eff.org/deeplinks/2026/09/hey-siri-how-do-i-limit-ai-data-access-effector-3817",
+"o": "EFF",
+"lane": "news",
+"at": "2026-09-30T16:45:11+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "29761bfdbf2f",
+"t": "Internet Infrastructure Services Empower Deepfake Abuse, New Study Finds",
+"u": "https://www.404media.co/deepfake-abuse-sites-infrastructure-providers-study/",
+"o": "404 Media",
+"lane": "news",
+"at": "2026-09-30T16:02:39+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "2104d195eeaa",
+"t": "Here’s how tech leaders will self-police AI safety under Trump’s deal",
+"u": "https://www.theverge.com/ai-artificial-intelligence/1002584/trump-us-ai-safety-deal-self-regulation-tech-execs",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-09-30T15:47:44+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "b6e3d08624e5",
+"t": "SCOTUS says Tennessee can move forward with Christa Pike's execution",
+"u": "https://www.axios.com/local/nashville/2026/09/30/christa-pike-execution-stayed-appeals-court",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-30T14:58:36+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "1ffbaa6015da",
+"t": "How Cities Are Forced to Funnel License Plate Data to a Massive Federal Surveillance Program",
+"u": "https://www.404media.co/how-cities-are-forced-to-funnel-license-plate-data-to-a-massive-federal-surveillance-program-hidta/",
+"o": "404 Media",
+"lane": "news",
+"at": "2026-09-30T14:29:15+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "9e6d61fdb933",
+"t": "WhatsApp introduces optional parental controls for teenagers",
+"u": "https://www.bbc.co.uk/news/articles/cm986x65we88o?at_medium=RSS&at_campaign=rss",
+"o": "BBC",
+"lane": "news",
+"at": "2026-09-30T13:01:30+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "71f399cadb92",
+"t": "Internet of Things: OMB Action Needed to Ensure Agencies Secure Their Networked Devices",
+"u": "https://www.gao.gov/products/gao-26-108937",
+"o": "GAO",
+"lane": "agency",
+"at": "2026-09-30T11:12:48+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "cf4e41463dba",
+"t": "Trump meets with top tech leaders to discuss regulations and launch new website",
+"u": "https://www.npr.org/2026/09/30/nx-s1-5984963/trump-meets-with-top-tech-leaders-to-discuss-regulations-and-launch-new-website",
+"o": "NPR",
+"lane": "news",
+"at": "2026-09-30T10:46:27+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "c2ffadeb9805",
+"t": "Takeaways from Trump's summit with AI leaders",
+"u": "https://www.npr.org/2026/09/30/nx-s1-5984944/takeaways-from-trumps-summit-with-ai-leaders",
+"o": "NPR",
+"lane": "news",
+"at": "2026-09-30T10:46:21+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "199d51294ee7",
+"t": "Trump's AI \"constitution\" crowns day of accelerating ambition",
+"u": "https://www.axios.com/2026/09/30/ai-constitution-trump-white-house",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-30T09:33:10+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "02095b100178",
+"t": "Al Gore on AI, ‘An Inconvenient Truth,’ and the Biggest Surprises of the Past 20 Years",
+"u": "https://heatmap.news/podcast/shift-key-153-al-gore",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-09-30T09:10:06+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "bb67b6f8a295",
+"t": "A startup wants to build a massive nuclear-powered data center on public land in Utah",
+"u": "https://www.npr.org/2026/09/30/nx-s1-5983482/valar-atomic-nuclear-data-center-project-beehive-utah",
+"o": "NPR",
+"lane": "news",
+"at": "2026-09-30T09:01:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "2d3d377c233e",
+"t": "Transcript: Al Gore on AI, ‘An Inconvenient Truth,’ and the Biggest Surprises of the Past 20 Years",
+"u": "https://heatmap.news/podcast/shift-key-153-al-gore-transcript",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-09-30T09:00:06+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "719d3195b24b",
+"t": "Trump orders US government to call AI ‘Super Intelligence’",
+"u": "https://www.theverge.com/policy/1002468/trump-ai-superintelligence-executive-order-ai",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-09-29T23:34:43+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "9e8939ac5e61",
+"t": "Boeing nabs $20B contract for Navy's futuristic fighter",
+"u": "https://www.axios.com/2026/09/29/navy-boeing-fighter-contract-f47",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-29T21:42:11+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "756b677d1383",
+"t": "While the Country Rejects ALPR Mass Surveillance, SF Settles for Weak Safeguards",
+"u": "https://www.eff.org/deeplinks/2026/09/while-country-rejects-alpr-mass-surveillance-sf-settles-weak-safeguards",
+"o": "EFF",
+"lane": "news",
+"at": "2026-09-29T21:30:22+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "1eef151c513c",
+"t": "Supreme Court green-lights Trump's third-country deportations",
+"u": "https://www.axios.com/2026/09/29/supreme-court-trump-third-country-deportations",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-29T20:40:17+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "869ec631d907",
+"t": "Trump says tech execs signed ‘morally binding’ accord to help police AI",
+"u": "https://www.politico.com/news/2026/09/29/ai-execs-morally-binding-constitution-01097855",
+"o": "Politico",
+"lane": "news",
+"at": "2026-09-29T20:29:03+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "710217288673",
+"t": "Mesabi Metallics to build a $15B lower-carbon steel mill in Iowa",
+"u": "https://www.canarymedia.com/articles/green-steel/mesabi-metallics-steel-mill-iowa",
+"o": "Canary Media",
+"lane": "news",
+"at": "2026-09-29T20:26:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "33853db4a689",
+"t": "Trump ads paid for by US government allegedly violate anti-propaganda laws",
+"u": "https://arstechnica.com/tech-policy/2026/09/trump-ads-paid-for-by-us-government-allegedly-violate-anti-propaganda-laws/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-09-29T20:23:40+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "ba20d63ef6d5",
+"t": "Trump leans on SCOTUS shadow docket more than Biden, Obama and Bush combined",
+"u": "https://www.axios.com/2026/09/29/trump-supreme-court-shadow-docket-41-applications",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-29T19:55:36+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "490754c33ab0",
+"t": "Tech Life",
+"u": "https://www.bbc.co.uk/sounds/play/w3ct8jyh?at_medium=RSS&at_campaign=rss",
+"o": "BBC",
+"lane": "news",
+"at": "2026-09-29T19:30:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "ca5628092aec",
+"t": "OpenAI hit with landmark lawsuit following Hugging Face hack",
+"u": "https://www.axios.com/2026/09/29/openai-sued-hugging-face-breach",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-29T19:00:05+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "f599d6f0232c",
+"t": "Apple pressured to explain Trump role in ICE-tracking app removals",
+"u": "https://arstechnica.com/tech-policy/2026/09/apple-worked-with-trump-admin-to-remove-ice-tracking-apps-lawmaker-says/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-09-29T17:29:14+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "c900dbff66f9",
+"t": "Meet OpenAI's \"dots\" — a new AI assistant meant to take on Meta's Muse.",
+"u": "https://www.axios.com/2026/09/29/openai-dots-ai-assistant-devday",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-29T17:15:07+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "f85bd92bddd5",
+"t": "Privacy’s Defenders Podcast: Cowboys, Cypherpunks and Visionaries",
+"u": "https://www.eff.org/deeplinks/2026/09/privacys-defenders-podcast-cowboys-cypherpunks-and-visionaries",
+"o": "EFF",
+"lane": "news",
+"at": "2026-09-29T15:00:32+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "b2da9e373574",
+"t": "Scoop: OpenAI's annual recurring revenue nears $70B",
+"u": "https://www.axios.com/2026/09/29/scoop-openais-annual-recurring-revenue-nears-70b",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-29T14:15:40+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "f8e517255078",
+"t": "AMD to Acquire World Labs for $8.2B to Advance AI Models and Robotics",
+"u": "https://www.datacenterknowledge.com/data-center-chips/amd-to-acquire-world-labs-for-8-2b-to-advance-ai-models-and-robotics",
+"o": "Data Center Knowledge",
+"lane": "news",
+"at": "2026-09-29T14:04:42+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "5ded3c9f80ae",
+"t": "SEC Charges Multiple Entities in Fraud Schemes Totaling at Least $15 Million That Used WhatsApp and Other Platforms to Lure Investors",
+"u": "https://www.sec.gov/newsroom/press-releases/2026-95-sec-charges-multiple-entities-fraud-schemes-totaling-least-15-million-used-whatsapp-other-platforms",
+"o": "SEC",
+"lane": "agency",
+"at": "2026-09-29T13:55:53+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "220c9b87b787",
+"t": "Which AI Models Use the Most Energy?",
+"u": "https://heatmap.news/energy/sustainable-ai-model-dashboard",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-09-29T13:00:03+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "3704d533c81d",
+"t": "Will Chinese AI companies slow down? A top House Democrat wants answers",
+"u": "https://www.theverge.com/policy/1001767/khanna-ai-safety-china-treaty",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-09-29T12:00:13+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "4bcf099e639c",
+"t": "Small Business Research Programs: Better Data Could Improve Insight into Companies’ Success",
+"u": "https://www.gao.gov/products/gao-26-108750",
+"o": "GAO",
+"lane": "agency",
+"at": "2026-09-29T11:27:37+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "5aec8c7a9977",
+"t": "How American political campaigns are using AI – and what they’re spending on the tools",
+"u": "https://www.theguardian.com/technology/2026/sep/29/political-campaigns-ai-tools-spending",
+"o": "The Guardian",
+"lane": "news",
+"at": "2026-09-29T11:00:49+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "f0b3d57efcdd",
+"t": "The 200 GW Moment: Reinventing the Grid for the AI Economy",
+"u": "https://www.datacenterknowledge.com/energy-power-supply/the-200-gw-moment-reinventing-the-grid-for-the-ai-economy",
+"o": "Data Center Knowledge",
+"lane": "news",
+"at": "2026-09-29T09:00:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "8e8f0c1a7544",
+"t": "Amodei adds Thune meeting to Washington tour",
+"u": "https://www.politico.com/news/2026/09/28/amodei-thune-washington-tour-01096170",
+"o": "Politico",
+"lane": "news",
+"at": "2026-09-28T23:16:20+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "d6fa27c327ba",
+"t": "Experts worry about Nvidia's AI chip sales in China and influence over Trump",
+"u": "https://arstechnica.com/tech-policy/2026/09/nvidia-may-sell-more-chips-in-china-as-jensen-huangs-influence-over-trump-grows/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-09-28T21:49:10+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "40c705246096",
+"t": "The Next Generation of AI Infrastructure Design Starts with Efficiency",
+"u": "https://www.datacenterknowledge.com/ai-data-centers/the-next-generation-of-ai-infrastructure-design-starts-with-efficiency",
+"o": "Data Center Knowledge",
+"lane": "news",
+"at": "2026-09-28T21:01:49+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "309d3a4f83f0",
+"t": "Florida invokes extinction fears in legal bid to halt OpenAI development",
+"u": "https://arstechnica.com/ai/2026/09/florida-asks-court-to-put-the-brakes-on-openais-frontier-ai-development/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-09-28T20:49:39+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "a3fd9f9aa5bb",
+"t": "EFF to San Francisco Police: Drones are Powerful Surveillance Tools That Require a Robust Policy",
+"u": "https://www.eff.org/deeplinks/2026/09/eff-san-francisco-police-drones-are-powerful-surveillance-tools-require-robust",
+"o": "EFF",
+"lane": "news",
+"at": "2026-09-28T20:30:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "984219dcf429",
+"t": "Should You Trust a Politician’s Pivot on Data Centers?",
+"u": "https://heatmap.news/ideas/2026-governors-data-centers",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-09-28T19:27:51+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "4852d3de1238",
+"t": "Kalshi loses again as judges rule prediction markets must obey gambling laws",
+"u": "https://arstechnica.com/tech-policy/2026/09/another-court-rules-kalshi-sports-bets-arent-swaps-says-states-can-crack-down/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-09-28T19:04:09+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "523d5e9de5b0",
+"t": "Florida seeks a ban on ChatGPT acting like a person",
+"u": "https://www.theverge.com/ai-artificial-intelligence/1001527/chatgpt-florida-ban-first-person-human-attributes-kids",
+"o": "The Verge",
+"lane": "news",
+"at": "2026-09-28T18:42:17+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "8c4f45741547",
+"t": "Kash Patel's FBI loses another top official",
+"u": "https://www.axios.com/2026/09/28/fbi-kash-patel-andrew-bailey-leaves",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-28T18:09:12+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "b4d5fa2c7ed8",
+"t": "Scoop: Arevia Power’s ‘Evolution’ From Solar to Gas and Data Centers",
+"u": "https://heatmap.news/energy/arevia-power-data-centers",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-09-28T17:57:12+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "97104364e129",
+"t": "Trump and Johnson to meet with tech CEOs on AI risk",
+"u": "https://www.politico.com/news/2026/09/28/zuckerberg-amodei-to-attend-ai-white-house-meeting-01095324",
+"o": "Politico",
+"lane": "news",
+"at": "2026-09-28T17:19:35+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "ddbcd195d314",
+"t": "Florida asks for order to halt ChatGPT development",
+"u": "https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-28T16:43:37+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "89766dc55a71",
+"t": "IT Systems Annual Assessment: DOD Should Improve IT Fraud Risk Management Practices",
+"u": "https://www.gao.gov/products/gao-26-108596",
+"o": "GAO",
+"lane": "agency",
+"at": "2026-09-28T11:01:02+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "ca6d89c27fc0",
+"t": "Microsoft goes quiet after church groups ask for 1% of data center costs",
+"u": "https://arstechnica.com/tech-policy/2026/09/microsoft-goes-quiet-after-church-groups-ask-for-1-of-data-center-costs/",
+"o": "Ars Technica",
+"lane": "news",
+"at": "2026-09-28T11:00:09+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "7574bf99e050",
+"t": "Exclusive: AI giants, unions join forces for data center fight",
+"u": "https://www.axios.com/2026/09/28/ai-industry-unions-data-centers",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-28T10:57:13+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "4060f8d4183a",
+"t": "Exclusive: Mike Johnson to travel to 22 states in final midterm sprint",
+"u": "https://www.axios.com/2026/09/28/mike-johnson-midterms-house-republicans",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-28T10:00:06+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "7a9fbd6237c0",
+"t": "AI's man of the moment",
+"u": "https://www.axios.com/2026/09/28/dario-amodei-artificial-intelligence-ai",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-28T09:53:40+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "874fd7269777",
+"t": "Why I'm finally giving Meta AI a chance",
+"u": "https://www.axios.com/2026/09/28/meta-ai-muse-privacy-zuckerberg",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-28T09:00:07+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "8dfdfbaff0db",
+"t": "Anthropic CEO to attend White House dinner with Trump",
+"u": "https://www.politico.com/news/2026/09/27/anthropic-amodei-trump-white-house-dinner-01094287",
+"o": "Politico",
+"lane": "news",
+"at": "2026-09-27T18:25:43+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "22185ad33c46",
+"t": "Bill Gates says an AI ‘kill switch’ isn’t enough",
+"u": "https://www.politico.com/news/2026/09/27/bill-gates-ai-kill-switch-01094236",
+"o": "Politico",
+"lane": "news",
+"at": "2026-09-27T17:35:00+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+},
+{
+"id": "d38cac0d923a",
+"t": "Trump: 5 terrorism suspects in U.K. base incident were under investigation",
+"u": "https://www.axios.com/2026/09/27/terrorism-raf-fairford-base-us-air-force",
+"o": "Axios",
+"lane": "news",
+"at": "2026-09-27T16:19:35+00:00",
+"seen": "2026-10-05T15:19:45+00:00",
+"status": "unverified headline"
+}
+]
+}
