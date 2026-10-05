@@ -683,6 +683,18 @@
    "n": "xAI",
    "k": "company",
    "note": "Elon Musk's AI company; operates Colossus data centers in Memphis area"
+  },
+  {
+   "id": "florida-attorney-general",
+   "n": "Florida Attorney General",
+   "k": "official",
+   "note": "Florida's chief legal officer; sued OpenAI in June 2026."
+  },
+  {
+   "id": "california-labor-commissioner",
+   "n": "California Labor Commissioner",
+   "k": "agency",
+   "note": "State office that enforces wage and hour law."
   }
  ]
 }

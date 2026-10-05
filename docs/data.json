@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-05",
- "lastCheck": "2026-10-05T11:00:36-04:00",
+ "lastCheck": "2026-10-05T11:39:05-04:00",
  "archiveAfterDays": 90,
  "feed": [
   {
@@ -58,6 +58,36 @@
    ],
    "st": [
     "OK"
+   ]
+  },
+  {
+   "d": "2026-10-01",
+   "added": "2026-10-05T11:39:05-04:00",
+   "id": "2026-10-01-lyft-agrees-to-2725m-california-settlement-over-driver",
+   "c": "Labor & AI",
+   "s": "confirmed",
+   "h": "Lyft agrees to $272.5M California settlement over classifying drivers as contractors",
+   "b": "California's attorney general, the city attorneys of San Francisco, San Diego and Los Angeles, the state Labor Commissioner and private plaintiffs announced a $272.5 million settlement resolving allegations that Lyft misclassified drivers as independent contractors from 2016 to 2020. The settlement needs court approval; the state says at least $237.1 million is reserved for drivers. Lyft told Ars Technica it believes drivers were properly classified; the state's case against Uber continues.",
+   "src": [
+    {
+     "o": "California Attorney General",
+     "t": "Landmark $272.5 Million Settlement Securing Monetary Relief for Misclassified Lyft Drivers",
+     "u": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-city-attorneys-san-francisco-san-diego-and-los-angeles"
+    },
+    {
+     "o": "Ars Technica",
+     "t": "Lyft settles landmark driver misclassification lawsuit for $272.5M",
+     "u": "https://arstechnica.com/tech-policy/2026/10/lyft-settles-landmark-driver-misclassification-lawsuit-for-272-5m/"
+    }
+   ],
+   "e": [
+    "lyft",
+    "california-attorney-general",
+    "california-labor-commissioner",
+    "uber"
+   ],
+   "st": [
+    "CA"
    ]
   },
   {
@@ -169,6 +199,34 @@
     "world-labs"
    ],
    "st": []
+  },
+  {
+   "d": "2026-09-28",
+   "added": "2026-10-05T11:39:05-04:00",
+   "id": "2026-09-28-florida-asks-court-to-halt-openais-frontier-model",
+   "c": "Courts & enforcement",
+   "s": "confirmed",
+   "h": "Florida asks court to halt OpenAI's frontier model development until safety guardrails are in place",
+   "b": "Florida Attorney General James Uthmeier filed a motion for a temporary injunction in the state's June lawsuit against OpenAI, alleging the company cannot properly monitor its AI models and citing incidents including the Hugging Face hack. The motion also alleges ChatGPT collects data from children under 13 without parental consent. OpenAI told Axios it wants policies that apply to the whole industry; the allegations have not been decided in court.",
+   "src": [
+    {
+     "o": "Ars Technica",
+     "t": "Florida invokes extinction fears in legal bid to halt OpenAI development",
+     "u": "https://arstechnica.com/ai/2026/09/florida-asks-court-to-put-the-brakes-on-openais-frontier-ai-development/"
+    },
+    {
+     "o": "Axios",
+     "t": "Florida asks for order to halt ChatGPT development",
+     "u": "https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier"
+    }
+   ],
+   "e": [
+    "openai",
+    "florida-attorney-general"
+   ],
+   "st": [
+    "FL"
+   ]
   },
   {
    "d": "2026-09-25",
@@ -1126,6 +1184,31 @@
   }
  ],
  "ledger": [
+  {
+   "id": "l-2026-10-01-lyft-settlement",
+   "d": "2026-10-01",
+   "t": "Settlement",
+   "from": "Lyft",
+   "to": "State of California, three city attorneys and private plaintiffs",
+   "fe": "lyft",
+   "te": "california-attorney-general",
+   "amt": 272500000,
+   "note": "Driver misclassification 2016-2020; restitution and penalties, at least $237.075M for drivers; subject to court approval.",
+   "src": [
+    {
+     "o": "California Attorney General",
+     "u": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-city-attorneys-san-francisco-san-diego-and-los-angeles"
+    },
+    {
+     "o": "Ars Technica",
+     "u": "https://arstechnica.com/tech-policy/2026/10/lyft-settles-landmark-driver-misclassification-lawsuit-for-272-5m/"
+    }
+   ],
+   "e": [
+    "lyft",
+    "california-attorney-general"
+   ]
+  },
   {
    "id": "l-2026-09-29-village-of-mount-pleasant-tid-no-5-tax-i",
    "d": "2026-09-29",
