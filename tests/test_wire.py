@@ -29,12 +29,26 @@ def test():
     assert w.FILTERS["tech"].search("FTC Sues Data Broker")
     assert not w.FILTERS["dc"].search("Utility files wildfire plan")
     assert w.FILTERS["dc"].search("Utility signs large-load deal with hyperscaler")
+    gen = {"any": ["core"], "all": ["subject", "impact"]}
+    for title in ["Amazon Says It's No Longer Using NDAs for Data Centers", "Federal judge calls Flock 'indiscriminate mass surveillance'",
+                  "Lyft settles landmark driver misclassification lawsuit for $272.5M", "Apple and Google push states to shield app stores from some lawsuits",
+                  "Sam Altman hits AI industry over political spending"]:
+        assert w.keep(gen, title), title
+    for title in ["Apple's new M6 Mac Mini is over $100 off", "15 Best Office Chairs of 2026", "U.S. B-1 bombers evacuated from UK base",
+                  "Trump promises $100 checks for 20 million seniors for Medicare"]:
+        assert not w.keep(gen, title), title
+    assert w.parse_loose(b"<rss><channel><title>A & B</title><item><title><![CDATA[Grid & load]]></title><link>https://x.example/1</link><pubDate>Mon, 05 Oct 2026 10:00:00 GMT</pubDate></item></channel></rss>")[0]["t"] == "Grid & load"
+    try:
+        w.parse_feed(b"<!DOCTYPE html><html><body>blocked</body></html>"); raise AssertionError("html accepted")
+    except ValueError:
+        pass
     cfg = json.load(open(os.path.join(ROOT, "wire-sources.json")))
     ids = [s["id"] for s in cfg["sources"]]
     assert len(ids) == len(set(ids)), "duplicate source ids"
     for s in cfg["sources"]:
         assert s["kind"] in w.PARSERS and s["url"].startswith("https://"), s["id"]
-        assert not s.get("filter") or s["filter"] in w.FILTERS, s["id"]
+        fl = s.get("filter"); names = [fl] if isinstance(fl, str) else fl if isinstance(fl, list) else (fl or {}).get("any", []) + (fl or {}).get("all", [])
+        assert all(n in w.FILTERS for n in (names or [])), s["id"]
     print("wire tests ok (%d sources configured, %d on)" % (len(ids), sum(s.get("on", True) for s in cfg["sources"])))
 
 test()

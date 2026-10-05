@@ -3,10 +3,13 @@
  "max_age_days": 7,
  "run_every_min": 10,
  "filters": {
-  "tech": "data ?cent(er|re)|hyperscal|\\bA\\.?I\\b|artificial intelligence|super ?intelligence|algorithm|antitrust|monopol|merger|acqui|Google|Alphabet|\\bMeta\\b|Facebook|Instagram|WhatsApp|Amazon|Apple|Microsoft|Nvidia|OpenAI|Anthropic|\\bxAI\\b|Oracle|Palantir|CoreWeave|semiconductor|\\bchips?\\b|cloud|data broker|privacy|personal data|surveillance|facial recognition|biometric|\\bgig\\b|Uber|Lyft|DoorDash|layoff|lobby|super PAC|broadband|spectrum|TikTok|social media|online|internet|software|tech",
+  "tech": "data ?cent(er|re)|hyperscal|\\bA\\.?I\\b|artificial intelligence|super ?intelligence|algorithm|antitrust|monopol|merger|acqui|Google|Alphabet|\\bMeta\\b|Facebook|Instagram|WhatsApp|Amazon|Apple|Microsoft|Nvidia|OpenAI|Anthropic|\\bxAI\\b|Oracle|Palantir|CoreWeave|semiconductor|\\bchips?\\b|\\bservers?\\b|computer|cloud|data broker|privacy|personal data|surveillance|facial recognition|biometric|\\bgig\\b|Uber|Lyft|DoorDash|layoff|lobby|super PAC|broadband|spectrum|TikTok|social media|online|internet|software|tech",
   "power": "data ?cent(er|re)|hyperscal|antitrust|monopol|merger|acqui|lawsuit|sues|sued|settle|fine[sd]?\\b|ruling|judge|court|FTC|DOJ|regulator|attorney general|lobby|super PAC|PAC\\b|campaign|Pentagon|contract|ICE\\b|surveillance|privacy|data broker|layoff|job cuts|union|gig|moderator|utility|electric|power grid|\\bgrid\\b|water|tax break|incentive|zoning|billion",
   "dc": "data ?cent(er|re)|hyperscal|large[- ]load|\\bA\\.?I\\b|artificial intelligence|super ?intelligence|Google|Meta|Amazon|Microsoft|OpenAI|xAI|Oracle|CoreWeave|crypto ?min",
-  "community": "zoning|rezon|county|city council|commission|opposition|residents|lawsuit|sue|water|utility|tariff|rate|grid|tax|abatement|incentive|NDA|nondisclosure|moratorium|approv|reject|permit|gas|turbine|noise|PJM|ERCOT|acqui|merger|billion|lobby"
+  "community": "\\bzoning\\b|rezon|\\bcount(y|ies)\\b|city council|commission|opposition|residents|backlash|lawsuit|\\bsues?\\b|\\bwater\\b|utilit|tariff|\\brates?\\b|ratepayer|\\bgrid\\b|\\btax(es)?\\b|abatement|incentive|\\bNDAs?\\b|nondisclosure|moratorium|\\bapprov|\\breject|\\bdenie|\\bpermit|\\bgas\\b|turbine|\\bnoise\\b|\\bPJM\\b|\\bERCOT\\b|acqui|merger|\\bbillion\\b|lobby|legislat|\\blaw\\b|\\bbill\\b|pollution|emissions|church|unions?",
+  "subject": "\\bdata ?cent(er|re)s?\\b|\\bdatacent(er|re)s?\\b|hyperscal|\\bA\\.?I\\.?\\b|artificial intelligence|super ?intelligence|\\bLLMs?\\b|chatbot|ChatGPT|algorithm|deepfake|\\bchips?\\b|\\bservers?\\b|semiconductor|\\bcloud\\b|\\bGoogle\\b|Alphabet|\\bMeta\\b|Facebook|Instagram|WhatsApp|\\bAmazon\\b|\\bAWS\\b|\\bApple\\b|Microsoft|Nvidia|OpenAI|Anthropic|\\bxAI\\b|\\bMusk\\b|Oracle|Palantir|CoreWeave|TikTok|ByteDance|Flock|license[- ]plate|\\bALPR\\b|facial recognition|biometric|surveillance|data broker|personal data|privacy|social media|app stores?|broadband|\\bspectrum\\b|\\btech\\b|tech (companies|giants|industry|executives|execs|CEOs?)|Uber|Lyft|DoorDash|gig (work|workers|economy)|content moderat",
+  "impact": "\\blawsuits?\\b|\\bsues?\\b|\\bsued\\b|\\bjudge\\b|\\bcourt\\b|\\bruling\\b|\\brules?\\b|\\bsettle|\\bfined?\\b|\\bfines\\b|\\bpenalt|\\bFTC\\b|\\bDOJ\\b|Justice Department|\\bSEC\\b|\\bFCC\\b|\\bFERC\\b|regulat|attorney general|\\bAG\\b|\\blobby|super PAC|\\bPACs?\\b|campaign|donat|Pentagon|\\bcontracts?\\b|\\bICE\\b|\\bDHS\\b|surveillance|privacy|data broker|layoffs?|job cuts|\\bunions?\\b|workers|misclassif|utilit|electricity|\\bgrid\\b|power plant|\\bgas\\b|nuclear|\\bwater\\b|tax break|abatement|incentive|zoning|rezon|backlash|opposition|residents|moratorium|acqui|merger|\\$[\\d.]+ ?(billion|B\\b)|\\bbillion\\b|antitrust|monopol|Congress|Senate|\\bHouse\\b|\\bbills?\\b|\\blaws?\\b|legislat|White House|\\bTrump\\b|governor|\\bstates?\\b|investigat|\\bprobe\\b|charged|charges|arrest|indict|smuggl|export control|\\bban\\b|\\bbans\\b|\\bhack|breach|deal\\b|pact|accord|\\bNDAs?\\b|\\bfight\\b|\\blegal\\b|\\border\\b|\\bhalt\\b|\\bcosts?\\b|\\bcrackdown\\b|political spending|\\bspending\\b|export",
+  "core": "\\bdata ?cent(er|re)s?\\b|\\bdatacent(er|re)s?\\b|hyperscal|\\bFlock\\b|license[- ]plate|\\bALPR\\b|data brokers?|antitrust|monopol|facial recognition|gig workers|content moderators|misclassif|\\bPalantir\\b|AI (czar|regulation|safety|law|bill|pact|accord|lobby|super PAC)|super ?intelligence"
  },
  "sources": [
   {
@@ -18,7 +21,8 @@
    "lane": "agency",
    "filter": "tech",
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "HTTP 403 from GitHub Actions runners on 2026-10-05 (works through Firecrawl). Replaced in the Wire by gn-ftc; the routine reads the FTC page."
   },
   {
    "id": "ftc-competition",
@@ -29,7 +33,8 @@
    "lane": "agency",
    "filter": null,
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "HTTP 403 from GitHub Actions runners on 2026-10-05 (works through Firecrawl). Replaced in the Wire by gn-ftc; the routine reads the FTC page."
   },
   {
    "id": "ftc-consumer",
@@ -40,7 +45,8 @@
    "lane": "agency",
    "filter": "tech",
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "HTTP 403 from GitHub Actions runners on 2026-10-05 (works through Firecrawl). Replaced in the Wire by gn-ftc; the routine reads the FTC page."
   },
   {
    "id": "doj-news",
@@ -96,7 +102,8 @@
    "lane": "agency",
    "filter": "tech",
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "HTTP 403 from GitHub Actions runners on 2026-10-05. The SEC asks automated clients to send a contact email (tracker.config.json \"contact\" is empty)."
   },
   {
    "id": "fcc-headlines",
@@ -165,7 +172,8 @@
    "lane": "agency",
    "filter": null,
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "HTTP 403 from GitHub Actions runners on 2026-10-05; replaced by gn-calprivacy. The routine reads privacy.ca.gov."
   },
   {
    "id": "nlrb-news",
@@ -263,9 +271,18 @@
    "kind": "rss",
    "url": "https://www.theverge.com/rss/policy/index.xml",
    "lane": "news",
-   "filter": "tech",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "verge",
@@ -274,9 +291,18 @@
    "kind": "rss",
    "url": "https://www.theverge.com/rss/index.xml",
    "lane": "news",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "ars-policy",
@@ -285,9 +311,18 @@
    "kind": "rss",
    "url": "https://feeds.arstechnica.com/arstechnica/tech-policy",
    "lane": "news",
-   "filter": null,
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "techcrunch",
@@ -296,9 +331,18 @@
    "kind": "rss",
    "url": "https://techcrunch.com/feed/",
    "lane": "news",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "dcd",
@@ -363,9 +407,18 @@
    "kind": "rss",
    "url": "https://www.propublica.org/feeds/propublica/main",
    "lane": "news",
-   "filter": "tech",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "markup",
@@ -374,9 +427,18 @@
    "kind": "rss",
    "url": "https://themarkup.org/feeds/rss.xml",
    "lane": "news",
-   "filter": null,
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "404media",
@@ -385,9 +447,18 @@
    "kind": "rss",
    "url": "https://www.404media.co/rss/",
    "lane": "news",
-   "filter": "tech",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "wired",
@@ -396,9 +467,18 @@
    "kind": "rss",
    "url": "https://www.wired.com/feed/rss",
    "lane": "news",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "npr-tech",
@@ -407,9 +487,18 @@
    "kind": "rss",
    "url": "https://feeds.npr.org/1019/rss.xml",
    "lane": "news",
-   "filter": "tech",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "nyt-tech",
@@ -418,10 +507,19 @@
    "kind": "rss",
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
    "lane": "news",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
    "on": false,
-   "why_off": "untestable on 2026-10-05: Firecrawl refuses nytimes.com, WebFetch blocked; Google News site: fallback returned general news"
+   "why_off": "untestable on 2026-10-05: Firecrawl refuses nytimes.com, WebFetch blocked; Google News site: fallback returned general news",
+   "match": "title"
   },
   {
    "id": "wapo-tech",
@@ -430,9 +528,18 @@
    "kind": "rss",
    "url": "https://news.google.com/rss/search?q=site%3Awashingtonpost.com%2Ftechnology+when%3A3d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "cnbc-tech",
@@ -441,9 +548,18 @@
    "kind": "rss",
    "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html",
    "lane": "news",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "politico-tech",
@@ -452,9 +568,18 @@
    "kind": "rss",
    "url": "https://rss.politico.com/technology.xml",
    "lane": "news",
-   "filter": "tech",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "axios",
@@ -463,9 +588,18 @@
    "kind": "rss",
    "url": "https://api.axios.com/feed/",
    "lane": "news",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "techpolicypress",
@@ -474,9 +608,18 @@
    "kind": "rss",
    "url": "https://www.techpolicy.press/rss/feed.xml",
    "lane": "news",
-   "filter": null,
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 30,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "courthousenews",
@@ -485,9 +628,18 @@
    "kind": "rss",
    "url": "https://www.courthousenews.com/feed/",
    "lane": "news",
-   "filter": "tech",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "opensecrets",
@@ -498,7 +650,8 @@
    "lane": "news",
    "filter": "tech",
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "HTTP 403 from GitHub Actions runners on 2026-10-05; quarterly data, read by the routine."
   },
   {
    "id": "guardian-tech",
@@ -507,9 +660,18 @@
    "kind": "rss",
    "url": "https://www.theguardian.com/technology/rss",
    "lane": "news",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "bbc-tech",
@@ -518,9 +680,18 @@
    "kind": "rss",
    "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
    "lane": "news",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "ap-tech",
@@ -541,9 +712,18 @@
    "kind": "rss",
    "url": "https://news.google.com/rss/search?q=site%3Areuters.com%2Ftechnology+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "hn-dc",
@@ -563,9 +743,18 @@
    "kind": "rss",
    "url": "https://restofworld.org/feed/latest",
    "lane": "news",
-   "filter": "power",
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "eff",
@@ -574,9 +763,18 @@
    "kind": "rss",
    "url": "https://www.eff.org/rss/updates.xml",
    "lane": "news",
-   "filter": null,
+   "filter": {
+    "any": [
+     "core"
+    ],
+    "all": [
+     "subject",
+     "impact"
+    ]
+   },
    "every": 10,
-   "on": true
+   "on": true,
+   "match": "title"
   },
   {
    "id": "gn-dc-zoning",
@@ -709,7 +907,8 @@
    "lane": "agency",
    "filter": null,
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "returns an HTML page (bot check) to GitHub runners, 2026-10-05; worked through Firecrawl. The routine reads it; PJM news also reaches the Wire via Utility Dive and news searches."
   },
   {
    "id": "datacenterwatch",
@@ -720,6 +919,28 @@
    "lane": "news",
    "filter": null,
    "every": 30,
+   "on": true
+  },
+  {
+   "id": "gn-ftc",
+   "name": "Google News: site:ftc.gov",
+   "org": "Google News",
+   "kind": "rss",
+   "url": "https://news.google.com/rss/search?q=site%3Aftc.gov+when%3A3d&hl=en-US&gl=US&ceid=US%3Aen",
+   "lane": "search",
+   "filter": "tech",
+   "every": 20,
+   "on": true
+  },
+  {
+   "id": "gn-calprivacy",
+   "name": "Google News: California privacy agency",
+   "org": "Google News",
+   "kind": "rss",
+   "url": "https://news.google.com/rss/search?q=%22California+Privacy+Protection+Agency%22+OR+CalPrivacy+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+   "lane": "search",
+   "filter": null,
+   "every": 60,
    "on": true
   }
  ]
