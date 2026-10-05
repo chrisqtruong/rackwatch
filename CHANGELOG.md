@@ -2,6 +2,9 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-05 (players, beta)
+- Entities > Players (beta): the largest companies and groups, grouped by sector (AI labs, chips, cloud and platforms, data center builders, apps and gig work, government tech, political money), with a dot per month sized by how many posts and ledger rows Tracewire recorded and a running-total line. Every dot opens the items behind it with their sources and saved copies. Includes a table view. Sectors are set with a `sec` field in `docs/entities.json`.
+
 ## 2026-10-05 (repository renamed)
 - Removed the animated circuit traces from the header; the header keeps its grid and the dot-grid logo.
 - Repository renamed to `chrisqtruong/tracewire`; the site moved to https://chrisqtruong.github.io/tracewire/ . Updated the config (slug, site and repo links, giscus repository), README, license credit, launch steps and routine prompt. The old address chrisqtruong.github.io/rackwatch no longer serves the site.
