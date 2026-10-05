@@ -696,6 +696,28 @@
    "filter": null,
    "every": 20,
    "on": true
+  },
+  {
+   "id": "pjm-insidelines",
+   "name": "PJM Inside Lines",
+   "org": "PJM",
+   "kind": "rss",
+   "url": "https://insidelines.pjm.com/feed/",
+   "lane": "agency",
+   "filter": null,
+   "every": 10,
+   "on": true
+  },
+  {
+   "id": "datacenterwatch",
+   "name": "Data Center Watch",
+   "org": "Data Center Watch",
+   "kind": "rss",
+   "url": "https://datacenterwatch.substack.com/feed",
+   "lane": "news",
+   "filter": null,
+   "every": 30,
+   "on": true
   }
  ]
 }
