@@ -68,7 +68,13 @@ def local(tag):
 
 
 def parse_feed(raw):
-    root = ET.fromstring(raw)
+    raw = raw.lstrip(b"\xef\xbb\xbf \t\r\n")
+    if raw[:200].lower().find(b"<html") >= 0 or raw[:15].lower().startswith(b"<!doctype html"):
+        raise ValueError("got an HTML page, not a feed (blocked or moved)")
+    try:
+        root = ET.fromstring(raw)
+    except ET.ParseError:
+        return parse_loose(raw)
     out = []
     for el in root.iter():
         if local(el.tag) not in ("item", "entry"):
@@ -94,6 +100,23 @@ def parse_feed(raw):
                 f["u"] = ch.text.strip()
         if f.get("t") and f.get("u"):
             out.append(f)
+    return out
+
+
+def parse_loose(raw):
+    """Fallback for feeds that are not well-formed XML (stray &, bad entities): read <item>/<entry> blocks by pattern."""
+    t = raw.decode("utf-8", "replace")
+    out = []
+    for blk in re.findall(r"<(?:item|entry)\b.*?</(?:item|entry)>", t, re.S):
+        g = lambda tag: (re.search(r"<%s\b[^>]*>(.*?)</%s>" % (tag, tag), blk, re.S) or [None, ""])[1]
+        title = text(re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", g("title"), flags=re.S))
+        link = g("link").strip() or (re.search(r'<link\b[^>]*href="([^"]+)"', blk) or [None, ""])[1]
+        link = re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", link).strip()
+        at = when(g("pubDate") or g("published") or g("updated") or g("dc:date"))
+        if title and link.startswith("http"):
+            out.append({"t": title, "u": html.unescape(link), "at": at, "x": text(re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", g("description"), flags=re.S))[:300]})
+    if not out:
+        raise ValueError("not a readable feed")
     return out
 
 
@@ -141,6 +164,18 @@ def due(s, force):
     return every <= RUN_EVERY or (int(time.time() // 60) % every) < RUN_EVERY
 
 
+def keep(flt, hay):
+    """filter: None (keep all) | "name" | ["a", "b"] (all must match) | {"any": [...], "all": [...]} (any one, or all of these)."""
+    if not flt:
+        return True
+    if isinstance(flt, str):
+        return bool(FILTERS[flt].search(hay))
+    if isinstance(flt, list):
+        return all(FILTERS[n].search(hay) for n in flt)
+    return any(FILTERS[n].search(hay) for n in flt.get("any", [])) or (
+        bool(flt.get("all")) and all(FILTERS[n].search(hay) for n in flt["all"]))
+
+
 def poll(s):
     t0 = time.time()
     try:
@@ -149,10 +184,10 @@ def poll(s):
         items = PARSERS[s["kind"]](raw)
     except Exception as e:
         return s, None, "%s: %s" % (type(e).__name__, str(e)[:160]), time.time() - t0
-    flt = FILTERS.get(s.get("filter")) if s.get("filter") else None
     kept = []
     for f in items:
-        if flt and not flt.search(f["t"] + " " + f.get("x", "")):
+        hay = f["t"] if s.get("match") == "title" else f["t"] + " " + f.get("x", "")
+        if not keep(s.get("filter"), hay):
             continue
         if s.get("exclude") and re.search(s["exclude"], f["u"]):
             continue
