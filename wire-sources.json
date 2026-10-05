@@ -907,7 +907,8 @@
    "lane": "agency",
    "filter": null,
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "returns an HTML page (bot check) to GitHub runners, 2026-10-05; worked through Firecrawl. The routine reads it; PJM news also reaches the Wire via Utility Dive and news searches."
   },
   {
    "id": "datacenterwatch",

@@ -155,7 +155,7 @@ Lanes: agency, court, filing, news, search. `on: false` sources are kept for the
 | gn-labor | Google News: labor | yes | feed ok; 0 items, newest None. Original returns valid RSS with ZERO items (top-level OR of parenthesized groups appears to break the query). Restructured query loaded OK: 60 items, newest Mon, 05 Oct 2026 14:17:26 GMT 'Your Boss Can Use AI To Watch You. California Just Drew Some New Lines - Replaced with the tested URL now in the config. |
 | gn-privacy | Google News: privacy | yes | feed ok; 9 items, newest Mon, 05 Oct 2026 14:00:00 GMT. Works but low volume; some noise (Ceuta 'settlement', Lina Khan interview). |
 | gn-corruption | Google News: corruption | no: query returned 3 irrelevant items on 2026-10-05; needs a rewritten, tested query | feed ok; 3 items, newest Mon, 05 Oct 2026 12:50:00 GMT. Technically working but all 3 items are irrelevant junk from one local paper (Pet of the Week, Five indicted on theft charges, AP photos). Query needs rework; no replacement tested. |
-| pjm-insidelines | PJM Inside Lines | yes | Firecrawl ok (primary-source test): current, newest Oct 2 / Oct 5 |
+| pjm-insidelines | PJM Inside Lines | no: returns an HTML page (bot check) to GitHub runners, 2026-10-05; worked through Firecrawl. The routine reads it; PJM news also reaches the Wire via Utility Dive and news searches. | Firecrawl ok (primary-source test): current, newest Oct 2 / Oct 5 |
 | datacenterwatch | Data Center Watch | yes | Firecrawl ok (primary-source test): current, newest Oct 2 / Oct 5 |
 
 | gn-ftc | Google News: site:ftc.gov | yes | Added 2026-10-05 after FTC feeds returned 403 to GitHub's runners; first checked by the Wire run after this change (see wire-status.json). |
@@ -163,7 +163,7 @@ Lanes: agency, court, filing, news, search. `on: false` sources are kept for the
 
 ### First live Wire run (GitHub Actions, 2026-10-05 15:19 UTC)
 
-39 sources were due; 32 worked. Failed from GitHub's runners although they worked through Firecrawl: FTC (3 feeds), SEC litigation releases, CalPrivacy and OpenSecrets (HTTP 403, switched off above), and PJM Inside Lines (feed not well-formed XML; the poller now falls back to a lenient reader). General outlets let through shopping and unrelated politics, so they now pass only headlines that name a core topic (data centers, Flock, data brokers, antitrust...) or a tech subject plus an impact term (lawsuit, regulator, contract, utility, lobbying...), matched on the title.
+39 sources were due; 32 worked. Failed from GitHub's runners although they worked through Firecrawl: FTC (3 feeds), SEC litigation releases, CalPrivacy and OpenSecrets (HTTP 403, switched off above), and PJM Inside Lines (returns a bot-check web page; switched off). A second run on the fix branch (15:22 UTC) polled 44 sources: 43 worked, including the new gn-ftc search. General outlets let through shopping and unrelated politics, so they now pass only headlines that name a core topic (data centers, Flock, data brokers, antitrust...) or a tech subject plus an impact term (lawsuit, regulator, contract, utility, lobbying...), matched on the title.
 
 ## Known blind spots (keep this list honest; `docs/blindspots.json` mirrors it on the About page)
 
@@ -177,7 +177,7 @@ Lanes: agency, court, filing, news, search. `on: false` sources are kept for the
 - **State utility commissions:** Virginia SCC and Pennsylvania PUC news lists load by script (only featured items visible); Georgia PSC's newsroom stopped in 2019 (use the homepage); none of the tested commissions offer RSS. Local data center votes reach us through news searches, often a day or more late.
 - **County and city meetings** (rezonings, NDAs, abatements) have no central feed at all; coverage depends on local news and Data Center Watch.
 - **Court dockets:** CourtListener's feed covers opinions, not new filings; PACER is not read. New lawsuits are seen when agencies or outlets report them.
-- **Blocked for the Wire, readable by the routine:** FTC, SEC litigation releases, CalPrivacy and OpenSecrets refuse requests from GitHub's servers (HTTP 403). Their news reaches the Wire only through news searches, and the hourly check reads them directly, so it can take up to an hour.
+- **Blocked for the Wire, readable by the routine:** FTC, SEC litigation releases, CalPrivacy, OpenSecrets and PJM Inside Lines refuse requests from GitHub's servers (HTTP 403). Their news reaches the Wire only through news searches, and the hourly check reads them directly, so it can take up to an hour.
 - **Washington Post technology RSS is empty**; read through a Google News search instead.
 - **Google News searches** return redirect links and some off-topic items (for example "ICE" matching Intercontinental Exchange). They are Wire leads only.
 - **Lag:** the Wire runs every 5 to 15 minutes (GitHub decides), the verified Feed hourly. Lobbying and FEC money appears only when filings are due, weeks after the spending.

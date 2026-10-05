@@ -10,8 +10,8 @@
    "what": "Could not be read automatically at all. Its stories appear here only when other outlets or records confirm them."
   },
   {
-   "name": "Agencies that refuse our headline collector",
-   "what": "The FTC, the SEC's litigation releases, California's privacy agency and OpenSecrets block requests from GitHub's servers. The hourly check reads them directly, so their news can take up to an hour to appear."
+   "name": "Sources that refuse our headline collector",
+   "what": "The FTC, the SEC's litigation releases, California's privacy agency, OpenSecrets and the PJM grid operator's news site block requests from GitHub's servers. The hourly check reads them directly, so their news can take up to an hour to appear."
   },
   {
    "name": "AP and Reuters",
