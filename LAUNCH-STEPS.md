@@ -2,9 +2,9 @@
 
 About 15 minutes. Do them in order.
 
-## 0. Give Rackwatch its own repository
+## 0. Give Tracewire its own repository
 
-This session could not create a GitHub repository, so Rackwatch arrived as the `rackwatch/` folder in the Bankrolled pull request. Move it out first:
+This session could not create a GitHub repository, so Tracewire arrived as the `rackwatch/` folder in the Bankrolled pull request. Move it out first:
 
 1. Go to https://github.com/new. Owner **chrisqtruong**, name **rackwatch**, **Public**. Leave "Add a README", .gitignore and license **unchecked**. Click **Create repository**.
 2. On your computer:
@@ -60,7 +60,7 @@ Note: GitHub pauses scheduled workflows in a repository with no activity for 60 
 ## 5. Create the scheduled verification task
 
 1. Open https://claude.ai/code → **Routines** (left sidebar; in Claude Code you can also type `/schedule`). Click **New routine**.
-2. Name: **Rackwatch hourly check**.
+2. Name: **Tracewire hourly check**.
 3. Prompt: paste everything below the line in `ROUTINE-PROMPT.md`.
 4. Repository: **chrisqtruong/rackwatch**. Allow it to push to **main** (the routine commits directly, like Bankrolled's).
 5. Schedule: **Hourly** (the shortest interval the scheduler allows; pick a lower interval only if your plan offers one). Connectors: add **Firecrawl** if it is available to you; many sources are only readable through it.
@@ -71,4 +71,4 @@ Note: GitHub pauses scheduled workflows in a repository with no activity for 60 
 
 - Open https://chrisqtruong.github.io/rackwatch/#p-2026-09-25-tiktok-settles-alabama-youthsafety-suit-for-at (or any permalink from a report): the page scrolls to that post.
 - The **Actions** tab shows a green "Check data" run for the last push (it runs `scripts/validate.py`).
-- Add Rackwatch to your site's project list if you want it there. The only link between Rackwatch and Bankrolled is the footer line.
+- Add Tracewire to your site's project list if you want it there. The only link between Tracewire and Bankrolled is the footer line.

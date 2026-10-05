@@ -2,6 +2,16 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-05 (new name and header)
+- Renamed from Rackwatch to **Tracewire**: on a circuit board a trace is the path that carries the signal; here it also means following the money and the deals, and the Wire is the live headline lane. The name is set in `tracker.config.json`. Repository and site URLs still say `rackwatch` until the GitHub repository is renamed.
+- New logo: a halftone dot grid (after Bankrolled's halftone dot) with two lit circuit traces; matching favicon.
+- Header: circuit traces drawn on the header's 24 px grid, with pads, vias, a dot field and a slow signal pulse (off when the device asks for reduced motion). Light-mode grid made more visible.
+
+## 2026-10-05 (record keeping)
+- Saved copies: a new hourly GitHub Action saves every source link to the Internet Archive (`scripts/archive_sources.py`, `docs/source-archive.json`); posts and ledger rows show a "saved copy" link next to each source once it exists.
+- Corrections: corrected posts carry a "Corrected" label, and the About page lists every correction with its date and what changed. The validator checks the correction note format.
+- Status page (new tab, also linked from the update times in the header): last verification check, last Wire update, Wire sources working and failing, switched-off sources and why, recent checks (new `checks` log in data.json, written by each scheduled run), and saved-copy coverage.
+
 ## 2026-10-05 (shorter pages)
 - Every long list is now paged with Prev/Next and a "1–8 of 41" count, and the page number is kept in the link: Feed (8 posts), Wire (30), Entities (24), entity timelines (12) and ledger rows (10), Ledger (20 rows, 6 projects), Archive (8).
 - Wire sidebar on the Feed is a fixed-height panel that stays in view and scrolls on its own (desktop). On phones it is replaced by the one-line Wire strip.

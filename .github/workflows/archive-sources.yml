@@ -1,0 +1,44 @@
+name: Archive sources
+
+# Saves every source link in the Feed, Ledger and project tracker to the Internet
+# Archive (Wayback Machine) and records the snapshot in docs/source-archive.json,
+# so links stay readable if the original page moves or disappears.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  push:
+    branches: [main]
+    paths: ["docs/data.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: archive-sources
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Save new source links
+        id: arc
+        run: python3 scripts/archive_sources.py --max 15
+      - name: Commit if something changed
+        if: steps.arc.outputs.changed == 'true'
+        run: |
+          git config user.name "archive-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/source-archive.json
+          git commit -m "Archive sources $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4; do
+            git push && exit 0
+            sleep $((i * 3))
+            git pull --rebase origin "${GITHUB_REF_NAME}" || exit 1
+          done
+          exit 1

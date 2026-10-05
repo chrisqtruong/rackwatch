@@ -635,7 +635,7 @@
    "c": "Courts & enforcement",
    "s": "confirmed",
    "h": "Meta settles youth-harm claims by 51 state and territory AGs mid-trial, agrees to design changes",
-   "b": "Meta reached a settlement mid-trial with 51 states and territories that alleged Instagram and Facebook were designed to be addictive for young users and misled the public about safety. Meta agreed to time limits, overnight and school-hour restrictions, age assurance and independent audits, and to payments over ten years. The D.C. Attorney General, NPR and other outlets describe the guaranteed and maximum payment totals differently, so Rackwatch leaves the figure out until the filed agreement settles it. Meta denied the allegations.",
+   "b": "Meta reached a settlement mid-trial with 51 states and territories that alleged Instagram and Facebook were designed to be addictive for young users and misled the public about safety. Meta agreed to time limits, overnight and school-hour restrictions, age assurance and independent audits, and to payments over ten years. The D.C. Attorney General, NPR and other outlets describe the guaranteed and maximum payment totals differently, so Tracewire leaves the figure out until the filed agreement settles it. Meta denied the allegations.",
    "src": [
     {
      "o": "Office of the Attorney General for the District of Columbia",
@@ -2096,6 +2096,36 @@
     }
    ],
    "note": "Two buildings operating since Sept. 2025 and six more due in 2026 for ~1.2 GW (DCD, March 2026); 'under construction' reflects partial operation. Oracle/OpenAI dropped a planned expansion toward 2 GW in March 2026; DCD reported Nvidia paid a $150M deposit and was helping Crusoe court Meta. Crusoe says the campus will provide up to 32% of Abilene's FY2025 budgeted property tax revenue at full operation."
+  }
+ ],
+ "checks": [
+  {
+   "t": "2026-10-05T11:39:05-04:00",
+   "kind": "manual",
+   "triaged": 168,
+   "opened": 7,
+   "added": 2,
+   "corrected": 0,
+   "ledger": 1,
+   "rejected": 2,
+   "failed": [
+    "justice.gov (404, truncated link)"
+   ],
+   "note": "Reduced Firecrawl budget; primary-page sweep skipped."
+  },
+  {
+   "t": "2026-10-05T11:10:00-04:00",
+   "kind": "seed",
+   "triaged": 0,
+   "opened": null,
+   "added": 52,
+   "corrected": 0,
+   "ledger": 30,
+   "rejected": 0,
+   "failed": [
+    "WebFetch blocked on all hosts; Firecrawl used"
+   ],
+   "note": "Launch seed: backfilled posts with true dates."
   }
  ]
 }

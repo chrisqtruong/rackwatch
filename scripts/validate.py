@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Rackwatch data files. Exit 1 on any error. Run before every commit."""
+"""Validate Tracewire data files. Exit 1 on any error. Run before every commit."""
 import csv, glob, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -95,6 +95,19 @@ for pr in data.get("projects", []):
     if pr.get("st") not in STATES: err(w + ": bad state")
     ents_ok(w, pr.get("e"))
     src_ok(w, pr.get("src"), need_title=False)
+
+for c in data.get("checks", []):
+    if not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", c.get("t", "")): err("checks: bad time %r" % c.get("t"))
+    for k in ("triaged", "opened", "added", "corrected", "ledger", "rejected"):
+        if c.get(k) is not None and not isinstance(c[k], int): err("checks %s: %s must be a whole number or null" % (c.get("t"), k))
+if len(data.get("checks", [])) > 200: err("checks: keep at most 200 entries (drop the oldest)")
+for p_, where in posts:
+    for m in re.finditer(r"\(Corrected ([^:)]*)", p_.get("b", "")):
+        if not DATE.match(m.group(1)): err("%s post %s: correction note must read (Corrected YYYY-MM-DD: what changed.)" % (where, p_.get("id")))
+if os.path.exists(D("docs", "source-archive.json")):
+    sa = json.load(open(D("docs", "source-archive.json")))
+    for u, v in sa.get("urls", {}).items():
+        if v.get("a") and not v["a"].startswith("https://web.archive.org/"): err("source-archive: bad snapshot for " + u)
 
 # ledger.csv must mirror the ledger
 rows = list(csv.reader(open(D("ledger.csv"), newline="")))
