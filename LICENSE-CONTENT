@@ -1,4 +1,4 @@
-Rackwatch content and data
+Tracewire content and data
 Copyright (c) 2026 Chris Truong
 
 The written content and data in this repository (docs/data.json, docs/entities.json,
@@ -9,12 +9,12 @@ You are free to share and adapt this material for any purpose, including
 commercially, as long as you give appropriate credit, link to the license,
 and indicate if changes were made. Suggested credit:
 
-  Source: Rackwatch (https://chrisqtruong.github.io/rackwatch/), CC BY 4.0
+  Source: Tracewire (https://chrisqtruong.github.io/rackwatch/), CC BY 4.0
 
 Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
 Summary: https://creativecommons.org/licenses/by/4.0/
 
-This license covers Rackwatch's own summaries, compilations and data
+This license covers Tracewire's own summaries, compilations and data
 files. It does not cover the linked source articles and documents, which
 belong to their publishers. Public records cited here (for example FEC filings, Senate lobbying
 filings and agency releases) are generally in the public domain.

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rackwatch</title>
+<title>Tracewire</title>
 <meta name="description" content="A sourced public record of the tech, AI and data-center deals and decisions that affect ordinary people.">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -18,6 +18,7 @@
  --accent:#38c8ee;--accent-ink:#04141a;--accent-soft:rgba(56,200,238,.12);
  --ok:#4fd18b;--ok-soft:rgba(79,209,139,.13);--rep:#f0c35a;--rep-soft:rgba(240,195,90,.13);--dis:#ff8a85;--dis-soft:rgba(255,138,133,.13);
  --shadow:0 1px 0 rgba(255,255,255,.03) inset;
+ --grid:rgba(130,150,175,.13);--trace:rgba(56,200,238,.30);--via:rgba(56,200,238,.65);--dotc:rgba(150,170,195,.30);
  color-scheme:dark}
 [data-theme="light"]{
  --bg:#f5f7fa;--bg2:#eef2f6;--panel:#ffffff;--panel2:#f7f9fb;--line:#d6dde5;--line2:#c3ccd7;
@@ -25,6 +26,7 @@
  --accent:#0369a1;--accent-ink:#ffffff;--accent-soft:rgba(3,105,161,.09);
  --ok:#11734a;--ok-soft:rgba(17,115,74,.09);--rep:#8a5300;--rep-soft:rgba(138,83,0,.09);--dis:#b42318;--dis-soft:rgba(180,35,24,.08);
  --shadow:0 1px 2px rgba(15,23,32,.05);
+ --grid:rgba(25,55,90,.15);--trace:rgba(3,105,161,.42);--via:rgba(3,105,161,.8);--dotc:rgba(25,55,90,.28);
  color-scheme:light}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -41,9 +43,21 @@ a:hover{text-decoration-thickness:2px}
 /* header */
 header.top{border-bottom:1px solid var(--line);background:
  linear-gradient(var(--bg),var(--bg)) padding-box;position:relative;overflow:hidden}
-header.top::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
- background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
- background-size:24px 24px;mask-image:linear-gradient(90deg,transparent 40%,#000 100%);-webkit-mask-image:linear-gradient(90deg,transparent 40%,#000 100%)}
+header.top::before{content:"";position:absolute;inset:0;pointer-events:none;
+ background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+ background-size:24px 24px;mask-image:linear-gradient(90deg,transparent 25%,#000 85%);-webkit-mask-image:linear-gradient(90deg,transparent 25%,#000 85%)}
+.circuit{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;mask-image:linear-gradient(90deg,transparent 30%,#000 80%);-webkit-mask-image:linear-gradient(90deg,transparent 30%,#000 80%)}
+.circuit .tr{stroke:var(--trace);stroke-width:1.5;fill:none;stroke-linejoin:round}
+.circuit .via{fill:var(--bg);stroke:var(--via);stroke-width:1.5}
+.circuit .pad{fill:var(--via)}
+.circuit .dt{fill:var(--dotc)}
+.circuit .pulse{stroke:var(--accent);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:22 978;stroke-dashoffset:1000;opacity:.9;animation:sig 7s linear infinite}
+@keyframes sig{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.circuit .pulse{display:none}}
+@media(max-width:700px){.circuit{opacity:.55}}
+.logo{width:32px;height:32px;color:var(--text);flex:0 0 auto}
+.logo .lt{stroke:var(--accent);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.logo .lv{fill:var(--bg);stroke:var(--accent);stroke-width:1.4}
 .brand{display:flex;align-items:center;gap:12px;padding:18px 0 6px;position:relative}
 .brand a{color:var(--text);text-decoration:none;display:flex;align-items:center;gap:10px}
 .brand h1{font-size:22px;letter-spacing:-.01em;margin:0;font-weight:700}
@@ -55,6 +69,14 @@ header.top::before{content:"";position:absolute;inset:0;pointer-events:none;opac
 .lede{color:var(--muted);margin:2px 0 12px;max-width:760px;position:relative;font-size:15px}
 .fresh{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--muted);padding:0 0 12px;position:relative}
 .fresh span{display:inline-flex;align-items:center;gap:6px}
+.fresh-link{display:inline-flex;flex-wrap:wrap;gap:6px 16px;color:inherit;text-decoration:none;min-height:32px;align-items:center}
+.fresh-link:hover{color:var(--text)}
+.srcs .arc{font-size:12.5px;color:var(--faint);margin-left:4px}
+.srcs .arc a{color:var(--faint)}
+.chip.corr{color:var(--accent);border-color:var(--accent)}
+.ok-t{color:var(--ok)}.bad-t{color:var(--dis)}
+.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0 0}
+@media(min-width:700px){.statgrid{grid-template-columns:repeat(4,1fr)}}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--faint);display:inline-block}
 .dot.live{background:var(--ok);box-shadow:0 0 0 3px var(--ok-soft)}
 .dot.stale{background:var(--rep)}
@@ -217,21 +239,22 @@ footer .row{display:flex;flex-wrap:wrap;gap:8px 18px}
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top">
+ <svg class="circuit" id="circuit" aria-hidden="true" focusable="false"></svg>
  <div class="wrap">
   <div class="brand">
    <a href="#/feed" aria-label="Home">
-    <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="3" width="24" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.6"/><g stroke="var(--line2)" stroke-width="1.4"><line x1="7" y1="10" x2="23" y2="10"/><line x1="7" y1="15" x2="23" y2="15"/><line x1="7" y1="20" x2="23" y2="20"/></g><circle cx="20.5" cy="10" r="1.3" fill="var(--ok)"/><circle cx="20.5" cy="15" r="1.3" fill="var(--accent)"/><circle cx="20.5" cy="20" r="1.3" fill="var(--rep)"/></svg>
-    <h1 id="site-name">Rackwatch</h1>
+    <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"></svg>
+    <h1 id="site-name">Tracewire</h1>
    </a>
    <div class="tools"><button class="btn small" id="theme" type="button" aria-label="Switch to light theme">Light</button></div>
   </div>
   <p class="lede" id="lede">A sourced public record of the tech, AI and data-center deals and decisions that affect ordinary people.</p>
-  <div class="fresh" aria-live="polite">
+  <div class="fresh" aria-live="polite"><a class="fresh-link" href="#/status" aria-label="Status: when the Wire and the verified feed last updated">
    <span><i class="dot" id="wire-dot"></i><span id="wire-age">Wire: loading…</span></span>
    <span><i class="dot" id="feed-dot"></i><span id="feed-age">Verified feed: loading…</span></span>
-  </div>
+  </a></div>
   <nav class="tabs" aria-label="Sections">
-   <a href="#/feed" data-v="feed">Feed</a><a href="#/wire" data-v="wire">Wire</a><a href="#/entities" data-v="entities">Entities</a><a href="#/ledger" data-v="ledger">Ledger</a><a href="#/maps" data-v="maps">Maps &amp; diagrams</a><a href="#/archive" data-v="archive">Archive</a><a href="#/about" data-v="about">About</a>
+   <a href="#/feed" data-v="feed">Feed</a><a href="#/wire" data-v="wire">Wire</a><a href="#/entities" data-v="entities">Entities</a><a href="#/ledger" data-v="ledger">Ledger</a><a href="#/maps" data-v="maps">Maps &amp; diagrams</a><a href="#/archive" data-v="archive">Archive</a><a href="#/about" data-v="about">About</a><a href="#/status" data-v="status">Status</a>
   </nav>
  </div>
 </header>
@@ -239,7 +262,7 @@ footer .row{display:flex;flex-wrap:wrap;gap:8px 18px}
 <footer>
  <div class="wrap">
   <div class="row">
-   <span><span class="js-name">Rackwatch</span>. Content and data CC BY 4.0.</span>
+   <span><span class="js-name">Tracewire</span>. Content and data CC BY 4.0.</span>
    <a href="data.json">data.json</a><a href="entities.json">entities.json</a><a href="wire.json">wire.json</a><a id="f-csv" href="#">ledger.csv</a>
    <a id="f-repo" href="#">Source and history</a><a id="f-disc" href="#">Tips and corrections</a>
   </div>
@@ -288,10 +311,10 @@ function render(){
  const r=route();
  $$("nav.tabs a").forEach(a=>a.toggleAttribute("aria-current",false));
  const tab=r.v==="entity"?"entities":r.v;const a=$(`nav.tabs a[data-v="${tab}"]`);if(a)a.setAttribute("aria-current","page");
- const V={feed:vFeed,wire:vWire,entities:vEntities,entity:vEntity,ledger:vLedger,maps:vMaps,archive:vArchive,about:vAbout}[r.v]||vFeed;
+ const V={feed:vFeed,wire:vWire,entities:vEntities,entity:vEntity,ledger:vLedger,maps:vMaps,archive:vArchive,about:vAbout,status:vStatus}[r.v]||vFeed;
  V(r);
- const t={feed:"Feed",wire:"Wire",entities:"Entities",entity:entName(r.arg),ledger:"Ledger",maps:"Maps and diagrams",archive:"Archive",about:"About"}[r.v]||"Feed";
- document.title=`${t} · ${S.cfg.name||"Rackwatch"}`;
+ const t={feed:"Feed",wire:"Wire",entities:"Entities",entity:entName(r.arg),ledger:"Ledger",maps:"Maps and diagrams",archive:"Archive",about:"About",status:"Status"}[r.v]||"Feed";
+ document.title=`${t} · ${S.cfg.name||"Tracewire"}`;
 }
 
 /* ---------- paging ---------- */
@@ -310,7 +333,14 @@ let LASTVISIT="";try{LASTVISIT=localStorage.getItem("rw-seen")||"";localStorage.
 
 /* ---------- shared renderers ---------- */
 function chip(s){return`<span class="chip ${esc(s)}">${esc(STATUS[s]||s)}</span>`}
-function srcList(src){return`<ul class="srcs" aria-label="Sources">${(src||[]).map(x=>`<li><span class="o">${esc(x.o)}:</span> <a href="${safeUrl(x.u)}" rel="noopener" target="_blank">${esc(x.t||x.o)}</a></li>`).join("")}</ul>`}
+function arcOf(u){const a=S.arcmap&&S.arcmap[u];return a&&a.a?a.a:null}
+function arcLink(u){const a=arcOf(u);return a?`<span class="arc">(<a href="${safeUrl(a)}" rel="noopener" target="_blank" title="Copy saved by the Internet Archive">saved copy</a>)</span>`:""}
+function srcList(src){return`<ul class="srcs" aria-label="Sources">${(src||[]).map(x=>`<li><span class="o">${esc(x.o)}:</span> <a href="${safeUrl(x.u)}" rel="noopener" target="_blank">${esc(x.t||x.o)}</a>${arcLink(x.u)}</li>`).join("")}</ul>`}
+const CORR=/\(Corrected (\d{4}-\d{2}-\d{2}): ([^)]*)\)/g;
+function corrections(){const out=[];const posts=S.data.feed.map(p=>[p,0]).concat(Object.values(S.arch).flatMap(m=>m.feed.map(p=>[p,1])));
+ posts.forEach(([p,a])=>{for(const m of (p.h+" "+p.b).matchAll(CORR))out.push({d:m[1],what:m[2],post:p,arch:a})});
+ S.data.ledger.forEach(x=>{for(const m of (x.note||"").matchAll(CORR))out.push({d:m[1],what:m[2],row:x})});
+ return out.sort((a,b)=>a.d<b.d?1:-1)}
 function postHTML(p,opt={}){
  const ents=(p.e||[]).map(id=>`<a class="tag" href="#/entity/${encodeURIComponent(id)}">${esc(entName(id))}</a>`).join("");
  const sts=(p.st||[]).map(s=>`<a class="tag st" href="#/feed?st=${esc(s)}" title="${esc(STATES[s]||s)}">${esc(s)}</a>`).join("");
@@ -318,7 +348,7 @@ function postHTML(p,opt={}){
  const upd=p.updates&&p.updates.length?`<div class="upd"><span class="lbl">Updates</span><ol>${p.updates.slice().sort((a,b)=>a.d<b.d?1:-1).map(u=>`<li><time datetime="${esc(u.d)}">${fmtDate(u.d)}</time>: ${esc(u.t)} <a href="${safeUrl(u.u)}" rel="noopener" target="_blank">${esc(u.o)}</a></li>`).join("")}</ol></div>`:"";
  const g=giscusOn()?`<button class="btn small" type="button" data-discuss="${esc(p.id)}" aria-expanded="false">Discuss</button>`:"";
  return`<article class="post" id="p-${esc(p.id)}">
- <div class="meta"><time datetime="${esc(p.d)}">${fmtDate(p.d)}</time>${chip(p.s)}<span>${esc(p.c)}</span>${opt.arch?'<span class="chip plain">Archive</span>':""}${LASTVISIT&&p.added&&p.added>LASTVISIT?'<span class="chip new plain">New since your last visit</span>':""}</div>
+ <div class="meta"><time datetime="${esc(p.d)}">${fmtDate(p.d)}</time>${chip(p.s)}<span>${esc(p.c)}</span>${opt.arch?'<span class="chip plain">Archive</span>':""}${/\(Corrected \d{4}-/.test(p.b+p.h)?'<span class="chip corr plain" title="This post was corrected; see the note at the end">Corrected</span>':""}${LASTVISIT&&p.added&&p.added>LASTVISIT?'<span class="chip new plain">New since your last visit</span>':""}</div>
  <h3><a href="#p-${esc(p.id)}">${esc(p.h)}</a></h3>${img}
  <p>${esc(p.b)}</p>${upd}
  ${ents||sts?`<div class="tags">${ents}${sts}</div>`:""}
@@ -492,7 +522,7 @@ async function vEntity(r){
 /* ---------- ledger ---------- */
 const LTABS=[["all","All rows",null],["deals","Mergers & deals",["Acquisition","Investment","Partnership"]],["money","Lobbying & political money",["Lobbying","Political"]],["enforce","Enforcement & fines",["Fine","Settlement"]],["gov","Contracts & incentives",["Contract","Tax incentive","Rate decision"]],["projects","Data center projects",null]];
 function ledgerTable(rows,compact){
- return`<table><thead><tr><th>Date</th><th>Type</th><th>From</th><th>To</th><th class="num">Amount</th>${compact?"":"<th>Note</th>"}<th>Sources</th></tr></thead><tbody>${rows.map(x=>`<tr id="l-${esc(x.id)}"><td><time datetime="${esc(x.d)}">${esc(x.d)}</time></td><td>${esc(x.t)}</td><td>${x.fe?`<a href="#/entity/${esc(x.fe)}">${esc(x.from)}</a>`:esc(x.from)}</td><td>${x.te?`<a href="#/entity/${esc(x.te)}">${esc(x.to)}</a>`:esc(x.to)}</td><td class="num mono" title="${esc(moneyFull(x.amt))}">${money(x.amt)}</td>${compact?"":`<td>${esc(x.note)}</td>`}<td>${(x.src||[]).map(s=>`<a href="${safeUrl(s.u)}" rel="noopener" target="_blank">${esc(s.o)}</a>`).join(", ")}</td></tr>`).join("")}</tbody></table>`;
+ return`<table><thead><tr><th>Date</th><th>Type</th><th>From</th><th>To</th><th class="num">Amount</th>${compact?"":"<th>Note</th>"}<th>Sources</th></tr></thead><tbody>${rows.map(x=>`<tr id="l-${esc(x.id)}"><td><time datetime="${esc(x.d)}">${esc(x.d)}</time></td><td>${esc(x.t)}</td><td>${x.fe?`<a href="#/entity/${esc(x.fe)}">${esc(x.from)}</a>`:esc(x.from)}</td><td>${x.te?`<a href="#/entity/${esc(x.te)}">${esc(x.to)}</a>`:esc(x.to)}</td><td class="num mono" title="${esc(moneyFull(x.amt))}">${money(x.amt)}</td>${compact?"":`<td>${esc(x.note)}</td>`}<td>${(x.src||[]).map(s=>`<a href="${safeUrl(s.u)}" rel="noopener" target="_blank">${esc(s.o)}</a>${arcOf(s.u)?` <a class="faint" href="${safeUrl(arcOf(s.u))}" rel="noopener" target="_blank" title="Saved copy (Internet Archive)">(saved)</a>`:""}`).join(", ")}</td></tr>`).join("")}</tbody></table>`;
 }
 function projCard(p){
  return`<div class="card" id="dc-${esc(p.id)}"><div class="meta"><span class="chip plain">${esc(p.status)}</span><span class="mono">${esc(p.st)}</span><time datetime="${esc(p.d)}">as of ${fmtDate(p.d)}</time></div><h3>${esc(p.n)}</h3>
@@ -607,13 +637,15 @@ async function vArchive(r){
 
 /* ---------- about ---------- */
 async function vAbout(){
+ await loadAllArchive();
  let blind=S.blind;
  if(!blind){try{blind=S.blind=await getJSON("blindspots.json")}catch(e){blind=S.blind={items:[]}}}
- const n=S.cfg.name||"Rackwatch";
+ const n=S.cfg.name||"Tracewire";
  $("#main").innerHTML=`<div class="prose"><h2>About ${esc(n)}</h2>
  <p>${esc(n)} uses AI to keep a permanent, sourced public record of how big tech and infrastructure deals affect communities: where data centers go and what they draw from local power and water, who buys whom, who pays to influence the rules, which public contracts go to which companies, and what courts and regulators decide.</p>
  <h2>How it works</h2>
- <ul><li><b>Wire</b>: a GitHub Action collects headlines ${esc(S.cfg.wire_interval||"every few minutes")} from public feeds: agency press releases, the Federal Register, SEC filings, court opinion searches and news outlets. These are raw and unchecked.</li>
+ <ul><li><b>Saved copies</b>: every source link is also saved to the Internet Archive, so it stays readable if the page moves or disappears. Look for “saved copy” next to a source.</li>
+ <li><b>Wire</b>: a GitHub Action collects headlines ${esc(S.cfg.wire_interval||"every few minutes")} from public feeds: agency press releases, the Federal Register, SEC filings, court opinion searches and news outlets. These are raw and unchecked.</li>
  <li><b>Feed</b>: a scheduled AI run (${esc(S.cfg.routine_interval||"hourly")}) reads the Wire and the primary sources, opens each item at its source, and writes a post in its own words with links. Each post carries a status label.</li>
  <li><b>Ledger</b>: confirmed deals, fines, settlements, contracts, incentives, lobbying and political money, with amounts as announced by the filer or the authority.</li>
  <li><b>Entities</b>: every post and ledger row is tagged with the companies, agencies, officials, utilities and places involved.</li></ul>
@@ -629,11 +661,79 @@ async function vAbout(){
  <h2>Known blind spots</h2>
  <p>These are sources we tested and could not read automatically, or that are paywalled or slow. Coverage of them depends on other outlets and may lag. Last tested <time>${esc(blind.tested||"")}</time>.</p>
  <ul>${(blind.items||[]).map(b=>`<li><b>${esc(b.name)}</b>: ${esc(b.what)}</li>`).join("")}</ul>
+ <h2 id="corrections">Corrections</h2>
+ ${(()=>{const c=corrections();return c.length?`<ul>${c.map(x=>`<li><time datetime="${esc(x.d)}">${fmtDate(x.d)}</time>: ${esc(x.what)} ${x.post?`<a href="#p-${esc(x.post.id)}">${esc(x.post.h)}</a>`:`<a href="#/ledger/all?q=${encodeURIComponent(x.row.from)}">Ledger: ${esc(x.row.t)}, ${esc(x.row.from)}</a>`}</li>`).join("")}</ul>`:"<p>No corrections so far. When a post or ledger row is corrected, it is fixed in place under the same link, marked “Corrected”, and listed here with the date and what changed.</p>"})()}
  <h2>Corrections and tips</h2>
  <p>Use the <a href="${esc(S.cfg.repo_url||"#")}/discussions">Discussions board</a> or the comments under any post. Tips are treated as leads and checked independently before anything is posted.</p>
  <h2>Data</h2>
  <p>Everything is in plain files, free to reuse under CC BY 4.0: <a href="data.json">data.json</a> (feed, ledger, projects), <a href="entities.json">entities.json</a>, <a href="wire.json">wire.json</a>, the <a href="archive/index.json">archive</a>, and the full history in the <a href="${esc(S.cfg.repo_url||"#")}">repository</a>.</p></div>`;
 }
+
+/* ---------- status ---------- */
+async function vStatus(){
+ $("#main").innerHTML=`<p class="muted">Loading…</p>`;
+ let ws={sources:{},off:{}};try{ws=await getJSON("wire-status.json",true)}catch(e){}
+ const checks=(S.data.checks||[]).slice().sort((a,b)=>a.t<b.t?-1:1).reverse();
+ const src=Object.entries(ws.sources||{}).map(([id,v])=>({id,...v}));
+ const bad=src.filter(x=>!x.ok),good=src.filter(x=>x.ok);
+ const arc=S.arcstate||{};
+ const lc=S.data.lastCheck,wu=S.wire&&S.wire.updated;
+ const row=c=>`<tr><td><time datetime="${esc(c.t)}">${esc(new Date(c.t).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}))}</time></td><td>${esc(c.kind||"scheduled")}</td><td class="num mono">${c.triaged??"—"}</td><td class="num mono">${c.opened??"—"}</td><td class="num mono">${c.added??0}</td><td class="num mono">${c.corrected??0}</td><td class="num mono">${c.ledger??0}</td><td>${esc((c.failed||[]).join("; "))}${c.note?`<div class="faint" style="font-size:13px">${esc(c.note)}</div>`:""}</td></tr>`;
+ const srow=x=>`<tr><td>${esc(x.name||x.id)}</td><td class="${x.ok?"ok-t":"bad-t"}">${x.ok?"working":"failing"}</td><td>${x.last_ok?esc(ago(x.last_ok)):"never"}</td><td class="num mono">${x.n??"—"}</td><td class="faint" style="font-size:13px">${esc(x.err||"")}</td></tr>`;
+ const sh=`<thead><tr><th>Source</th><th>Status</th><th>Last worked</th><th class="num">Items</th><th>Error</th></tr></thead>`;
+ const off=Object.values(ws.off||{});
+ $("#main").innerHTML=`<h2>Status</h2><p class="muted" style="max-width:760px">How the record is being kept: when each part last ran, what the verification checks did, which automatic sources are working, and how many source links have a saved copy.</p>
+ <div class="statgrid">
+  <div class="stat"><div class="v">${lc?esc(ago(lc)):"—"}</div><div class="k">last verification check (${esc(S.cfg.routine_interval||"scheduled")})</div></div>
+  <div class="stat"><div class="v">${wu?esc(ago(wu)):"—"}</div><div class="k">Wire last found new headlines (runs ${esc(S.cfg.wire_interval||"often")})</div></div>
+  <div class="stat"><div class="v">${src.length?`${good.length}/${src.length}`:"—"}</div><div class="k">Wire sources working on their last run</div></div>
+  <div class="stat"><div class="v">${arc.total?`${arc.saved||0}/${arc.total}`:"—"}</div><div class="k">source links with a saved copy</div></div>
+ </div>
+ <section class="sec"><h2>Recent verification checks</h2><p class="muted" style="font-size:14px;margin-top:-4px">Each check reads the Wire and primary sources, opens items at their source, and posts only what holds up. Full notes are in the daily <a href="${esc(S.cfg.repo_url||"#")}/tree/main/reports">reports</a>.</p>
+ ${checks.length?`<div id="ck" data-pgtop="ck"></div>`:'<p class="empty">No checks logged yet.</p>'}</section>
+ <section class="sec"><h2>Wire sources</h2>
+ ${bad.length?`<p class="muted" style="font-size:14px;margin-top:-4px">${bad.length} failing on the last run:</p><div class="tbl-wrap"><table>${sh}<tbody>${bad.map(srow).join("")}</tbody></table></div>`:`<p class="muted" style="font-size:14px;margin-top:-4px">${src.length?"All sources polled on their last run worked.":"No Wire runs recorded yet."}</p>`}
+ ${good.length?`<details style="margin-top:12px"><summary style="cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--accent);font-weight:600">Show ${good.length} working sources</summary><div class="tbl-wrap">  <table>${sh}<tbody>${good.sort((a,b)=>(a.name||"").localeCompare(b.name||"")).map(srow).join("")}</tbody></table></div></details>`:""}
+ ${off.length?`<details style="margin-top:4px"><summary style="cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--accent);font-weight:600">Show ${off.length} switched-off sources and why</summary><ul>${off.map(x=>`<li><b>${esc(x.name)}</b>: ${esc(x.why)}</li>`).join("")}</ul></details>`:""}
+ </section>
+ <section class="sec"><h2>Saved copies of sources</h2><p class="muted" style="font-size:14px;margin-top:-4px">A GitHub Action saves every source link to the Internet Archive once an hour, so the record survives broken links. ${arc.total?`<span class="mono">${arc.saved||0}</span> of <span class="mono">${arc.total}</span> saved so far${arc.updated?`, last run ${esc(ago(arc.updated))}`:""}.`:"It has not run yet."}</p></section>`;
+ if(checks.length){let cp=1;const pc=()=>{const P=pg(cp,checks.length,10);$("#ck").innerHTML=`<div class="tbl-wrap"><table><thead><tr><th>When</th><th>Kind</th><th class="num">Wire items read</th><th class="num">Pages opened</th><th class="num">Posts added</th><th class="num">Corrected</th><th class="num">Ledger rows</th><th>Problems</th></tr></thead><tbody>${checks.slice(P.a,P.b).map(row).join("")}</tbody></table></div>`+(checks.length>10?pager("ck",checks.length,P.page,10):"")};S.pg.ck=n=>{cp=n;pc()};pc()}
+}
+
+/* ---------- logo and header circuitry ---------- */
+// Logo: a halftone dot grid (dots grow toward the lower right, after Bankrolled's halftone dot), with two lit traces.
+function drawLogo(svg){
+ const g=i=>4+6*i;let d="";
+ for(let i=0;i<5;i++)for(let j=0;j<5;j++){const r=.75+1.05*((i+j)/8);d+=`<circle cx="${g(i)}" cy="${g(j)}" r="${r.toFixed(2)}" fill="currentColor"/>`}
+ svg.innerHTML=d+`<path class="lt" d="M${g(0)} ${g(1)}H${g(2)}L${g(3)} ${g(2)}H${g(4)}"/><path class="lt" d="M${g(1)} ${g(4)}V${g(3)}L${g(2)} ${g(2)}"/>`+
+  [[0,1],[4,2],[1,4],[2,2]].map(([i,j])=>`<circle class="lv" cx="${g(i)}" cy="${g(j)}" r="2.3"/>`).join("");
+}
+// Header: circuit traces on the 24px grid, vias at the ends, a dot field, and a slow signal pulse.
+function drawCircuit(){
+ const svg=$("#circuit");if(!svg)return;const W=svg.clientWidth,H=svg.clientHeight;if(!W||!H)return;
+ let seed=20261005;const rnd=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};
+ const G=24,cols=Math.floor(W/G),rows=Math.floor(H/G),x0=Math.floor(cols*.42);
+ svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+ let dots="",tr="",vias="",paths=[];
+ for(let c=x0;c<=cols;c++)for(let r=1;r<rows;r++){if(rnd()<.55){const t=(c-x0)/Math.max(1,cols-x0);dots+=`<circle class="dt" cx="${c*G}" cy="${r*G}" r="${(.8+1.4*t*rnd()).toFixed(2)}"/>`}}
+ // each trace owns two rows (2k+1 and 2k+2) and jogs between them at 45 degrees, so traces never cross
+ for(let k=0;2*k+2<rows;k++){
+  let c=cols-Math.floor(rnd()*2),r=2*k+1+(rnd()<.5?0:1);let d=`M${c*G} ${r*G}`;const pts=[[c,r]];
+  const segs=3+Math.floor(rnd()*3),span=Math.max(2,Math.round((cols-x0)/7));
+  for(let s2=0;s2<segs&&c>x0;s2++){
+   const h=2+Math.floor(rnd()*span);c-=h;d+=`H${c*G}`;pts.push([c,r]);
+   if(s2<segs-1){r=r===2*k+1?2*k+2:2*k+1;c-=1;d+=`L${c*G} ${r*G}`;pts.push([c,r])}
+  }
+  tr+=`<path class="tr" d="${d}"/>`;paths.push(d);
+  const [sc,sr]=pts[0],[ec,er]=pts[pts.length-1];
+  vias+=`<rect class="pad" x="${sc*G-3}" y="${sr*G-3}" width="6" height="6" rx="1"/><circle class="via" cx="${ec*G}" cy="${er*G}" r="3.6"/>`;
+ }
+ const pulses=paths.filter((_,i)=>i%2===0).slice(0,3).map((d,i)=>`<path class="pulse" pathLength="1000" style="animation-delay:${-i*2.3}s" d="${d}"/>`).join("");
+ svg.innerHTML=dots+tr+pulses+vias;
+}
+document.querySelectorAll("svg.logo").forEach(drawLogo);
+drawCircuit();
+let rzT;window.addEventListener("resize",()=>{clearTimeout(rzT);rzT=setTimeout(drawCircuit,150)});
 
 /* ---------- boot ---------- */
 function theme(){const t=document.documentElement.dataset.theme;const b=$("#theme");b.textContent=t==="dark"?"Light":"Dark";b.setAttribute("aria-label",`Switch to ${t==="dark"?"light":"dark"} theme`)}
@@ -644,12 +744,13 @@ async function boot(){
   const [cfg,data,ents]=await Promise.all([getJSON("config.json"),getJSON("data.json",true),getJSON("entities.json")]);
   S.cfg=cfg;S.data=data;S.data.feed=data.feed||[];S.data.ledger=data.ledger||[];S.ents=ents.entities||[];S.ents.forEach(e=>S.E[e.id]=e);
  }catch(e){$("#main").innerHTML=`<p class="empty">Could not load the data files. Please refresh.</p>`;console.error(e);return}
- const n=S.cfg.name||"Rackwatch";$("#site-name").textContent=n;$$(".js-name").forEach(x=>x.textContent=n);
+ const n=S.cfg.name||"Tracewire";$("#site-name").textContent=n;$$(".js-name").forEach(x=>x.textContent=n);
  if(S.cfg.tagline)$("#lede").textContent=S.cfg.tagline;
  $("#f-csv").href=(S.cfg.repo_url||"")+"/blob/main/ledger.csv";$("#f-repo").href=S.cfg.repo_url||"#";$("#f-disc").href=(S.cfg.repo_url||"")+"/discussions";
  if(S.cfg.sister)$("#f-sister").innerHTML=`Also from the same maker: <a href="${safeUrl(S.cfg.sister.url)}">${esc(S.cfg.sister.name)}</a>, ${esc(S.cfg.sister.note)}.`;
  window.addEventListener("hashchange",()=>{render();if(!/^#p-/.test(location.hash))window.scrollTo(0,0)});
  render();refreshWire();
+ getJSON("source-archive.json",true).then(a=>{S.arcstate=a;S.arcmap=a.urls||{};const v=route().v;if(["feed","entity","ledger","archive","status"].includes(v))render()}).catch(()=>{});
  setInterval(refreshWire,120000);setInterval(paintFresh,30000);
 }
 boot();

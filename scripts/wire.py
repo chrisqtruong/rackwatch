@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rackwatch Wire: poll free RSS/Atom feeds and APIs, keep the newest unverified headlines.
+"""Wire: poll free RSS/Atom feeds and APIs, keep the newest unverified headlines.
 
   python3 scripts/wire.py            # poll sources that are due, update docs/wire.json
   python3 scripts/wire.py --all      # poll every source regardless of its interval
@@ -249,6 +249,8 @@ def main():
                 "note": "Unverified headlines collected automatically from public feeds. Not checked by %s. Verified items appear in the Feed." % CFG["name"],
                 "items": items}
         status["updated"] = NOW.isoformat(timespec="seconds")
+        status["off"] = {x["id"]: {"name": x["name"], "why": x.get("why_off", "")} for x in SRC["sources"] if not x.get("on", True)}
+        status["sources"] = {k: v for k, v in status["sources"].items() if any(x["id"] == k and x.get("on", True) for x in SRC["sources"])}
         json.dump(wire, open(WIRE, "w"), indent=0, ensure_ascii=False)
         json.dump(status, open(STATUS, "w"), indent=1, ensure_ascii=False)
     line = "changed=%s" % str(changed).lower()
