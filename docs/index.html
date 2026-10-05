@@ -18,7 +18,7 @@
  --accent:#38c8ee;--accent-ink:#04141a;--accent-soft:rgba(56,200,238,.12);
  --ok:#4fd18b;--ok-soft:rgba(79,209,139,.13);--rep:#f0c35a;--rep-soft:rgba(240,195,90,.13);--dis:#ff8a85;--dis-soft:rgba(255,138,133,.13);
  --shadow:0 1px 0 rgba(255,255,255,.03) inset;
- --grid:rgba(130,150,175,.13);--trace:rgba(56,200,238,.30);--via:rgba(56,200,238,.65);--dotc:rgba(150,170,195,.30);
+ --grid:rgba(130,150,175,.13);
  color-scheme:dark}
 [data-theme="light"]{
  --bg:#f5f7fa;--bg2:#eef2f6;--panel:#ffffff;--panel2:#f7f9fb;--line:#d6dde5;--line2:#c3ccd7;
@@ -26,7 +26,7 @@
  --accent:#0369a1;--accent-ink:#ffffff;--accent-soft:rgba(3,105,161,.09);
  --ok:#11734a;--ok-soft:rgba(17,115,74,.09);--rep:#8a5300;--rep-soft:rgba(138,83,0,.09);--dis:#b42318;--dis-soft:rgba(180,35,24,.08);
  --shadow:0 1px 2px rgba(15,23,32,.05);
- --grid:rgba(25,55,90,.15);--trace:rgba(3,105,161,.42);--via:rgba(3,105,161,.8);--dotc:rgba(25,55,90,.28);
+ --grid:rgba(25,55,90,.15);
  color-scheme:light}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -46,15 +46,6 @@ header.top{border-bottom:1px solid var(--line);background:
 header.top::before{content:"";position:absolute;inset:0;pointer-events:none;
  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
  background-size:24px 24px;mask-image:linear-gradient(90deg,transparent 25%,#000 85%);-webkit-mask-image:linear-gradient(90deg,transparent 25%,#000 85%)}
-.circuit{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;mask-image:linear-gradient(90deg,transparent 30%,#000 80%);-webkit-mask-image:linear-gradient(90deg,transparent 30%,#000 80%)}
-.circuit .tr{stroke:var(--trace);stroke-width:1.5;fill:none;stroke-linejoin:round}
-.circuit .via{fill:var(--bg);stroke:var(--via);stroke-width:1.5}
-.circuit .pad{fill:var(--via)}
-.circuit .dt{fill:var(--dotc)}
-.circuit .pulse{stroke:var(--accent);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:22 978;stroke-dashoffset:1000;opacity:.9;animation:sig 7s linear infinite}
-@keyframes sig{to{stroke-dashoffset:0}}
-@media(prefers-reduced-motion:reduce){.circuit .pulse{display:none}}
-@media(max-width:700px){.circuit{opacity:.55}}
 .logo{width:32px;height:32px;color:var(--text);flex:0 0 auto}
 .logo .lt{stroke:var(--accent);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .logo .lv{fill:var(--bg);stroke:var(--accent);stroke-width:1.4}
@@ -239,7 +230,6 @@ footer .row{display:flex;flex-wrap:wrap;gap:8px 18px}
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top">
- <svg class="circuit" id="circuit" aria-hidden="true" focusable="false"></svg>
  <div class="wrap">
   <div class="brand">
    <a href="#/feed" aria-label="Home">
@@ -700,7 +690,7 @@ async function vStatus(){
  if(checks.length){let cp=1;const pc=()=>{const P=pg(cp,checks.length,10);$("#ck").innerHTML=`<div class="tbl-wrap"><table><thead><tr><th>When</th><th>Kind</th><th class="num">Wire items read</th><th class="num">Pages opened</th><th class="num">Posts added</th><th class="num">Corrected</th><th class="num">Ledger rows</th><th>Problems</th></tr></thead><tbody>${checks.slice(P.a,P.b).map(row).join("")}</tbody></table></div>`+(checks.length>10?pager("ck",checks.length,P.page,10):"")};S.pg.ck=n=>{cp=n;pc()};pc()}
 }
 
-/* ---------- logo and header circuitry ---------- */
+/* ---------- logo ---------- */
 // Logo: a halftone dot grid (dots grow toward the lower right, after Bankrolled's halftone dot), with two lit traces.
 function drawLogo(svg){
  const g=i=>4+6*i;let d="";
@@ -708,32 +698,7 @@ function drawLogo(svg){
  svg.innerHTML=d+`<path class="lt" d="M${g(0)} ${g(1)}H${g(2)}L${g(3)} ${g(2)}H${g(4)}"/><path class="lt" d="M${g(1)} ${g(4)}V${g(3)}L${g(2)} ${g(2)}"/>`+
   [[0,1],[4,2],[1,4],[2,2]].map(([i,j])=>`<circle class="lv" cx="${g(i)}" cy="${g(j)}" r="2.3"/>`).join("");
 }
-// Header: circuit traces on the 24px grid, vias at the ends, a dot field, and a slow signal pulse.
-function drawCircuit(){
- const svg=$("#circuit");if(!svg)return;const W=svg.clientWidth,H=svg.clientHeight;if(!W||!H)return;
- let seed=20261005;const rnd=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};
- const G=24,cols=Math.floor(W/G),rows=Math.floor(H/G),x0=Math.floor(cols*.42);
- svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
- let dots="",tr="",vias="",paths=[];
- for(let c=x0;c<=cols;c++)for(let r=1;r<rows;r++){if(rnd()<.55){const t=(c-x0)/Math.max(1,cols-x0);dots+=`<circle class="dt" cx="${c*G}" cy="${r*G}" r="${(.8+1.4*t*rnd()).toFixed(2)}"/>`}}
- // each trace owns two rows (2k+1 and 2k+2) and jogs between them at 45 degrees, so traces never cross
- for(let k=0;2*k+2<rows;k++){
-  let c=cols-Math.floor(rnd()*2),r=2*k+1+(rnd()<.5?0:1);let d=`M${c*G} ${r*G}`;const pts=[[c,r]];
-  const segs=3+Math.floor(rnd()*3),span=Math.max(2,Math.round((cols-x0)/7));
-  for(let s2=0;s2<segs&&c>x0;s2++){
-   const h=2+Math.floor(rnd()*span);c-=h;d+=`H${c*G}`;pts.push([c,r]);
-   if(s2<segs-1){r=r===2*k+1?2*k+2:2*k+1;c-=1;d+=`L${c*G} ${r*G}`;pts.push([c,r])}
-  }
-  tr+=`<path class="tr" d="${d}"/>`;paths.push(d);
-  const [sc,sr]=pts[0],[ec,er]=pts[pts.length-1];
-  vias+=`<rect class="pad" x="${sc*G-3}" y="${sr*G-3}" width="6" height="6" rx="1"/><circle class="via" cx="${ec*G}" cy="${er*G}" r="3.6"/>`;
- }
- const pulses=paths.filter((_,i)=>i%2===0).slice(0,3).map((d,i)=>`<path class="pulse" pathLength="1000" style="animation-delay:${-i*2.3}s" d="${d}"/>`).join("");
- svg.innerHTML=dots+tr+pulses+vias;
-}
 document.querySelectorAll("svg.logo").forEach(drawLogo);
-drawCircuit();
-let rzT;window.addEventListener("resize",()=>{clearTimeout(rzT);rzT=setTimeout(drawCircuit,150)});
 
 /* ---------- boot ---------- */
 function theme(){const t=document.documentElement.dataset.theme;const b=$("#theme");b.textContent=t==="dark"?"Light":"Dark";b.setAttribute("aria-label",`Switch to ${t==="dark"?"light":"dark"} theme`)}

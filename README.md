@@ -2,7 +2,7 @@
 
 The tech, AI and data-center deals and decisions that affect ordinary people, with a source for every fact.
 
-### → [Read Tracewire: chrisqtruong.github.io/rackwatch](https://chrisqtruong.github.io/rackwatch/)
+### → [Read Tracewire: chrisqtruong.github.io/tracewire](https://chrisqtruong.github.io/tracewire/)
 
 Tracewire keeps a permanent, sourced public record of how big tech and infrastructure deals affect communities: where data centers go and what they draw from local power and water, who buys whom, who pays to influence the rules, which public contracts go to which companies, and what courts and regulators decide. It is written and checked by a scheduled AI run, against primary sources, under the rules in `METHOD.md`.
 

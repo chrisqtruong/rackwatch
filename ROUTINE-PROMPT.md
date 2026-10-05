@@ -1,6 +1,6 @@
 # Scheduled task prompt
 
-Paste everything below the line into a Claude scheduled task (claude.ai/code > Routines, or `/schedule` in Claude Code). Attach the `chrisqtruong/rackwatch` repository. **Interval: hourly** (the shortest the scheduler allows; if your account allows shorter, 30 minutes is fine and the prompt still works). Connectors: none required; Firecrawl if available.
+Paste everything below the line into a Claude scheduled task (claude.ai/code > Routines, or `/schedule` in Claude Code). Attach the `chrisqtruong/tracewire` repository. **Interval: hourly** (the shortest the scheduler allows; if your account allows shorter, 30 minutes is fine and the prompt still works). Connectors: none required; Firecrawl if available.
 
 The tracker's name comes from `tracker.config.json` ("name"); if you rename it, change it there and in the first line below.
 
@@ -11,7 +11,7 @@ You maintain "Tracewire", a public, sourced tracker of the tech, AI and data-cen
 SCOPE: US-focused community and social impact of tech, AI and data-center power: data center siting, water and electricity use, utility rate changes, tax abatements and NDAs, local opposition and zoning fights; AI, chip and cloud mergers, acquisitions, acqui-hires and exclusive partnerships; antitrust actions and settlements; lobbying, PAC and campaign money from tech companies; government and surveillance contracts; layoffs tied to AI; labor, content-moderation and gig-work rulings; privacy and data-broker enforcement; bribery, corruption or conflict-of-interest cases tied to a tech or infrastructure deal. Excludes product launches, stock moves and rumor without a named source. When unsure whether an item matters or is corruption, post it as "reported" with neutral wording. Never call anything corruption in our own voice: say what was filed, charged, alleged or reported, and by whom.
 
 WHERE IT LIVES
-- GitHub repository chrisqtruong/rackwatch, served by GitHub Pages at https://chrisqtruong.github.io/rackwatch/ . Do not redesign docs/index.html.
+- GitHub repository chrisqtruong/tracewire, served by GitHub Pages at https://chrisqtruong.github.io/tracewire/ . Do not redesign docs/index.html.
 - docs/data.json: current content: `feed` (last 90 days), `ledger`, `projects`, `updated`, `lastCheck`.
 - docs/entities.json: `{"entities":[{"id","n","k","note"}]}`; k is one of company, agency, official, utility, place, court, group.
 - docs/source-archive.json: saved Internet Archive copies of every source link, written hourly by the GitHub Action `.github/workflows/archive-sources.yml`. NEVER edit it; it picks up new source links on its own.
@@ -42,6 +42,6 @@ STEP 6 Edit data keeping exact shapes.
 - Always set "updated" (today, ET) and "lastCheck" (real current time from the clock right before writing). The page shows "Verified feed updated X min ago" from lastCheck, so set it on every run, even when nothing is new.
 - Optional image only per IMAGES.md.
 
-STEP 7 Validate and publish. Run `python3 scripts/validate.py` and fix every ERROR. If the ledger changed, run `python3 scripts/ledger_csv.py`. Keep one report per day, reports/YYYY-MM-DD.md; append "### Check at HH:MM ET" with new items (status, links, permalink https://chrisqtruong.github.io/rackwatch/#p-<id>), ledger rows, corrections, archived posts, Wire items triaged (count) and any you rejected as out of scope, sources read/failed. For a quiet check write one line ("### Check at HH:MM ET: nothing new. Read: <sources>."). Commit "Update YYYY-MM-DD HH:MM" and push to main; if rejected, `git pull --rebase` (the Wire Action commits often; its files never conflict with yours) and push again.
+STEP 7 Validate and publish. Run `python3 scripts/validate.py` and fix every ERROR. If the ledger changed, run `python3 scripts/ledger_csv.py`. Keep one report per day, reports/YYYY-MM-DD.md; append "### Check at HH:MM ET" with new items (status, links, permalink https://chrisqtruong.github.io/tracewire/#p-<id>), ledger rows, corrections, archived posts, Wire items triaged (count) and any you rejected as out of scope, sources read/failed. For a quiet check write one line ("### Check at HH:MM ET: nothing new. Read: <sources>."). Commit "Update YYYY-MM-DD HH:MM" and push to main; if rejected, `git pull --rebase` (the Wire Action commits often; its files never conflict with yours) and push again.
 
 STEP 8 Notify. First check of the morning: always send a message ("Tracewire ran today (date).") with additions, corrections, reported/disputed items and the site link. Every other check: notify only if something was added or corrected, or a major item was posted or pinned (start with MAJOR, headline, status, permalink). If the repo can't be reached or pushed to, say so with the exact error. Silence when nothing changed.

@@ -2,29 +2,16 @@
 
 About 15 minutes. Do them in order.
 
-## 0. Give Tracewire its own repository
+## 0. Own repository (done)
 
-This session could not create a GitHub repository, so Tracewire arrived as the `rackwatch/` folder in the Bankrolled pull request. Move it out first:
-
-1. Go to https://github.com/new. Owner **chrisqtruong**, name **rackwatch**, **Public**. Leave "Add a README", .gitignore and license **unchecked**. Click **Create repository**.
-2. On your computer:
-   ```bash
-   git clone https://github.com/chrisqtruong/bankrolled && cd bankrolled
-   git fetch origin claude/friendly-curie-trafef && git checkout claude/friendly-curie-trafef
-   git subtree split -P rackwatch -b rackwatch-only
-   git push https://github.com/chrisqtruong/rackwatch rackwatch-only:main
-   ```
-   The new repo now has the full site, data and the Wire workflow at its root, with history.
-3. You can then delete the `rackwatch/` folder from the Bankrolled pull request (the kit fixes and `tracker-kit/examples/tech-power.json` stay).
-
-All remaining steps are in **github.com/chrisqtruong/rackwatch**.
+Tracewire started as a `rackwatch/` folder in the Bankrolled pull request, was moved to its own repository with `git subtree split`, and the repository was renamed from `rackwatch` to `tracewire`. Everything below happens in **github.com/chrisqtruong/tracewire**.
 
 ## 1. Turn on GitHub Pages
 
 1. **Settings** (top tab) → **Pages** (left sidebar).
 2. Under "Build and deployment", Source: **Deploy from a branch**.
 3. Branch: **main**, folder: **/docs**. Click **Save**.
-4. Wait 1 to 2 minutes, reload. The page shows "Your site is live at https://chrisqtruong.github.io/rackwatch/".
+4. Wait 1 to 2 minutes, reload. The page shows "Your site is live at https://chrisqtruong.github.io/tracewire/".
 
 ## 2. Let the Wire workflow push
 
@@ -47,8 +34,8 @@ Note: GitHub pauses scheduled workflows in a repository with no activity for 60 
 ## 4. Turn on Discussions and giscus comments
 
 1. **Settings** → **General** → scroll to "Features" → tick **Discussions**.
-2. Install the giscus app: open https://github.com/apps/giscus → **Install** (or **Configure**) → **Only select repositories** → pick **rackwatch** → **Install**.
-3. Open https://giscus.app. In "Repository" type `chrisqtruong/rackwatch`; it should say "Success! This repository meets all of the above criteria."
+2. Install the giscus app: open https://github.com/apps/giscus → **Install** (or **Configure**) → **Only select repositories** → pick **tracewire** → **Install**.
+3. Open https://giscus.app. In "Repository" type `chrisqtruong/tracewire`; it should say "Success! This repository meets all of the above criteria."
 4. "Page ↔ Discussions Mapping": choose **Discussion title contains a specific term** (the page passes "post <id>" for each post).
 5. "Discussion Category": choose **Announcements** (only you and giscus can start threads; anyone signed in can reply). Tick **Only search for discussions in this category**.
 6. Scroll to "Enable giscus". In the script shown, copy the two values:
@@ -62,13 +49,13 @@ Note: GitHub pauses scheduled workflows in a repository with no activity for 60 
 1. Open https://claude.ai/code → **Routines** (left sidebar; in Claude Code you can also type `/schedule`). Click **New routine**.
 2. Name: **Tracewire hourly check**.
 3. Prompt: paste everything below the line in `ROUTINE-PROMPT.md`.
-4. Repository: **chrisqtruong/rackwatch**. Allow it to push to **main** (the routine commits directly, like Bankrolled's).
+4. Repository: **chrisqtruong/tracewire**. Allow it to push to **main** (the routine commits directly, like Bankrolled's).
 5. Schedule: **Hourly** (the shortest interval the scheduler allows; pick a lower interval only if your plan offers one). Connectors: add **Firecrawl** if it is available to you; many sources are only readable through it.
 6. Save, then click **Run now** once.
 7. Check: a commit "Update 2026-… HH:MM" appears, `reports/<today>.md` has a "Check at HH:MM ET" section, and the site header says "Verified feed updated X min ago".
 
 ## 6. Final checks
 
-- Open https://chrisqtruong.github.io/rackwatch/#p-2026-09-25-tiktok-settles-alabama-youthsafety-suit-for-at (or any permalink from a report): the page scrolls to that post.
+- Open https://chrisqtruong.github.io/tracewire/#p-2026-09-25-tiktok-settles-alabama-youthsafety-suit-for-at (or any permalink from a report): the page scrolls to that post.
 - The **Actions** tab shows a green "Check data" run for the last push (it runs `scripts/validate.py`).
 - Add Tracewire to your site's project list if you want it there. The only link between Tracewire and Bankrolled is the footer line.
