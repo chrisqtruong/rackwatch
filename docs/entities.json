@@ -22,13 +22,15 @@
    "id": "amazon",
    "n": "Amazon",
    "k": "company",
-   "note": "Retailer and owner of Amazon Web Services (AWS), the largest cloud provider."
+   "note": "Retailer and owner of Amazon Web Services (AWS), the largest cloud provider.",
+   "sec": "Cloud & platforms"
   },
   {
    "id": "amd",
    "n": "AMD",
    "k": "company",
-   "note": "Chipmaker; GPUs and CPUs"
+   "note": "Chipmaker; GPUs and CPUs",
+   "sec": "Chips"
   },
   {
    "id": "american-battlefield-trust",
@@ -46,7 +48,8 @@
    "id": "anthropic",
    "n": "Anthropic",
    "k": "company",
-   "note": "AI lab; maker of Claude; backed by Amazon and Google"
+   "note": "AI lab; maker of Claude; backed by Amazon and Google",
+   "sec": "AI labs"
   },
   {
    "id": "app-drivers-union",
@@ -58,7 +61,8 @@
    "id": "apple",
    "n": "Apple",
    "k": "company",
-   "note": "Receives payments from Google for default search placement"
+   "note": "Receives payments from Google for default search placement",
+   "sec": "Cloud & platforms"
   },
   {
    "id": "arizona-department-of-water-resources",
@@ -88,7 +92,8 @@
    "id": "broadcom",
    "n": "Broadcom",
    "k": "company",
-   "note": "Chipmaker that co-develops Google's TPUs"
+   "note": "Chipmaker that co-develops Google's TPUs",
+   "sec": "Chips"
   },
   {
    "id": "bytedance",
@@ -154,7 +159,8 @@
    "id": "crusoe",
    "n": "Crusoe",
    "k": "company",
-   "note": "AI data center developer"
+   "note": "AI data center developer",
+   "sec": "Data center builders"
   },
   {
    "id": "cybba",
@@ -214,7 +220,8 @@
    "id": "edgeconnex",
    "n": "EdgeConneX",
    "k": "company",
-   "note": "Data center developer"
+   "note": "Data center developer",
+   "sec": "Data center builders"
   },
   {
    "id": "entergy-louisiana",
@@ -268,7 +275,8 @@
    "id": "google",
    "n": "Google",
    "k": "company",
-   "note": "Alphabet subsidiary; search, ads, cloud and TPU chips"
+   "note": "Alphabet subsidiary; search, ads, cloud and TPU chips",
+   "sec": "Cloud & platforms"
   },
   {
    "id": "gsa",
@@ -286,7 +294,8 @@
    "id": "hugging-face",
    "n": "Hugging Face",
    "k": "company",
-   "note": "Open AI model and dataset hosting platform; being acquired by Nvidia"
+   "note": "Open AI model and dataset hosting platform; being acquired by Nvidia",
+   "sec": "AI labs"
   },
   {
    "id": "ice",
@@ -316,7 +325,8 @@
    "id": "leading-the-future",
    "n": "Leading the Future",
    "k": "group",
-   "note": "Pro-AI-industry super PAC (FEC C00916114) formed August 2025"
+   "note": "Pro-AI-industry super PAC (FEC C00916114) formed August 2025",
+   "sec": "Political money"
   },
   {
    "id": "lexisnexis-risk-solutions",
@@ -352,7 +362,8 @@
    "id": "lyft",
    "n": "Lyft",
    "k": "company",
-   "note": "Ride-hailing platform"
+   "note": "Ride-hailing platform",
+   "sec": "Apps & gig work"
   },
   {
    "id": "massachusetts-dlr",
@@ -364,13 +375,15 @@
    "id": "meta",
    "n": "Meta",
    "k": "company",
-   "note": "Owner of Facebook, Instagram and WhatsApp; builds large AI data centers."
+   "note": "Owner of Facebook, Instagram and WhatsApp; builds large AI data centers.",
+   "sec": "Cloud & platforms"
   },
   {
    "id": "microsoft",
    "n": "Microsoft",
    "k": "company",
-   "note": "Software and cloud company"
+   "note": "Software and cloud company",
+   "sec": "Cloud & platforms"
   },
   {
    "id": "miso",
@@ -436,7 +449,8 @@
    "id": "nvidia",
    "n": "Nvidia",
    "k": "company",
-   "note": "Largest maker of AI chips; invests in customers and data center developers."
+   "note": "Largest maker of AI chips; invests in customers and data center developers.",
+   "sec": "Chips"
   },
   {
    "id": "nyiso",
@@ -448,19 +462,22 @@
    "id": "openai",
    "n": "OpenAI",
    "k": "company",
-   "note": "Developer of ChatGPT"
+   "note": "Developer of ChatGPT",
+   "sec": "AI labs"
   },
   {
    "id": "oracle",
    "n": "Oracle",
    "k": "company",
-   "note": "Cloud and database company"
+   "note": "Cloud and database company",
+   "sec": "Cloud & platforms"
   },
   {
    "id": "palantir",
    "n": "Palantir Technologies",
    "k": "company",
-   "note": "Data analytics and AI software contractor"
+   "note": "Data analytics and AI software contractor",
+   "sec": "Government tech"
   },
   {
    "id": "penske-media",
@@ -508,7 +525,8 @@
    "id": "public-first-action",
    "n": "Public First Action",
    "k": "group",
-   "note": "AI-policy 501(c)(4) led by former Reps. Brad Carson and Chris Stewart; funded in part by Anthropic"
+   "note": "AI-policy 501(c)(4) led by former Reps. Brad Carson and Chris Stewart; funded in part by Anthropic",
+   "sec": "Political money"
   },
   {
    "id": "public-first-pac",
@@ -526,7 +544,8 @@
    "id": "qts",
    "n": "QTS Data Centers",
    "k": "company",
-   "note": "Data center developer (Blackstone-owned)"
+   "note": "Data center developer (Blackstone-owned)",
+   "sec": "Data center builders"
   },
   {
    "id": "reflection-ai",
@@ -550,7 +569,8 @@
    "id": "sb-energy",
    "n": "SB Energy",
    "k": "company",
-   "note": "SoftBank Group subsidiary developing the PORTS-Pike campus in Ohio"
+   "note": "SoftBank Group subsidiary developing the PORTS-Pike campus in Ohio",
+   "sec": "Data center builders"
   },
   {
    "id": "sec",
@@ -622,7 +642,8 @@
    "id": "tiktok",
    "n": "TikTok",
    "k": "company",
-   "note": "Short-video social media platform"
+   "note": "Short-video social media platform",
+   "sec": "Apps & gig work"
   },
   {
    "id": "tract-capital",
@@ -646,7 +667,8 @@
    "id": "uber",
    "n": "Uber",
    "k": "company",
-   "note": "Ride-hailing and delivery platform"
+   "note": "Ride-hailing and delivery platform",
+   "sec": "Apps & gig work"
   },
   {
    "id": "us-army",
@@ -676,13 +698,15 @@
    "id": "world-labs",
    "n": "World Labs",
    "k": "company",
-   "note": "San Francisco AI lab founded by Fei-Fei Li; being acquired by AMD"
+   "note": "San Francisco AI lab founded by Fei-Fei Li; being acquired by AMD",
+   "sec": "AI labs"
   },
   {
    "id": "xai",
    "n": "xAI",
    "k": "company",
-   "note": "Elon Musk's AI company; operates Colossus data centers in Memphis area"
+   "note": "Elon Musk's AI company; operates Colossus data centers in Memphis area",
+   "sec": "AI labs"
   },
   {
    "id": "florida-attorney-general",

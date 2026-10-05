@@ -19,6 +19,7 @@ for e in ents:
     if e["id"] in E: err("entity duplicate id: " + e["id"])
     if e.get("k") not in ("company", "agency", "official", "utility", "place", "court", "group"): err("entity %s bad kind %r" % (e["id"], e.get("k")))
     if not e.get("n"): err("entity %s has no name" % e["id"])
+    if e.get("sec") and not isinstance(e["sec"], str): err("entity %s: sec must be text" % e["id"])
     E[e["id"]] = e
 
 def src_ok(where, src, need_title=True):
