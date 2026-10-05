@@ -69,6 +69,6 @@ Note: GitHub pauses scheduled workflows in a repository with no activity for 60 
 
 ## 6. Final checks
 
-- Open https://chrisqtruong.github.io/rackwatch/#p-2026-09-25-tiktok-settles-alabama-youth-safety-suit-for-at-least (or any permalink from a report): the page scrolls to that post.
+- Open https://chrisqtruong.github.io/rackwatch/#p-2026-09-25-tiktok-settles-alabama-youthsafety-suit-for-at (or any permalink from a report): the page scrolls to that post.
 - The **Actions** tab shows a green "Check data" run for the last push (it runs `scripts/validate.py`).
 - Add Rackwatch to your site's project list if you want it there. The only link between Rackwatch and Bankrolled is the footer line.

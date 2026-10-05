@@ -1,1 +1,45 @@
-{"tested":"2026-10-05","items":[{"name":"Provisional","what":"pending"}]}
+{
+ "tested": "2026-10-05",
+ "items": [
+  {
+   "name": "Most sources block simple automated reading",
+   "what": "Every government and news site we tested refused our basic page reader; we read them through a scraping service with a tight rate limit, which slows each check."
+  },
+  {
+   "name": "New York Times",
+   "what": "Could not be read automatically at all. Its stories appear here only when other outlets or records confirm them."
+  },
+  {
+   "name": "AP and Reuters",
+   "what": "No working news feeds. AP is not in the Wire; Reuters is followed through a news search that catches only some stories."
+  },
+  {
+   "name": "Paywalls",
+   "what": "Bloomberg, the Wall Street Journal, The Information, RTO Insider, Law360 and E&E News show headlines only. We use them as leads and confirm facts elsewhere."
+  },
+  {
+   "name": "Federal contract awards",
+   "what": "The USAspending search cannot be queried with our tools, so contracts are found through agency announcements and news, often later."
+  },
+  {
+   "name": "FERC and state utility commissions",
+   "what": "FERC has no news feed and its document library is a search form; several state commissions (Virginia, Pennsylvania, Georgia) do not list news in a readable way. Decisions can reach us a day or more late."
+  },
+  {
+   "name": "County and city meetings",
+   "what": "Local rezoning votes, tax abatements and nondisclosure agreements have no central source. We depend on local news and Data Center Watch, so smaller places are under-covered."
+  },
+  {
+   "name": "New lawsuits",
+   "what": "We read court opinions, not new filings in federal dockets (PACER). New cases appear when agencies or outlets report them."
+  },
+  {
+   "name": "Money in politics lags by design",
+   "what": "Lobbying and campaign-finance totals appear only when quarterly filings are due, weeks or months after the money was spent."
+  },
+  {
+   "name": "The Wire is unverified and not instant",
+   "what": "GitHub runs the headline collector every 5 to 15 minutes, and news searches include some off-topic items. Nothing in the Wire has been checked."
+  }
+ ]
+}

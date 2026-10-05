@@ -420,15 +420,16 @@
    "lane": "news",
    "filter": "power",
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "untestable on 2026-10-05: Firecrawl refuses nytimes.com, WebFetch blocked; Google News site: fallback returned general news"
   },
   {
    "id": "wapo-tech",
-   "name": "Washington Post Technology",
-   "org": "The Washington Post",
+   "name": "Google News: washingtonpost.com/technology",
+   "org": "Google News",
    "kind": "rss",
-   "url": "https://feeds.washingtonpost.com/rss/business/technology",
-   "lane": "news",
+   "url": "https://news.google.com/rss/search?q=site%3Awashingtonpost.com%2Ftechnology+when%3A3d&hl=en-US&gl=US&ceid=US%3Aen",
+   "lane": "search",
    "filter": "power",
    "every": 10,
    "on": true
@@ -471,10 +472,10 @@
    "name": "Tech Policy Press",
    "org": "Tech Policy Press",
    "kind": "rss",
-   "url": "https://www.techpolicy.press/rss/",
+   "url": "https://www.techpolicy.press/rss/feed.xml",
    "lane": "news",
    "filter": null,
-   "every": 10,
+   "every": 30,
    "on": true
   },
   {
@@ -504,7 +505,7 @@
    "name": "The Guardian Technology",
    "org": "The Guardian",
    "kind": "rss",
-   "url": "https://www.theguardian.com/us-news/technology/rss",
+   "url": "https://www.theguardian.com/technology/rss",
    "lane": "news",
    "filter": "power",
    "every": 10,
@@ -530,15 +531,16 @@
    "lane": "news",
    "filter": "power",
    "every": 10,
-   "on": true
+   "on": false,
+   "why_off": "AP has no working RSS (HTML redirect, technology.rss 404); Google News site:apnews.com fallback is mostly general news"
   },
   {
    "id": "reuters-tech",
-   "name": "Reuters Technology",
-   "org": "Reuters",
+   "name": "Google News: reuters.com/technology",
+   "org": "Google News",
    "kind": "rss",
-   "url": "https://www.reuters.com/arc/outboundfeeds/v3/category/technology/?outputType=xml",
-   "lane": "news",
+   "url": "https://news.google.com/rss/search?q=site%3Areuters.com%2Ftechnology+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+   "lane": "search",
    "filter": "power",
    "every": 10,
    "on": true
@@ -548,7 +550,7 @@
    "name": "Heatmap News",
    "org": "Heatmap",
    "kind": "rss",
-   "url": "https://heatmap.news/rss",
+   "url": "https://heatmap.news/feeds/feed.rss",
    "lane": "news",
    "filter": "dc",
    "every": 10,
@@ -669,7 +671,7 @@
    "name": "Google News: labor",
    "org": "Google News",
    "kind": "rss",
-   "url": "https://news.google.com/rss/search?q=%28layoffs+AI%29+OR+%28%22gig+workers%22+ruling%29+OR+%28%22content+moderators%22+lawsuit%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+   "url": "https://news.google.com/rss/search?q=%28layoffs+OR+%22gig+workers%22+OR+%22content+moderators%22%29+%28AI+OR+ruling+OR+lawsuit%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
    "every": 20,
@@ -695,7 +697,8 @@
    "lane": "search",
    "filter": null,
    "every": 20,
-   "on": true
+   "on": false,
+   "why_off": "query returned 3 irrelevant items on 2026-10-05; needs a rewritten, tested query"
   },
   {
    "id": "pjm-insidelines",

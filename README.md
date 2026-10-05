@@ -12,7 +12,7 @@ Rackwatch keeps a permanent, sourced public record of how big tech and infrastru
 
 | Lane | What | How often |
 |---|---|---|
-| **Wire** (`docs/wire.json`) | Unverified headlines from ~60 public feeds: FTC, DOJ, SEC, FCC, FERC, Federal Register, SEC EDGAR full-text search, CourtListener, news outlets and news searches. Newest 200, de-duplicated, each with source and time. | GitHub Action `.github/workflows/wire.yml`, scheduled every 5 minutes (GitHub runs it every 5 to 15). Commits only when something changed. |
+| **Wire** (`docs/wire.json`) | Unverified headlines from 57 tested public feeds: FTC, DOJ, SEC, FCC, FERC, Federal Register, SEC EDGAR full-text search, CourtListener, news outlets and news searches. Newest 200, de-duplicated, each with source and time. | GitHub Action `.github/workflows/wire.yml`, scheduled every 5 minutes (GitHub runs it every 5 to 15). Commits only when something changed. |
 | **Feed** (`docs/data.json`) | Posts verified at their sources, labeled confirmed / reported / disputed, tagged with entities and states. | Claude scheduled task from `ROUTINE-PROMPT.md`, hourly. Major news first, then pinned per `PINNING.md`. |
 | **Ledger** | Confirmed deals, fines, settlements, contracts, incentives, lobbying and political money. Also `ledger.csv`. | Same run. |
 
