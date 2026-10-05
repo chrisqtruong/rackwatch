@@ -73,7 +73,7 @@ h3{font-size:17px;margin:0}
 .lbl{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
 
 /* legend */
-.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13.5px;color:var(--muted);margin:0 0 14px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13.5px;color:var(--muted);margin:0 0 16px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
 .legend b{color:var(--text);font-weight:600}
 .chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--line2);color:var(--muted);white-space:nowrap}
 .chip.confirmed{color:var(--ok);background:var(--ok-soft);border-color:transparent}
@@ -92,7 +92,7 @@ h3{font-size:17px;margin:0}
 .panel-h .r{margin-left:auto}
 
 /* filters */
-.filters{display:grid;gap:8px;grid-template-columns:1fr 1fr;margin-bottom:12px}
+.filters{display:grid;gap:8px;grid-template-columns:1fr 1fr;margin-bottom:16px}
 .filters .q{grid-column:1/-1}
 @media(min-width:700px){.filters{grid-template-columns:2fr 1fr 1fr 1fr 1fr}.filters .q{grid-column:auto}}
 input[type=search],select{width:100%;min-height:44px;font:inherit;font-size:15px;color:var(--text);background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:0 10px}
@@ -100,7 +100,8 @@ select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,va
 .active-f{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:-4px 0 12px;font-size:13.5px;color:var(--muted)}
 
 /* posts */
-.post{padding:16px;border-bottom:1px solid var(--line)}
+.post{padding:20px 16px;border-bottom:1px solid var(--line)}
+@media(min-width:700px){.post{padding:20px}}
 .post:last-child{border-bottom:0}
 .post:target,.post.hl{background:var(--accent-soft)}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:13px;color:var(--muted);margin-bottom:6px}
@@ -116,7 +117,7 @@ select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,va
 .srcs{font-size:14px;margin:6px 0 0;padding:0;list-style:none}
 .srcs li{margin:2px 0}
 .srcs .o{color:var(--muted)}
-.acts{display:flex;gap:6px;margin-top:10px}
+.acts{display:flex;gap:8px;margin-top:12px}
 .upd{margin:10px 0 4px;padding:8px 12px;border-left:2px solid var(--accent);background:var(--bg2);border-radius:0 8px 8px 0;font-size:14.5px}
 .upd ol{margin:4px 0 0;padding-left:18px}
 .upd li{margin:4px 0}
@@ -138,12 +139,24 @@ figcaption{font-size:12.5px;color:var(--muted)}
 .lane{font-size:11px}
 .wire-note{font-size:13px;color:var(--muted);padding:10px 14px;border-bottom:1px solid var(--line);background:var(--rep-soft)}
 .side-wire{max-height:none}
+.pager{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-top:1px solid var(--line);font-size:13px}
+.pager .btn[disabled]{opacity:.4;cursor:default;border-color:var(--line)}
+.pager .mono{color:var(--muted)}
+.panel>.pager:first-child{border-top:0}
+.tbl-wrap+.pager,.ent-grid+.pager,.cards+.pager{border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px;background:var(--panel);margin-top:-1px}
+.ent-grid+.pager,.cards+.pager{border-top:1px solid var(--line);border-radius:12px;margin-top:12px}
+.toolbar{display:grid;gap:8px;grid-template-columns:1fr;margin:0 0 16px}
+@media(min-width:700px){.toolbar{grid-template-columns:minmax(0,1fr) 220px}}
+.side-foot{display:block;padding:12px 14px;border-top:1px solid var(--line);font-size:14px;font-weight:600;text-decoration:none}
+.chip.new{color:var(--accent);background:var(--accent-soft);border-color:transparent}
+.sec{margin-top:32px}
+.sec>h2{font-size:17px;margin:0 0 12px}
 .wire-strip{display:flex;gap:10px;align-items:center;margin:0 0 12px;padding:10px 12px;min-height:48px;border:1px dashed var(--rep);border-radius:10px;color:var(--text);text-decoration:none;font-size:14px;background:var(--rep-soft)}
 .wire-strip b{color:var(--rep);font-family:"JetBrains Mono",monospace;font-size:12px;text-transform:uppercase;letter-spacing:.05em;flex:0 0 auto}
 .wire-strip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 @media(min-width:900px){.wire-strip{display:none!important}}
-@media(max-width:899px){.side-wire{order:2}}
-@media(min-width:900px){.side-wire .list{max-height:1100px;overflow:auto}}
+@media(max-width:899px){.side-wire{display:none}}
+@media(min-width:900px){.side-wire{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);display:flex;flex-direction:column;overflow:hidden}.side-wire .list{overflow-y:auto;overscroll-behavior:contain;flex:1 1 auto;min-height:0}.side-wire .panel-h,.side-wire .wire-note,.side-wire .side-foot{flex:0 0 auto}}
 
 /* tables */
 .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
@@ -160,10 +173,10 @@ td time{white-space:nowrap}
 .kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px;font-size:14px;margin:8px 0}
 .kv dt{color:var(--faint);font-family:"JetBrains Mono",monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;padding-top:2px}
 .kv dd{margin:0}
-.subtabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.subtabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
 .subtabs a{min-height:40px;display:inline-flex;align-items:center;padding:0 12px;border:1px solid var(--line2);border-radius:999px;color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}
 .subtabs a[aria-current="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0 16px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0 8px}
 @media(min-width:700px){.stats{grid-template-columns:repeat(4,1fr)}}
 .stat{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel)}
 .stat .v{font-family:"JetBrains Mono",monospace;font-size:20px;font-weight:500}
@@ -281,6 +294,20 @@ function render(){
  document.title=`${t} · ${S.cfg.name||"Rackwatch"}`;
 }
 
+/* ---------- paging ---------- */
+const PER={feed:8,wire:30,ents:24,tl:12,lrows:10,ledger:20,proj:6,arch:8};
+S.pg={};
+function pg(page,total,per){const pages=Math.max(1,Math.ceil(total/per));page=Math.min(Math.max(1,+page||1),pages);return{page,pages,a:(page-1)*per,b:Math.min(total,page*per)}}
+function pager(id,total,page,per){
+ if(!total)return"";const P=pg(page,total,per);
+ if(P.pages<2)return`<div class="pager"><span class="mono">${total} item${total===1?"":"s"}</span></div>`;
+ return`<nav class="pager" aria-label="Pages"><button class="btn small" type="button" data-pg="${id}" data-to="${P.page-1}"${P.page<=1?" disabled":""}>← Prev</button><span class="mono">${P.a+1}–${P.b} of ${total} · page ${P.page} of ${P.pages}</span><button class="btn small" type="button" data-pg="${id}" data-to="${P.page+1}"${P.page>=P.pages?" disabled":""}>Next →</button></nav>`;
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-pg]");if(!b||b.disabled)return;const f=S.pg[b.dataset.pg];if(!f)return;
+ const top=b.closest("[data-pgtop]")||b.closest(".panel")||b.parentElement;f(+b.dataset.to);
+ const t=document.querySelector(`[data-pgtop="${b.dataset.pg}"]`)||top;if(t&&t.getBoundingClientRect().top<0)t.scrollIntoView({block:"start"})});
+let LASTVISIT="";try{LASTVISIT=localStorage.getItem("rw-seen")||"";localStorage.setItem("rw-seen",new Date().toISOString())}catch(e){}
+
 /* ---------- shared renderers ---------- */
 function chip(s){return`<span class="chip ${esc(s)}">${esc(STATUS[s]||s)}</span>`}
 function srcList(src){return`<ul class="srcs" aria-label="Sources">${(src||[]).map(x=>`<li><span class="o">${esc(x.o)}:</span> <a href="${safeUrl(x.u)}" rel="noopener" target="_blank">${esc(x.t||x.o)}</a></li>`).join("")}</ul>`}
@@ -291,7 +318,7 @@ function postHTML(p,opt={}){
  const upd=p.updates&&p.updates.length?`<div class="upd"><span class="lbl">Updates</span><ol>${p.updates.slice().sort((a,b)=>a.d<b.d?1:-1).map(u=>`<li><time datetime="${esc(u.d)}">${fmtDate(u.d)}</time>: ${esc(u.t)} <a href="${safeUrl(u.u)}" rel="noopener" target="_blank">${esc(u.o)}</a></li>`).join("")}</ol></div>`:"";
  const g=giscusOn()?`<button class="btn small" type="button" data-discuss="${esc(p.id)}" aria-expanded="false">Discuss</button>`:"";
  return`<article class="post" id="p-${esc(p.id)}">
- <div class="meta"><time datetime="${esc(p.d)}">${fmtDate(p.d)}</time>${chip(p.s)}<span>${esc(p.c)}</span>${opt.arch?'<span class="chip plain">Archive</span>':""}</div>
+ <div class="meta"><time datetime="${esc(p.d)}">${fmtDate(p.d)}</time>${chip(p.s)}<span>${esc(p.c)}</span>${opt.arch?'<span class="chip plain">Archive</span>':""}${LASTVISIT&&p.added&&p.added>LASTVISIT?'<span class="chip new plain">New since your last visit</span>':""}</div>
  <h3><a href="#p-${esc(p.id)}">${esc(p.h)}</a></h3>${img}
  <p>${esc(p.b)}</p>${upd}
  ${ents||sts?`<div class="tags">${ents}${sts}</div>`:""}
@@ -341,8 +368,8 @@ function filterBar(q,withState=true){
 }
 function bindFilters(cb){
  const read=()=>({q:$("#f-q").value.trim(),e:$("#f-e").value,c:$("#f-c").value,s:$("#f-s").value,st:$("#f-st")?$("#f-st").value:""});
- let t;$("#f-q").addEventListener("input",()=>{clearTimeout(t);t=setTimeout(()=>{setQ(read());S.shown=30;cb(read())},200)});
- $$("#f-e,#f-c,#f-s,#f-st").forEach(s=>s.addEventListener("change",()=>{setQ(read());S.shown=30;cb(read())}));
+ let t;$("#f-q").addEventListener("input",()=>{clearTimeout(t);t=setTimeout(()=>{setQ(read());cb(read())},200)});
+ $$("#f-e,#f-c,#f-s,#f-st").forEach(s=>s.addEventListener("change",()=>{setQ(read());cb(read())}));
 }
 function activeLine(q,n){
  const bits=[];if(q.e)bits.push("entity: "+entName(q.e));if(q.c)bits.push(q.c);if(q.s)bits.push(STATUS[q.s]);if(q.st)bits.push(STATES[q.st]||q.st);if(q.q)bits.push(`“${q.q}”`);
@@ -351,11 +378,13 @@ function activeLine(q,n){
 function vFeed(r){
  const q=r.q;
  $("#main").innerHTML=`<div class="legend" role="note"><span><b>Feed</b> = checked against sources.</span><span><b>Wire</b> = raw headlines, not yet checked.</span><span>${chip("confirmed")} primary record</span><span>${chip("reported")} not yet confirmed</span><span>${chip("disputed")} denied by the subject</span></div>
- <div class="split"><section aria-labelledby="feed-h"><h2 id="feed-h" class="sr">Verified feed</h2>${filterBar(q)}<a class="wire-strip" href="#/wire" id="wire-strip" hidden></a><div id="pins"></div><div id="f-active"></div><div class="panel" id="feed-list"></div></section>
- <aside class="panel side-wire" aria-labelledby="sw-h"><div class="panel-h"><h2 id="sw-h">Wire</h2><span class="chip unv">Unverified</span><a class="r" href="#/wire">All</a></div><div class="wire-note">Headlines pulled automatically from public feeds. Not checked yet.</div><div class="list" id="side-wire"></div></aside></div>`;
- bindFilters(paintFeed);paintFeed(q);paintWireLists();
- if(r.post)goToPost(r.post);
+ <div class="split"><section aria-labelledby="feed-h"><h2 id="feed-h" class="sr">Verified feed</h2>${filterBar(q)}<a class="wire-strip" href="#/wire" id="wire-strip" hidden></a><div id="pins"></div><div id="f-active"></div><div class="panel" id="feed-list" data-pgtop="feed"></div></section>
+ <aside class="panel side-wire" aria-labelledby="sw-h"><div class="panel-h"><h2 id="sw-h">Wire</h2><span class="chip unv">Unverified</span><a class="r" href="#/wire">All</a></div><div class="wire-note">Headlines pulled automatically from public feeds. Not checked yet.</div><div class="list" id="side-wire"></div><a class="side-foot" href="#/wire" id="side-foot">Open the full Wire →</a></aside></div>`;
+ bindFilters(paintFeed);paintWireLists();
+ if(r.post){const i=feedOrder({}).findIndex(p=>p.id===r.post);if(i>=0)q.p=Math.floor(i/PER.feed)+1}
+ paintFeed(q).then(()=>{if(r.post)goToPost(r.post)});
 }
+function feedOrder(q){const now=today();const any=q.q||q.e||q.c||q.s||q.st;const pin=any?new Set():new Set(S.data.feed.filter(p=>p.pin&&(!p.pinUntil||p.pinUntil>=now)).slice(0,2).map(p=>p.id));return S.data.feed.filter(p=>!pin.has(p.id)&&matches(p,q)).sort(byDate)}
 async function paintFeed(q){
  const any=q.q||q.e||q.c||q.s||q.st;
  if(any&&!S.archAll)await loadAllArchive();
@@ -368,9 +397,10 @@ async function paintFeed(q){
  list=list.filter(p=>!pinIds.has(p.id)).sort(byDate);arch=arch.sort(byDate);
  const all=list.map(p=>[p,0]).concat(arch.map(p=>[p,1]));
  $("#f-active").innerHTML=activeLine(q,all.length);
- const html=all.slice(0,S.shown).map(([p,a])=>postHTML(p,{arch:a})).join("");
- $("#feed-list").innerHTML=(html||`<p class="empty">No posts match. Try clearing a filter.</p>`)+(all.length>S.shown?`<div class="more"><button class="btn" id="more" type="button">Show more (${all.length-S.shown} left)</button></div>`:"");
- const m=$("#more");if(m)m.onclick=()=>{S.shown+=30;paintFeed(q)};
+ const P=pg(q.p,all.length,PER.feed);
+ const html=all.slice(P.a,P.b).map(([p,a])=>postHTML(p,{arch:a})).join("");
+ $("#feed-list").innerHTML=(html||`<p class="empty">No posts match. Try clearing a filter.</p>`)+pager("feed",all.length,P.page,PER.feed);
+ S.pg.feed=n=>{q.p=n;setQ(q);paintFeed(q)};
 }
 async function goToPost(id){
  let el=document.getElementById("p-"+id);
@@ -380,7 +410,8 @@ async function goToPost(id){
 }
 function paintWireLists(){
  const items=(S.wire&&S.wire.items)||[];
- const side=$("#side-wire");if(side)side.innerHTML=items.slice(0,25).map(wireHTML).join("")||`<p class="empty">The Wire has no headlines yet. It fills in once the GitHub Action runs.</p>`;
+ const side=$("#side-wire");if(side)side.innerHTML=items.slice(0,60).map(wireHTML).join("")||`<p class="empty">The Wire has no headlines yet. It fills in once the GitHub Action runs.</p>`;
+ const sf=$("#side-foot");if(sf)sf.textContent=items.length?`Open the full Wire (${items.length}) →`:"Open the Wire →";
  const full=$("#wire-list");if(full)paintWire();
  const st=$("#wire-strip");if(st){if(items.length){st.hidden=false;st.innerHTML=`<b>Wire</b><span>${esc(ago(items[0].at))}: ${esc(items[0].t)}</span><span class="faint" style="flex:0 0 auto">${items.length} unverified →</span>`}else st.hidden=true}
 }
@@ -391,16 +422,19 @@ function vWire(r){
  $("#main").innerHTML=`<h2>Wire</h2><p class="muted" style="max-width:760px">Headlines collected automatically ${esc(S.cfg.wire_interval||"every few minutes")} from agency feeds, court and filing searches, and news outlets. <b>Nothing here has been checked.</b> The ${esc(S.cfg.routine_interval||"hourly")} verification run reads these at their sources; what holds up moves to the Feed with a status label.</p>
  <form class="filters" onsubmit="return false" style="grid-template-columns:2fr 1fr"><label class="q"><span class="sr">Search the Wire</span><input type="search" id="w-q" placeholder="Search headlines" value="${esc(q.q||"")}"></label>
  <label><span class="sr">Lane</span><select id="w-l"><option value="">All lanes</option>${lanes.map(l=>`<option${q.l===l?" selected":""}>${l}</option>`).join("")}</select></label></form>
- <div class="panel"><div class="panel-h"><span class="chip unv">Unverified headlines</span><span class="r muted mono" style="font-size:12.5px" id="w-n"></span></div><div id="wire-list"></div></div>
+ <div class="panel" data-pgtop="wire"><div class="panel-h"><span class="chip unv">Unverified headlines</span><span class="r muted mono" style="font-size:12.5px" id="w-n"></span></div><div id="wire-list"></div></div>
  <p class="muted" style="font-size:13.5px">Lanes: <b>agency</b> official press feeds; <b>court</b> opinion searches; <b>filing</b> SEC full-text search; <b>news</b> outlet feeds; <b>search</b> news-search queries (outlet named on each item). Source health: <a href="wire-status.json">wire-status.json</a>.</p>`;
- const go=()=>{setQ({q:$("#w-q").value.trim(),l:$("#w-l").value});paintWire()};
+ S.wpage=+q.p||1;
+ const go=()=>{S.wpage=1;setQ({q:$("#w-q").value.trim(),l:$("#w-l").value});paintWire()};
+ S.pg.wire=n=>{S.wpage=n;setQ({q:$("#w-q").value.trim(),l:$("#w-l").value,p:n});paintWire()};
  $("#w-q").addEventListener("input",go);$("#w-l").addEventListener("change",go);paintWire();
 }
 function paintWire(){
  const q=$("#w-q")?$("#w-q").value.trim().toLowerCase():"",l=$("#w-l")?$("#w-l").value:"";
  const items=((S.wire&&S.wire.items)||[]).filter(i=>(!l||i.lane===l)&&(!q||(i.t+" "+i.o).toLowerCase().includes(q)));
  $("#w-n").textContent=items.length+" headlines";
- $("#wire-list").innerHTML=items.map(wireHTML).join("")||`<p class="empty">No headlines${q||l?" match":" yet"}.</p>`;
+ const P=pg(S.wpage,items.length,PER.wire);
+ $("#wire-list").innerHTML=(items.slice(P.a,P.b).map(wireHTML).join("")||`<p class="empty">No headlines${q||l?" match":" yet"}.</p>`)+pager("wire",items.length,P.page,PER.wire);
 }
 
 /* ---------- entities ---------- */
@@ -410,12 +444,28 @@ function entStats(id){
  return{posts,rows:rows.length};
 }
 function vEntities(r){
- const k=r.q.k||"";
- const kinds=[...new Set(S.ents.map(e=>e.k))];
- const list=S.ents.filter(e=>!k||e.k===k).map(e=>({...e,...entStats(e.id)})).sort((a,b)=>(b.posts+b.rows)-(a.posts+a.rows)||a.n.localeCompare(b.n));
+ const q=r.q,k=q.k||"";
+ const kinds=[...new Set(S.ents.map(e=>e.k))].sort((a,b)=>(KINDS[a]||a).localeCompare(KINDS[b]||b));
+ const all=S.ents.map(e=>({...e,...entStats(e.id)}));
  $("#main").innerHTML=`<h2>Entities</h2><p class="muted">Companies, agencies, officials, utilities and places named in the Feed and Ledger. Each page shows its timeline, deals, money in and out, and linked posts.</p>
- <div class="subtabs" role="list"><a role="listitem" href="#/entities" aria-current="${!k}">All (${S.ents.length})</a>${kinds.map(x=>`<a role="listitem" href="#/entities?k=${x}" aria-current="${k===x}">${esc(KINDS[x]||x)}</a>`).join("")}</div>
- <div class="ent-grid">${list.map(e=>`<a class="ent" href="#/entity/${encodeURIComponent(e.id)}"><span class="n">${esc(e.n)}</span><span class="c">${esc(KINDS[e.k]||e.k)} · <span class="mono">${e.posts}</span> posts · <span class="mono">${e.rows}</span> ledger rows</span></a>`).join("")}</div>`;
+ <div class="subtabs">${[["","All"]].concat(kinds.map(x=>[x,KINDS[x]||x])).map(([x,n])=>`<a href="#/entities${x?"?k="+x:""}" aria-current="${k===x}">${esc(n)} (${all.filter(e=>!x||e.k===x).length})</a>`).join("")}</div>
+ <form class="toolbar" role="search" onsubmit="return false"><label><span class="sr">Search entities</span><input type="search" id="e-q" placeholder="Search names and notes" value="${esc(q.q||"")}"></label>
+ <label><span class="sr">Sort</span><select id="e-s"><option value="act">Most activity first</option><option value="az"${q.s==="az"?" selected":""}>A to Z</option><option value="new"${q.s==="new"?" selected":""}>Most recent activity</option></select></label></form>
+ <div id="e-list" data-pgtop="ents"></div>`;
+ const last=id=>{const d=S.data.feed.filter(p=>(p.e||[]).includes(id)).map(p=>p.d).concat(S.data.ledger.filter(x=>(x.e||[]).includes(id)||x.fe===id||x.te===id).map(x=>x.d)).sort().pop();return d||""};
+ let page=+q.p||1;
+ const paint=()=>{
+  const t=$("#e-q").value.trim().toLowerCase(),so=$("#e-s").value;
+  let list=all.filter(e=>(!k||e.k===k)&&(!t||(e.n+" "+(e.note||"")).toLowerCase().includes(t)));
+  if(so==="az")list.sort((a,b)=>a.n.localeCompare(b.n));else if(so==="new")list.sort((a,b)=>last(b.id).localeCompare(last(a.id))||a.n.localeCompare(b.n));else list.sort((a,b)=>(b.posts+b.rows)-(a.posts+a.rows)||a.n.localeCompare(b.n));
+  const P=pg(page,list.length,PER.ents);
+  $("#e-list").innerHTML=(list.length?`<div class="ent-grid">${list.slice(P.a,P.b).map(e=>`<a class="ent" href="#/entity/${encodeURIComponent(e.id)}"><span class="n">${esc(e.n)}</span><span class="c">${esc(KINDS[e.k]||e.k)} · <span class="mono">${e.posts}</span> posts · <span class="mono">${e.rows}</span> ledger rows</span></a>`).join("")}</div>`:'<p class="empty">No entities match.</p>')+pager("ents",list.length,P.page,PER.ents);
+ };
+ const save=()=>setQ({k,q:$("#e-q").value.trim(),s:$("#e-s").value==="act"?"":$("#e-s").value,p:page>1?page:""});
+ S.pg.ents=n=>{page=n;save();paint()};
+ let tm;$("#e-q").addEventListener("input",()=>{clearTimeout(tm);tm=setTimeout(()=>{page=1;save();paint()},150)});
+ $("#e-s").addEventListener("change",()=>{page=1;save();paint()});
+ paint();
 }
 async function vEntity(r){
  const id=r.arg,e=S.E[id];
@@ -430,10 +480,13 @@ async function vEntity(r){
  $("#main").innerHTML=`<p><a href="#/entities">← All entities</a></p><h2>${esc(e.n)}</h2><p class="muted">${esc(KINDS[e.k]||e.k)}${e.note?" · "+esc(e.note):""}</p>
  <div class="stats"><div class="stat"><div class="v">${posts.length}</div><div class="k">posts</div></div><div class="stat"><div class="v">${deals.length}</div><div class="k">deals and contracts</div></div><div class="stat"><div class="v">${money(out||null)}</div><div class="k">money out (confirmed)</div></div><div class="stat"><div class="v">${money(inn||null)}</div><div class="k">money in (confirmed)</div></div></div>
  <p class="faint" style="font-size:13px">Money totals add confirmed ledger rows only and may mix different kinds of money (deals, fines, lobbying). See each row.</p>
- <div class="split"><section><h2 style="font-size:17px">Timeline</h2>${tl.length?`<ol class="tl">${tl.map(t=>`<li class="${t.m?"money":""}"><time datetime="${esc(t.d)}" class="faint" style="font-size:12.5px">${fmtDate(t.d)}</time><div>${t.h}</div></li>`).join("")}</ol>`:'<p class="muted">Nothing yet.</p>'}</section>
+ <div class="split sec"><section><h2 style="font-size:17px;margin:0 0 12px">Timeline</h2><div class="panel" style="padding:16px 16px 0" data-pgtop="tl"><div id="tl"></div></div><p style="margin:12px 0 0;font-size:14px">${posts.length?`<a href="#/feed?e=${encodeURIComponent(id)}">Read all ${posts.length} posts in full in the Feed →</a>`:""}</p></section>
  <aside>${projs.length?`<h2 style="font-size:17px">Data center projects</h2>${projs.map(projCard).join("")}`:`<h2 style="font-size:17px">About this page</h2><p class="muted" style="font-size:14px">Built from every post and confirmed ledger row tagged with ${esc(e.n)}. Tags are added by the verification run; if something is missing, say so in the comments or Discussions.</p>`}</aside></div>
- ${rows.length?`<h2 style="font-size:17px;margin-top:20px">Ledger rows</h2><div class="tbl-wrap">${ledgerTable(rows)}</div>`:""}
- <h2 style="font-size:17px;margin-top:20px">Linked posts</h2><div class="panel">${posts.map(p=>postHTML(p)).join("")||'<p class="empty">No posts yet.</p>'}</div>`;
+ ${rows.length?`<section class="sec"><h2>Ledger rows</h2><div id="el" data-pgtop="lrows"></div></section>`:""}`;
+ let tp=1,lp=1;
+ const ptl=()=>{const P=pg(tp,tl.length,PER.tl);$("#tl").innerHTML=(tl.length?`<ol class="tl">${tl.slice(P.a,P.b).map(t=>`<li class="${t.m?"money":""}"><time datetime="${esc(t.d)}" class="faint" style="font-size:12.5px">${fmtDate(t.d)}</time><div>${t.h}</div></li>`).join("")}</ol>`:'<p class="muted" style="padding-bottom:16px">Nothing yet.</p>')+(tl.length>PER.tl?`<div style="margin:0 -16px">${pager("tl",tl.length,P.page,PER.tl)}</div>`:"")};
+ const pl=()=>{if(!rows.length)return;const P=pg(lp,rows.length,PER.lrows);$("#el").innerHTML=`<div class="tbl-wrap">${ledgerTable(rows.slice(P.a,P.b))}</div>`+(rows.length>PER.lrows?pager("lrows",rows.length,P.page,PER.lrows):"")};
+ S.pg.tl=n=>{tp=n;ptl()};S.pg.lrows=n=>{lp=n;pl()};ptl();pl();
 }
 
 /* ---------- ledger ---------- */
@@ -445,18 +498,38 @@ function projCard(p){
  return`<div class="card" id="dc-${esc(p.id)}"><div class="meta"><span class="chip plain">${esc(p.status)}</span><span class="mono">${esc(p.st)}</span><time datetime="${esc(p.d)}">as of ${fmtDate(p.d)}</time></div><h3>${esc(p.n)}</h3>
  <dl class="kv"><dt>Who</dt><dd>${(p.e||[]).map(id=>`<a href="#/entity/${esc(id)}">${esc(entName(id))}</a>`).join(", ")||esc(p.co)}</dd><dt>Where</dt><dd>${esc(p.place)}, ${esc(STATES[p.st]||p.st)}</dd><dt>Size</dt><dd class="mono">${p.mw!=null?esc(p.mw)+" MW":"Not stated"}</dd><dt>Power</dt><dd>${esc(p.power)}</dd><dt>Water</dt><dd>${esc(p.water)}</dd><dt>Incentives</dt><dd>${esc(p.incent)}</dd><dt>Opposition</dt><dd>${esc(p.opp)}</dd></dl>${srcList(p.src)}</div>`;
 }
+function ledgerHay(x){return[x.d,x.t,x.from,x.to,x.note,entName(x.fe||""),entName(x.te||""),(x.e||[]).map(entName).join(" "),(x.src||[]).map(s=>s.o).join(" "),money(x.amt)].join(" ").toLowerCase()}
+function projHay(p){return[p.n,p.co,p.place,p.st,STATES[p.st]||"",p.status,p.power,p.water,p.incent,p.opp,(p.e||[]).map(entName).join(" ")].join(" ").toLowerCase()}
 function vLedger(r){
- const tab=r.arg||"all",T=LTABS.find(t=>t[0]===tab)||LTABS[0];
- let body;
- if(tab==="projects"){const ps=(S.data.projects||[]).slice().sort((a,b)=>a.st<b.st?-1:1);body=`<p class="muted">Large US data center projects: size, power and water claims (attributed to who made them), incentives, status and opposition.</p><div class="cards">${ps.map(projCard).join("")}</div>`}
- else{
-  const rows=S.data.ledger.filter(x=>!T[2]||T[2].includes(x.t)).sort(byDate);
+ const tab=r.arg||"all",T=LTABS.find(t=>t[0]===tab)||LTABS[0],q=r.q;
+ const isP=tab==="projects";
+ $("#main").innerHTML=`<h2>Ledger</h2><div class="subtabs">${LTABS.map(t=>`<a href="#/ledger/${t[0]}" aria-current="${t[0]===tab}">${t[1]}</a>`).join("")}</div>
+ <p class="muted" id="l-note"></p>
+ <form class="toolbar" role="search" onsubmit="return false"><label><span class="sr">Search the ledger</span><input type="search" id="l-q" placeholder="${isP?"Search projects, companies, states":"Search companies, agencies, notes, dates"}" value="${esc(q.q||"")}"></label>
+ ${isP?`<label><span class="sr">Status</span><select id="l-t"><option value="">Any status</option>${[...new Set((S.data.projects||[]).map(p=>p.status))].sort().map(x=>`<option${q.t===x?" selected":""}>${esc(x)}</option>`).join("")}</select></label>`:`<label><span class="sr">Type</span><select id="l-t"><option value="">All types</option>${(T[2]||S.cfg.ledger_types||[]).map(x=>`<option${q.t===x?" selected":""}>${esc(x)}</option>`).join("")}</select></label>`}</form>
+ <div id="l-body" data-pgtop="ledger"></div><div id="l-extra"></div>`;
+ let page=+q.p||1;
+ const paint=()=>{
+  const t=$("#l-q").value.trim().toLowerCase(),ty=$("#l-t").value,words=t.split(/\s+/).filter(Boolean);
+  if(isP){
+   const ps=(S.data.projects||[]).filter(p=>(!ty||p.status===ty)&&words.every(w=>projHay(p).includes(w))).sort((a,b)=>a.st<b.st?-1:a.st>b.st?1:0);
+   $("#l-note").textContent="Large US data center projects: size, power and water claims (attributed to who made them), incentives, status and opposition.";
+   const P=pg(page,ps.length,PER.proj);
+   $("#l-body").innerHTML=(ps.length?`<div class="cards">${ps.slice(P.a,P.b).map(projCard).join("")}</div>`:'<p class="empty">No projects match.</p>')+(ps.length>PER.proj?pager("ledger",ps.length,P.page,PER.proj):"");
+   return;
+  }
+  const rows=S.data.ledger.filter(x=>(!T[2]||T[2].includes(x.t))&&(!ty||x.t===ty)&&words.every(w=>ledgerHay(x).includes(w))).sort(byDate);
   const tot=rows.filter(x=>x.amt!=null).reduce((a,x)=>a+ +x.amt,0);
-  let extra="";
-  if(tab==="money"){const by={};rows.forEach(x=>{if(x.amt!=null)by[x.from]=(by[x.from]||0)+ +x.amt});extra=`<h3 style="margin:14px 0 8px">By payer</h3><div class="tbl-wrap"><table><thead><tr><th>Payer</th><th class="num">Confirmed total</th></tr></thead><tbody>${Object.entries(by).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<tr><td>${esc(k)}</td><td class="num mono">${money(v)}</td></tr>`).join("")}</tbody></table></div>`}
-  body=`<p class="muted">Confirmed rows only. Amounts are what the filing, company or authority announced; a dash means not disclosed. ${rows.length} rows${tot?`, <span class="mono">${money(tot)}</span> disclosed`:""}.</p><div class="tbl-wrap">${rows.length?ledgerTable(rows):'<p class="empty">No rows yet.</p>'}</div>${extra}`;
- }
- $("#main").innerHTML=`<h2>Ledger</h2><div class="subtabs">${LTABS.map(t=>`<a href="#/ledger/${t[0]}" aria-current="${t[0]===tab}">${t[1]}</a>`).join("")}</div>${body}`;
+  $("#l-note").innerHTML=`Confirmed rows only. Amounts are what the filing, company or authority announced; a dash means not disclosed. <span class="mono">${rows.length}</span> row${rows.length===1?"":"s"}${tot?`, <span class="mono">${money(tot)}</span> disclosed`:""}${t||ty?" match":""}.`;
+  const P=pg(page,rows.length,PER.ledger);
+  $("#l-body").innerHTML=rows.length?`<div class="tbl-wrap">${ledgerTable(rows.slice(P.a,P.b))}</div>${pager("ledger",rows.length,P.page,PER.ledger)}`:'<div class="tbl-wrap"><p class="empty">No rows match.</p></div>';
+  if(tab==="money"){const by={};rows.forEach(x=>{if(x.amt!=null)by[x.from]=(by[x.from]||0)+ +x.amt});$("#l-extra").innerHTML=Object.keys(by).length?`<section class="sec"><h2>By payer</h2><div class="tbl-wrap"><table><thead><tr><th>Payer</th><th class="num">Confirmed total</th></tr></thead><tbody>${Object.entries(by).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<tr><td>${esc(k)}</td><td class="num mono">${money(v)}</td></tr>`).join("")}</tbody></table></div></section>`:""}
+ };
+ const save=()=>setQ({q:$("#l-q").value.trim(),t:$("#l-t").value,p:page>1?page:""});
+ S.pg.ledger=n=>{page=n;save();paint()};
+ let tm;$("#l-q").addEventListener("input",()=>{clearTimeout(tm);tm=setTimeout(()=>{page=1;save();paint()},150)});
+ $("#l-t").addEventListener("change",()=>{page=1;save();paint()});
+ paint();
 }
 
 /* ---------- maps & diagrams ---------- */
@@ -515,7 +588,8 @@ async function vArchive(r){
  $("#main").innerHTML=`<h2>Archive</h2><p class="muted">Posts stay in the Feed for ${esc(S.cfg.archive_days||90)} days, then move to a monthly archive file. Nothing is deleted. Search covers the Feed and every archive month.</p>
  <form class="filters" role="search" onsubmit="return false" style="grid-template-columns:1fr"><label class="q"><span class="sr">Search everything</span><input type="search" id="a-q" placeholder="Search all posts, including the archive" value="${esc(r.q.q||"")}"></label></form>
  <div class="subtabs"><a href="#/archive" aria-current="${!m}">Last ${esc(S.cfg.archive_days||90)} days (${recent})</a>${idx.months.map(x=>`<a href="#/archive/${esc(x.m)}" aria-current="${m===x.m}">${new Date(x.m+"-15").toLocaleDateString("en-US",{month:"short",year:"numeric"})} (${x.n})</a>`).join("")}</div>
- <div id="a-active"></div><div class="panel" id="a-list"><p class="empty">Loading…</p></div>`;
+ <div id="a-active"></div><div class="panel" id="a-list" data-pgtop="arch"><p class="empty">Loading…</p></div>`;
+ let page=+r.q.p||1;
  const paint=async()=>{
   const q=$("#a-q").value.trim();
   let list,arch=0;
@@ -524,9 +598,11 @@ async function vArchive(r){
   else list=S.data.feed.map(p=>[p,0]);
   list.sort((a,b)=>byDate(a[0],b[0]));
   $("#a-active").innerHTML=q?`<div class="active-f">${list.length} result${list.length===1?"":"s"} across the Feed and archive</div>`:"";
-  $("#a-list").innerHTML=list.map(([p,a])=>postHTML(p,{arch:a})).join("")||`<p class="empty">Nothing here${q?" matches":" yet"}.</p>`;
+  const P=pg(page,list.length,PER.arch);
+  $("#a-list").innerHTML=(list.slice(P.a,P.b).map(([p,a])=>postHTML(p,{arch:a})).join("")||`<p class="empty">Nothing here${q?" matches":" yet"}.</p>`)+pager("arch",list.length,P.page,PER.arch);
  };
- let t;$("#a-q").addEventListener("input",()=>{clearTimeout(t);t=setTimeout(()=>{setQ({q:$("#a-q").value.trim()});paint()},200)});paint();
+ S.pg.arch=n=>{page=n;setQ({q:$("#a-q").value.trim(),p:n>1?n:""});paint()};
+ let t;$("#a-q").addEventListener("input",()=>{clearTimeout(t);t=setTimeout(()=>{page=1;setQ({q:$("#a-q").value.trim()});paint()},200)});paint();
 }
 
 /* ---------- about ---------- */
@@ -572,7 +648,7 @@ async function boot(){
  if(S.cfg.tagline)$("#lede").textContent=S.cfg.tagline;
  $("#f-csv").href=(S.cfg.repo_url||"")+"/blob/main/ledger.csv";$("#f-repo").href=S.cfg.repo_url||"#";$("#f-disc").href=(S.cfg.repo_url||"")+"/discussions";
  if(S.cfg.sister)$("#f-sister").innerHTML=`Also from the same maker: <a href="${safeUrl(S.cfg.sister.url)}">${esc(S.cfg.sister.name)}</a>, ${esc(S.cfg.sister.note)}.`;
- window.addEventListener("hashchange",()=>{S.shown=30;render();if(!/^#p-/.test(location.hash))window.scrollTo(0,0)});
+ window.addEventListener("hashchange",()=>{render();if(!/^#p-/.test(location.hash))window.scrollTo(0,0)});
  render();refreshWire();
  setInterval(refreshWire,120000);setInterval(paintFresh,30000);
 }
