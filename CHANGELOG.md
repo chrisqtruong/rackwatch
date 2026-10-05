@@ -2,6 +2,10 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-05 (players: moves view)
+- Players (beta) now sorts each company's verified record into five kinds of moves (Deals, Build, Influence, Scrutiny, Workers) instead of a month-by-month count of mentions. Each cell shows the number of verified posts and the dollar amount disclosed in the confirmed ledger; a summary row shows the totals for the selected sector and where most moves fall. The chart fits the screen at every width (no sideways scrolling). Every number still opens the items behind it with their sources.
+- Fixed the money format: whole amounts lost a zero ($70B showed as $7B, $50B as $5B) on the Ledger, entity pages and diagrams.
+
 ## 2026-10-05 (players, beta)
 - Entities > Players (beta): the largest companies and groups, grouped by sector (AI labs, chips, cloud and platforms, data center builders, apps and gig work, government tech, political money), with a dot per month sized by how many posts and ledger rows Tracewire recorded and a running-total line. Every dot opens the items behind it with their sources and saved copies. Includes a table view. Sectors are set with a `sec` field in `docs/entities.json`.
 

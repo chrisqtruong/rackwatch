@@ -165,29 +165,27 @@ figcaption{font-size:12.5px;color:var(--muted)}
 .sec{margin-top:32px}
 .sec>h2{font-size:17px;margin:0 0 12px}
 .chip.beta{color:var(--accent);border-color:var(--accent)}
-.pl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel);position:relative}
-.pl-row{display:grid;grid-template-columns:minmax(132px,176px) repeat(var(--m),minmax(44px,1fr)) 128px;align-items:center;min-width:calc(176px + var(--m)*44px + 128px)}
+.pl-sum{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:0 0 16px}
+@media(max-width:700px){.pl-sum{grid-template-columns:repeat(2,minmax(0,1fr))}.pl-sum>.stat:last-child{grid-column:1/-1}}
+.pl-sum .k b{color:var(--text);font-weight:600}
+.pl-wrap{border:1px solid var(--line);border-radius:12px;background:var(--panel);position:relative}
+.pl-row{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(5,minmax(0,1fr));align-items:stretch}
 .pl-row+.pl-row{border-top:1px solid var(--line)}
-.pl-hd{font-family:"JetBrains Mono",monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);background:var(--panel2)}
-.pl-hd>span{padding:10px 0;text-align:center}
-.pl-hd>span:first-child,.pl-hd>span:last-child{text-align:left;padding-left:14px}
-.pl-sec{padding:16px 14px 6px;font-family:"JetBrains Mono",monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line);min-width:calc(176px + var(--m)*44px + 128px)}
-.pl-nm{padding:0 14px;font-weight:600;font-size:15px;min-height:52px;display:flex;align-items:center;position:sticky;left:0;z-index:2;background:var(--panel);align-self:stretch}
-.pl-hd>span:first-child{position:sticky;left:0;z-index:2;background:var(--panel2)}
-.pl-sec>span{position:sticky;left:14px}
-@media(max-width:700px){.pl-row{grid-template-columns:104px repeat(var(--m),40px) 92px;min-width:calc(104px + var(--m)*40px + 92px)}.pl-sec{min-width:calc(104px + var(--m)*40px + 92px)}.pl-nm{font-size:13.5px;padding:0 10px}.pl-tr svg{width:44px}.pl-hd>span:last-child{font-size:0}.pl-hd>span:last-child::after{content:"Total";font-size:11.5px}}
-.pl-swipe{display:none;font-size:12.5px;color:var(--faint);margin:0 0 8px}
-@media(max-width:700px){.pl-swipe{display:block}}
-.pl-nm a{color:var(--text);text-decoration:none}.pl-nm a:hover{color:var(--accent);text-decoration:underline}
-.pl-c{appearance:none;border:0;background:none;min-height:52px;width:100%;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:8px;padding:0}
+.pl-hd{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);background:var(--panel2);border-radius:12px 12px 0 0}
+.pl-hd>span{padding:10px 2px;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pl-hd>span:first-child{text-align:left;padding-left:14px}
+.pl-sec{padding:16px 14px 6px;font-family:"JetBrains Mono",monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line)}
+.pl-nm{padding:8px 14px;min-height:64px;display:flex;flex-direction:column;justify-content:center;gap:2px;min-width:0}
+.pl-nm a{color:var(--text);text-decoration:none;font-weight:600;font-size:15px;line-height:1.25}.pl-nm a:hover{color:var(--accent);text-decoration:underline}
+.pl-nm small{font-size:12px;color:var(--faint);font-family:"JetBrains Mono",monospace}
+.pl-c{appearance:none;border:0;background:none;min-height:64px;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;border-radius:8px;padding:4px 0;color:inherit;font:inherit}
 .pl-c:hover,.pl-c[aria-pressed="true"]{background:var(--accent-soft)}
 .pl-c[disabled]{cursor:default;background:none}
-.pl-dot{display:block;border-radius:50%;background:var(--accent);box-shadow:0 0 0 2px var(--panel)}
-.pl-dot.z{width:4px;height:4px;background:var(--line2);box-shadow:none}
-.pl-tr{display:flex;align-items:center;gap:8px;padding:0 14px 0 6px}
-.pl-tr svg{width:64px;height:24px;flex:0 0 auto;overflow:visible}
-.pl-tr .n{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--text)}
-.pl-tip{position:absolute;pointer-events:none;background:var(--text);color:var(--bg);font-size:12.5px;line-height:1.35;padding:6px 9px;border-radius:6px;white-space:nowrap;z-index:5;transform:translate(-50%,calc(-100% - 8px))}
+.pl-n{display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:600;box-shadow:0 0 0 2px var(--panel)}
+.pl-n.z{background:none;color:var(--line2);box-shadow:none;font-weight:400}
+.pl-m{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);line-height:1;min-height:11px}
+@media(max-width:700px){.pl-row{grid-template-columns:86px repeat(5,minmax(0,1fr))}.pl-hd{font-size:9.5px;letter-spacing:0}.pl-nm{padding:8px 8px 8px 10px}.pl-nm a{font-size:13px}.pl-nm small{display:none}.pl-m{font-size:10px}}
+.pl-tip{position:absolute;pointer-events:none;background:var(--text);color:var(--bg);font-size:12.5px;line-height:1.35;padding:6px 9px;border-radius:6px;white-space:nowrap;z-index:5;transform:translate(-50%,calc(-100% - 6px))}
 .pl-key{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;font-size:13px;color:var(--muted);margin:12px 0 0}
 .pl-key i{display:inline-block;border-radius:50%;background:var(--accent);vertical-align:middle;margin-right:6px}
 .pl-detail{margin-top:24px}
@@ -304,7 +302,7 @@ const KINDS={company:"Company",agency:"Government agency",official:"Public offic
 async function getJSON(u,bust){const r=await fetch(u+(bust?"?t="+Date.now():""),{cache:bust?"no-store":"default"});if(!r.ok)throw new Error(u+" "+r.status);return r.json()}
 function fmtDate(d){if(!d)return"";const x=new Date(d.length===10?d+"T12:00:00":d);return x.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"})}
 function ago(iso){if(!iso)return"never";const m=Math.max(0,Math.round((Date.now()-new Date(iso))/60000));if(m<1)return"just now";if(m<60)return m+" min ago";const h=Math.round(m/60);if(h<48)return h+" hr ago";return Math.round(h/24)+" days ago"}
-function money(n){if(n==null||n==="")return"—";n=+n;if(n>=1e9)return"$"+(n/1e9).toFixed(n%1e9?2:0).replace(/\.?0+$/,"")+"B";if(n>=1e6)return"$"+(n/1e6).toFixed(1).replace(/\.0$/,"")+"M";if(n>=1e3)return"$"+Math.round(n/1e3)+"K";return"$"+n}
+function money(n){if(n==null||n==="")return"—";n=+n;const t=(v,u)=>"$"+v.toFixed(2).replace(/\.00$/,"").replace(/(\.\d)0$/,"$1")+u;if(n>=1e9)return t(n/1e9,"B");if(n>=1e6)return t(n/1e6,"M");if(n>=1e3)return"$"+Math.round(n/1e3)+"K";return"$"+n}
 function moneyFull(n){return n==null?"Not disclosed":"$"+(+n).toLocaleString("en-US")}
 const entName=id=>(S.E[id]&&S.E[id].n)||id;
 const today=()=>new Date().toISOString().slice(0,10);
@@ -523,53 +521,57 @@ function vEntities(r){
 }
 /* ---------- players (beta) ---------- */
 const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const LANES=[["deals","Deals","Acquisitions, investments and partnerships"],["build","Build","Data centers, power and water"],["influence","Influence","Lobbying, political money and government contracts"],["scrutiny","Scrutiny","Lawsuits, enforcement, fines and privacy actions"],["workers","Workers","Labor, gig work and AI layoffs"]];
+const POSTLANE={"Deals & mergers":"deals","Data centers":"build","Energy & water":"build","Political money":"influence","Government contracts":"influence","Antitrust":"scrutiny","Courts & enforcement":"scrutiny","Privacy & surveillance":"scrutiny","Corruption cases":"scrutiny","Labor & AI":"workers"};
+const LEDGERLANE={Acquisition:"deals",Investment:"deals",Partnership:"deals","Tax incentive":"build","Rate decision":"build",Lobbying:"influence",Political:"influence",Contract:"influence",Fine:"scrutiny",Settlement:"scrutiny"};
 function playerItems(id){
- const posts=S.data.feed.map(p=>[p,0]).concat(Object.values(S.arch).flatMap(m=>m.feed.map(p=>[p,1]))).filter(([p])=>(p.e||[]).includes(id)).map(([p,a])=>({d:p.d,kind:"post",p,arch:a}));
- const rows=S.data.ledger.filter(x=>(x.e||[]).includes(id)||x.fe===id||x.te===id).map(x=>({d:x.d,kind:"ledger",x}));
+ const posts=S.data.feed.map(p=>[p,0]).concat(Object.values(S.arch).flatMap(m=>m.feed.map(p=>[p,1]))).filter(([p])=>(p.e||[]).includes(id)).map(([p,a])=>({d:p.d,kind:"post",p,arch:a,lane:POSTLANE[p.c]||"scrutiny"}));
+ const rows=S.data.ledger.filter(x=>(x.e||[]).includes(id)||x.fe===id||x.te===id).map(x=>({d:x.d,kind:"ledger",x,lane:LEDGERLANE[x.t]||"deals"}));
  return posts.concat(rows).sort((a,b)=>a.d<b.d?1:a.d>b.d?-1:0);
 }
+function laneStats(items,lane){const its=items.filter(i=>i.lane===lane);return{n:its.filter(i=>i.kind==="post").length,amt:its.filter(i=>i.kind==="ledger"&&i.x.amt!=null).reduce((a,i)=>a+ +i.x.amt,0),items:its}}
 async function vPlayers(r){
  await loadAllArchive();
  const q=r.q;
  const players=S.ents.filter(e=>e.sec).map(e=>({e,items:playerItems(e.id)})).filter(x=>x.items.length);
- const secs=[...new Set(players.map(x=>x.e.sec))];
+ players.forEach(x=>{x.L={};LANES.forEach(([k])=>x.L[k]=laneStats(x.items,k));x.moves=x.items.filter(i=>i.kind==="post").length;x.last=x.items[0]&&x.items[0].d});
  const order=["AI labs","Chips","Cloud & platforms","Data center builders","Apps & gig work","Government tech","Political money"];
- secs.sort((a,b)=>(order.indexOf(a)+99)%99-(order.indexOf(b)+99)%99);
+ const secs=[...new Set(players.map(x=>x.e.sec))].sort((a,b)=>(order.indexOf(a)+99)%99-(order.indexOf(b)+99)%99);
  const sec=secs.includes(q.s)?q.s:"";
- const all=players.flatMap(x=>x.items.map(i=>i.d.slice(0,7))).sort();
- const months=[];if(all.length){let [y,m]=all[0].split("-").map(Number);const [ey,em]=today().slice(0,7).split("-").map(Number);while(y<ey||(y===ey&&m<=em)){months.push(`${y}-${String(m).padStart(2,"0")}`);m++;if(m>12){m=1;y++}}}
  const shown=players.filter(x=>!sec||x.e.sec===sec);
- const cnt=(x,mo)=>x.items.filter(i=>i.d.startsWith(mo)).length;
- const max=Math.max(1,...shown.flatMap(x=>months.map(mo=>cnt(x,mo))));
- const size=n=>Math.round(8+14*Math.sqrt(n/max));
- const spark=x=>{let c=0;const pts=[[0,0]].concat(months.map((mo,i)=>{c+=cnt(x,mo);return[i+1,c]}));const W=64,H=22,tot=c||1;
-  const xy=pts.map(([i,v])=>[(i/months.length)*W,H-(v/tot)*H]);
-  return`<svg viewBox="0 -2 ${W} ${H+4}" aria-hidden="true"><polyline points="${xy.map(p=>p.map(n=>n.toFixed(1)).join(",")).join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${xy[xy.length-1][0]}" cy="${xy[xy.length-1][1]}" r="3" fill="var(--accent)"/></svg>`};
- const ml=(mo,i)=>{const [y,m]=mo.split("-");return MON[+m-1]+(i===0||m==="01"?` ’${y.slice(2)}`:"")};
- const row=x=>`<div class="pl-row" style="--m:${months.length}"><div class="pl-nm"><a href="#/entity/${encodeURIComponent(x.e.id)}">${esc(x.e.n)}</a></div>${months.map((mo,i)=>{const n=cnt(x,mo),z=size(n);return n?`<button class="pl-c" type="button" data-pl="${esc(x.e.id)}" data-mo="${mo}" aria-pressed="false" aria-label="${esc(x.e.n)}, ${ml(mo,0)}: ${n} item${n>1?"s":""}. Show them." data-tip="${esc(x.e.n)} · ${ml(mo,0)}: ${n} item${n>1?"s":""}"><span class="pl-dot" style="width:${z}px;height:${z}px"></span></button>`:`<button class="pl-c" type="button" disabled aria-label="${esc(x.e.n)}, ${ml(mo,0)}: none"><span class="pl-dot z"></span></button>`}).join("")}<div class="pl-tr"><button class="pl-c" type="button" style="justify-content:flex-start;gap:8px;padding:0 4px" data-pl="${esc(x.e.id)}" data-mo="" aria-pressed="false" aria-label="${esc(x.e.n)}: all ${x.items.length} items. Show them." data-tip="${esc(x.e.n)}: ${x.items.length} items so far">${spark(x)}<span class="n">${x.items.length}</span></button></div></div>`;
- const groups=(sec?[sec]:secs).map(g=>`<div class="pl-sec" style="--m:${months.length}"><span>${esc(g)}</span></div>`+shown.filter(x=>x.e.sec===g).sort((a,b)=>b.items.length-a.items.length||a.e.n.localeCompare(b.e.n)).map(row).join("")).join("");
- const mid=Math.max(1,Math.round(max/2));
+ // sector summary: unique posts and unique ledger rows across the shown players
+ const sum={};LANES.forEach(([k])=>{const ps=new Set(),ls=new Map();shown.forEach(x=>x.L[k].items.forEach(i=>i.kind==="post"?ps.add(i.p.id):ls.set(i.x.id,i.x)));sum[k]={n:ps.size,amt:[...ls.values()].filter(x=>x.amt!=null).reduce((a,x)=>a+ +x.amt,0)}});
+ const top=LANES.slice().sort((a,b)=>sum[b[0]].n-sum[a[0]].n)[0];
+ const max=Math.max(1,...shown.flatMap(x=>LANES.map(([k])=>x.L[k].n)));
+ const size=n=>Math.round(22+16*Math.sqrt(n/max));
+ const fmtLast=d=>d?`${MON[+d.slice(5,7)-1]} ${+d.slice(8,10)}`:"";
+ const cell=(x,k,lab)=>{const L=x.L[k];if(!L.items.length)return`<button class="pl-c" type="button" disabled aria-label="${esc(x.e.n)}, ${lab}: none recorded"><span class="pl-n z" style="width:22px;height:22px">·</span><span class="pl-m"></span></button>`;
+  const z=size(L.n),tip=`${x.e.n} · ${lab}: ${L.n} move${L.n===1?"":"s"}${L.amt?`, ${money(L.amt)} disclosed`:""}`;
+  return`<button class="pl-c" type="button" data-pl="${esc(x.e.id)}" data-lane="${k}" aria-pressed="false" aria-label="${esc(tip)}. Show them." data-tip="${esc(tip)}"><span class="pl-n${L.n?"":" z"}" style="width:${L.n?z:22}px;height:${L.n?z:22}px">${L.n||"–"}</span><span class="pl-m">${L.amt?money(L.amt):""}</span></button>`};
+ const row=x=>`<div class="pl-row"><div class="pl-nm"><a href="#/entity/${encodeURIComponent(x.e.id)}">${esc(x.e.n)}</a><small>${x.moves} move${x.moves===1?"":"s"} · latest ${esc(fmtLast(x.last))}</small></div>${LANES.map(([k,lab])=>cell(x,k,lab)).join("")}</div>`;
+ const groups=(sec?[sec]:secs).map(g=>`<div class="pl-sec">${esc(g)}</div>`+shown.filter(x=>x.e.sec===g).sort((a,b)=>b.moves-a.moves||a.e.n.localeCompare(b.e.n)).map(row).join("")).join("");
  $("#main").innerHTML=`<h2>Entities</h2>${entTabs("pl")}
- <p class="muted" style="max-width:760px">How often the largest companies and groups show up in Tracewire's record, month by month. Bigger dots mean more posts and ledger rows that month; the line on the right shows their running total. Select any dot to see the items behind it, each with its sources. This counts what Tracewire has recorded, not market value or everything a company did. <span class="chip beta plain">Beta</span></p>
+ <p class="muted" style="max-width:780px">What the largest companies and groups are doing, sorted into five kinds of moves. Each number counts verified posts; the dollar figure under it adds the amounts disclosed in the confirmed ledger (money in or out). Select any number to see the items behind it, each with its sources. This reflects what Tracewire has recorded, not everything a company did. <span class="chip beta plain">Beta</span></p>
  <div class="subtabs" style="margin-top:16px"><a href="#/entities/players" aria-current="${!sec}">All sectors</a>${secs.map(g=>`<a href="#/entities/players?s=${encodeURIComponent(g)}" aria-current="${sec===g}">${esc(g)}</a>`).join("")}</div>
- <p class="pl-swipe">Showing the latest months. Swipe the chart sideways for earlier ones.</p><div class="pl-wrap" id="pl-wrap"><div class="pl-row pl-hd" style="--m:${months.length}"><span>Player</span>${months.map((mo,i)=>`<span>${ml(mo,i)}</span>`).join("")}<span>Running total</span></div>${groups}<div class="pl-tip" id="pl-tip" hidden></div></div>
- <div class="pl-key" aria-hidden="true"><span><i style="width:${size(1)}px;height:${size(1)}px"></i>1 item</span>${mid>1&&mid<max?`<span><i style="width:${size(mid)}px;height:${size(mid)}px"></i>${mid} items</span>`:""}${max>1?`<span><i style="width:${size(max)}px;height:${size(max)}px"></i>${max} items in a month</span>`:""}<span><i style="width:4px;height:4px;background:var(--line2)"></i>none recorded</span></div>
- <details style="margin-top:8px"><summary style="cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--accent);font-weight:600">Table view</summary><div class="tbl-wrap"><table><thead><tr><th>Player</th><th>Sector</th>${months.map((mo,i)=>`<th class="num">${ml(mo,i)}</th>`).join("")}<th class="num">Total</th></tr></thead><tbody>${shown.map(x=>`<tr><td>${esc(x.e.n)}</td><td>${esc(x.e.sec)}</td>${months.map(mo=>`<td class="num mono">${cnt(x,mo)||""}</td>`).join("")}<td class="num mono">${x.items.length}</td></tr>`).join("")}</tbody></table></div></details>
- <section class="pl-detail" id="pl-detail" aria-live="polite"><div class="panel"><p class="empty">Select a dot to see the posts and ledger rows behind it, with their sources.</p></div></section>`;
+ <div class="pl-sum">${LANES.map(([k,lab,desc])=>`<div class="stat" title="${esc(desc)}"><div class="v">${sum[k].n}</div><div class="k"><b>${lab}</b>${sum[k].amt?` · <span class="mono">${money(sum[k].amt)}</span>`:""}<br>${esc(desc)}</div></div>`).join("")}</div>
+ <p class="muted" style="font-size:14px;margin:-4px 0 12px">${sec?esc(sec):"Across all sectors"}, the most recorded moves are in <b style="color:var(--text)">${top[1].toLowerCase()}</b> (${sum[top[0]].n} of ${LANES.reduce((a,[k])=>a+sum[k].n,0)}).</p>
+ <div class="pl-wrap" id="pl-wrap"><div class="pl-row pl-hd"><span>Player</span>${LANES.map(([k,lab,desc])=>`<span title="${esc(desc)}">${lab}</span>`).join("")}</div>${groups}<div class="pl-tip" id="pl-tip" hidden></div></div>
+ <div class="pl-key"><span>Bigger circle = more verified moves.</span><span><span class="mono">$</span> = disclosed amounts in the confirmed ledger.</span><span><span class="mono" style="color:var(--line2)">·</span> none recorded</span></div>
+ <details style="margin-top:8px"><summary style="cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--accent);font-weight:600">Table view</summary><div class="tbl-wrap"><table><thead><tr><th>Player</th><th>Sector</th>${LANES.map(([,lab])=>`<th class="num">${lab}</th>`).join("")}<th>Latest</th></tr></thead><tbody>${shown.map(x=>`<tr><td>${esc(x.e.n)}</td><td>${esc(x.e.sec)}</td>${LANES.map(([k])=>`<td class="num mono">${x.L[k].n||""}${x.L[k].amt?` (${money(x.L[k].amt)})`:""}</td>`).join("")}<td><time datetime="${esc(x.last)}">${esc(x.last)}</time></td></tr>`).join("")}</tbody></table></div></details>
+ <section class="pl-detail" id="pl-detail" aria-live="polite"><div class="panel"><p class="empty">Select a number to see the posts and ledger rows behind it, with their sources.</p></div></section>`;
  const wrap=$("#pl-wrap"),tip=$("#pl-tip");
- if(wrap.scrollWidth>wrap.clientWidth)wrap.scrollLeft=wrap.scrollWidth;
- const showTip=b=>{if(!b||!b.dataset.tip){tip.hidden=true;return}const wr=wrap.getBoundingClientRect(),br=b.getBoundingClientRect();tip.textContent=b.dataset.tip;tip.style.left=(br.left-wr.left+wrap.scrollLeft+br.width/2)+"px";tip.style.top=(br.top-wr.top+wrap.scrollTop+6)+"px";tip.hidden=false};
+ const showTip=b=>{if(!b||!b.dataset.tip){tip.hidden=true;return}const wr=wrap.getBoundingClientRect(),br=b.getBoundingClientRect();tip.textContent=b.dataset.tip;tip.hidden=false;
+  let x=br.left-wr.left+br.width/2;const half=tip.offsetWidth/2;x=Math.min(Math.max(x,half+4),wr.width-half-4);tip.style.left=x+"px";tip.style.top=(br.top-wr.top+4)+"px"};
  wrap.addEventListener("mouseover",e=>showTip(e.target.closest(".pl-c:not([disabled])")));
  wrap.addEventListener("mouseleave",()=>tip.hidden=true);
  wrap.addEventListener("focusin",e=>showTip(e.target.closest(".pl-c:not([disabled])")));
  wrap.addEventListener("focusout",()=>tip.hidden=true);
- wrap.addEventListener("scroll",()=>tip.hidden=true,{passive:true});
- wrap.addEventListener("click",e=>{const b=e.target.closest(".pl-c[data-pl]");if(!b)return;
+ wrap.addEventListener("click",e=>{const b=e.target.closest(".pl-c[data-pl]");if(!b)return;tip.hidden=true;
   $$(".pl-c[aria-pressed=true]",wrap).forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");
-  const x=players.find(p=>p.e.id===b.dataset.pl),mo=b.dataset.mo,items=x.items.filter(i=>!mo||i.d.startsWith(mo));
-  const cats={};items.forEach(i=>{const c=i.kind==="post"?i.p.c:"Ledger: "+i.x.t;cats[c]=(cats[c]||0)+1});
-  $("#pl-detail").innerHTML=`<div class="panel"><div class="panel-h"><h2>${esc(x.e.n)} · ${mo?esc(MON[+mo.slice(5)-1]+" "+mo.slice(0,4)):"all months"}</h2><span class="r mono muted" style="font-size:12.5px">${items.length} item${items.length>1?"s":""}</span></div>
-  <div class="tags" style="padding:4px 16px 0">${Object.entries(cats).sort((a,b)=>b[1]-a[1]).map(([c,n])=>`<span class="tag">${esc(c)} <span class="mono" style="margin-left:6px">${n}</span></span>`).join("")}</div>
+  const x=players.find(p=>p.e.id===b.dataset.pl),k=b.dataset.lane,lane=LANES.find(l=>l[0]===k),items=x.L[k].items;
+  $("#pl-detail").innerHTML=`<div class="panel"><div class="panel-h"><h2>${esc(x.e.n)} · ${esc(lane[1])}</h2><span class="r mono muted" style="font-size:12.5px">${x.L[k].n} move${x.L[k].n===1?"":"s"}${x.L[k].amt?` · ${money(x.L[k].amt)} disclosed`:""}</span></div>
+  <div class="tags" style="padding:8px 16px 0">${LANES.map(([kk,lab])=>`<span class="tag"${kk===k?' style="border-color:var(--accent)"':""}>${lab} <span class="mono" style="margin-left:6px">${x.L[kk].n}</span></span>`).join("")}</div>
+  <p class="muted" style="font-size:13.5px;margin:8px 16px 4px">${esc(lane[2])}.</p>
   ${items.map(i=>i.kind==="post"?`<div class="pl-item"><div class="meta"><time datetime="${esc(i.d)}">${fmtDate(i.d)}</time>${chip(i.p.s)}<span>${esc(i.p.c)}</span></div><h3><a href="#p-${esc(i.p.id)}">${esc(i.p.h)}</a></h3>${srcList(i.p.src)}</div>`
    :`<div class="pl-item"><div class="meta"><time datetime="${esc(i.d)}">${fmtDate(i.d)}</time><span class="chip plain">Ledger</span><span>${esc(i.x.t)}</span></div><h3>${esc(i.x.from)} → ${esc(i.x.to)} <span class="mono" style="font-weight:500">${money(i.x.amt)}</span></h3><p class="muted" style="margin:4px 0;font-size:14px">${esc(i.x.note)}</p>${srcList((i.x.src||[]).map(s=>({o:s.o,t:s.o,u:s.u})))}</div>`).join("")}
   <div class="pager"><a href="#/entity/${encodeURIComponent(x.e.id)}">Open the ${esc(x.e.n)} page →</a></div></div>`;
