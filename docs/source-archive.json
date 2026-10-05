@@ -1,1 +1,68 @@
-{"updated":null,"total":0,"saved":0,"urls":{}}
+{
+ "updated": "2026-10-05T16:00:39+00:00",
+ "total": 113,
+ "saved": 14,
+ "urls": {
+  "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/": {
+   "a": "https://web.archive.org/web/20261005063939/https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/?",
+   "at": "2026-10-05"
+  },
+  "https://www.wndu.com/2026/10/02/amazon-ends-ndas-with-local-governments-over-data-centers/": {
+   "a": "https://web.archive.org/web/20261005160107/https://www.wndu.com/2026/10/02/amazon-ends-ndas-with-local-governments-over-data-centers/",
+   "at": "2026-10-05"
+  },
+  "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/": {
+   "a": "https://web.archive.org/web/20261004102259/https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/?",
+   "at": "2026-10-04"
+  },
+  "https://gizmodo.com/judge-calls-flock-search-indiscriminate-mass-surveillance-throws-out-evidence-2000821402": {
+   "tries": 1,
+   "err": "URLError: <urlopen error timed out>",
+   "last": "2026-10-05T16:00:39+00:00"
+  },
+  "https://oag.ca.gov/news/press-releases/attorney-general-bonta-city-attorneys-san-francisco-san-diego-and-los-angeles": {
+   "a": "https://web.archive.org/web/20261002210529/https://oag.ca.gov/news/press-releases/attorney-general-bonta-city-attorneys-san-francisco-san-diego-and-los-angeles",
+   "at": "2026-10-02"
+  },
+  "https://arstechnica.com/tech-policy/2026/10/lyft-settles-landmark-driver-misclassification-lawsuit-for-272-5m/": {
+   "a": "https://web.archive.org/web/20261003060713/https://arstechnica.com/tech-policy/2026/10/lyft-settles-landmark-driver-misclassification-lawsuit-for-272-5m/",
+   "at": "2026-10-03"
+  },
+  "https://mixed-news.com/en/judge-mehta-dismisses-chegg-penske-ai-overviews-google-antitrust/": {
+   "a": "https://web.archive.org/web/20261005160458/https://mixed-news.com/en/judge-mehta-dismisses-chegg-penske-ai-overviews-google-antitrust/",
+   "at": "2026-10-05"
+  },
+  "https://ppc.land/judge-mehta-dismisses-penskes-google-ai-overviews-antitrust-suit/": {
+   "a": "https://web.archive.org/web/20261005160606/https://ppc.land/judge-mehta-dismisses-penskes-google-ai-overviews-antitrust-suit/",
+   "at": "2026-10-05"
+  },
+  "https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751/": {
+   "a": "https://web.archive.org/web/20261003203211/https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751/",
+   "at": "2026-10-03"
+  },
+  "https://www.rtoinsider.com/ferc-conditionally-approves-pjm-backstop-procurement-delays-implementation/": {
+   "a": "https://web.archive.org/web/20261002214134/https://www.rtoinsider.com/ferc-conditionally-approves-pjm-backstop-procurement-delays-implementation/",
+   "at": "2026-10-02"
+  },
+  "https://www.wpr.org/news/microsoft-to-redirect-data-center-incentive-back-to-mount-pleasant": {
+   "a": "https://web.archive.org/web/20261001062839/https://www.wpr.org/news/microsoft-to-redirect-data-center-incentive-back-to-mount-pleasant",
+   "at": "2026-10-01"
+  },
+  "https://wtmj.com/news/2026/09/29/microsoft-redirects-5-million-incentive-to-mount-pleasant-for-property-tax-relief/": {
+   "a": "https://web.archive.org/web/20261001232138/https://wtmj.com/news/2026/09/29/microsoft-redirects-5-million-incentive-to-mount-pleasant-for-property-tax-relief/",
+   "at": "2026-10-01"
+  },
+  "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute": {
+   "a": "https://web.archive.org/web/20261002212820/https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+   "at": "2026-10-02"
+  },
+  "https://qz.com/amd-acquiring-world-labs-fei-fei-li-8-billion-092926": {
+   "a": "https://web.archive.org/web/20260930191902/https://qz.com/amd-acquiring-world-labs-fei-fei-li-8-billion-092926",
+   "at": "2026-09-30"
+  },
+  "https://arstechnica.com/ai/2026/09/florida-asks-court-to-put-the-brakes-on-openais-frontier-ai-development/": {
+   "a": "https://web.archive.org/web/20260929223221/https://arstechnica.com/ai/2026/09/florida-asks-court-to-put-the-brakes-on-openais-frontier-ai-development/",
+   "at": "2026-09-29"
+  }
+ }
+}
