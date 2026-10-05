@@ -1,0 +1,46 @@
+{
+ "name": "Rackwatch",
+ "slug": "rackwatch",
+ "tagline": "The tech, AI and data-center deals and decisions that affect ordinary people, with a source for every fact.",
+ "categories": [
+  "Data centers",
+  "Energy & water",
+  "Deals & mergers",
+  "Antitrust",
+  "Political money",
+  "Government contracts",
+  "Labor & AI",
+  "Privacy & surveillance",
+  "Courts & enforcement",
+  "Corruption cases"
+ ],
+ "ledger_types": [
+  "Acquisition",
+  "Investment",
+  "Partnership",
+  "Fine",
+  "Settlement",
+  "Contract",
+  "Lobbying",
+  "Political",
+  "Tax incentive",
+  "Rate decision"
+ ],
+ "archive_days": 90,
+ "tz": "America/New_York",
+ "site_url": "https://chrisqtruong.github.io/rackwatch/",
+ "repo_url": "https://github.com/chrisqtruong/rackwatch",
+ "sister": {
+  "name": "Bankrolled",
+  "note": "a tracker of sports-gambling money and power",
+  "url": "https://chrisqtruong.github.io/bankrolled/"
+ },
+ "giscus": {
+  "repo": "chrisqtruong/rackwatch",
+  "repo_id": "GISCUS_REPO_ID",
+  "category": "Announcements",
+  "category_id": "GISCUS_CATEGORY_ID"
+ },
+ "wire_interval": "every 5 to 10 minutes",
+ "routine_interval": "hourly"
+}

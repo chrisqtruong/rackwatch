@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rackwatch</title>
+<meta name="description" content="A sourced public record of the tech, AI and data-center deals and decisions that affect ordinary people.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("rw-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+:root,[data-theme="dark"]{
+ --bg:#0d1117;--bg2:#121821;--panel:#161d27;--panel2:#1b2430;--line:#263241;--line2:#324154;
+ --text:#e6edf3;--muted:#9aa8b8;--faint:#6e7d8f;
+ --accent:#38c8ee;--accent-ink:#04141a;--accent-soft:rgba(56,200,238,.12);
+ --ok:#4fd18b;--ok-soft:rgba(79,209,139,.13);--rep:#f0c35a;--rep-soft:rgba(240,195,90,.13);--dis:#ff8a85;--dis-soft:rgba(255,138,133,.13);
+ --shadow:0 1px 0 rgba(255,255,255,.03) inset;
+ color-scheme:dark}
+[data-theme="light"]{
+ --bg:#f5f7fa;--bg2:#eef2f6;--panel:#ffffff;--panel2:#f7f9fb;--line:#d6dde5;--line2:#c3ccd7;
+ --text:#0f1720;--muted:#465566;--faint:#64748b;
+ --accent:#0369a1;--accent-ink:#ffffff;--accent-soft:rgba(3,105,161,.09);
+ --ok:#11734a;--ok-soft:rgba(17,115,74,.09);--rep:#8a5300;--rep-soft:rgba(138,83,0,.09);--dis:#b42318;--dis-soft:rgba(180,35,24,.08);
+ --shadow:0 1px 2px rgba(15,23,32,.05);
+ color-scheme:light}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 "Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.mono,time,.num,.chip,.lbl,code{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+a{color:var(--accent);text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--accent-ink);padding:8px 12px;border-radius:6px;z-index:9}
+.skip:focus{left:8px}
+
+/* header */
+header.top{border-bottom:1px solid var(--line);background:
+ linear-gradient(var(--bg),var(--bg)) padding-box;position:relative;overflow:hidden}
+header.top::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+ background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+ background-size:24px 24px;mask-image:linear-gradient(90deg,transparent 40%,#000 100%);-webkit-mask-image:linear-gradient(90deg,transparent 40%,#000 100%)}
+.brand{display:flex;align-items:center;gap:12px;padding:18px 0 6px;position:relative}
+.brand a{color:var(--text);text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand h1{font-size:22px;letter-spacing:-.01em;margin:0;font-weight:700}
+.brand .tools{margin-left:auto;display:flex;gap:8px}
+.btn{appearance:none;border:1px solid var(--line2);background:var(--panel);color:var(--text);font:inherit;font-size:14px;
+ min-height:44px;padding:0 14px;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.btn:hover{border-color:var(--accent)}
+.btn.small{min-height:36px;padding:0 10px;font-size:13px}
+.lede{color:var(--muted);margin:2px 0 12px;max-width:760px;position:relative;font-size:15px}
+.fresh{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--muted);padding:0 0 12px;position:relative}
+.fresh span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--faint);display:inline-block}
+.dot.live{background:var(--ok);box-shadow:0 0 0 3px var(--ok-soft)}
+.dot.stale{background:var(--rep)}
+nav.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;position:relative;margin:0 -16px;padding:0 16px}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs a{flex:0 0 auto;min-height:46px;display:flex;align-items:center;padding:0 14px;color:var(--muted);text-decoration:none;
+ font-weight:600;font-size:15px;border-bottom:2px solid transparent}
+nav.tabs a[aria-current="page"]{color:var(--text);border-bottom-color:var(--accent)}
+nav.tabs a:hover{color:var(--text)}
+
+main{padding:18px 0 40px;min-height:60vh}
+h2{font-size:20px;margin:6px 0 10px;letter-spacing:-.01em}
+h3{font-size:17px;margin:0}
+.muted{color:var(--muted)}
+.faint{color:var(--faint)}
+.lbl{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13.5px;color:var(--muted);margin:0 0 14px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.legend b{color:var(--text);font-weight:600}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--line2);color:var(--muted);white-space:nowrap}
+.chip.confirmed{color:var(--ok);background:var(--ok-soft);border-color:transparent}
+.chip.reported{color:var(--rep);background:var(--rep-soft);border-color:transparent}
+.chip.disputed{color:var(--dis);background:var(--dis-soft);border-color:transparent}
+.chip.unv{color:var(--rep);border-color:var(--rep)}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.chip.plain::before,.chip.lane::before{display:none}
+
+/* layout */
+.split{display:grid;gap:18px}
+@media(min-width:900px){.split{grid-template-columns:minmax(0,1fr) 340px}}
+.panel{border:1px solid var(--line);border-radius:12px;background:var(--panel);box-shadow:var(--shadow)}
+.panel-h{display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.panel-h h2{margin:0;font-size:16px}
+.panel-h .r{margin-left:auto}
+
+/* filters */
+.filters{display:grid;gap:8px;grid-template-columns:1fr 1fr;margin-bottom:12px}
+.filters .q{grid-column:1/-1}
+@media(min-width:700px){.filters{grid-template-columns:2fr 1fr 1fr 1fr 1fr}.filters .q{grid-column:auto}}
+input[type=search],select{width:100%;min-height:44px;font:inherit;font-size:15px;color:var(--text);background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:0 10px}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 16px) 19px,calc(100% - 11px) 19px;background-size:5px 5px;background-repeat:no-repeat;padding-right:28px}
+.active-f{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:-4px 0 12px;font-size:13.5px;color:var(--muted)}
+
+/* posts */
+.post{padding:16px;border-bottom:1px solid var(--line)}
+.post:last-child{border-bottom:0}
+.post:target,.post.hl{background:var(--accent-soft)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:13px;color:var(--muted);margin-bottom:6px}
+.meta time{color:var(--text)}
+.post h3{font-size:18px;line-height:1.35;font-weight:650}
+.post h3 a{color:var(--text);text-decoration:none}
+.post h3 a:hover{text-decoration:underline}
+.post p{margin:6px 0 8px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.tag{font-size:13px;color:var(--text);background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:3px 8px;text-decoration:none;min-height:30px;display:inline-flex;align-items:center}
+.tag:hover{border-color:var(--accent)}
+.tag.st{font-family:"JetBrains Mono",monospace;font-size:12px}
+.srcs{font-size:14px;margin:6px 0 0;padding:0;list-style:none}
+.srcs li{margin:2px 0}
+.srcs .o{color:var(--muted)}
+.acts{display:flex;gap:6px;margin-top:10px}
+.upd{margin:10px 0 4px;padding:8px 12px;border-left:2px solid var(--accent);background:var(--bg2);border-radius:0 8px 8px 0;font-size:14.5px}
+.upd ol{margin:4px 0 0;padding-left:18px}
+.upd li{margin:4px 0}
+figure{margin:10px 0}
+figure img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+figcaption{font-size:12.5px;color:var(--muted)}
+.pinned{border-color:var(--accent);margin-bottom:16px}
+.pinned .panel-h{background:var(--accent-soft)}
+.empty{padding:28px 16px;color:var(--muted);text-align:center}
+.more{display:flex;justify-content:center;padding:14px}
+.giscus-box{margin-top:12px}
+
+/* wire */
+.wire-i{padding:11px 14px;border-bottom:1px solid var(--line);display:grid;gap:3px}
+.wire-i:last-child{border-bottom:0}
+.wire-i .meta{margin:0;font-size:12px}
+.wire-i a{color:var(--text);text-decoration:none;font-weight:500;line-height:1.35}
+.wire-i a:hover{text-decoration:underline;color:var(--accent)}
+.lane{font-size:11px}
+.wire-note{font-size:13px;color:var(--muted);padding:10px 14px;border-bottom:1px solid var(--line);background:var(--rep-soft)}
+.side-wire{max-height:none}
+@media(min-width:900px){.side-wire .list{max-height:1100px;overflow:auto}}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:500;font-family:"JetBrains Mono",monospace;background:var(--panel2);position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;white-space:nowrap}
+td time{white-space:nowrap}
+.cards{display:grid;gap:12px}
+@media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+.card{padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.card h3{margin-bottom:4px}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px;font-size:14px;margin:8px 0}
+.kv dt{color:var(--faint);font-family:"JetBrains Mono",monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;padding-top:2px}
+.kv dd{margin:0}
+.subtabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.subtabs a{min-height:40px;display:inline-flex;align-items:center;padding:0 12px;border:1px solid var(--line2);border-radius:999px;color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}
+.subtabs a[aria-current="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0 16px}
+@media(min-width:700px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel)}
+.stat .v{font-family:"JetBrains Mono",monospace;font-size:20px;font-weight:500}
+.stat .k{font-size:12.5px;color:var(--muted)}
+
+/* entities */
+.ent-grid{display:grid;gap:8px;grid-template-columns:1fr}
+@media(min-width:600px){.ent-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.ent-grid{grid-template-columns:1fr 1fr 1fr}}
+.ent{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);text-decoration:none;color:var(--text);min-height:64px}
+.ent:hover{border-color:var(--accent)}
+.ent .n{font-weight:650}
+.ent .c{font-size:12.5px;color:var(--muted)}
+.tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--line2);margin-left:6px}
+.tl li{position:relative;padding:0 0 14px 16px}
+.tl li::before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--panel);border:2px solid var(--accent)}
+.tl li.money::before{border-color:var(--ok)}
+
+/* diagrams */
+.fig{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:14px;margin-bottom:18px}
+.fig svg{width:100%;height:auto;display:block}
+.fig details{margin-top:8px;font-size:14px}
+.fig summary{cursor:pointer;min-height:40px;display:flex;align-items:center;color:var(--accent);font-weight:600}
+svg text{font-family:"JetBrains Mono",monospace;fill:var(--text)}
+.tile{stroke:var(--bg);stroke-width:3}
+.edge{stroke:var(--line2);fill:none}
+.legend-sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:4px}
+
+/* about */
+.prose{max-width:720px}
+.prose h2{margin-top:26px}
+.prose li{margin:4px 0}
+
+footer{border-top:1px solid var(--line);padding:22px 0 40px;font-size:14px;color:var(--muted)}
+footer .row{display:flex;flex-wrap:wrap;gap:8px 18px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+ <div class="wrap">
+  <div class="brand">
+   <a href="#/feed" aria-label="Home">
+    <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="3" width="24" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.6"/><g stroke="var(--line2)" stroke-width="1.4"><line x1="7" y1="10" x2="23" y2="10"/><line x1="7" y1="15" x2="23" y2="15"/><line x1="7" y1="20" x2="23" y2="20"/></g><circle cx="20.5" cy="10" r="1.3" fill="var(--ok)"/><circle cx="20.5" cy="15" r="1.3" fill="var(--accent)"/><circle cx="20.5" cy="20" r="1.3" fill="var(--rep)"/></svg>
+    <h1 id="site-name">Rackwatch</h1>
+   </a>
+   <div class="tools"><button class="btn small" id="theme" type="button" aria-label="Switch to light theme">Light</button></div>
+  </div>
+  <p class="lede" id="lede">A sourced public record of the tech, AI and data-center deals and decisions that affect ordinary people.</p>
+  <div class="fresh" aria-live="polite">
+   <span><i class="dot" id="wire-dot"></i><span id="wire-age">Wire: loading…</span></span>
+   <span><i class="dot" id="feed-dot"></i><span id="feed-age">Verified feed: loading…</span></span>
+  </div>
+  <nav class="tabs" aria-label="Sections">
+   <a href="#/feed" data-v="feed">Feed</a><a href="#/wire" data-v="wire">Wire</a><a href="#/entities" data-v="entities">Entities</a><a href="#/ledger" data-v="ledger">Ledger</a><a href="#/maps" data-v="maps">Maps &amp; diagrams</a><a href="#/archive" data-v="archive">Archive</a><a href="#/about" data-v="about">About</a>
+  </nav>
+ </div>
+</header>
+<main id="main" class="wrap" tabindex="-1"><p class="muted">Loading…</p></main>
+<footer>
+ <div class="wrap">
+  <div class="row">
+   <span><span class="js-name">Rackwatch</span>. Content and data CC BY 4.0.</span>
+   <a href="data.json">data.json</a><a href="entities.json">entities.json</a><a href="wire.json">wire.json</a><a id="f-csv" href="#">ledger.csv</a>
+   <a id="f-repo" href="#">Source and history</a><a id="f-disc" href="#">Tips and corrections</a>
+  </div>
+  <p id="f-sister"></p>
+ </div>
+</footer>
+<script>
+"use strict";
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl=u=>/^https?:\/\//i.test(u||"")?esc(u):"#";
+const S={cfg:{},data:{feed:[],ledger:[],projects:[]},ents:[],E:{},wire:null,archIdx:null,arch:{},archAll:false,shown:30};
+const STATUS={confirmed:"Confirmed",reported:"Reported",disputed:"Disputed"};
+const STATES={AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",DC:"District of Columbia",FL:"Florida",GA:"Georgia",HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming"};
+const KINDS={company:"Company",agency:"Government agency",official:"Public official",utility:"Utility",place:"Place",court:"Court",group:"Group or PAC"};
+
+async function getJSON(u,bust){const r=await fetch(u+(bust?"?t="+Date.now():""),{cache:bust?"no-store":"default"});if(!r.ok)throw new Error(u+" "+r.status);return r.json()}
+function fmtDate(d){if(!d)return"";const x=new Date(d.length===10?d+"T12:00:00":d);return x.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"})}
+function ago(iso){if(!iso)return"never";const m=Math.max(0,Math.round((Date.now()-new Date(iso))/60000));if(m<1)return"just now";if(m<60)return m+" min ago";const h=Math.round(m/60);if(h<48)return h+" hr ago";return Math.round(h/24)+" days ago"}
+function money(n){if(n==null||n==="")return"—";n=+n;if(n>=1e9)return"$"+(n/1e9).toFixed(n%1e9?2:0).replace(/\.?0+$/,"")+"B";if(n>=1e6)return"$"+(n/1e6).toFixed(1).replace(/\.0$/,"")+"M";if(n>=1e3)return"$"+Math.round(n/1e3)+"K";return"$"+n}
+function moneyFull(n){return n==null?"Not disclosed":"$"+(+n).toLocaleString("en-US")}
+const entName=id=>(S.E[id]&&S.E[id].n)||id;
+const today=()=>new Date().toISOString().slice(0,10);
+
+/* ---------- freshness ---------- */
+function paintFresh(){
+ const w=S.wire&&S.wire.updated, f=S.data.lastCheck;
+ const wm=w?(Date.now()-new Date(w))/60000:1e9, fm=f?(Date.now()-new Date(f))/60000:1e9;
+ $("#wire-age").textContent=w?`Wire updated ${ago(w)}`:"Wire: not yet running";
+ $("#feed-age").textContent=f?`Verified feed updated ${ago(f)}`:"Verified feed: no check yet";
+ $("#wire-dot").className="dot "+(wm<30?"live":wm<180?"":"stale");
+ $("#feed-dot").className="dot "+(fm<90?"live":fm<360?"":"stale");
+}
+async function refreshWire(){try{S.wire=await getJSON("wire.json",true)}catch(e){S.wire=S.wire||{items:[]}}paintFresh();if(route().v==="wire"||route().v==="feed")paintWireLists()}
+
+/* ---------- routing ---------- */
+function route(){
+ let h=location.hash.slice(1);
+ if(/^p-/.test(h))return{v:"feed",post:h.slice(2),q:{}};
+ if(!h.startsWith("/"))h="/feed";
+ const [path,qs]=h.slice(1).split("?");const parts=path.split("/");
+ return{v:parts[0]||"feed",arg:decodeURIComponent(parts[1]||""),q:Object.fromEntries(new URLSearchParams(qs||""))};
+}
+function setQ(q){const r=route();const p=new URLSearchParams(Object.entries(q).filter(([,v])=>v));const s=p.toString();history.replaceState(null,"","#/"+r.v+(r.arg?"/"+encodeURIComponent(r.arg):"")+(s?"?"+s:""));}
+function render(){
+ const r=route();
+ $$("nav.tabs a").forEach(a=>a.toggleAttribute("aria-current",false));
+ const tab=r.v==="entity"?"entities":r.v;const a=$(`nav.tabs a[data-v="${tab}"]`);if(a)a.setAttribute("aria-current","page");
+ const V={feed:vFeed,wire:vWire,entities:vEntities,entity:vEntity,ledger:vLedger,maps:vMaps,archive:vArchive,about:vAbout}[r.v]||vFeed;
+ V(r);
+ const t={feed:"Feed",wire:"Wire",entities:"Entities",entity:entName(r.arg),ledger:"Ledger",maps:"Maps and diagrams",archive:"Archive",about:"About"}[r.v]||"Feed";
+ document.title=`${t} · ${S.cfg.name||"Rackwatch"}`;
+}
+
+/* ---------- shared renderers ---------- */
+function chip(s){return`<span class="chip ${esc(s)}">${esc(STATUS[s]||s)}</span>`}
+function srcList(src){return`<ul class="srcs" aria-label="Sources">${(src||[]).map(x=>`<li><span class="o">${esc(x.o)}:</span> <a href="${safeUrl(x.u)}" rel="noopener" target="_blank">${esc(x.t||x.o)}</a></li>`).join("")}</ul>`}
+function postHTML(p,opt={}){
+ const ents=(p.e||[]).map(id=>`<a class="tag" href="#/entity/${encodeURIComponent(id)}">${esc(entName(id))}</a>`).join("");
+ const sts=(p.st||[]).map(s=>`<a class="tag st" href="#/feed?st=${esc(s)}" title="${esc(STATES[s]||s)}">${esc(s)}</a>`).join("");
+ const img=p.img&&p.img.u?`<figure><img src="${safeUrl(p.img.u)}" alt="${esc(p.img.alt)}" loading="lazy"><figcaption>${esc(p.img.credit)}, ${esc(p.img.lic)}. <a href="${safeUrl(p.img.page)}" rel="noopener" target="_blank">Source</a></figcaption></figure>`:"";
+ const upd=p.updates&&p.updates.length?`<div class="upd"><span class="lbl">Updates</span><ol>${p.updates.slice().sort((a,b)=>a.d<b.d?1:-1).map(u=>`<li><time datetime="${esc(u.d)}">${fmtDate(u.d)}</time>: ${esc(u.t)} <a href="${safeUrl(u.u)}" rel="noopener" target="_blank">${esc(u.o)}</a></li>`).join("")}</ol></div>`:"";
+ const g=giscusOn()?`<button class="btn small" type="button" data-discuss="${esc(p.id)}" aria-expanded="false">Discuss</button>`:"";
+ return`<article class="post" id="p-${esc(p.id)}">
+ <div class="meta"><time datetime="${esc(p.d)}">${fmtDate(p.d)}</time>${chip(p.s)}<span>${esc(p.c)}</span>${opt.arch?'<span class="chip plain">Archive</span>':""}</div>
+ <h3><a href="#p-${esc(p.id)}">${esc(p.h)}</a></h3>${img}
+ <p>${esc(p.b)}</p>${upd}
+ ${ents||sts?`<div class="tags">${ents}${sts}</div>`:""}
+ ${srcList(p.src)}
+ <div class="acts"><button class="btn small" type="button" data-copy="${esc(p.id)}">Copy link</button>${g}</div>
+ <div class="giscus-box" hidden></div></article>`;
+}
+function wireHTML(i){
+ return`<div class="wire-i"><div class="meta"><time datetime="${esc(i.at)}" title="${esc(new Date(i.at).toLocaleString())}">${esc(ago(i.at))}</time><span>${esc(i.o)}</span><span class="chip lane">${esc(i.lane||"news")}</span></div>
+ <a href="${safeUrl(i.u)}" rel="noopener nofollow" target="_blank">${esc(i.t)}</a></div>`;
+}
+function giscusOn(){const g=S.cfg.giscus;return g&&g.repo_id&&!/^GISCUS_/.test(g.repo_id)&&g.category_id&&!/^GISCUS_/.test(g.category_id)}
+function mountGiscus(box,id){
+ const g=S.cfg.giscus,s=document.createElement("script");s.src="https://giscus.app/client.js";s.async=true;s.crossOrigin="anonymous";
+ const at={"data-repo":g.repo,"data-repo-id":g.repo_id,"data-category":g.category,"data-category-id":g.category_id,"data-mapping":"specific","data-term":"post "+id,"data-strict":"1","data-reactions-enabled":"0","data-emit-metadata":"0","data-input-position":"top","data-theme":document.documentElement.dataset.theme==="light"?"light":"dark_dimmed","data-lang":"en","data-loading":"lazy"};
+ for(const k in at)s.setAttribute(k,at[k]);box.innerHTML="";box.appendChild(s);
+}
+document.addEventListener("click",e=>{
+ const c=e.target.closest("[data-copy]");
+ if(c){const u=location.href.split("#")[0]+"#p-"+c.dataset.copy;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>{c.textContent="Copied"},()=>{prompt("Link:",u)});setTimeout(()=>c.textContent="Copy link",1800);return}
+ const d=e.target.closest("[data-discuss]");
+ if(d){const box=d.closest(".post").querySelector(".giscus-box");const open=box.hidden;box.hidden=!open;d.setAttribute("aria-expanded",open);if(open&&!box.dataset.on){box.dataset.on=1;mountGiscus(box,d.dataset.discuss)}}
+});
+
+/* ---------- feed ---------- */
+function matches(p,q){
+ if(q.e&&!(p.e||[]).includes(q.e))return false;
+ if(q.c&&p.c!==q.c)return false;
+ if(q.s&&p.s!==q.s)return false;
+ if(q.st&&!(p.st||[]).includes(q.st))return false;
+ if(q.q){const t=(p.h+" "+p.b+" "+(p.e||[]).map(entName).join(" ")+" "+(p.src||[]).map(s=>s.o).join(" ")+" "+(p.st||[]).join(" ")).toLowerCase();
+  if(!q.q.toLowerCase().split(/\s+/).filter(Boolean).every(w=>t.includes(w)))return false}
+ return true;
+}
+const byDate=(a,b)=>(a.d<b.d?1:a.d>b.d?-1:(a.added||"")<(b.added||"")?1:-1);
+function filterBar(q,withState=true){
+ const ents=S.ents.slice().sort((a,b)=>a.n.localeCompare(b.n));
+ const st=[...new Set(S.data.feed.flatMap(p=>p.st||[]).concat(Object.values(S.arch).flatMap(m=>m.feed.flatMap(p=>p.st||[]))))].sort();
+ return`<form class="filters" role="search" onsubmit="return false">
+ <label class="q"><span class="sr">Search</span><input type="search" id="f-q" placeholder="Search posts, companies, places" value="${esc(q.q||"")}"></label>
+ <label><span class="sr">Entity</span><select id="f-e"><option value="">All entities</option>${ents.map(x=>`<option value="${esc(x.id)}"${q.e===x.id?" selected":""}>${esc(x.n)}</option>`).join("")}</select></label>
+ <label><span class="sr">Category</span><select id="f-c"><option value="">All categories</option>${(S.cfg.categories||[]).map(c=>`<option${q.c===c?" selected":""}>${esc(c)}</option>`).join("")}</select></label>
+ <label><span class="sr">Status</span><select id="f-s"><option value="">Any status</option>${Object.keys(STATUS).map(s=>`<option value="${s}"${q.s===s?" selected":""}>${STATUS[s]}</option>`).join("")}</select></label>
+ ${withState?`<label><span class="sr">State</span><select id="f-st"><option value="">All states</option>${st.map(s=>`<option value="${s}"${q.st===s?" selected":""}>${esc(STATES[s]||s)}</option>`).join("")}</select></label>`:""}
+ </form>`;
+}
+function bindFilters(cb){
+ const read=()=>({q:$("#f-q").value.trim(),e:$("#f-e").value,c:$("#f-c").value,s:$("#f-s").value,st:$("#f-st")?$("#f-st").value:""});
+ let t;$("#f-q").addEventListener("input",()=>{clearTimeout(t);t=setTimeout(()=>{setQ(read());S.shown=30;cb(read())},200)});
+ $$("#f-e,#f-c,#f-s,#f-st").forEach(s=>s.addEventListener("change",()=>{setQ(read());S.shown=30;cb(read())}));
+}
+function activeLine(q,n){
+ const bits=[];if(q.e)bits.push("entity: "+entName(q.e));if(q.c)bits.push(q.c);if(q.s)bits.push(STATUS[q.s]);if(q.st)bits.push(STATES[q.st]||q.st);if(q.q)bits.push(`“${q.q}”`);
+ return bits.length?`<div class="active-f"><span>${n} result${n===1?"":"s"} for ${esc(bits.join(" · "))}</span><a class="btn small" href="#/${route().v}">Clear filters</a></div>`:"";
+}
+function vFeed(r){
+ const q=r.q;
+ $("#main").innerHTML=`<div class="legend" role="note"><span><b>Feed</b> = checked against sources.</span><span><b>Wire</b> = raw headlines, not yet checked.</span><span>${chip("confirmed")} primary record</span><span>${chip("reported")} not yet confirmed</span><span>${chip("disputed")} denied by the subject</span></div>
+ <div class="split"><section aria-labelledby="feed-h"><h2 id="feed-h" class="sr">Verified feed</h2>${filterBar(q)}<div id="pins"></div><div id="f-active"></div><div class="panel" id="feed-list"></div></section>
+ <aside class="panel side-wire" aria-labelledby="sw-h"><div class="panel-h"><h2 id="sw-h">Wire</h2><span class="chip unv">Unverified</span><a class="r" href="#/wire">All</a></div><div class="wire-note">Headlines pulled automatically from public feeds. Not checked yet.</div><div class="list" id="side-wire"></div></aside></div>`;
+ bindFilters(paintFeed);paintFeed(q);paintWireLists();
+ if(r.post)goToPost(r.post);
+}
+async function paintFeed(q){
+ const any=q.q||q.e||q.c||q.s||q.st;
+ if(any&&!S.archAll)await loadAllArchive();
+ let list=S.data.feed.filter(p=>matches(p,q));
+ let arch=any?Object.values(S.arch).flatMap(m=>m.feed).filter(p=>matches(p,q)):[];
+ const now=today();
+ const pins=any?[]:S.data.feed.filter(p=>p.pin&&(!p.pinUntil||p.pinUntil>=now)).slice(0,2);
+ $("#pins").innerHTML=pins.map(p=>`<section class="panel pinned" aria-label="Developing story"><div class="panel-h"><span class="lbl" style="color:var(--accent)">Developing story</span></div>${postHTML(p)}</section>`).join("");
+ const pinIds=new Set(pins.map(p=>p.id));
+ list=list.filter(p=>!pinIds.has(p.id)).sort(byDate);arch=arch.sort(byDate);
+ const all=list.map(p=>[p,0]).concat(arch.map(p=>[p,1]));
+ $("#f-active").innerHTML=activeLine(q,all.length);
+ const html=all.slice(0,S.shown).map(([p,a])=>postHTML(p,{arch:a})).join("");
+ $("#feed-list").innerHTML=(html||`<p class="empty">No posts match. Try clearing a filter.</p>`)+(all.length>S.shown?`<div class="more"><button class="btn" id="more" type="button">Show more (${all.length-S.shown} left)</button></div>`:"");
+ const m=$("#more");if(m)m.onclick=()=>{S.shown+=30;paintFeed(q)};
+}
+async function goToPost(id){
+ let el=document.getElementById("p-"+id);
+ if(!el){await loadAllArchive();const p=Object.values(S.arch).flatMap(m=>m.feed).find(x=>x.id===id);
+  if(p){$("#feed-list").insertAdjacentHTML("afterbegin",postHTML(p,{arch:1}));el=document.getElementById("p-"+id)}}
+ if(el){el.classList.add("hl");el.scrollIntoView({block:"start"});el.querySelector("h3 a").focus({preventScroll:true})}
+}
+function paintWireLists(){
+ const items=(S.wire&&S.wire.items)||[];
+ const side=$("#side-wire");if(side)side.innerHTML=items.slice(0,25).map(wireHTML).join("")||`<p class="empty">The Wire has no headlines yet. It fills in once the GitHub Action runs.</p>`;
+ const full=$("#wire-list");if(full)paintWire();
+}
+
+/* ---------- wire ---------- */
+function vWire(r){
+ const q=r.q;const lanes=["agency","court","filing","news","search"];
+ $("#main").innerHTML=`<h2>Wire</h2><p class="muted" style="max-width:760px">Headlines collected automatically ${esc(S.cfg.wire_interval||"every few minutes")} from agency feeds, court and filing searches, and news outlets. <b>Nothing here has been checked.</b> The ${esc(S.cfg.routine_interval||"hourly")} verification run reads these at their sources; what holds up moves to the Feed with a status label.</p>
+ <form class="filters" onsubmit="return false" style="grid-template-columns:2fr 1fr"><label class="q"><span class="sr">Search the Wire</span><input type="search" id="w-q" placeholder="Search headlines" value="${esc(q.q||"")}"></label>
+ <label><span class="sr">Lane</span><select id="w-l"><option value="">All lanes</option>${lanes.map(l=>`<option${q.l===l?" selected":""}>${l}</option>`).join("")}</select></label></form>
+ <div class="panel"><div class="panel-h"><span class="chip unv">Unverified headlines</span><span class="r muted mono" style="font-size:12.5px" id="w-n"></span></div><div id="wire-list"></div></div>
+ <p class="muted" style="font-size:13.5px">Lanes: <b>agency</b> official press feeds; <b>court</b> opinion searches; <b>filing</b> SEC full-text search; <b>news</b> outlet feeds; <b>search</b> news-search queries (outlet named on each item). Source health: <a href="wire-status.json">wire-status.json</a>.</p>`;
+ const go=()=>{setQ({q:$("#w-q").value.trim(),l:$("#w-l").value});paintWire()};
+ $("#w-q").addEventListener("input",go);$("#w-l").addEventListener("change",go);paintWire();
+}
+function paintWire(){
+ const q=$("#w-q")?$("#w-q").value.trim().toLowerCase():"",l=$("#w-l")?$("#w-l").value:"";
+ const items=((S.wire&&S.wire.items)||[]).filter(i=>(!l||i.lane===l)&&(!q||(i.t+" "+i.o).toLowerCase().includes(q)));
+ $("#w-n").textContent=items.length+" headlines";
+ $("#wire-list").innerHTML=items.map(wireHTML).join("")||`<p class="empty">No headlines${q||l?" match":" yet"}.</p>`;
+}
+
+/* ---------- entities ---------- */
+function entStats(id){
+ const posts=S.data.feed.filter(p=>(p.e||[]).includes(id)).length;
+ const rows=S.data.ledger.filter(x=>(x.e||[]).includes(id)||x.fe===id||x.te===id);
+ return{posts,rows:rows.length};
+}
+function vEntities(r){
+ const k=r.q.k||"";
+ const kinds=[...new Set(S.ents.map(e=>e.k))];
+ const list=S.ents.filter(e=>!k||e.k===k).map(e=>({...e,...entStats(e.id)})).sort((a,b)=>(b.posts+b.rows)-(a.posts+a.rows)||a.n.localeCompare(b.n));
+ $("#main").innerHTML=`<h2>Entities</h2><p class="muted">Companies, agencies, officials, utilities and places named in the Feed and Ledger. Each page shows its timeline, deals, money in and out, and linked posts.</p>
+ <div class="subtabs" role="list"><a role="listitem" href="#/entities" aria-current="${!k}">All (${S.ents.length})</a>${kinds.map(x=>`<a role="listitem" href="#/entities?k=${x}" aria-current="${k===x}">${esc(KINDS[x]||x)}</a>`).join("")}</div>
+ <div class="ent-grid">${list.map(e=>`<a class="ent" href="#/entity/${encodeURIComponent(e.id)}"><span class="n">${esc(e.n)}</span><span class="c">${esc(KINDS[e.k]||e.k)} · <span class="mono">${e.posts}</span> posts · <span class="mono">${e.rows}</span> ledger rows</span></a>`).join("")}</div>`;
+}
+async function vEntity(r){
+ const id=r.arg,e=S.E[id];
+ if(!e){$("#main").innerHTML=`<p class="empty">No entity “${esc(id)}”. <a href="#/entities">See all entities</a>.</p>`;return}
+ await loadAllArchive();
+ const posts=S.data.feed.concat(Object.values(S.arch).flatMap(m=>m.feed)).filter(p=>(p.e||[]).includes(id)).sort(byDate);
+ const rows=S.data.ledger.filter(x=>(x.e||[]).includes(id)||x.fe===id||x.te===id).sort(byDate);
+ const out=rows.filter(x=>x.fe===id&&x.amt!=null).reduce((a,x)=>a+ +x.amt,0), inn=rows.filter(x=>x.te===id&&x.amt!=null).reduce((a,x)=>a+ +x.amt,0);
+ const deals=rows.filter(x=>["Acquisition","Investment","Partnership","Contract"].includes(x.t));
+ const projs=(S.data.projects||[]).filter(p=>(p.e||[]).includes(id));
+ const tl=posts.map(p=>({d:p.d,h:`<a href="#p-${esc(p.id)}">${esc(p.h)}</a> ${chip(p.s)}`,m:0})).concat(rows.map(x=>({d:x.d,h:`${esc(x.t)}: ${esc(x.from)} → ${esc(x.to)} <span class="mono">${money(x.amt)}</span>`,m:1}))).sort((a,b)=>a.d<b.d?1:-1);
+ $("#main").innerHTML=`<p><a href="#/entities">← All entities</a></p><h2>${esc(e.n)}</h2><p class="muted">${esc(KINDS[e.k]||e.k)}${e.note?" · "+esc(e.note):""}</p>
+ <div class="stats"><div class="stat"><div class="v">${posts.length}</div><div class="k">posts</div></div><div class="stat"><div class="v">${deals.length}</div><div class="k">deals and contracts</div></div><div class="stat"><div class="v">${money(out||null)}</div><div class="k">money out (confirmed)</div></div><div class="stat"><div class="v">${money(inn||null)}</div><div class="k">money in (confirmed)</div></div></div>
+ <p class="faint" style="font-size:13px">Money totals add confirmed ledger rows only and may mix different kinds of money (deals, fines, lobbying). See each row.</p>
+ <div class="split"><section><h2 style="font-size:17px">Timeline</h2>${tl.length?`<ol class="tl">${tl.map(t=>`<li class="${t.m?"money":""}"><time datetime="${esc(t.d)}" class="faint" style="font-size:12.5px">${fmtDate(t.d)}</time><div>${t.h}</div></li>`).join("")}</ol>`:'<p class="muted">Nothing yet.</p>'}</section>
+ <aside>${rows.length?`<h2 style="font-size:17px">Ledger rows</h2><div class="tbl-wrap">${ledgerTable(rows,true)}</div>`:""}
+ ${projs.length?`<h2 style="font-size:17px;margin-top:16px">Data center projects</h2>${projs.map(projCard).join("")}`:""}</aside></div>
+ <h2 style="font-size:17px;margin-top:20px">Linked posts</h2><div class="panel">${posts.map(p=>postHTML(p)).join("")||'<p class="empty">No posts yet.</p>'}</div>`;
+}
+
+/* ---------- ledger ---------- */
+const LTABS=[["all","All rows",null],["deals","Mergers & deals",["Acquisition","Investment","Partnership"]],["money","Lobbying & political money",["Lobbying","Political"]],["enforce","Enforcement & fines",["Fine","Settlement"]],["gov","Contracts & incentives",["Contract","Tax incentive","Rate decision"]],["projects","Data center projects",null]];
+function ledgerTable(rows,compact){
+ return`<table><thead><tr><th>Date</th><th>Type</th><th>From</th><th>To</th><th class="num">Amount</th>${compact?"":"<th>Note</th>"}<th>Sources</th></tr></thead><tbody>${rows.map(x=>`<tr id="l-${esc(x.id)}"><td><time datetime="${esc(x.d)}">${esc(x.d)}</time></td><td>${esc(x.t)}</td><td>${x.fe?`<a href="#/entity/${esc(x.fe)}">${esc(x.from)}</a>`:esc(x.from)}</td><td>${x.te?`<a href="#/entity/${esc(x.te)}">${esc(x.to)}</a>`:esc(x.to)}</td><td class="num mono" title="${esc(moneyFull(x.amt))}">${money(x.amt)}</td>${compact?"":`<td>${esc(x.note)}</td>`}<td>${(x.src||[]).map(s=>`<a href="${safeUrl(s.u)}" rel="noopener" target="_blank">${esc(s.o)}</a>`).join(", ")}</td></tr>`).join("")}</tbody></table>`;
+}
+function projCard(p){
+ return`<div class="card" id="dc-${esc(p.id)}"><div class="meta"><span class="chip plain">${esc(p.status)}</span><span class="mono">${esc(p.st)}</span><time datetime="${esc(p.d)}">as of ${fmtDate(p.d)}</time></div><h3>${esc(p.n)}</h3>
+ <dl class="kv"><dt>Who</dt><dd>${(p.e||[]).map(id=>`<a href="#/entity/${esc(id)}">${esc(entName(id))}</a>`).join(", ")||esc(p.co)}</dd><dt>Where</dt><dd>${esc(p.place)}, ${esc(STATES[p.st]||p.st)}</dd><dt>Size</dt><dd class="mono">${p.mw!=null?esc(p.mw)+" MW":"Not stated"}</dd><dt>Power</dt><dd>${esc(p.power)}</dd><dt>Water</dt><dd>${esc(p.water)}</dd><dt>Incentives</dt><dd>${esc(p.incent)}</dd><dt>Opposition</dt><dd>${esc(p.opp)}</dd></dl>${srcList(p.src)}</div>`;
+}
+function vLedger(r){
+ const tab=r.arg||"all",T=LTABS.find(t=>t[0]===tab)||LTABS[0];
+ let body;
+ if(tab==="projects"){const ps=(S.data.projects||[]).slice().sort((a,b)=>a.st<b.st?-1:1);body=`<p class="muted">Large US data center projects: size, power and water claims (attributed to who made them), incentives, status and opposition.</p><div class="cards">${ps.map(projCard).join("")}</div>`}
+ else{
+  const rows=S.data.ledger.filter(x=>!T[2]||T[2].includes(x.t)).sort(byDate);
+  const tot=rows.filter(x=>x.amt!=null).reduce((a,x)=>a+ +x.amt,0);
+  let extra="";
+  if(tab==="money"){const by={};rows.forEach(x=>{if(x.amt!=null)by[x.from]=(by[x.from]||0)+ +x.amt});extra=`<h3 style="margin:14px 0 8px">By payer</h3><div class="tbl-wrap"><table><thead><tr><th>Payer</th><th class="num">Confirmed total</th></tr></thead><tbody>${Object.entries(by).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<tr><td>${esc(k)}</td><td class="num mono">${money(v)}</td></tr>`).join("")}</tbody></table></div>`}
+  body=`<p class="muted">Confirmed rows only. Amounts are what the filing, company or authority announced; a dash means not disclosed. ${rows.length} rows${tot?`, <span class="mono">${money(tot)}</span> disclosed`:""}.</p><div class="tbl-wrap">${rows.length?ledgerTable(rows):'<p class="empty">No rows yet.</p>'}</div>${extra}`;
+ }
+ $("#main").innerHTML=`<h2>Ledger</h2><div class="subtabs">${LTABS.map(t=>`<a href="#/ledger/${t[0]}" aria-current="${t[0]===tab}">${t[1]}</a>`).join("")}</div>${body}`;
+}
+
+/* ---------- maps & diagrams ---------- */
+const GRID={AK:[0,0],ME:[10,0],VT:[9,1],NH:[10,1],WA:[0,2],ID:[1,2],MT:[2,2],ND:[3,2],MN:[4,2],IL:[5,2],WI:[6,2],MI:[7,2],NY:[8,2],RI:[9,2],MA:[10,2],OR:[0,3],NV:[1,3],WY:[2,3],SD:[3,3],IA:[4,3],IN:[5,3],OH:[6,3],PA:[7,3],NJ:[8,3],CT:[9,3],CA:[0,4],UT:[1,4],CO:[2,4],NE:[3,4],MO:[4,4],KY:[5,4],WV:[6,4],VA:[7,4],MD:[8,4],DE:[9,4],AZ:[1,5],NM:[2,5],KS:[3,5],AR:[4,5],TN:[5,5],NC:[6,5],SC:[7,5],DC:[8,5],OK:[3,6],LA:[4,6],MS:[5,6],AL:[6,6],GA:[7,6],HI:[0,7],TX:[3,7],FL:[8,7]};
+function stateMap(){
+ const ps=S.data.projects||[],n={},mw={};ps.forEach(p=>{n[p.st]=(n[p.st]||0)+1;mw[p.st]=(mw[p.st]||0)+(+p.mw||0)});
+ const posts=S.data.feed.filter(p=>p.c==="Data centers"||p.c==="Energy & water"),pn={};posts.forEach(p=>(p.st||[]).forEach(s=>pn[s]=(pn[s]||0)+1));
+ const W=52,G=4;
+ const tiles=Object.entries(GRID).map(([s,[x,y]])=>{const c=n[s]||0,k=pn[s]||0;const fill=c?"var(--accent)":k?"var(--accent-soft)":"var(--bg2)";const tc=c?"var(--accent-ink)":"var(--text)";
+  return`<a href="#/feed?st=${s}" aria-label="${esc(STATES[s])}: ${c} tracked projects, ${k} posts"><rect class="tile" x="${x*(W+G)}" y="${y*(W+G)}" width="${W}" height="${W}" rx="6" fill="${fill}" stroke="var(--line)" stroke-width="1"/><text x="${x*(W+G)+W/2}" y="${y*(W+G)+22}" text-anchor="middle" font-size="13" style="fill:${tc}">${s}</text>${c?`<text x="${x*(W+G)+W/2}" y="${y*(W+G)+40}" text-anchor="middle" font-size="12" style="fill:${tc}">${c}</text>`:""}</a>`}).join("");
+ const alt=Object.keys(n).sort().map(s=>`<li>${esc(STATES[s])}: ${n[s]} project${n[s]>1?"s":""}${mw[s]?` (<span class="mono">${mw[s].toLocaleString()} MW</span> stated)`:""}: ${ps.filter(p=>p.st===s).map(p=>esc(p.n)).join("; ")}</li>`).join("");
+ return`<figure class="fig" aria-labelledby="m1"><h3 id="m1">Data center projects by state</h3><p class="muted" style="font-size:14px">Each square is a state. <span class="legend-sw" style="background:var(--accent)"></span>tracked project (number shown) · <span class="legend-sw" style="background:var(--accent-soft);border:1px solid var(--line2)"></span>data center or energy posts only. Tap a state to filter the Feed.</p>
+ <svg viewBox="-2 -2 ${11*(W+G)+2} ${8*(W+G)+2}" role="img" aria-label="Tile map of US states with tracked data center projects. Text version below.">${tiles}</svg>
+ <details><summary>Text version</summary><ul>${alt||"<li>No projects yet.</li>"}</ul></details></figure>`;
+}
+function dealMap(){
+ const rows=S.data.ledger.filter(x=>["Acquisition","Investment","Partnership"].includes(x.t)&&x.fe&&x.te);
+ const ids=[...new Set(rows.flatMap(x=>[x.fe,x.te]))];
+ if(!ids.length)return"";
+ const W=720,H=520,cx=W/2,cy=H/2,R=Math.min(W,H)/2-70;
+ const pos={};ids.forEach((id,i)=>{const a=-Math.PI/2+i*2*Math.PI/ids.length;pos[id]=[cx+R*Math.cos(a),cy+R*Math.sin(a),a]});
+ const col={Acquisition:"var(--dis)",Investment:"var(--accent)",Partnership:"var(--ok)"};
+ const mx=Math.max(...rows.map(x=>+x.amt||0),1);
+ const edges=rows.map(x=>{const [x1,y1]=pos[x.fe],[x2,y2]=pos[x.te];const mxp=(x1+x2)/2+(cy-(y1+y2)/2)*.18,myp=(y1+y2)/2-(cx-(x1+x2)/2)*.18;
+  const w=x.amt?1.5+5*Math.sqrt(+x.amt/mx):1.2;return`<path d="M${x1},${y1} Q${mxp},${myp} ${x2},${y2}" stroke="${col[x.t]}" stroke-width="${w.toFixed(1)}" fill="none" opacity=".75" marker-end="url(#ah-${x.t})"><title>${esc(x.t)}: ${esc(x.from)} → ${esc(x.to)}, ${esc(moneyFull(x.amt))}</title></path>`}).join("");
+ const nodes=ids.map(id=>{const [x,y,a]=pos[id];const lx=x+Math.cos(a)*14,ly=y+Math.sin(a)*14;const anc=Math.cos(a)>.3?"start":Math.cos(a)<-.3?"end":"middle";
+  return`<a href="#/entity/${esc(id)}"><circle cx="${x}" cy="${y}" r="7" fill="var(--panel)" stroke="var(--text)" stroke-width="1.5"/><text x="${lx}" y="${ly+(Math.sin(a)>.3?10:Math.sin(a)<-.3?-4:4)}" text-anchor="${anc}" font-size="12.5">${esc(entName(id))}</text></a>`}).join("");
+ const mk=Object.entries(col).map(([k,c])=>`<marker id="ah-${k}" viewBox="0 0 10 10" refX="16" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="${c}"/></marker>`).join("");
+ const alt=rows.slice().sort(byDate).map(x=>`<li><time datetime="${esc(x.d)}">${esc(x.d)}</time> ${esc(x.t)}: ${esc(x.from)} → ${esc(x.to)}, <span class="mono">${esc(moneyFull(x.amt))}</span>. ${esc(x.note)}</li>`).join("");
+ return`<figure class="fig" aria-labelledby="m2"><h3 id="m2">Who is buying, investing in and partnering with whom</h3><p class="muted" style="font-size:14px">Arrows point from the payer or buyer to the target. Line width grows with the disclosed amount. <span class="legend-sw" style="background:var(--dis)"></span>acquisition · <span class="legend-sw" style="background:var(--accent)"></span>investment · <span class="legend-sw" style="background:var(--ok)"></span>partnership or compute deal. Confirmed ledger rows only.</p>
+ <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Network diagram of deals between companies. Text version below."><defs>${mk}</defs>${edges}${nodes}</svg>
+ <details><summary>Text version</summary><ul>${alt}</ul></details></figure>`;
+}
+function moneyBars(){
+ const rows=S.data.ledger.filter(x=>["Lobbying","Political"].includes(x.t)&&x.amt!=null);
+ if(!rows.length)return"";
+ const by={};rows.forEach(x=>{const k=x.from;by[k]=by[k]||{L:0,P:0,fe:x.fe};by[k][x.t[0]]+=+x.amt});
+ const ent=Object.entries(by).sort((a,b)=>(b[1].L+b[1].P)-(a[1].L+a[1].P));const mx=Math.max(...ent.map(([,v])=>v.L+v.P));
+ const W=720,rh=34,lw=200,bw=W-lw-90,H=ent.length*rh+10;
+ const bars=ent.map(([k,v],i)=>{const y=i*rh+6,l=bw*v.L/mx,p=bw*v.P/mx;return`<g><text x="${lw-10}" y="${y+16}" text-anchor="end" font-size="12.5">${esc(k.length>26?k.slice(0,25)+"…":k)}</text><rect x="${lw}" y="${y+3}" width="${Math.max(l,0)}" height="18" rx="3" fill="var(--accent)"><title>Lobbying ${moneyFull(v.L)}</title></rect><rect x="${lw+l}" y="${y+3}" width="${Math.max(p,0)}" height="18" rx="3" fill="var(--rep)"><title>Political ${moneyFull(v.P)}</title></rect><text x="${lw+l+p+8}" y="${y+16}" font-size="12.5">${money(v.L+v.P)}</text></g>`}).join("");
+ const alt=ent.map(([k,v])=>`<li>${esc(k)}: lobbying <span class="mono">${moneyFull(v.L||null)}</span>, political <span class="mono">${moneyFull(v.P||null)}</span></li>`).join("");
+ return`<figure class="fig" aria-labelledby="m3"><h3 id="m3">Money toward government, by payer</h3><p class="muted" style="font-size:14px"><span class="legend-sw" style="background:var(--accent)"></span>lobbying (disclosed filings) · <span class="legend-sw" style="background:var(--rep)"></span>political (PAC or campaign). Sums of confirmed ledger rows, which cover different periods; see the Ledger for each filing.</p>
+ <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Bar chart of lobbying and political money by payer. Text version below.">${bars}</svg><details><summary>Text version</summary><ul>${alt}</ul></details></figure>`;
+}
+function vMaps(){
+ $("#main").innerHTML=`<h2>Maps &amp; diagrams</h2><p class="muted">Drawn from the confirmed ledger and the project tracker, so they update as the record grows. Every diagram has a text version.</p>${stateMap()}${dealMap()}${moneyBars()}`;
+}
+
+/* ---------- archive ---------- */
+async function loadArchIdx(){if(!S.archIdx){try{S.archIdx=await getJSON("archive/index.json")}catch(e){S.archIdx={months:[],total:0}}}return S.archIdx}
+async function loadMonth(m){if(!S.arch[m]){try{S.arch[m]=await getJSON(`archive/${m}.json`)}catch(e){S.arch[m]={month:m,feed:[]}}}return S.arch[m]}
+async function loadAllArchive(){if(S.archAll)return;const i=await loadArchIdx();await Promise.all(i.months.map(x=>loadMonth(x.m)));S.archAll=true}
+async function vArchive(r){
+ const idx=await loadArchIdx();const m=r.arg;
+ const recent=S.data.feed.length;
+ $("#main").innerHTML=`<h2>Archive</h2><p class="muted">Posts stay in the Feed for ${esc(S.cfg.archive_days||90)} days, then move to a monthly archive file. Nothing is deleted. Search covers the Feed and every archive month.</p>
+ <form class="filters" role="search" onsubmit="return false" style="grid-template-columns:1fr"><label class="q"><span class="sr">Search everything</span><input type="search" id="a-q" placeholder="Search all posts, including the archive" value="${esc(r.q.q||"")}"></label></form>
+ <div class="subtabs"><a href="#/archive" aria-current="${!m}">Last ${esc(S.cfg.archive_days||90)} days (${recent})</a>${idx.months.map(x=>`<a href="#/archive/${esc(x.m)}" aria-current="${m===x.m}">${new Date(x.m+"-15").toLocaleDateString("en-US",{month:"short",year:"numeric"})} (${x.n})</a>`).join("")}</div>
+ <div id="a-active"></div><div class="panel" id="a-list"><p class="empty">Loading…</p></div>`;
+ const paint=async()=>{
+  const q=$("#a-q").value.trim();
+  let list,arch=0;
+  if(q){await loadAllArchive();list=S.data.feed.map(p=>[p,0]).concat(Object.values(S.arch).flatMap(x=>x.feed.map(p=>[p,1]))).filter(([p])=>matches(p,{q}))}
+  else if(m){list=(await loadMonth(m)).feed.map(p=>[p,1])}
+  else list=S.data.feed.map(p=>[p,0]);
+  list.sort((a,b)=>byDate(a[0],b[0]));
+  $("#a-active").innerHTML=q?`<div class="active-f">${list.length} result${list.length===1?"":"s"} across the Feed and archive</div>`:"";
+  $("#a-list").innerHTML=list.map(([p,a])=>postHTML(p,{arch:a})).join("")||`<p class="empty">Nothing here${q?" matches":" yet"}.</p>`;
+ };
+ let t;$("#a-q").addEventListener("input",()=>{clearTimeout(t);t=setTimeout(()=>{setQ({q:$("#a-q").value.trim()});paint()},200)});paint();
+}
+
+/* ---------- about ---------- */
+async function vAbout(){
+ let blind=S.blind;
+ if(!blind){try{blind=S.blind=await getJSON("blindspots.json")}catch(e){blind=S.blind={items:[]}}}
+ const n=S.cfg.name||"Rackwatch";
+ $("#main").innerHTML=`<div class="prose"><h2>About ${esc(n)}</h2>
+ <p>${esc(n)} uses AI to keep a permanent, sourced public record of how big tech and infrastructure deals affect communities: where data centers go and what they draw from local power and water, who buys whom, who pays to influence the rules, which public contracts go to which companies, and what courts and regulators decide.</p>
+ <h2>How it works</h2>
+ <ul><li><b>Wire</b>: a GitHub Action collects headlines ${esc(S.cfg.wire_interval||"every few minutes")} from public feeds: agency press releases, the Federal Register, SEC filings, court opinion searches and news outlets. These are raw and unchecked.</li>
+ <li><b>Feed</b>: a scheduled AI run (${esc(S.cfg.routine_interval||"hourly")}) reads the Wire and the primary sources, opens each item at its source, and writes a post in its own words with links. Each post carries a status label.</li>
+ <li><b>Ledger</b>: confirmed deals, fines, settlements, contracts, incentives, lobbying and political money, with amounts as announced by the filer or the authority.</li>
+ <li><b>Entities</b>: every post and ledger row is tagged with the companies, agencies, officials, utilities and places involved.</li></ul>
+ <h2>Status labels</h2>
+ <ul><li>${chip("confirmed")} backed by a primary record (filing, court document, regulator action, official data, company statement) or reputable reporting that cites one.</li>
+ <li>${chip("reported")} from a single outlet, unnamed sources, estimates, or deals described as in talks. When we are unsure whether something matters, we post it as reported.</li>
+ <li>${chip("disputed")} credible reporting that the subject has publicly denied. Both sides are given.</li></ul>
+ <h2>Rules we follow</h2>
+ <ul><li>People are charged or accused until convicted. Lawsuits are allegations. We describe what was filed, charged, alleged or reported, and by whom. We do not label conduct as corruption in our own voice.</li>
+ <li>When sources disagree on a number, we leave the number out and say so.</li><li>Summaries are in our own words; any quotation is under 15 words.</li><li>Every link is a page that was actually opened. No guessed URLs.</li>
+ <li>Corrections are made in place, keep the post's permanent link, and say what changed and when. Nothing is deleted. Items found late are added with their true date.</li>
+ <li>Images are only public-domain government works, freely licensed Wikimedia Commons files with credit, or our own diagrams. No news photos, no photos of private people.</li></ul>
+ <h2>Known blind spots</h2>
+ <p>These are sources we tested and could not read automatically, or that are paywalled or slow. Coverage of them depends on other outlets and may lag. Last tested <time>${esc(blind.tested||"")}</time>.</p>
+ <ul>${(blind.items||[]).map(b=>`<li><b>${esc(b.name)}</b>: ${esc(b.what)}</li>`).join("")}</ul>
+ <h2>Corrections and tips</h2>
+ <p>Use the <a href="${esc(S.cfg.repo_url||"#")}/discussions">Discussions board</a> or the comments under any post. Tips are treated as leads and checked independently before anything is posted.</p>
+ <h2>Data</h2>
+ <p>Everything is in plain files, free to reuse under CC BY 4.0: <a href="data.json">data.json</a> (feed, ledger, projects), <a href="entities.json">entities.json</a>, <a href="wire.json">wire.json</a>, the <a href="archive/index.json">archive</a>, and the full history in the <a href="${esc(S.cfg.repo_url||"#")}">repository</a>.</p></div>`;
+}
+
+/* ---------- boot ---------- */
+function theme(){const t=document.documentElement.dataset.theme;const b=$("#theme");b.textContent=t==="dark"?"Light":"Dark";b.setAttribute("aria-label",`Switch to ${t==="dark"?"light":"dark"} theme`)}
+$("#theme").onclick=()=>{const t=document.documentElement.dataset.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=t;try{localStorage.setItem("rw-theme",t)}catch(e){}theme()};
+async function boot(){
+ theme();
+ try{
+  const [cfg,data,ents]=await Promise.all([getJSON("config.json"),getJSON("data.json",true),getJSON("entities.json")]);
+  S.cfg=cfg;S.data=data;S.data.feed=data.feed||[];S.data.ledger=data.ledger||[];S.ents=ents.entities||[];S.ents.forEach(e=>S.E[e.id]=e);
+ }catch(e){$("#main").innerHTML=`<p class="empty">Could not load the data files. Please refresh.</p>`;console.error(e);return}
+ const n=S.cfg.name||"Rackwatch";$("#site-name").textContent=n;$$(".js-name").forEach(x=>x.textContent=n);
+ if(S.cfg.tagline)$("#lede").textContent=S.cfg.tagline;
+ $("#f-csv").href=(S.cfg.repo_url||"")+"/blob/main/ledger.csv";$("#f-repo").href=S.cfg.repo_url||"#";$("#f-disc").href=(S.cfg.repo_url||"")+"/discussions";
+ if(S.cfg.sister)$("#f-sister").innerHTML=`Also from the same maker: <a href="${safeUrl(S.cfg.sister.url)}">${esc(S.cfg.sister.name)}</a>, ${esc(S.cfg.sister.note)}.`;
+ window.addEventListener("hashchange",()=>{S.shown=30;render();if(!/^#p-/.test(location.hash))window.scrollTo(0,0)});
+ render();refreshWire();
+ setInterval(refreshWire,120000);setInterval(paintFresh,30000);
+}
+boot();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+name: Check data
+
+on:
+  push:
+    paths: ["docs/**", "ledger.csv", "scripts/**", "tracker.config.json", "wire-sources.json", "tests/**"]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/validate.py
+      - run: python3 tests/test_wire.py

@@ -1,0 +1,40 @@
+name: Wire
+
+# Polls public feeds and APIs and writes new unverified headlines to docs/wire.json.
+# GitHub runs scheduled jobs on a best-effort basis: "*/5" usually fires every 5 to 15 minutes.
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wire
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Poll feeds
+        id: wire
+        run: python3 scripts/wire.py
+      - name: Commit if something changed
+        if: steps.wire.outputs.changed == 'true'
+        run: |
+          git config user.name "wire-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/wire.json docs/wire-status.json
+          git commit -m "Wire $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4; do
+            git push && exit 0
+            sleep $((i * 3))
+            git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort; git reset --hard "origin/${GITHUB_REF_NAME}"; python3 scripts/wire.py; git add docs/wire.json docs/wire-status.json; git commit -m "Wire $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0; }
+          done
+          exit 1
