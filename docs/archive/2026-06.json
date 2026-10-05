@@ -1,0 +1,122 @@
+{
+ "month": "2026-06",
+ "feed": [
+  {
+   "d": "2026-06-22",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-06-22-oracle-annual-filing-says-ai-adoption-has",
+   "c": "Labor & AI",
+   "s": "confirmed",
+   "h": "Oracle annual filing says AI adoption has cut its workforce; headcount down about 21,000 in a year",
+   "b": "In its fiscal 2026 Form 10-K, Oracle said the adoption and deployment of AI across its operations has resulted, and may continue to result, in workforce reductions, and reported about 141,000 full-time employees as of May 31, 2026. TechCrunch reported this is a drop of about 21,000, or 13%, over 12 months, while Oracle redirects spending toward AI data centers.",
+   "src": [
+    {
+     "o": "Oracle Corp. (SEC Form 10-K)",
+     "t": "Oracle Form 10-K for fiscal year ended May 31, 2026",
+     "u": "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526277521/orcl-20260531.htm"
+    },
+    {
+     "o": "TechCrunch",
+     "t": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others",
+     "u": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
+    }
+   ],
+   "e": [
+    "oracle"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-06-18",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-06-18-ferc-orders-all-six-regional-grid-operators",
+   "c": "Energy & water",
+   "s": "confirmed",
+   "h": "FERC orders all six regional grid operators to justify or reform rules for connecting data centers",
+   "b": "FERC issued show cause orders under Section 206 of the Federal Power Act directing PJM, MISO, SPP, CAISO, ISO-NE and NYISO to justify their tariffs for connecting large loads such as data centers or propose changes. Grid operators had 30 days to report on how they will ensure enough generation for new large loads and 60 days to respond.",
+   "src": [
+    {
+     "o": "Federal Energy Regulatory Commission",
+     "t": "FERC Launches Aggressive Targeted Action to Speed Large Load Integration",
+     "u": "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration"
+    },
+    {
+     "o": "McGuireWoods",
+     "t": "FERC Issues Section 206 Show Cause Orders Directing All Six RTOs/ISOs to Justify or Reform Large Load Integration Rules",
+     "u": "https://www.mcguirewoods.com/client-resources/alerts/2026/6/ferc-issues-section-206-show-cause-orders-directing-all-six-rtos-isos-to-justify-or-reform-large-load-integration-rules/"
+    }
+   ],
+   "e": [
+    "ferc",
+    "pjm-interconnection",
+    "miso",
+    "spp",
+    "caiso",
+    "iso-ne",
+    "nyiso"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-06-17",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-06-17-ai-industry-groups-spend-heavily-on-both",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "AI industry groups spend heavily on both sides of New York House primary over state AI-safety law author",
+   "b": "The AP reported that Leading the Future spent millions of dollars through a subsidiary against Assemblyman Alex Bores, author of New York's RAISE Act, in the NY-12 Democratic primary, while groups partly funded by Anthropic spent to support him. Outlets give different totals for both sides, so the figures are left out. Axios later reported that Bores lost the June 23 primary to Micah Lasher.",
+   "src": [
+    {
+     "o": "Associated Press (via U.S. News)",
+     "t": "A New York House Primary Has Become an AI Industry Family Feud With Millions in Corporate Spending",
+     "u": "https://www.usnews.com/news/business/articles/2026-06-17/a-new-york-house-primary-has-become-an-ai-industry-family-feud-with-millions-in-corporate-spending"
+    },
+    {
+     "o": "Axios",
+     "t": "Pro-AI super PAC keeps $31M ready for the midterms",
+     "u": "https://www.axios.com/2026/07/17/pro-ai-super-pac-ready-midterms"
+    }
+   ],
+   "e": [
+    "leading-the-future",
+    "public-first-pac",
+    "jobs-and-democracy-pac",
+    "anthropic",
+    "openai"
+   ],
+   "st": [
+    "NY"
+   ]
+  },
+  {
+   "d": "2026-06-15",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-06-15-justice-department-asks-court-to-dismiss-naacp",
+   "c": "Energy & water",
+   "s": "confirmed",
+   "h": "Justice Department asks court to dismiss NAACP suit over xAI's gas turbines, citing national security",
+   "b": "The Justice Department moved to intervene in and dismiss an NAACP Clean Air Act suit alleging xAI ran gas turbines in Southaven, Mississippi, without an air permit to power its Colossus 2 data center near Memphis. DOJ argued enforcement decisions rest with the executive branch and that the suit threatens power for AI used in military operations; the NAACP's claims remain allegations.",
+   "src": [
+    {
+     "o": "The Hill",
+     "t": "Justice Department backs xAI in NAACP air pollution suit",
+     "u": "https://thehill.com/policy/energy-environment/5926181-xai-naacp-memphis-grok/"
+    },
+    {
+     "o": "Quartz",
+     "t": "DOJ moves to dismiss NAACP Clean Air Act lawsuit against xAI",
+     "u": "https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726"
+    }
+   ],
+   "e": [
+    "doj",
+    "xai",
+    "naacp"
+   ],
+   "st": [
+    "MS",
+    "TN"
+   ]
+  }
+ ]
+}

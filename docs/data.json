@@ -1,12 +1,2018 @@
 {
  "updated": "2026-10-05",
- "feed": [],
- "ledger": [],
- "losses": [],
- "pac": [],
- "pacNext": "",
- "numbers": [],
- "charts": [],
- "lastCheck": "2026-10-05T14:38:20+00:00",
- "archiveAfterDays": 90
+ "lastCheck": "2026-10-05T11:00:36-04:00",
+ "archiveAfterDays": 90,
+ "feed": [
+  {
+   "d": "2026-10-02",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-10-02-amazon-web-services-says-it-no-longer",
+   "c": "Data centers",
+   "s": "confirmed",
+   "h": "Amazon Web Services says it no longer uses NDAs with government agencies on data center projects",
+   "b": "AWS CEO Matt Garman said the company has stopped using nondisclosure agreements with government agencies on its data center projects and will publish annual figures on energy and water use. The move came about two weeks after South Bend, Indiana's mayor barred city officials from signing such NDAs after a city official acknowledged signing one with AWS in 2023.",
+   "src": [
+    {
+     "o": "TechCrunch",
+     "t": "Amazon responds to data center backlash, says it no longer uses NDAs",
+     "u": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/"
+    },
+    {
+     "o": "WNDU",
+     "t": "Amazon ends data center NDAs with local governments",
+     "u": "https://www.wndu.com/2026/10/02/amazon-ends-ndas-with-local-governments-over-data-centers/"
+    }
+   ],
+   "e": [
+    "amazon",
+    "south-bend-in"
+   ],
+   "st": [
+    "IN"
+   ]
+  },
+  {
+   "d": "2026-10-01",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-10-01-federal-judge-rules-warrantless-flock-platereader-search",
+   "c": "Privacy & surveillance",
+   "s": "confirmed",
+   "h": "Federal judge rules warrantless Flock plate-reader search unconstitutional, calls it mass surveillance",
+   "b": "U.S. District Judge Sara E. Hill of the Northern District of Oklahoma ruled that a Tulsa County deputy violated the Fourth Amendment by searching Flock and other license-plate reader databases without a warrant, which returned more than 50 location records on a driver, and suppressed the evidence that followed. The ruling is not binding precedent but is among the first by a federal judge finding a Flock search unconstitutional.",
+   "src": [
+    {
+     "o": "TechCrunch",
+     "t": "Federal judge calls Flock 'indiscriminate mass surveillance'",
+     "u": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/"
+    },
+    {
+     "o": "Gizmodo",
+     "t": "Judge Calls Flock Search 'Indiscriminate Mass Surveillance,' Throws Out Evidence",
+     "u": "https://gizmodo.com/judge-calls-flock-search-indiscriminate-mass-surveillance-throws-out-evidence-2000821402"
+    }
+   ],
+   "e": [
+    "flock-safety",
+    "nd-okla",
+    "tulsa-county-sheriff"
+   ],
+   "st": [
+    "OK"
+   ]
+  },
+  {
+   "d": "2026-09-30",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-30-judge-mehta-dismisses-chegg-and-penske-media",
+   "c": "Antitrust",
+   "s": "confirmed",
+   "h": "Judge Mehta dismisses Chegg and Penske Media antitrust suits over Google AI Overviews",
+   "b": "Judge Amit Mehta of the U.S. District Court for D.C. granted Google's motions to dismiss the antitrust suits brought by Chegg and Penske Media over AI Overviews. The publishers said Google ties search traffic to free use of their content; the court found they had pleaded an expectation of traffic, not an agreement, which a Sherman Act claim requires. The judge acknowledged that publishers lose traffic.",
+   "src": [
+    {
+     "o": "MIXED",
+     "t": "Judge dismisses Chegg's and Penske's AI Overviews cases: an expectation is not an agreement",
+     "u": "https://mixed-news.com/en/judge-mehta-dismisses-chegg-penske-ai-overviews-google-antitrust/"
+    },
+    {
+     "o": "PPC Land",
+     "t": "Judge Mehta dismisses Penske's Google AI Overviews antitrust suit",
+     "u": "https://ppc.land/judge-mehta-dismisses-penskes-google-ai-overviews-antitrust-suit/"
+    }
+   ],
+   "e": [
+    "google",
+    "chegg",
+    "penske-media",
+    "us-district-court-dc"
+   ],
+   "st": [
+    "DC"
+   ]
+  },
+  {
+   "d": "2026-09-29",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-29-ferc-partly-rejects-pjms-emergency-backstop-power",
+   "c": "Energy & water",
+   "s": "confirmed",
+   "h": "FERC partly rejects PJM's emergency backstop power procurement for data centers; PJM postpones auction",
+   "b": "FERC accepted PJM's one-time Reliability Backstop Procurement, meant to close the 6.8 GW shortfall driven by data center load, but found its cost allocation, transmission-owner exit rules and buyer collateral terms may be unjust and unreasonable. PJM then delayed the bid window it had planned to open Sept. 30. FERC Chairman Laura Swett called the plan a flawed, eleventh-hour mechanism with billion-dollar consumer implications.",
+   "src": [
+    {
+     "o": "Utility Dive",
+     "t": "FERC chair slams PJM 'mess' as country's largest grid operator delays power auction",
+     "u": "https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751/"
+    },
+    {
+     "o": "RTO Insider",
+     "t": "FERC Conditionally Approves PJM Backstop Procurement, Delays Implementation",
+     "u": "https://www.rtoinsider.com/ferc-conditionally-approves-pjm-backstop-procurement-delays-implementation/"
+    }
+   ],
+   "e": [
+    "ferc",
+    "pjm-interconnection"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-09-29",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-29-microsoft-gives-up-5-millionayear-incentive-for",
+   "c": "Data centers",
+   "s": "confirmed",
+   "h": "Microsoft gives up $5 million-a-year incentive for its Mount Pleasant, Wisconsin data center campus",
+   "b": "Microsoft said it will forgo an annual incentive of up to $5 million from Mount Pleasant's tax increment district under a 2023 development agreement, with $4.9 million going back to the village and about $100,000 to the Racine County Economic Development Corporation. The village plans to use it to lower its tax levy starting in 2027; Microsoft's first Fairwater building is operating and a second is due in 2028.",
+   "src": [
+    {
+     "o": "WPR",
+     "t": "Microsoft to 'redirect' data center incentive back to Mount Pleasant",
+     "u": "https://www.wpr.org/news/microsoft-to-redirect-data-center-incentive-back-to-mount-pleasant"
+    },
+    {
+     "o": "WTMJ",
+     "t": "Microsoft redirects $5 million incentive to Mount Pleasant for property tax relief",
+     "u": "https://wtmj.com/news/2026/09/29/microsoft-redirects-5-million-incentive-to-mount-pleasant-for-property-tax-relief/"
+    }
+   ],
+   "e": [
+    "microsoft",
+    "mount-pleasant-wi"
+   ],
+   "st": [
+    "WI"
+   ]
+  },
+  {
+   "d": "2026-09-28",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-28-amd-to-acquire-feifei-lis-world-labs",
+   "c": "Deals & mergers",
+   "s": "confirmed",
+   "h": "AMD to acquire Fei-Fei Li's World Labs in $8.2 billion all-stock deal",
+   "b": "AMD agreed to buy World Labs, an AI lab building spatial-intelligence models, in an all-stock deal valued at about $8.2 billion. AMD expects it to close by the end of 2026, subject to regulatory approvals. World Labs founder Fei-Fei Li is to join AMD as executive vice president and chief scientist.",
+   "src": [
+    {
+     "o": "AMD Investor Relations",
+     "t": "AMD to Acquire World Labs to Advance the Future of AI Compute",
+     "u": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute"
+    },
+    {
+     "o": "Quartz",
+     "t": "AMD acquires Fei-Fei Li's World Labs for $8.2 billion",
+     "u": "https://qz.com/amd-acquiring-world-labs-fei-fei-li-8-billion-092926"
+    }
+   ],
+   "e": [
+    "amd",
+    "world-labs"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-09-25",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-25-tiktok-settles-alabama-youthsafety-suit-for-at",
+   "c": "Courts & enforcement",
+   "s": "confirmed",
+   "h": "TikTok settles Alabama youth-safety suit for at least $100M days before trial",
+   "b": "Alabama Attorney General Steve Marshall announced that TikTok will pay at least $100 million, and up to $300 million if conditions are met, to resolve claims it built addictive features and misled the public about safety for young users. TikTok agreed to a two-hour daily limit, overnight access limits, stronger age checks and a default non-personalized feed for teens in the state.",
+   "src": [
+    {
+     "o": "Alabama Attorney General's Office",
+     "t": "Attorney General Marshall Announces Historic Multi-Million-Dollar Settlement with TikTok",
+     "u": "https://www.alabamaag.gov/attorney-general-marshall-announces-historic-multi-million-dollar-settlement-with-tiktok/"
+    },
+    {
+     "o": "CBS News",
+     "t": "TikTok settles Alabama lawsuit over youth safety concerns for at least $100 million",
+     "u": "https://www.cbsnews.com/news/tiktok-alabama-youth-safety-lawsuit-settlement/"
+    }
+   ],
+   "e": [
+    "tiktok",
+    "alabama-attorney-general"
+   ],
+   "st": [
+    "AL"
+   ]
+  },
+  {
+   "d": "2026-09-21",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-21-newsom-signs-seven-california-data-center-bills",
+   "c": "Energy & water",
+   "s": "confirmed",
+   "h": "Newsom signs seven California data center bills on water disclosure, rates and environmental review",
+   "b": "California Gov. Gavin Newsom signed seven data center bills, including AB 2619 and AB 2469 on water-use disclosure, AB 1577 on reporting, SB 1168 on rate structures and SB 886 on ratepayer protection. The laws require proposed data centers to give local governments and water suppliers water-use information and aim to keep grid upgrade costs off other ratepayers; Newsom vetoed a similar water bill last year.",
+   "src": [
+    {
+     "o": "Office of the Governor of California",
+     "t": "Governor Newsom signs most comprehensive data center laws in the nation, providing communities more control on water, electricity, and land use",
+     "u": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
+    },
+    {
+     "o": "CalMatters",
+     "t": "What to know about 7 new data center laws Gavin Newsom signed",
+     "u": "https://calmatters.org/economy/technology/2026/09/new-california-laws-data-centers/"
+    }
+   ],
+   "e": [
+    "california-governor",
+    "data-center-coalition"
+   ],
+   "st": [
+    "CA"
+   ]
+  },
+  {
+   "d": "2026-09-18",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-18-north-carolina-regulators-deny-duke-energy-gas",
+   "c": "Energy & water",
+   "s": "confirmed",
+   "h": "North Carolina regulators deny Duke Energy gas turbine tied to data center load growth",
+   "b": "The North Carolina Utilities Commission denied Duke Energy a certificate for a roughly $584 million, 255 MW combustion turbine at its Smith complex in Richmond County, near Amazon's planned $10 billion data center. Commissioners said Duke had not shown the need, since about 70% of its modeled load growth comes from data centers, nor how data center customers would pay for it.",
+   "src": [
+    {
+     "o": "WUNC",
+     "t": "In rare step, NC Utilities Commission denies Duke Energy permission to build new gas plant",
+     "u": "https://www.wunc.org/environment/2026-09-21/nc-utilities-commission-denies-duke-energy-gas-plant"
+    },
+    {
+     "o": "Canary Media",
+     "t": "Duke Energy wants to build a new gas plant. Regulators said not so fast.",
+     "u": "https://www.canarymedia.com/articles/fossil-fuels/regulators-reject-duke-gas-plant-north-carolina"
+    }
+   ],
+   "e": [
+    "north-carolina-utilities-commission",
+    "duke-energy",
+    "amazon"
+   ],
+   "st": [
+    "NC"
+   ]
+  },
+  {
+   "d": "2026-09-17",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-17-nevada-regulators-approve-two-temporary-gas-plants",
+   "c": "Energy & water",
+   "s": "confirmed",
+   "h": "Nevada regulators approve two temporary gas plants built to power Fleet data centers near Reno",
+   "b": "The Public Utilities Commission of Nevada approved two gas-fired plants, South Valley (144 MW) and Peru Ridge (218 MW), proposed by Fleet Data Centers, a Tract Capital subsidiary, for data centers at and near the Tahoe Reno Industrial Center. Fleet says the plants will run two to three years until NV Energy can provide permanent service; approval depends on state environmental and Storey County permits, and residents spoke against it for over two hours.",
+   "src": [
+    {
+     "o": "Nevada Current",
+     "t": "Public Utility Commission approves gas plants to power data centers",
+     "u": "https://nevadacurrent.com/2026/09/18/public-utility-commission-approves-gas-plants-to-power-data-centers/"
+    },
+    {
+     "o": "Las Vegas Review-Journal",
+     "t": "Nevada data center growth drives approval of temporary gas plants",
+     "u": "https://www.reviewjournal.com/business/energy/nevada-data-center-growth-drives-approval-of-temporary-gas-plants-3890109/"
+    }
+   ],
+   "e": [
+    "public-utilities-commission-of-nevada",
+    "fleet-data-centers",
+    "tract-capital",
+    "nv-energy",
+    "storey-county-nv"
+   ],
+   "st": [
+    "NV"
+   ]
+  },
+  {
+   "d": "2026-09-17",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-17-court-approves-expanded-refunds-in-amazons-25",
+   "c": "Courts & enforcement",
+   "s": "confirmed",
+   "h": "Court approves expanded refunds in Amazon's $2.5 billion Prime settlement with FTC",
+   "b": "A federal court approved a joint FTC and Amazon motion that widens who qualifies for refunds under the 2025 Prime enrollment settlement. It raises the maximum payment from $51 to $200 and makes future payments automatic. The FTC says Amazon has paid more than $845 million in redress so far, under a settlement of $1.5 billion in redress plus a $1 billion civil penalty.",
+   "src": [
+    {
+     "o": "Federal Trade Commission",
+     "t": "FTC Announces Additional Payments to Consumers Stemming from FTC's Amazon Prime Settlement",
+     "u": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement"
+    },
+    {
+     "o": "CBS News",
+     "t": "Amazon Prime customers could get $200 refunds in expanded FTC deal. See who is eligible.",
+     "u": "https://cbsnews.com/news/amazon-prime-ftc-settlement-refunds"
+    }
+   ],
+   "e": [
+    "amazon",
+    "ftc"
+   ],
+   "st": [
+    "WA"
+   ]
+  },
+  {
+   "d": "2026-09-17",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-17-ice-awards-thomson-reuters-unit-up-to",
+   "c": "Government contracts",
+   "s": "confirmed",
+   "h": "ICE awards Thomson Reuters unit up to $125M data-analytics deal after dropping sole-source plan",
+   "b": "ICE awarded Thomson Reuters Special Services a five-year blanket purchase agreement with a $125 million ceiling for screening, vetting and investigative analytics for Homeland Security Investigations. Only one company bid. ICE had withdrawn a plan in August to award the same work without competition, citing industry feedback. Biometric Update reported that the withdrawn justification described continuous monitoring of up to 1 million people or entities.",
+   "src": [
+    {
+     "o": "GovCon Wire",
+     "t": "TRSS Wins $125M ICE Data Analytics BPA After Sole-Source Reversal",
+     "u": "https://www.govconwire.com/articles/trss-ice-data-analytic-support-services-bpa-win"
+    },
+    {
+     "o": "Biometric Update",
+     "t": "ICE's $125M Thomson Reuters deal adds data layer to identity targeting systems",
+     "u": "https://www.biometricupdate.com/202609/ices-125m-thomson-reuters-deal-adds-data-layer-to-identity-targeting-systems"
+    }
+   ],
+   "e": [
+    "ice",
+    "dhs",
+    "thomson-reuters"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-09-17",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-17-carroll-county-ky-ethics-commission-opens-investigation",
+   "c": "Corruption cases",
+   "s": "confirmed",
+   "h": "Carroll County, Ky., ethics commission opens investigation into city's data center land deal",
+   "b": "The Carroll County Ethics Commission voted to open a formal inquiry into land transfers and officials' communications tied to a planned hyperscale data center by Poe Companies and PowerHouse Data Centers. The city of Carrollton signed an option on the land in July 2025, a year before the project was public. Residents have filed complaints alleging that council members with ties to utility LG&E-KU should not have voted. The commission tabled the conflict-of-interest complaint and advanced one alleging misconduct and withheld records.",
+   "src": [
+    {
+     "o": "WHAS11",
+     "t": "Commission opens ethics investigation into Carroll County data center project",
+     "u": "https://www.whas11.com/article/news/politics/commission-opens-ethics-investigation-into-carroll-county-data-center-project/417-2184fd8c-8d0a-4b13-83e3-88612cf6e6e0"
+    },
+    {
+     "o": "Kentucky Public Radio (Louisville Public Media)",
+     "t": "Frustration over Kentucky data center has found another target — ethics complaints",
+     "u": "https://www.lpm.org/news/2026-09-28/frustration-over-kentucky-data-center-has-found-another-target-ethics-complaints"
+    }
+   ],
+   "e": [
+    "carroll-county-ky",
+    "carrollton-ky",
+    "poe-companies",
+    "powerhouse-data-centers",
+    "lg-and-e-ku"
+   ],
+   "st": [
+    "KY"
+   ]
+  },
+  {
+   "d": "2026-09-15",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-15-loudoun-county-supervisors-vote-to-pause-new",
+   "c": "Data centers",
+   "s": "confirmed",
+   "h": "Loudoun County supervisors vote to pause new data center applications for 12 months",
+   "b": "Loudoun County's Board of Supervisors voted 7-1 with one abstention to direct staff to draft a resolution pausing legislative data center applications for up to 12 months while the county writes new rules. The chair said it is not a ban or moratorium; a formal resolution was expected at the Oct. 20 business meeting.",
+   "src": [
+    {
+     "o": "NBC4 Washington",
+     "t": "Loudoun County board pauses data center applications",
+     "u": "https://www.nbcwashington.com/news/local/northern-virginia/loudoun-county-board-pauses-data-center-applications/4155005/"
+    },
+    {
+     "o": "DatacenterDynamics",
+     "t": "Virginia's Loudoun County board votes to pause new data center applications",
+     "u": "https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-board-votes-to-pause-new-data-center-applications/"
+    }
+   ],
+   "e": [
+    "loudoun-county-va"
+   ],
+   "st": [
+    "VA"
+   ]
+  },
+  {
+   "d": "2026-09-10",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-10-gsa-signs-new-onegov-deal-giving-agencies",
+   "c": "Government contracts",
+   "s": "confirmed",
+   "h": "GSA signs new OneGov deal giving agencies 50% off OpenAI's ChatGPT token pricing from Oct. 1",
+   "b": "GSA announced a 27-month OneGov agreement with OpenAI that offers federal, state, local and tribal governments a 50% discount on usage-based ChatGPT pricing, with no platform fee or minimum spend, starting Oct. 1, 2026. Nextgov reported that it replaces the earlier $1-a-year offer, which expired at the end of September, and that discounted OneGov deals with Anthropic and Google were also expiring. GSA says OneGov has saved about $1.68 billion in total.",
+   "src": [
+    {
+     "o": "U.S. General Services Administration",
+     "t": "GSA Expands OneGov AI Offerings with Discounted, Consumption-Based Access to OpenAI's ChatGPT",
+     "u": "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-expands-onegov-ai-offerings-with-discounted-openais-chatgpt-09102026"
+    },
+    {
+     "o": "Nextgov/FCW",
+     "t": "GSA unveils new, token-based OneGov discount with OpenAI",
+     "u": "https://www.nextgov.com/acquisition/2026/09/gsa-unveils-new-token-based-onegov-discount-openai/415908/"
+    }
+   ],
+   "e": [
+    "gsa",
+    "openai"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-09-03",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-03-nvidia-agrees-to-buy-hugging-face-for",
+   "c": "Deals & mergers",
+   "s": "confirmed",
+   "h": "Nvidia agrees to buy Hugging Face for about $12.9 billion",
+   "b": "Nvidia announced a definitive agreement to acquire AI model-sharing platform Hugging Face. Its SEC filing describes an approximately $11.9 billion purchase price plus an employee retention program of up to about $1.0 billion, with closing expected in the first half of 2027 subject to regulatory approvals. Nvidia says Hugging Face will stay open and will not require Nvidia hardware.",
+   "src": [
+    {
+     "o": "NVIDIA Blog",
+     "t": "NVIDIA to Acquire Hugging Face",
+     "u": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
+    },
+    {
+     "o": "U.S. SEC (NVIDIA Form 8-K)",
+     "t": "nvda-20260902",
+     "u": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000078/nvda-20260902.htm"
+    },
+    {
+     "o": "Phoronix",
+     "t": "NVIDIA Acquiring Hugging Face For $12.93 Billion",
+     "u": "https://www.phoronix.com/news/NVIDIA-Hugging-Face"
+    }
+   ],
+   "e": [
+    "nvidia",
+    "hugging-face"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-09-02",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-02-judge-declines-to-break-up-google-ad",
+   "c": "Antitrust",
+   "s": "confirmed",
+   "h": "Judge declines to break up Google ad tech, orders six years of behavioral remedies and a monitor",
+   "b": "In the DOJ and states' ad tech monopolization case, Judge Leonie Brinkema in the Eastern District of Virginia rejected the request to make Google divest its AdX exchange and instead ordered behavioral remedies. The full opinion, unsealed later, requires AdX and DFP integrations with Prebid, publisher data export, a bar on AdWords bidding preferentially into Google's own tools, and a monitor and technical committee for the six-year judgment. Google has said it disagrees with the underlying monopoly finding.",
+   "src": [
+    {
+     "o": "U.S. Department of Justice",
+     "t": "Department of Justice Again Wins Substantial Relief Against Google",
+     "u": "https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google"
+    },
+    {
+     "o": "AdExchanger",
+     "t": "Google Won't Have To Break Up Its Ad Tech Business, Judge Brinkema Rules",
+     "u": "https://www.adexchanger.com/antitrust/google-wont-have-to-break-up-its-ad-tech-business-judge-brinkema-rules/"
+    }
+   ],
+   "e": [
+    "google",
+    "doj",
+    "us-district-court-edva"
+   ],
+   "st": [
+    "VA"
+   ]
+  },
+  {
+   "d": "2026-09-01",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-09-01-california-fines-virginia-data-broker-salesintel-36400",
+   "c": "Privacy & surveillance",
+   "s": "confirmed",
+   "h": "California fines Virginia data broker SalesIntel $36,400 for registering late",
+   "b": "CalPrivacy announced a board decision requiring SalesIntel Research, which the agency says offers data on 200 million professional contacts and 54 million mobile numbers, to pay $36,400 for operating as a data broker without registering by the 2025 deadline. The company must also post privacy metrics and handle deletion requests through DROP.",
+   "src": [
+    {
+     "o": "California Privacy Protection Agency",
+     "t": "CalPrivacy Continues Enforcement Blitz with Action Against Virginia Data Broker",
+     "u": "https://privacy.ca.gov/2026/09/calprivacy-continues-enforcement-blitz-with-action-against-virginia-data-broker/"
+    },
+    {
+     "o": "Norton Rose Fulbright Data Protection Report",
+     "t": "Internet privacy updates: CalPrivacy fines data brokers, Colorado proposes new AI regulations",
+     "u": "https://www.dataprotectionreport.com/2026/09/internet-privacy-updates-calprivacy-fines-data-brokers-colorado-proposes-new-ai-regulations/"
+    }
+   ],
+   "e": [
+    "calprivacy",
+    "salesintel"
+   ],
+   "st": [
+    "CA",
+    "VA"
+   ]
+  },
+  {
+   "d": "2026-08-31",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-31-ftc-and-22-states-sue-amazon-alleging",
+   "c": "Courts & enforcement",
+   "s": "confirmed",
+   "h": "FTC and 22 states sue Amazon, alleging hidden surcharges inflated its ad auction prices",
+   "b": "The FTC and 22 states sued Amazon in federal court in Washington state. They allege that for about seven years Amazon added undisclosed surcharges in its search-ad auctions, raising prices for more than a million brands and sellers and hiding the practice. Amazon called the suit misguided and said no advertiser pays more than its bid.",
+   "src": [
+    {
+     "o": "Federal Trade Commission",
+     "t": "FTC, States Sue Amazon Over Secret Ad Surcharge Scheme",
+     "u": "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme"
+    },
+    {
+     "o": "Courthouse News Service",
+     "t": "FTC, 22 states sue Amazon over advertising surcharges",
+     "u": "https://courthousenews.com/ftc-22-states-sue-amazon-over-advertising-surcharges/"
+    }
+   ],
+   "e": [
+    "amazon",
+    "ftc"
+   ],
+   "st": [
+    "WA"
+   ]
+  },
+  {
+   "d": "2026-08-27",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-27-new-jersey-law-requires-large-data-centers",
+   "c": "Energy & water",
+   "s": "confirmed",
+   "h": "New Jersey law requires large data centers to report energy and water use twice a year",
+   "b": "Gov. Mikie Sherrill signed S3379, requiring data centers above 100 MW to file semiannual reports with the Board of Public Utilities on energy use, peak water use and water sources. The data will be summarized for the public, but the law limits release under the state records law; environmental groups said it does not go far enough.",
+   "src": [
+    {
+     "o": "New Jersey Monitor",
+     "t": "Data centers must report water, energy use under new law signed by Gov. Sherrill",
+     "u": "https://newjerseymonitor.com/2026/08/27/data-centers-water-energy-use-law/"
+    },
+    {
+     "o": "DatacenterDynamics",
+     "t": "New Jersey governor signs law requiring data centers to report energy and water use",
+     "u": "https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/"
+    }
+   ],
+   "e": [
+    "new-jersey-bpu",
+    "new-jersey-governor"
+   ],
+   "st": [
+    "NJ"
+   ]
+  },
+  {
+   "d": "2026-08-26",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-26-meta-settles-youthharm-claims-by-51-state",
+   "c": "Courts & enforcement",
+   "s": "confirmed",
+   "h": "Meta settles youth-harm claims by 51 state and territory AGs mid-trial, agrees to design changes",
+   "b": "Meta reached a settlement mid-trial with 51 states and territories that alleged Instagram and Facebook were designed to be addictive for young users and misled the public about safety. Meta agreed to time limits, overnight and school-hour restrictions, age assurance and independent audits, and to payments over ten years. The D.C. Attorney General, NPR and other outlets describe the guaranteed and maximum payment totals differently, so Rackwatch leaves the figure out until the filed agreement settles it. Meta denied the allegations.",
+   "src": [
+    {
+     "o": "Office of the Attorney General for the District of Columbia",
+     "t": "Attorney General Schwalb Announces That Meta Will Pay Up to $17.1 Billion for Exploiting Kids with Intentionally Addictive Social Media Platforms",
+     "u": "https://oag.dc.gov/release/attorney-general-schwalb-announces-meta-will-pay"
+    },
+    {
+     "o": "NPR",
+     "t": "Meta, states agree to $17 billion settlement in child safety trial",
+     "u": "https://www.npr.org/2026/08/26/nx-s1-5944781/meta-settlement-child-safety-lawsuit"
+    }
+   ],
+   "e": [
+    "meta",
+    "dc-attorney-general"
+   ],
+   "st": [
+    "CA",
+    "DC"
+   ]
+  },
+  {
+   "d": "2026-08-24",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-24-maryland-data-center-firm-ainet-and-exceo",
+   "c": "Corruption cases",
+   "s": "confirmed",
+   "h": "Maryland data center firm AiNET and ex-CEO pay $1.8M to settle false-claims allegations over SEC contract",
+   "b": "AiNET Corp. and its former CEO agreed to pay $1.8 million to resolve Justice Department allegations that they falsely certified their Beltsville, Md., data center as meeting Tier III standards to win an SEC contract. DOJ also alleged that they claimed an inspection by an entity that was not an operating company. DOJ said the claims are allegations only, with no finding of liability.",
+   "src": [
+    {
+     "o": "U.S. Department of Justice",
+     "t": "AiNET Corp. and Deepak Jain Agree to Pay $1.8M to Resolve Allegations of Submitting False Claims to the U.S. Securities and Exchange Commission for Data Center Services",
+     "u": "https://www.justice.gov/opa/pr/ainet-corp-and-deepak-jain-agree-pay-18m-resolve-allegations-submitting-false-claims-us"
+    },
+    {
+     "o": "The Washington Times",
+     "t": "Maryland data center contractor, former CEO settle SEC fraud allegations for $1.8 million",
+     "u": "https://www.washingtontimes.com/news/2026/aug/24/maryland-data-center-contractor-former-ceo-settle-sec-fraud/"
+    }
+   ],
+   "e": [
+    "ainet",
+    "doj",
+    "sec"
+   ],
+   "st": [
+    "MD"
+   ]
+  },
+  {
+   "d": "2026-08-21",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-21-tiktok-and-bytedance-agree-to-400m-settlement",
+   "c": "Privacy & surveillance",
+   "s": "confirmed",
+   "h": "TikTok and ByteDance agree to $400M settlement of Justice Department children's privacy suit",
+   "b": "The Justice Department announced that TikTok, ByteDance and affiliates will pay $400 million to resolve a 2024 lawsuit, brought on FTC referral, alleging violations of the Children's Online Privacy Protection Act. TikTok pays $300 million now and $100 million more once a court vacates a 2019 consent decree against predecessor Musical.ly; the department cited changes in TikTok's ownership and practices since 2024.",
+   "src": [
+    {
+     "o": "U.S. Department of Justice",
+     "t": "Justice Department Secures $400M Settlement with TikTok and ByteDance to Resolve Children's Privacy Litigation",
+     "u": "https://www.justice.gov/opa/pr/justice-department-secures-400m-settlement-tiktok-and-bytedance-resolve-childrens-privacy"
+    },
+    {
+     "o": "BleepingComputer",
+     "t": "TikTok reaches $400M settlement with US over COPPA violations",
+     "u": "https://www.bleepingcomputer.com/news/legal/tiktok-reaches-400m-settlement-with-us-over-coppa-violations/"
+    }
+   ],
+   "e": [
+    "tiktok",
+    "bytedance",
+    "doj",
+    "ftc"
+   ],
+   "st": [
+    "CA"
+   ]
+  },
+  {
+   "d": "2026-08-17",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-17-nvidia-backs-sb-energys-ohio-campus-for",
+   "c": "Deals & mergers",
+   "s": "confirmed",
+   "h": "Nvidia backs SB Energy's Ohio campus for OpenAI, taking exclusive compute role and $1.5B stake",
+   "b": "Nvidia said it will provide credit support for land, power and shell buildout at SB Energy's PORTS-Pike campus in Pike County, Ohio, which will host only Nvidia AI compute, with OpenAI as the customer for up to 8 gigawatts under a 20-year lease. Nvidia is also investing $1.5 billion in SoftBank-owned SB Energy. UPI reported a much larger total for Nvidia's financing support; Nvidia's release does not state that figure, so it is not used here.",
+   "src": [
+    {
+     "o": "NVIDIA Newsroom",
+     "t": "NVIDIA Guarantees SB Energy's PORTS-Pike Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute",
+     "u": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "o": "UPI",
+     "t": "Nvidia to post $105 billion for OpenAI data center in Ohio",
+     "u": "https://www.upi.com/Top_News/US/2026/08/17/nvidia-openai-sb-energy-ports-pike-data-center-ohio/4201786985547/"
+    }
+   ],
+   "e": [
+    "nvidia",
+    "openai",
+    "sb-energy",
+    "softbank",
+    "pike-county-oh"
+   ],
+   "st": [
+    "OH"
+   ]
+  },
+  {
+   "d": "2026-08-13",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-13-california-fines-boston-addata-broker-cybba-52400",
+   "c": "Privacy & surveillance",
+   "s": "confirmed",
+   "h": "California fines Boston ad-data broker Cybba $52,400 for failing to register under the Delete Act",
+   "b": "CalPrivacy's board ordered Cybba, Inc., which the agency says sells geolocation, internet activity and inference data for targeted ads, to pay $52,400 for not registering as a data broker by the 2025 deadline. The order also requires Cybba to post privacy-request metrics and process deletion requests through the state's DROP platform.",
+   "src": [
+    {
+     "o": "California Privacy Protection Agency",
+     "t": "CalPrivacy Announces Second Data Broker Enforcement Action in Less than a Week",
+     "u": "https://privacy.ca.gov/2026/08/calprivacy-announces-second-data-broker-enforcement-action-in-less-than-a-week/"
+    },
+    {
+     "o": "Norton Rose Fulbright Data Protection Report",
+     "t": "Internet privacy updates: CalPrivacy fines data brokers, Colorado proposes new AI regulations",
+     "u": "https://www.dataprotectionreport.com/2026/09/internet-privacy-updates-calprivacy-fines-data-brokers-colorado-proposes-new-ai-regulations/"
+    }
+   ],
+   "e": [
+    "calprivacy",
+    "cybba"
+   ],
+   "st": [
+    "CA",
+    "MA"
+   ]
+  },
+  {
+   "d": "2026-08-12",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-12-louisiana-regulators-vote-31-to-let-meta",
+   "c": "Energy & water",
+   "s": "confirmed",
+   "h": "Louisiana regulators vote 3-1 to let Meta keep Hyperion job and power-demand data confidential",
+   "b": "The Louisiana Public Service Commission voted 3-1 to overturn an administrative law judge's order requiring Meta to disclose how it calculated job projections and electricity demand for Hyperion, in the docket reviewing Entergy Louisiana's gas plants for the campus. Meta argued the records are trade secrets; Commissioner Davante Lewis dissented.",
+   "src": [
+    {
+     "o": "Louisiana Illuminator",
+     "t": "Meta can keep its data center details private, PSC decides",
+     "u": "https://lailluminator.com/2026/08/13/meta-data-center-private/"
+    },
+    {
+     "o": "WWNO",
+     "t": "Louisiana PSC kills ruling that would force Meta to turn over key data center information",
+     "u": "https://www.wwno.org/politics/2026-08-12/louisiana-psc-kills-ruling-that-would-force-meta-to-turn-over-key-data-center-information"
+    }
+   ],
+   "e": [
+    "louisiana-public-service-commission",
+    "meta",
+    "entergy-louisiana"
+   ],
+   "st": [
+    "LA"
+   ]
+  },
+  {
+   "d": "2026-08-11",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-11-california-privacy-agency-fines-data-broker-locatesmarter",
+   "c": "Privacy & surveillance",
+   "s": "confirmed",
+   "h": "California privacy agency fines data broker LocateSmarter $116,490 over opt-out demands and late registration",
+   "b": "The California Privacy Protection Agency (CalPrivacy) board ordered Iowa-based data broker LocateSmarter to pay $116,490 in fines and fees. The agency found the company registered late under the Delete Act and violated the CCPA by requiring a mailing address and partial Social Security number before people could opt out of data sales. The agency called it its first data broker action under both laws.",
+   "src": [
+    {
+     "o": "Orrick InfoBytes",
+     "t": "CalPrivacy fines data broker for alleged opt-out and registration violations",
+     "u": "https://infobytes.orrick.com/2026-08-13/calprivacy-fines-data-broker-for-alleged-opt-out-and-registration-violations/"
+    },
+    {
+     "o": "Norton Rose Fulbright Data Protection Report",
+     "t": "Internet privacy updates: CalPrivacy fines data brokers, Colorado proposes new AI regulations",
+     "u": "https://www.dataprotectionreport.com/2026/09/internet-privacy-updates-calprivacy-fines-data-brokers-colorado-proposes-new-ai-regulations/"
+    }
+   ],
+   "e": [
+    "calprivacy",
+    "locatesmarter"
+   ],
+   "st": [
+    "CA",
+    "IA"
+   ]
+  },
+  {
+   "d": "2026-08-04",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-08-04-deputy-defense-secretary-memo-directs-up-to",
+   "c": "Government contracts",
+   "s": "confirmed",
+   "h": "Deputy Defense Secretary memo directs up to $243.9M for Palantir services without stating a competition basis",
+   "b": "A one-page Aug. 4 memo from Deputy Defense Secretary Stephen Feinberg, titled 'Funding Palantir,' directs Pentagon acquisition and budget officials to fund up to $243.9 million for Palantir services through March 31, 2027, and to find funding through 2028. The Register and DefenseScoop both reported on the memo. A Project On Government Oversight analyst told The Register that the memo does not mention the justification the law requires for non-competitive awards. A department official said such planning memos are standard practice and are issued for many vendors.",
+   "src": [
+    {
+     "o": "The Register",
+     "t": "Give Palantir up to $244M through 2028, says internal Defense Department memo",
+     "u": "https://www.theregister.com/public-sector/2026/08/11/palantir-could-receive-244m-pentagon-no-bid-contract/5286438"
+    },
+    {
+     "o": "DefenseScoop",
+     "t": "Pentagon's nascent BOND program informed Feinberg's new 'Funding Palantir' memo",
+     "u": "https://defensescoop.com/2026/08/13/feinberg-funding-palantir-memo-pentagon-bond-program/"
+    }
+   ],
+   "e": [
+    "palantir",
+    "dod",
+    "stephen-feinberg"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-07-28",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-28-doj-and-states-ask-appeals-court-to",
+   "c": "Antitrust",
+   "s": "confirmed",
+   "h": "DOJ and states ask appeals court to uphold Google search ruling and ban default-search payments",
+   "b": "In the D.C. Circuit, the Justice Department and state enforcers filed a brief asking the court to affirm Judge Mehta's finding that Google illegally kept its search monopoly and to keep the data-sharing remedies. They also asked it to reverse his refusal to bar Google's payments to Apple and other distributors for default placement. Google has separately appealed the liability ruling.",
+   "src": [
+    {
+     "o": "Courthouse News Service",
+     "t": "DOJ urges DC Circuit to beef up remedies in Google monopoly ruling",
+     "u": "https://www.courthousenews.com/doj-urges-dc-circuit-to-beef-up-remedies-in-google-monopoly-ruling/"
+    },
+    {
+     "o": "MediaPost",
+     "t": "Google Search Remedies Too Weak, Feds Tell Appeals Court",
+     "u": "https://www.mediapost.com/publications/article/416888/google-search-remedies-too-weak-feds-tell-appeals.html"
+    }
+   ],
+   "e": [
+    "google",
+    "doj",
+    "dc-circuit",
+    "apple"
+   ],
+   "st": [
+    "DC"
+   ]
+  },
+  {
+   "d": "2026-07-23",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-23-eu-fines-google-eur-890-million-under",
+   "c": "Antitrust",
+   "s": "confirmed",
+   "h": "EU fines Google EUR 890 million under Digital Markets Act over Search and Play Store",
+   "b": "The European Commission issued two non-compliance decisions against Google under the DMA: EUR 460 million for favoring its own services in Search results and EUR 430 million for limiting app developers from steering users to other offers outside Google Play. Google was given 60 days to comply or risk periodic penalties. Google rejected the findings and did not rule out a court challenge.",
+   "src": [
+    {
+     "o": "European Commission",
+     "t": "Commission fines Google €890 million for breaches of the Digital Markets Act",
+     "u": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1670"
+    },
+    {
+     "o": "Security Affairs",
+     "t": "Google Fined €890M Under EU Digital Markets Act Over Search and Play Store Practices",
+     "u": "https://securityaffairs.com/195963/laws-and-regulations/google-fined-e890m-under-eu-digital-markets-act-over-search-and-play-store-practices.html"
+    }
+   ],
+   "e": [
+    "google",
+    "european-commission"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-07-22",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-22-mondaycom-cuts-about-20-of-staff-in",
+   "c": "Labor & AI",
+   "s": "confirmed",
+   "h": "Monday.com cuts about 20% of staff in restructuring tied to its AI strategy, SEC filing says",
+   "b": "Work-software company monday.com told the SEC it began a restructuring on July 22 to align with its 'AI Work Platform' focus and its AI-driven growth strategy, including cutting about 20% of its workforce. It expects $45 million to $55 million in net charges. TechCrunch reported the cut at just over 600 people, and that a co-founder said it was not made to replace people with AI.",
+   "src": [
+    {
+     "o": "monday.com Ltd. (SEC Form 6-K)",
+     "t": "monday.com Ltd. - Form 6-K (July 2026)",
+     "u": "https://www.sec.gov/Archives/edgar/data/0001845338/000117891326003553/zk2635715.htm"
+    },
+    {
+     "o": "TechCrunch",
+     "t": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others",
+     "u": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
+    }
+   ],
+   "e": [
+    "monday-com"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-07-21",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-21-anthropic-gives-another-20m-to-public-first",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "Anthropic gives another $20M to Public First Action, raising its total to $40M",
+   "b": "Anthropic announced a second $20 million donation to Public First Action, an AI-policy nonprofit, bringing its total to $40 million after a first gift in February 2026. The company said the money is restricted to public education and policy work and cannot be used to influence candidate elections. PYMNTS, citing the Wall Street Journal, described the group as a counterweight to the industry-backed Leading the Future.",
+   "src": [
+    {
+     "o": "Anthropic",
+     "t": "Anthropic is donating another $20 million to Public First Action",
+     "u": "https://www.anthropic.com/news/donation-public-first-action"
+    },
+    {
+     "o": "PYMNTS",
+     "t": "Anthropic Gives $40 Million to AI Regulation Group",
+     "u": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-gives-40-million-to-ai-regulation-group/"
+    }
+   ],
+   "e": [
+    "anthropic",
+    "public-first-action",
+    "leading-the-future"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-07-20",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-20-anthropic-and-openai-report-record-federal-lobbying",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "Anthropic and OpenAI report record federal lobbying for Q2 2026: $1.97M and $1.2M",
+   "b": "Lobbying Disclosure Act reports filed July 20 show $1,970,000 in Q2 2026 lobbying expenses for Anthropic's in-house registration and $1,200,000 for OpenAI. Quartz, citing CNBC, reported that both were company records. The same reporting put Meta's Q2 total at $5.99 million and Amazon's at $4.36 million. The filings list issues including AI, copyright, cloud infrastructure, cybersecurity and defense.",
+   "src": [
+    {
+     "o": "U.S. Senate / LDA.gov",
+     "t": "Filing List: client_name=Anthropic, 2026 Q2",
+     "u": "https://lda.gov/api/v1/filings/?client_name=Anthropic&filing_year=2026&filing_period=second_quarter"
+    },
+    {
+     "o": "U.S. Senate / LDA.gov",
+     "t": "Filing List: registrant_name=OpenAI, 2026 Q2",
+     "u": "https://lda.gov/api/v1/filings/?registrant_name=OpenAI&filing_year=2026&filing_period=second_quarter"
+    },
+    {
+     "o": "Quartz",
+     "t": "OpenAI and Anthropic are breaking their own lobbying records as IPOs loom",
+     "u": "https://qz.com/openai-anthropic-lobbying-records-q2-2026-072126"
+    }
+   ],
+   "e": [
+    "anthropic",
+    "openai",
+    "meta",
+    "amazon"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-07-20",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-20-judge-gives-final-approval-to-anthropics-15b",
+   "c": "Labor & AI",
+   "s": "confirmed",
+   "h": "Judge gives final approval to Anthropic's $1.5B settlement with authors over pirated books",
+   "b": "Judge Araceli Martinez-Olguin of the Northern District of California granted final approval of the $1.5 billion Bartz v. Anthropic class settlement, which pays about $3,000 per work for books Anthropic downloaded from pirate libraries. The court cut class counsel's fees to about 6.8% of the fund and the release covers only past acquisition and copying, not AI outputs or future conduct.",
+   "src": [
+    {
+     "o": "The Authors Guild",
+     "t": "Court Grants Final Approval of $1.5 Billion Anthropic Copyright Settlement",
+     "u": "https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/"
+    },
+    {
+     "o": "TechCrunch",
+     "t": "Anthropic's landmark $1.5B copyright settlement is approved",
+     "u": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
+    }
+   ],
+   "e": [
+    "anthropic",
+    "authors-guild",
+    "nd-cal"
+   ],
+   "st": [
+    "CA"
+   ]
+  },
+  {
+   "d": "2026-07-15",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-15-proai-super-pac-leading-the-future-reports",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "Pro-AI super PAC Leading the Future reports $31M cash on hand after moving $20M to affiliated PACs",
+   "b": "Leading the Future's July quarterly report to the FEC shows $20.36 million in disbursements for April through June, including $20 million in contributions to other committees, and $31.03 million cash on hand at June 30. Axios reported the transfers went to Think Big PAC and American Mission PAC, $10 million each. The group raised about $252,000 in the quarter, nearly all of it listed as other receipts.",
+   "src": [
+    {
+     "o": "Federal Election Commission",
+     "t": "FEC Disclosure Form 3X for LEADING THE FUTURE (filing FEC-1993396)",
+     "u": "https://docquery.fec.gov/cgi-bin/forms/C00916114/1993396/"
+    },
+    {
+     "o": "Federal Election Commission (OpenFEC API)",
+     "t": "Filings for committee C00916114",
+     "u": "https://api.open.fec.gov/v1/filings/?api_key=DEMO_KEY&committee_id=C00916114&sort=-receipt_date&per_page=6"
+    },
+    {
+     "o": "Axios",
+     "t": "Pro-AI super PAC keeps $31M ready for the midterms",
+     "u": "https://www.axios.com/2026/07/17/pro-ai-super-pac-ready-midterms"
+    }
+   ],
+   "e": [
+    "leading-the-future",
+    "think-big-pac",
+    "american-mission-pac",
+    "fec"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-07-14",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-14-pjm-capacity-auction-clears-at-325mwday-price",
+   "c": "Energy & water",
+   "s": "confirmed",
+   "h": "PJM capacity auction clears at $325/MW-day price cap, falls about 6.8 GW short; data center demand cited",
+   "b": "PJM announced results of its auction for the June 2028-May 2029 delivery year: capacity cleared at the $325 per MW-day cap across the region and the auction fell roughly 6.8 GW short of its reliability target. Utility Dive reported total capacity costs of about $16.4 billion and a roughly 2 GW rise in forecast demand driven largely by data centers; Illinois' Citizens Utility Board said data center demand is the main driver of high prices, citing PJM's market monitor.",
+   "src": [
+    {
+     "o": "Utility Dive",
+     "t": "PJM capacity prices hit price cap, reserve shortfall grows",
+     "u": "https://www.utilitydive.com/news/pjm-capacity-auction-price-cap-reserve-shortfall/825282/"
+    },
+    {
+     "o": "Citizens Utility Board (Illinois)",
+     "t": "CUB: Sustained High PJM Capacity Prices Ramp Up Urgency For Data Center Reform",
+     "u": "https://www.citizensutilityboard.org/blog/2026/07/15/cub-sustained-high-pjm-capacity-prices-ramp-up-urgency-for-data-center-reform/"
+    }
+   ],
+   "e": [
+    "pjm-interconnection"
+   ],
+   "st": [
+    "PA",
+    "NJ",
+    "MD",
+    "VA",
+    "IL",
+    "OH",
+    "DC"
+   ]
+  },
+  {
+   "d": "2026-07-13",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-13-meta-expands-louisiana-hyperion-data-center-to",
+   "c": "Data centers",
+   "s": "confirmed",
+   "h": "Meta expands Louisiana Hyperion data center to 5 GW and more than $50 billion",
+   "b": "Meta said its Hyperion campus in Richland Parish, Louisiana, will scale to 5 gigawatts with investment above $50 billion, up from an earlier estimate of more than $27 billion. CNBC reported the project benefits from Louisiana's 20-year sales tax exemption for data centers built before 2029; Meta says it pays the full cost of the energy, water and infrastructure it uses.",
+   "src": [
+    {
+     "o": "CNBC",
+     "t": "Meta's Louisiana data center investment to reach $50 billion, aided by generous tax incentives",
+     "u": "https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html"
+    },
+    {
+     "o": "The Hill",
+     "t": "Meta expanding plans for its largest data center",
+     "u": "https://thehill.com/policy/technology/5965840-meta-louisiana-datacenter-expansion/"
+    }
+   ],
+   "e": [
+    "meta",
+    "entergy-louisiana",
+    "richland-parish-la",
+    "blue-owl-capital"
+   ],
+   "st": [
+    "LA"
+   ]
+  },
+  {
+   "d": "2026-07-07",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-07-prince-william-supervisors-vote-80-to-deny",
+   "c": "Data centers",
+   "s": "confirmed",
+   "h": "Prince William supervisors vote 8-0 to deny 2,000-acre Dulles Cloud South data center rezoning",
+   "b": "After a five-hour hearing, the Prince William County Board of County Supervisors voted 8-0 against a comprehensive plan change for Dulles Cloud South, a proposed campus of about 1,940 acres allowing 43 million square feet of data centers. Supervisors cited infrastructure, power and water demand, transmission needs and loss of rural land.",
+   "src": [
+    {
+     "o": "Virginia Mercury",
+     "t": "Prince William supervisors reject Dulles Cloud South data center proposal",
+     "u": "https://virginiamercury.com/2026/07/09/after-digital-gateway-project-fails-prince-william-supervisors-reject-dulles-cloud-south-data-center-proposal/"
+    },
+    {
+     "o": "WTOP News",
+     "t": "Prince William Co. supervisors deny 2,000-acre Dulles South data center plans",
+     "u": "https://wtop.com/prince-william-county/2026/07/prince-william-co-supervisors-deny-2000-acre-dulles-south-data-center-plans/"
+    }
+   ],
+   "e": [
+    "prince-william-county-va"
+   ],
+   "st": [
+    "VA"
+   ]
+  },
+  {
+   "d": "2026-07-07",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-07-douglas-county-georgia-commissioners-vote-41-to",
+   "c": "Data centers",
+   "s": "confirmed",
+   "h": "Douglas County, Georgia commissioners vote 4-1 to deny 700-acre EdgeConneX-linked data center campus",
+   "b": "Douglas County commissioners denied rezoning and permits sought by East Village Dothan LLC, an EdgeConneX affiliate, for a roughly 700-acre, 4.4 million sq ft campus near I-20 and Liberty Road outside Villa Rica. County planning staff said it conflicted with the growth plan and could affect traffic, public safety and water quality, since part of the site lies in the basin feeding the county's main reservoir; it was the second denial on the property in seven months.",
+   "src": [
+    {
+     "o": "Douglas County Sentinel",
+     "t": "County rejects plans for 700-acre data center campus",
+     "u": "https://www.douglascountysentinel.com/douglasville_sentinel/county-rejects-plans-for-700-acre-data-center-campus/article_a5761e68-bcdb-5537-a954-b2a948460ea3.html"
+    },
+    {
+     "o": "DatacenterDynamics",
+     "t": "County officials deny data center zoning request in Georgia",
+     "u": "https://www.datacenterdynamics.com/en/news/county-officials-deny-data-center-zoning-request-in-georgia/"
+    }
+   ],
+   "e": [
+    "douglas-county-ga",
+    "edgeconnex"
+   ],
+   "st": [
+    "GA"
+   ]
+  }
+ ],
+ "ledger": [
+  {
+   "id": "l-2026-09-29-village-of-mount-pleasant-tid-no-5-tax-i",
+   "d": "2026-09-29",
+   "t": "Tax incentive",
+   "from": "Village of Mount Pleasant (TID No. 5)",
+   "to": "Microsoft",
+   "te": "microsoft",
+   "amt": null,
+   "note": "Up to $5M a year incentive under a 2023 agreement; Microsoft announced it will give the incentive up (2026-09-29).",
+   "src": [
+    {
+     "o": "WPR",
+     "u": "https://www.wpr.org/news/microsoft-to-redirect-data-center-incentive-back-to-mount-pleasant"
+    },
+    {
+     "o": "WTMJ",
+     "u": "https://wtmj.com/news/2026/09/29/microsoft-redirects-5-million-incentive-to-mount-pleasant-for-property-tax-relief/"
+    }
+   ],
+   "e": [
+    "microsoft",
+    "mount-pleasant-wi"
+   ]
+  },
+  {
+   "id": "l-2026-09-28-amd-acquisition",
+   "d": "2026-09-28",
+   "t": "Acquisition",
+   "from": "AMD",
+   "to": "World Labs",
+   "fe": "amd",
+   "te": "world-labs",
+   "amt": 8200000000,
+   "note": "All-stock; close expected by end of 2026 pending approvals",
+   "src": [
+    {
+     "o": "AMD",
+     "u": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute"
+    }
+   ],
+   "e": [
+    "amd",
+    "world-labs"
+   ]
+  },
+  {
+   "id": "l-2026-09-25-tiktok-settlement",
+   "d": "2026-09-25",
+   "t": "Settlement",
+   "from": "TikTok",
+   "to": "State of Alabama",
+   "fe": "tiktok",
+   "te": "alabama-attorney-general",
+   "amt": 100000000,
+   "note": "Minimum; up to $300M if conditions met",
+   "src": [
+    {
+     "o": "Alabama Attorney General's Office",
+     "u": "https://www.alabamaag.gov/attorney-general-marshall-announces-historic-multi-million-dollar-settlement-with-tiktok/"
+    }
+   ],
+   "e": [
+    "tiktok"
+   ]
+  },
+  {
+   "id": "l-2026-09-18-north-carolina-utilities-commission-rate",
+   "d": "2026-09-18",
+   "t": "Rate decision",
+   "from": "North Carolina Utilities Commission",
+   "to": "Duke Energy",
+   "amt": null,
+   "note": "Certificate denied for a ~$584M, 255 MW combustion turbine Duke tied to data center load growth (decision, not a payment).",
+   "src": [
+    {
+     "o": "WUNC",
+     "u": "https://www.wunc.org/environment/2026-09-21/nc-utilities-commission-denies-duke-energy-gas-plant"
+    },
+    {
+     "o": "Canary Media",
+     "u": "https://www.canarymedia.com/articles/fossil-fuels/regulators-reject-duke-gas-plant-north-carolina"
+    }
+   ],
+   "e": [
+    "north-carolina-utilities-commission",
+    "duke-energy"
+   ]
+  },
+  {
+   "id": "l-2026-09-17-amazon-settlement",
+   "d": "2026-09-17",
+   "t": "Settlement",
+   "from": "Amazon",
+   "to": "FTC / consumers",
+   "fe": "amazon",
+   "amt": null,
+   "note": "Court-approved change to the 2025 $2.5B Prime settlement: max refund raised to $200; over $845M paid so far. amt null to avoid double counting the 2025 settlement",
+   "src": [
+    {
+     "o": "Federal Trade Commission",
+     "u": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement"
+    }
+   ],
+   "e": [
+    "amazon",
+    "ftc"
+   ]
+  },
+  {
+   "id": "l-2026-09-17-ice-contract",
+   "d": "2026-09-17",
+   "t": "Contract",
+   "from": "ICE",
+   "to": "Thomson Reuters Special Services",
+   "fe": "ice",
+   "te": "thomson-reuters",
+   "amt": 125000000,
+   "note": "Five-year BPA ceiling; single bidder; award date approximate",
+   "src": [
+    {
+     "o": "GovCon Wire",
+     "u": "https://www.govconwire.com/articles/trss-ice-data-analytic-support-services-bpa-win"
+    },
+    {
+     "o": "Biometric Update",
+     "u": "https://www.biometricupdate.com/202609/ices-125m-thomson-reuters-deal-adds-data-layer-to-identity-targeting-systems"
+    }
+   ],
+   "e": [
+    "ice",
+    "thomson-reuters"
+   ]
+  },
+  {
+   "id": "l-2026-09-10-gsa-contract",
+   "d": "2026-09-10",
+   "t": "Contract",
+   "from": "GSA",
+   "to": "OpenAI",
+   "fe": "gsa",
+   "te": "openai",
+   "amt": null,
+   "note": "OneGov agreement: 50% off ChatGPT token pricing for 27 months from Oct 1; no fixed value",
+   "src": [
+    {
+     "o": "GSA",
+     "u": "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-expands-onegov-ai-offerings-with-discounted-openais-chatgpt-09102026"
+    }
+   ],
+   "e": [
+    "gsa",
+    "openai"
+   ]
+  },
+  {
+   "id": "l-2026-09-03-nvidia-acquisition",
+   "d": "2026-09-03",
+   "t": "Acquisition",
+   "from": "Nvidia",
+   "to": "Hugging Face",
+   "fe": "nvidia",
+   "te": "hugging-face",
+   "amt": 12930000000,
+   "note": "Definitive agreement; about $11.9B price plus up to about $1.0B retention; close expected H1 2027 pending approvals",
+   "src": [
+    {
+     "o": "NVIDIA Blog",
+     "u": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
+    },
+    {
+     "o": "U.S. SEC",
+     "u": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000078/nvda-20260902.htm"
+    }
+   ],
+   "e": [
+    "nvidia",
+    "hugging-face"
+   ]
+  },
+  {
+   "id": "l-2026-09-01-salesintel-research-inc-fine",
+   "d": "2026-09-01",
+   "t": "Fine",
+   "from": "SalesIntel Research, Inc.",
+   "to": "California Privacy Protection Agency",
+   "fe": "salesintel",
+   "te": "calprivacy",
+   "amt": 36400,
+   "note": "Late data broker registration (Delete Act); includes registration fee",
+   "src": [
+    {
+     "o": "California Privacy Protection Agency",
+     "u": "https://privacy.ca.gov/2026/09/calprivacy-continues-enforcement-blitz-with-action-against-virginia-data-broker/"
+    }
+   ],
+   "e": [
+    "salesintel",
+    "calprivacy"
+   ]
+  },
+  {
+   "id": "l-2026-08-26-meta-settlement",
+   "d": "2026-08-26",
+   "t": "Settlement",
+   "from": "Meta",
+   "to": "51 states and territories",
+   "fe": "meta",
+   "te": "state-attorneys-general",
+   "amt": null,
+   "note": "Settlement of youth-harm claims; sources give different payment totals, so the amount is omitted (see post).",
+   "src": [
+    {
+     "o": "D.C. Office of the Attorney General",
+     "u": "https://oag.dc.gov/release/attorney-general-schwalb-announces-meta-will-pay"
+    }
+   ],
+   "e": [
+    "meta",
+    "dc-attorney-general"
+   ]
+  },
+  {
+   "id": "l-2026-08-24-ainet-corp-and-former-ceo-settlement",
+   "d": "2026-08-24",
+   "t": "Settlement",
+   "from": "AiNET Corp. and former CEO",
+   "to": "United States (DOJ/SEC)",
+   "fe": "ainet",
+   "te": "doj",
+   "amt": 1800000,
+   "note": "False Claims Act settlement over data center certification; no admission of liability",
+   "src": [
+    {
+     "o": "DOJ",
+     "u": "https://www.justice.gov/opa/pr/ainet-corp-and-deepak-jain-agree-pay-18m-resolve-allegations-submitting-false-claims-us"
+    }
+   ],
+   "e": [
+    "ainet",
+    "doj",
+    "sec"
+   ]
+  },
+  {
+   "id": "l-2026-08-21-tiktok-bytedance-settlement",
+   "d": "2026-08-21",
+   "t": "Settlement",
+   "from": "TikTok / ByteDance",
+   "to": "United States (DOJ, on FTC referral)",
+   "fe": "tiktok",
+   "te": "doj",
+   "amt": 400000000,
+   "note": "COPPA case; $300M immediate, $100M on vacatur of 2019 Musical.ly decree",
+   "src": [
+    {
+     "o": "U.S. Department of Justice",
+     "u": "https://www.justice.gov/opa/pr/justice-department-secures-400m-settlement-tiktok-and-bytedance-resolve-childrens-privacy"
+    }
+   ],
+   "e": [
+    "tiktok",
+    "doj"
+   ]
+  },
+  {
+   "id": "l-2026-08-17-nvidia-investment",
+   "d": "2026-08-17",
+   "t": "Investment",
+   "from": "Nvidia",
+   "to": "SB Energy",
+   "fe": "nvidia",
+   "te": "sb-energy",
+   "amt": 1500000000,
+   "note": "Tied to PORTS-Pike, Ohio campus hosting Nvidia compute for OpenAI; Nvidia also provides credit support (reported up to $105B)",
+   "src": [
+    {
+     "o": "NVIDIA Newsroom",
+     "u": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    }
+   ],
+   "e": [
+    "nvidia",
+    "sb-energy",
+    "openai"
+   ]
+  },
+  {
+   "id": "l-2026-08-17-nvidia-partnership",
+   "d": "2026-08-17",
+   "t": "Partnership",
+   "from": "Nvidia",
+   "to": "OpenAI / SB Energy",
+   "fe": "nvidia",
+   "te": "openai",
+   "amt": null,
+   "note": "Exclusive Nvidia compute at PORTS-Pike; OpenAI customer for up to 8 GW, 20-year lease",
+   "src": [
+    {
+     "o": "NVIDIA Newsroom",
+     "u": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    }
+   ],
+   "e": [
+    "nvidia",
+    "openai",
+    "sb-energy"
+   ]
+  },
+  {
+   "id": "l-2026-08-13-cybba-inc-fine",
+   "d": "2026-08-13",
+   "t": "Fine",
+   "from": "Cybba, Inc.",
+   "to": "California Privacy Protection Agency",
+   "fe": "cybba",
+   "te": "calprivacy",
+   "amt": 52400,
+   "note": "Unregistered data broker (Delete Act)",
+   "src": [
+    {
+     "o": "California Privacy Protection Agency",
+     "u": "https://privacy.ca.gov/2026/08/calprivacy-announces-second-data-broker-enforcement-action-in-less-than-a-week/"
+    }
+   ],
+   "e": [
+    "cybba",
+    "calprivacy"
+   ]
+  },
+  {
+   "id": "l-2026-08-11-locatesmarter-llc-fine",
+   "d": "2026-08-11",
+   "t": "Fine",
+   "from": "LocateSmarter LLC",
+   "to": "California Privacy Protection Agency",
+   "fe": "locatesmarter",
+   "te": "calprivacy",
+   "amt": 116490,
+   "note": "Delete Act + CCPA fines and $6,000 registration fee; opt-out required partial SSN",
+   "src": [
+    {
+     "o": "Orrick InfoBytes",
+     "u": "https://infobytes.orrick.com/2026-08-13/calprivacy-fines-data-broker-for-alleged-opt-out-and-registration-violations/"
+    }
+   ],
+   "e": [
+    "locatesmarter",
+    "calprivacy"
+   ]
+  },
+  {
+   "id": "l-2026-07-23-google-fine",
+   "d": "2026-07-23",
+   "t": "Fine",
+   "from": "Google",
+   "to": "European Commission",
+   "fe": "google",
+   "te": "european-commission",
+   "amt": null,
+   "note": "EUR 890M under the DMA (EUR 460M Search self-preferencing + EUR 430M Play anti-steering); USD left null",
+   "src": [
+    {
+     "o": "European Commission",
+     "u": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1670"
+    }
+   ],
+   "e": [
+    "google",
+    "european-commission"
+   ]
+  },
+  {
+   "id": "l-2026-07-21-anthropic-political",
+   "d": "2026-07-21",
+   "t": "Political",
+   "from": "Anthropic",
+   "to": "Public First Action",
+   "fe": "anthropic",
+   "te": "public-first-action",
+   "amt": 20000000,
+   "note": "Second $20M donation, $40M total; company says it is restricted to education and policy, not elections",
+   "src": [
+    {
+     "o": "Anthropic",
+     "u": "https://www.anthropic.com/news/donation-public-first-action"
+    },
+    {
+     "o": "PYMNTS",
+     "u": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-gives-40-million-to-ai-regulation-group/"
+    }
+   ],
+   "e": [
+    "anthropic",
+    "public-first-action"
+   ]
+  },
+  {
+   "id": "l-2026-07-20-anthropic-lobbying",
+   "d": "2026-07-20",
+   "t": "Lobbying",
+   "from": "Anthropic",
+   "to": "Federal government (in-house lobbying, Q2 2026)",
+   "fe": "anthropic",
+   "amt": 1970000,
+   "note": "LDA Q2 2026 report, in-house registration; expenses method A",
+   "src": [
+    {
+     "o": "LDA.gov",
+     "u": "https://lda.gov/api/v1/filings/?client_name=Anthropic&filing_year=2026&filing_period=second_quarter"
+    }
+   ],
+   "e": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "l-2026-07-20-openai-lobbying",
+   "d": "2026-07-20",
+   "t": "Lobbying",
+   "from": "OpenAI",
+   "to": "Federal government (in-house lobbying, Q2 2026)",
+   "fe": "openai",
+   "amt": 1200000,
+   "note": "LDA Q2 2026 report by OpenAI OpCo, LLC; amended 2026-07-23 with the same amount",
+   "src": [
+    {
+     "o": "LDA.gov",
+     "u": "https://lda.gov/api/v1/filings/?registrant_name=OpenAI&filing_year=2026&filing_period=second_quarter"
+    }
+   ],
+   "e": [
+    "openai"
+   ]
+  },
+  {
+   "id": "l-2026-07-20-anthropic-settlement",
+   "d": "2026-07-20",
+   "t": "Settlement",
+   "from": "Anthropic",
+   "to": "Authors and publishers class (Bartz v. Anthropic)",
+   "fe": "anthropic",
+   "amt": 1500000000,
+   "note": "Final court approval of copyright class settlement, ~$3,000 per work",
+   "src": [
+    {
+     "o": "The Authors Guild",
+     "u": "https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/"
+    }
+   ],
+   "e": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "l-2026-07-15-leading-the-future-political",
+   "d": "2026-07-15",
+   "t": "Political",
+   "from": "Leading the Future",
+   "to": "Think Big PAC and American Mission PAC",
+   "fe": "leading-the-future",
+   "te": "think-big-pac",
+   "amt": 20000000,
+   "note": "Q2 2026 contributions to other committees (FEC Form 3X line 23); Axios reports $10M to each",
+   "src": [
+    {
+     "o": "FEC",
+     "u": "https://docquery.fec.gov/cgi-bin/forms/C00916114/1993396/"
+    },
+    {
+     "o": "Axios",
+     "u": "https://www.axios.com/2026/07/17/pro-ai-super-pac-ready-midterms"
+    }
+   ],
+   "e": [
+    "leading-the-future",
+    "think-big-pac",
+    "american-mission-pac"
+   ]
+  },
+  {
+   "id": "l-2026-07-14-pjm-capacity-auction-paid-by-electricity",
+   "d": "2026-07-14",
+   "t": "Rate decision",
+   "from": "PJM capacity auction (paid by electricity customers)",
+   "to": "Generators and demand response providers",
+   "amt": 16400000000,
+   "note": "2028/29 Base Residual Auction cleared at $325/MW-day cap; total cost per Utility Dive",
+   "src": [
+    {
+     "o": "Utility Dive",
+     "u": "https://www.utilitydive.com/news/pjm-capacity-auction-price-cap-reserve-shortfall/825282/"
+    },
+    {
+     "o": "Citizens Utility Board",
+     "u": "https://www.citizensutilityboard.org/blog/2026/07/15/cub-sustained-high-pjm-capacity-prices-ramp-up-urgency-for-data-center-reform/"
+    }
+   ],
+   "e": [
+    "pjm-interconnection"
+   ]
+  },
+  {
+   "id": "l-2026-07-13-meta-investment",
+   "d": "2026-07-13",
+   "t": "Investment",
+   "from": "Meta",
+   "to": "Hyperion data center, Richland Parish, LA",
+   "fe": "meta",
+   "amt": 50000000000,
+   "note": "Planned investment 'more than $50 billion'; 5 GW",
+   "src": [
+    {
+     "o": "CNBC",
+     "u": "https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html"
+    },
+    {
+     "o": "The Hill",
+     "u": "https://thehill.com/policy/technology/5965840-meta-louisiana-datacenter-expansion/"
+    }
+   ],
+   "e": [
+    "meta",
+    "richland-parish-la"
+   ]
+  },
+  {
+   "id": "l-2026-07-13-state-of-louisiana-tax-incentive",
+   "d": "2026-07-13",
+   "t": "Tax incentive",
+   "from": "State of Louisiana",
+   "to": "Meta (Hyperion)",
+   "te": "meta",
+   "amt": null,
+   "note": "20-year sales tax exemption for data centers built before 2029 (per CNBC); value not disclosed",
+   "src": [
+    {
+     "o": "CNBC",
+     "u": "https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html"
+    }
+   ],
+   "e": [
+    "meta"
+   ]
+  },
+  {
+   "id": "l-2026-05-28-series-h-investors-led-by-altimeter-drag",
+   "d": "2026-05-28",
+   "t": "Investment",
+   "from": "Series H investors (led by Altimeter, Dragoneer, Greenoaks, Sequoia)",
+   "to": "Anthropic",
+   "te": "anthropic",
+   "amt": 65000000000,
+   "note": "$965B post-money valuation; includes $5B from Amazon",
+   "src": [
+    {
+     "o": "Anthropic",
+     "u": "https://www.anthropic.com/news/series-h?hl=en-US"
+    }
+   ],
+   "e": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "l-2026-05-08-general-motors-settlement",
+   "d": "2026-05-08",
+   "t": "Settlement",
+   "from": "General Motors",
+   "to": "State of California (AG, LA/Napa/SF/Sonoma DAs, CalPrivacy)",
+   "fe": "general-motors",
+   "te": "california-attorney-general",
+   "amt": 12750000,
+   "note": "Civil penalties over OnStar driving-data sales; subject to court approval",
+   "src": [
+    {
+     "o": "Los Angeles County District Attorney's Office",
+     "u": "https://da.lacounty.gov/media/news/general-motors-pay-1275m-settle-california-consumer-protection-lawsuit-alleging-data"
+    }
+   ],
+   "e": [
+    "general-motors",
+    "california-attorney-general"
+   ]
+  },
+  {
+   "id": "l-2026-05-01-department-of-war-dod-contract",
+   "d": "2026-05-01",
+   "t": "Contract",
+   "from": "Department of War (DoD)",
+   "to": "SpaceX, OpenAI, Google, NVIDIA, Reflection, Microsoft, AWS, Oracle",
+   "fe": "dod",
+   "amt": null,
+   "note": "Classified-network (IL6/IL7) AI deployment agreements; values not disclosed",
+   "src": [
+    {
+     "o": "U.S. Department of War",
+     "u": "https://www.war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements/"
+    }
+   ],
+   "e": [
+    "dod",
+    "openai",
+    "google",
+    "nvidia",
+    "microsoft",
+    "amazon",
+    "oracle",
+    "spacex",
+    "reflection-ai"
+   ]
+  },
+  {
+   "id": "l-2026-04-20-amazon-investment",
+   "d": "2026-04-20",
+   "t": "Investment",
+   "from": "Amazon",
+   "to": "Anthropic",
+   "fe": "amazon",
+   "te": "anthropic",
+   "amt": 5000000000,
+   "note": "$5B now, up to $20B more on milestones; Anthropic commits more than $100B to AWS over 10 years",
+   "src": [
+    {
+     "o": "Amazon",
+     "u": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai"
+    }
+   ],
+   "e": [
+    "amazon",
+    "anthropic"
+   ]
+  },
+  {
+   "id": "l-2026-04-06-anthropic-partnership",
+   "d": "2026-04-06",
+   "t": "Partnership",
+   "from": "Anthropic",
+   "to": "Google / Broadcom",
+   "fe": "anthropic",
+   "te": "google",
+   "amt": null,
+   "note": "Multi-gigawatt TPU capacity from 2027 (3.5 GW per Broadcom filing via DCD); terms not disclosed",
+   "src": [
+    {
+     "o": "Anthropic",
+     "u": "https://www.anthropic.com/news/google-broadcom-partnership-compute"
+    }
+   ],
+   "e": [
+    "anthropic",
+    "google",
+    "broadcom"
+   ]
+  }
+ ],
+ "projects": [
+  {
+   "id": "meta-hyperion",
+   "n": "Hyperion",
+   "co": "Meta Platforms",
+   "e": [
+    "meta",
+    "entergy-louisiana",
+    "richland-parish-la",
+    "louisiana-public-service-commission"
+   ],
+   "place": "Richland Parish",
+   "st": "LA",
+   "lat": 32.45,
+   "lon": -91.75,
+   "mw": 5000,
+   "water": "Meta says it pays the full cost of energy, water and related infrastructure and will invest over $1B in local infrastructure including water and wastewater systems (per CNBC); no consumption figure disclosed",
+   "power": "Entergy Louisiana building 10 gas-fired plants (3 approved in 2025, 7 more proposed) totaling about 7.5 GW, per The Lens; Louisiana PSC final decision on the 7 additional plants scheduled for December 2026",
+   "incent": "Louisiana 20-year sales tax exemption for data centers built before 2029 (per CNBC); value not disclosed",
+   "status": "under construction",
+   "opp": "Critics including the Union of Concerned Scientists question ratepayer costs and fast-tracked approval of the gas plants (The Lens); Louisiana PSC voted 3-1 in Aug. 2026 to let Meta keep job and power-demand projections confidential",
+   "d": "2026-07-13",
+   "src": [
+    {
+     "o": "CNBC",
+     "u": "https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html"
+    },
+    {
+     "o": "The Lens",
+     "u": "https://thelensnola.org/2026/03/30/meta-triples-order-of-gas-fired-power-plants-for-its-ai-campus-in-louisiana/"
+    }
+   ],
+   "note": "5 GW is Meta's stated planned capacity (CNBC, The Hill), not current load. 'Under construction' inferred from reporting on local tax revenue already flowing (The Hill); not stated as such in the two cited sources."
+  },
+  {
+   "id": "pw-digital-gateway",
+   "n": "Prince William Digital Gateway",
+   "co": "QTS and Compass Datacenters",
+   "e": [
+    "qts",
+    "compass-datacenters",
+    "prince-william-county-va",
+    "american-battlefield-trust"
+   ],
+   "place": "Prince William County (near Manassas National Battlefield Park)",
+   "st": "VA",
+   "lat": 38.82,
+   "lon": -77.58,
+   "mw": null,
+   "water": "not disclosed",
+   "power": "American Battlefield Trust (a plaintiff) says the plan called for 14 on-site substations and up to 9 GW",
+   "incent": "none found",
+   "status": "cancelled",
+   "opp": "Oak Valley Homeowners Association, residents and the American Battlefield Trust sued; courts voided the rezonings over improper public notice (Aug. 2025 circuit ruling, upheld by Court of Appeals March 31, 2026); QTS dropped its Virginia Supreme Court appeal July 2, 2026",
+   "d": "2026-07-02",
+   "src": [
+    {
+     "o": "WTOP News",
+     "u": "https://wtop.com/prince-william-county/2026/07/digital-gateway-data-center-project-dies-after-final-developer-withdraws-appeal/"
+    },
+    {
+     "o": "American Battlefield Trust",
+     "u": "https://www.battlefields.org/news/victory-manassas-prince-william-digital-gateway-project-dead-after-developer-drops-appeal"
+    }
+   ],
+   "note": "mw left null: only the plaintiff group states a power figure (9 GW); WTOP gives about 2,000 acres and 22M+ sq ft."
+  },
+  {
+   "id": "xai-colossus-2",
+   "n": "Colossus 2 and Southaven gas plant",
+   "co": "xAI (MZX Tech)",
+   "e": [
+    "xai",
+    "naacp",
+    "doj"
+   ],
+   "place": "Memphis (Shelby County), TN, with turbines in Southaven (DeSoto County), MS",
+   "st": "TN",
+   "lat": 35.0,
+   "lon": -90.03,
+   "mw": null,
+   "water": "not disclosed",
+   "power": "Gas turbines at the Colossus Gas Plant in Southaven, MS; NAACP suit cites 27 turbines operated without a Clean Air Act permit; xAI says it relied on Mississippi's view that portable turbines are mobile sources not needing such a permit (The Hill)",
+   "incent": "none found",
+   "status": "operating",
+   "opp": "NAACP (represented by Earthjustice and SELC) sued in April 2026 in federal court alleging Clean Air Act violations; DOJ moved to intervene and dismiss in June 2026 citing national security",
+   "d": "2026-06-16",
+   "src": [
+    {
+     "o": "The Hill",
+     "u": "https://thehill.com/policy/energy-environment/5926181-xai-naacp-memphis-grok/"
+    },
+    {
+     "o": "Quartz",
+     "u": "https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726"
+    }
+   ],
+   "note": "Capacity claims vary across reporting (Musk's 1 GW claim vs. satellite-based estimates); mw null. Later reports cite higher turbine counts and a March 2026 Mississippi permit for 41 turbines; not verified here."
+  },
+  {
+   "id": "beale-project-blue",
+   "n": "Project Blue",
+   "co": "Beale Infrastructure",
+   "e": [
+    "beale-infrastructure",
+    "pima-county-az",
+    "tucson-az",
+    "arizona-department-of-water-resources",
+    "amazon"
+   ],
+   "place": "Pima County (near Pima County Fairgrounds, outside Tucson)",
+   "st": "AZ",
+   "lat": 32.05,
+   "lon": -110.8,
+   "mw": null,
+   "water": "Arizona Department of Water Resources approved two wells with rights up to 96.5 acre-feet (about 31 million gallons) a year; Beale officials estimate 15,000-20,000 gallons per day at full operation, with closed-loop air cooling (AZPM)",
+   "power": "not stated in cited sources",
+   "incent": "none found in cited sources",
+   "status": "under construction",
+   "opp": "Tucson Mayor and Council unanimously rejected involvement and use of city water; city revoked a temporary water meter used by a contractor for dust control in May 2026; residents protested at council meetings (AZPM, KJZZ)",
+   "d": "2026-05-29",
+   "src": [
+    {
+     "o": "AZPM",
+     "u": "https://news.azpm.org/p/azpmnews/2026/5/28/229919-arizona-water-officials-approve-wells-tied-to-project-blue-data-center/"
+    },
+    {
+     "o": "KJZZ",
+     "u": "https://www.kjzz.org/fronteras-desk/2026-05-29/project-blue-data-center-could-use-up-to-31-million-gallons-of-water-per-year"
+    }
+   ],
+   "note": "KJZZ says the plan was tied to Amazon Web Services; local officials have said AWS is no longer the end user (KVOA, not opened). A 600 MW figure appears in DCD/other listings but was not verified; mw null."
+  },
+  {
+   "id": "aws-susquehanna",
+   "n": "AWS data campus at Susquehanna",
+   "co": "Amazon Web Services (Amazon Data Services)",
+   "e": [
+    "amazon",
+    "amazon",
+    "talen-energy",
+    "pjm-interconnection"
+   ],
+   "place": "Salem Township, Luzerne County",
+   "st": "PA",
+   "lat": 41.09,
+   "lon": -76.15,
+   "mw": 1920,
+   "water": "Amazon Data Services sought a PA DEP NPDES permit to discharge cooling water into the Susquehanna River (FOX56, Jan. 2026); consumption not disclosed",
+   "power": "Talen says it supplies AWS up to 1,920 MW from the Susquehanna nuclear plant under a revised front-of-the-meter PPA through 2042, with the transition made in April 2026 (Talen 10-Q)",
+   "incent": "none found",
+   "status": "operating",
+   "opp": "none found in cited sources",
+   "d": "2026-08-05",
+   "src": [
+    {
+     "o": "Talen Energy Form 10-Q (SEC)",
+     "u": "https://www.sec.gov/Archives/edgar/data/0001622536/000162253626000066/tln-20260630.htm"
+    },
+    {
+     "o": "FOX56 (WOLF)",
+     "u": "https://fox56.com/news/local/amazon-seeks-state-permit-for-cooling-water-discharge-into-susquehanna-river"
+    }
+   ],
+   "note": "mw is contracted power supply per Talen, not confirmed IT load. 'Operating' based on Talen describing the campus as receiving power."
+  },
+  {
+   "id": "microsoft-fairwater-mount-pleasant",
+   "n": "Fairwater (Mount Pleasant campus)",
+   "co": "Microsoft",
+   "e": [
+    "microsoft",
+    "mount-pleasant-wi"
+   ],
+   "place": "Village of Mount Pleasant, Racine County",
+   "st": "WI",
+   "lat": 42.69,
+   "lon": -87.94,
+   "mw": null,
+   "water": "not disclosed in cited sources",
+   "power": "not stated in cited sources",
+   "incent": "2023 development agreement gave Microsoft up to $5M a year from Mount Pleasant's TID No. 5; Microsoft said Sept. 29, 2026 it will forgo it, returning $4.9M to the village and about $100K to Racine County EDC (WPR, WTMJ)",
+   "status": "operating",
+   "opp": "Microsoft was sued in July 2026 over noise complaints; some neighbors cite construction noise, dust, light, traffic (WPR)",
+   "d": "2026-09-29",
+   "src": [
+    {
+     "o": "WPR",
+     "u": "https://www.wpr.org/news/microsoft-to-redirect-data-center-incentive-back-to-mount-pleasant"
+    },
+    {
+     "o": "WTMJ",
+     "u": "https://wtmj.com/news/2026/09/29/microsoft-redirects-5-million-incentive-to-mount-pleasant-for-property-tax-relief/"
+    }
+   ],
+   "note": "First building operational (June 2026); second due 2028 per WPR."
+  },
+  {
+   "id": "stargate-abilene",
+   "n": "Stargate Abilene (Lancium Clean Campus)",
+   "co": "Crusoe (developer) for Oracle and OpenAI",
+   "e": [
+    "crusoe",
+    "oracle",
+    "openai",
+    "lancium",
+    "abilene-tx",
+    "nvidia",
+    "meta"
+   ],
+   "place": "Abilene, Taylor County",
+   "st": "TX",
+   "lat": 32.45,
+   "lon": -99.73,
+   "mw": 1200,
+   "water": "Crusoe says cooling is closed-loop and non-evaporative: about 1 million gallons initial fill per building (8 million total, from municipal supply) and about 50,000 gallons per building per year for maintenance",
+   "power": "Crusoe says power comes from the ERCOT grid (primarily renewable, including wind) with GE Vernova natural gas turbines for backup",
+   "incent": "not verified in cited sources (city and county property tax abatements for Lancium were reported locally but not opened here)",
+   "status": "under construction",
+   "opp": "none found in cited sources",
+   "d": "2026-03-06",
+   "src": [
+    {
+     "o": "DatacenterDynamics",
+     "u": "https://www.datacenterdynamics.com/en/news/oracleopenai-drop-plans-to-expand-flagship-abilene-stargate-site-meta-in-talks-to-pick-up-crusoe-capacity-with-nvidias-help/"
+    },
+    {
+     "o": "Crusoe (company blog)",
+     "u": "https://www.crusoe.ai/resources/blog/an-inside-look-at-the-abilene-ai-data-center"
+    }
+   ],
+   "note": "Two buildings operating since Sept. 2025 and six more due in 2026 for ~1.2 GW (DCD, March 2026); 'under construction' reflects partial operation. Oracle/OpenAI dropped a planned expansion toward 2 GW in March 2026; DCD reported Nvidia paid a $150M deposit and was helping Crusoe court Meta. Crusoe says the campus will provide up to 32% of Abilene's FY2025 budgeted property tax revenue at full operation."
+  }
+ ]
 }

@@ -1,0 +1,180 @@
+{
+ "month": "2026-05",
+ "feed": [
+  {
+   "d": "2026-05-28",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-05-28-anthropic-raises-65b-series-h-at-965b",
+   "c": "Deals & mergers",
+   "s": "confirmed",
+   "h": "Anthropic raises $65B Series H at $965B valuation, including $5B from Amazon",
+   "b": "Anthropic announced a $65 billion Series H at a $965 billion post-money valuation, led by Altimeter Capital, Dragoneer, Greenoaks and Sequoia Capital. Anthropic says the round includes $5 billion from Amazon, part of $15 billion in previously committed hyperscaler investments.",
+   "src": [
+    {
+     "o": "Anthropic",
+     "t": "Anthropic raises $65B Series H at $965B valuation",
+     "u": "https://www.anthropic.com/news/series-h?hl=en-US"
+    },
+    {
+     "o": "Built In",
+     "t": "Anthropic Raises $65B Series H, Achieves $965B Valuation",
+     "u": "https://builtin.com/articles/anthropic-raises-65b-series-h-965b-valuation-20260601"
+    }
+   ],
+   "e": [
+    "anthropic",
+    "amazon"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-05-22",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-05-22-massachusetts-certifies-first-us-union-for-uber",
+   "c": "Labor & AI",
+   "s": "confirmed",
+   "h": "Massachusetts certifies first U.S. union for Uber and Lyft drivers, covering about 70,000",
+   "b": "The Massachusetts Department of Labor Relations certified the App Drivers Union (SEIU 32BJ/IAM) as the bargaining representative for rideshare drivers working for Uber, Lyft and other transportation network companies. The step follows a 2024 ballot law letting drivers bargain while remaining contractors; the union and companies must now negotiate pay and terms and submit them to the state.",
+   "src": [
+    {
+     "o": "Mass.gov (Department of Labor Relations)",
+     "t": "Rideshare Driver Unionization",
+     "u": "https://www.mass.gov/info-details/rideshare-driver-unionization"
+    },
+    {
+     "o": "WBUR",
+     "t": "Massachusetts formally certifies nation's first union of Uber and Lyft drivers. Now what?",
+     "u": "https://www.wbur.org/news/2026/05/26/massachusetts-app-drivers-union-uber-lyft"
+    }
+   ],
+   "e": [
+    "uber",
+    "lyft",
+    "massachusetts-dlr",
+    "app-drivers-union"
+   ],
+   "st": [
+    "MA"
+   ]
+  },
+  {
+   "d": "2026-05-20",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-05-20-two-contractors-charged-with-bribing-army-employee",
+   "c": "Corruption cases",
+   "s": "confirmed",
+   "h": "Two contractors charged with bribing Army employee over Hawaii technology innovation campus contracts",
+   "b": "The Justice Department unsealed an indictment charging Leonard Pick and Brian Kent with conspiracy, bribery, major fraud and wire fraud. Prosecutors allege a scheme to pay a U.S. Army employee about $1.25 million in bribes, folded into inflated contract costs, tied to the Army Pacific's Hawaii-Pacific Innovation Campus. Stars and Stripes reported that the indictment says the Pentagon spent at least $100 million on the campus. The defendants are presumed innocent.",
+   "src": [
+    {
+     "o": "U.S. Department of Justice",
+     "t": "Two Defense Contractors Arrested for Bribery and Major Fraud Conspiracy Scheme Affecting Department of War Technology Innovation Contracts",
+     "u": "https://www.justice.gov/opa/pr/two-defense-contractors-arrested-bribery-and-major-fraud-conspiracy-scheme-affecting"
+    },
+    {
+     "o": "Stars and Stripes",
+     "t": "Bribery, fraud case targets contracts tied to Army innovation hub in Hawaii",
+     "u": "https://www.stripes.com/theaters/asia_pacific/2026-05-27/bribery-fraud-charges-army-innovation-hub-21801070.html"
+    }
+   ],
+   "e": [
+    "doj",
+    "us-army",
+    "hawaii-pacific-innovation-campus"
+   ],
+   "st": [
+    "HI"
+   ]
+  },
+  {
+   "d": "2026-05-08",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-05-08-gm-agrees-to-1275m-california-penalty-over",
+   "c": "Privacy & surveillance",
+   "s": "confirmed",
+   "h": "GM agrees to $12.75M California penalty over sale of OnStar driving and location data",
+   "b": "California's attorney general, four county district attorneys and CalPrivacy announced that General Motors will pay $12.75 million in civil penalties to resolve a lawsuit alleging it sold OnStar subscribers' driving and location data to LexisNexis Risk Solutions and Verisk from 2020 to 2024. GM must stop selling driving data to consumer reporting agencies for five years and delete retained data; it did not admit liability. CalMatters reported it is the largest CCPA penalty to date.",
+   "src": [
+    {
+     "o": "Los Angeles County District Attorney's Office",
+     "t": "General Motors to Pay $12.75M to Settle California Consumer Protection Lawsuit Alleging Data Privacy Violations",
+     "u": "https://da.lacounty.gov/media/news/general-motors-pay-1275m-settle-california-consumer-protection-lawsuit-alleging-data"
+    },
+    {
+     "o": "CalMatters",
+     "t": "GM just paid a record penalty for breaking California privacy law",
+     "u": "https://calmatters.org/economy/technology/2026/05/gm-record-california-penalty-onstar-data/"
+    }
+   ],
+   "e": [
+    "general-motors",
+    "california-attorney-general",
+    "calprivacy",
+    "lexisnexis-risk-solutions",
+    "verisk"
+   ],
+   "st": [
+    "CA"
+   ]
+  },
+  {
+   "d": "2026-05-07",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-05-07-cloudflare-cuts-about-1100-jobs-roughly-20",
+   "c": "Labor & AI",
+   "s": "confirmed",
+   "h": "Cloudflare cuts about 1,100 jobs, roughly 20% of staff, citing shift to 'agentic AI' operations",
+   "b": "Cloudflare announced it would cut about 1,100 employees, around 20% of its workforce, alongside record quarterly revenue of $639.8 million, up 34% year over year. Its co-founders tied the cuts to rising internal AI use and redesigning the company for what they called the agentic AI era; the CEO later said most of those cut were in internal support roles.",
+   "src": [
+    {
+     "o": "The Register",
+     "t": "Cloudflare to fire 1,100 staff whose jobs just aren't AI enough",
+     "u": "https://www.theregister.com/off-prem/2026/05/08/cloudflare-to-fire-1100-staff-whose-jobs-just-arent-ai-enough/5235536"
+    },
+    {
+     "o": "TechCrunch",
+     "t": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others",
+     "u": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
+    }
+   ],
+   "e": [
+    "cloudflare"
+   ],
+   "st": []
+  },
+  {
+   "d": "2026-05-01",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-05-01-pentagon-signs-eight-ai-firms-to-deploy",
+   "c": "Government contracts",
+   "s": "confirmed",
+   "h": "Pentagon signs eight AI firms to deploy models on classified networks; Anthropic left out",
+   "b": "The Department of War (Defense Department) announced agreements with SpaceX, OpenAI, Google, NVIDIA, Reflection, Microsoft, Amazon Web Services and Oracle to deploy AI capabilities on its Impact Level 6 and 7 classified networks for lawful operational use. The release did not give dollar values. The Washington Times reported that Anthropic was not included after talks broke down over the company's limits on autonomous weapons and domestic mass surveillance, and that the Pentagon had listed Anthropic as a supply chain risk.",
+   "src": [
+    {
+     "o": "U.S. Department of War",
+     "t": "Classified Networks AI Agreements",
+     "u": "https://www.war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements/"
+    },
+    {
+     "o": "The Washington Times",
+     "t": "Pentagon partners with major AI companies for use in classified networks",
+     "u": "https://www.washingtontimes.com/news/2026/may/1/pentagon-partners-major-ai-companies-use-classified-networks/"
+    }
+   ],
+   "e": [
+    "dod",
+    "spacex",
+    "openai",
+    "google",
+    "nvidia",
+    "reflection-ai",
+    "microsoft",
+    "amazon",
+    "oracle",
+    "anthropic"
+   ],
+   "st": []
+  }
+ ]
+}

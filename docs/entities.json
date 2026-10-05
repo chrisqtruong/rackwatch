@@ -1,0 +1,688 @@
+{
+ "entities": [
+  {
+   "id": "abilene-tx",
+   "n": "Abilene, Texas",
+   "k": "place",
+   "note": "Site of the first Stargate campus"
+  },
+  {
+   "id": "ainet",
+   "n": "AiNET Corp.",
+   "k": "company",
+   "note": "Data center operator in Beltsville, Maryland"
+  },
+  {
+   "id": "alabama-attorney-general",
+   "n": "Alabama Attorney General",
+   "k": "official",
+   "note": "Office led by Steve Marshall"
+  },
+  {
+   "id": "amazon",
+   "n": "Amazon",
+   "k": "company",
+   "note": "Retailer and owner of Amazon Web Services (AWS), the largest cloud provider."
+  },
+  {
+   "id": "amd",
+   "n": "AMD",
+   "k": "company",
+   "note": "Chipmaker; GPUs and CPUs"
+  },
+  {
+   "id": "american-battlefield-trust",
+   "n": "American Battlefield Trust",
+   "k": "group",
+   "note": "Historic preservation nonprofit; plaintiff against Digital Gateway rezonings"
+  },
+  {
+   "id": "american-mission-pac",
+   "n": "American Mission PAC",
+   "k": "group",
+   "note": "Super PAC affiliated with Leading the Future"
+  },
+  {
+   "id": "anthropic",
+   "n": "Anthropic",
+   "k": "company",
+   "note": "AI lab; maker of Claude; backed by Amazon and Google"
+  },
+  {
+   "id": "app-drivers-union",
+   "n": "App Drivers Union (SEIU 32BJ/IAM)",
+   "k": "group",
+   "note": "Union certified to represent Massachusetts rideshare drivers"
+  },
+  {
+   "id": "apple",
+   "n": "Apple",
+   "k": "company",
+   "note": "Receives payments from Google for default search placement"
+  },
+  {
+   "id": "arizona-department-of-water-resources",
+   "n": "Arizona Department of Water Resources",
+   "k": "agency",
+   "note": "State water regulator"
+  },
+  {
+   "id": "authors-guild",
+   "n": "The Authors Guild",
+   "k": "group",
+   "note": "U.S. professional organization for writers"
+  },
+  {
+   "id": "beale-infrastructure",
+   "n": "Beale Infrastructure",
+   "k": "company",
+   "note": "Developer of Project Blue near Tucson"
+  },
+  {
+   "id": "blue-owl-capital",
+   "n": "Blue Owl Capital",
+   "k": "company",
+   "note": "Asset manager; Meta's joint venture partner on Hyperion"
+  },
+  {
+   "id": "broadcom",
+   "n": "Broadcom",
+   "k": "company",
+   "note": "Chipmaker that co-develops Google's TPUs"
+  },
+  {
+   "id": "bytedance",
+   "n": "ByteDance",
+   "k": "company",
+   "note": "Beijing-based former parent and partial owner of TikTok"
+  },
+  {
+   "id": "caiso",
+   "n": "California Independent System Operator",
+   "k": "utility",
+   "note": "Regional grid operator"
+  },
+  {
+   "id": "california-attorney-general",
+   "n": "California Attorney General",
+   "k": "official",
+   "note": "California Department of Justice, led by Rob Bonta"
+  },
+  {
+   "id": "california-governor",
+   "n": "Office of the Governor of California",
+   "k": "official",
+   "note": "Gov. Gavin Newsom"
+  },
+  {
+   "id": "calprivacy",
+   "n": "California Privacy Protection Agency (CalPrivacy)",
+   "k": "agency",
+   "note": "California regulator enforcing the CCPA and Delete Act"
+  },
+  {
+   "id": "carroll-county-ky",
+   "n": "Carroll County, Kentucky",
+   "k": "place",
+   "note": "Rural county with planned hyperscale data centers"
+  },
+  {
+   "id": "carrollton-ky",
+   "n": "Carrollton, Kentucky",
+   "k": "place",
+   "note": "City that signed land option with Poe Companies"
+  },
+  {
+   "id": "chegg",
+   "n": "Chegg",
+   "k": "company",
+   "note": "Education services company; sued Google over AI Overviews"
+  },
+  {
+   "id": "cloudflare",
+   "n": "Cloudflare",
+   "k": "company",
+   "note": "Internet infrastructure and security company"
+  },
+  {
+   "id": "compass-datacenters",
+   "n": "Compass Datacenters",
+   "k": "company",
+   "note": "Data center developer"
+  },
+  {
+   "id": "crusoe",
+   "n": "Crusoe",
+   "k": "company",
+   "note": "AI data center developer"
+  },
+  {
+   "id": "cybba",
+   "n": "Cybba, Inc.",
+   "k": "company",
+   "note": "Boston-based data broker selling ad-targeting data"
+  },
+  {
+   "id": "data-center-coalition",
+   "n": "Data Center Coalition",
+   "k": "group",
+   "note": "Data center industry trade group"
+  },
+  {
+   "id": "dc-attorney-general",
+   "n": "Office of the Attorney General for the District of Columbia",
+   "k": "agency",
+   "note": "One of 51 state and territorial AGs in the Meta youth-harm settlement"
+  },
+  {
+   "id": "dc-circuit",
+   "n": "U.S. Court of Appeals for the D.C. Circuit",
+   "k": "court",
+   "note": "Hearing cross-appeals in the Google search case"
+  },
+  {
+   "id": "dhs",
+   "n": "Department of Homeland Security",
+   "k": "agency",
+   "note": "Parent department of ICE"
+  },
+  {
+   "id": "dod",
+   "n": "U.S. Department of Defense (Department of War)",
+   "k": "agency",
+   "note": "Pentagon; rebranded Department of War by the administration"
+  },
+  {
+   "id": "doj",
+   "n": "U.S. Department of Justice",
+   "k": "agency",
+   "note": "Federal law enforcement department"
+  },
+  {
+   "id": "douglas-county-ga",
+   "n": "Douglas County, Georgia",
+   "k": "place",
+   "note": "County west of Atlanta"
+  },
+  {
+   "id": "duke-energy",
+   "n": "Duke Energy",
+   "k": "utility",
+   "note": "Electric utility serving the Carolinas and other states"
+  },
+  {
+   "id": "edgeconnex",
+   "n": "EdgeConneX",
+   "k": "company",
+   "note": "Data center developer"
+  },
+  {
+   "id": "entergy-louisiana",
+   "n": "Entergy Louisiana",
+   "k": "utility",
+   "note": "Louisiana electric utility serving Meta's Hyperion campus"
+  },
+  {
+   "id": "european-commission",
+   "n": "European Commission",
+   "k": "agency",
+   "note": "EU executive; enforces the Digital Markets Act and EU competition law"
+  },
+  {
+   "id": "fec",
+   "n": "Federal Election Commission",
+   "k": "agency",
+   "note": "Federal campaign finance regulator"
+  },
+  {
+   "id": "ferc",
+   "n": "Federal Energy Regulatory Commission",
+   "k": "agency",
+   "note": "Federal regulator of interstate electricity transmission and wholesale markets"
+  },
+  {
+   "id": "fleet-data-centers",
+   "n": "Fleet Data Centers",
+   "k": "company",
+   "note": "Data center developer; subsidiary of Tract Capital"
+  },
+  {
+   "id": "flock-safety",
+   "n": "Flock Safety",
+   "k": "company",
+   "note": "Maker of automated license plate reader cameras used by police"
+  },
+  {
+   "id": "ftc",
+   "n": "Federal Trade Commission",
+   "k": "agency",
+   "note": "Federal consumer protection and antitrust agency"
+  },
+  {
+   "id": "general-motors",
+   "n": "General Motors",
+   "k": "company",
+   "note": "U.S. automaker; operates OnStar connected-vehicle service"
+  },
+  {
+   "id": "google",
+   "n": "Google",
+   "k": "company",
+   "note": "Alphabet subsidiary; search, ads, cloud and TPU chips"
+  },
+  {
+   "id": "gsa",
+   "n": "General Services Administration",
+   "k": "agency",
+   "note": "Federal procurement agency running OneGov"
+  },
+  {
+   "id": "hawaii-pacific-innovation-campus",
+   "n": "Hawaii-Pacific Innovation Campus",
+   "k": "place",
+   "note": "Army Pacific technology test hub in Honolulu"
+  },
+  {
+   "id": "hugging-face",
+   "n": "Hugging Face",
+   "k": "company",
+   "note": "Open AI model and dataset hosting platform; being acquired by Nvidia"
+  },
+  {
+   "id": "ice",
+   "n": "U.S. Immigration and Customs Enforcement",
+   "k": "agency",
+   "note": "DHS immigration enforcement agency"
+  },
+  {
+   "id": "iso-ne",
+   "n": "ISO New England",
+   "k": "utility",
+   "note": "Regional grid operator"
+  },
+  {
+   "id": "jobs-and-democracy-pac",
+   "n": "Jobs and Democracy PAC",
+   "k": "group",
+   "note": "Democratic-focused super PAC affiliated with Public First"
+  },
+  {
+   "id": "lancium",
+   "n": "Lancium",
+   "k": "company",
+   "note": "Owner of the Abilene campus land/energy site"
+  },
+  {
+   "id": "leading-the-future",
+   "n": "Leading the Future",
+   "k": "group",
+   "note": "Pro-AI-industry super PAC (FEC C00916114) formed August 2025"
+  },
+  {
+   "id": "lexisnexis-risk-solutions",
+   "n": "LexisNexis Risk Solutions",
+   "k": "company",
+   "note": "Data broker and consumer reporting agency"
+  },
+  {
+   "id": "lg-and-e-ku",
+   "n": "LG&E and KU",
+   "k": "utility",
+   "note": "Kentucky utilities owned by PPL"
+  },
+  {
+   "id": "locatesmarter",
+   "n": "LocateSmarter LLC",
+   "k": "company",
+   "note": "Iowa-based data broker"
+  },
+  {
+   "id": "loudoun-county-va",
+   "n": "Loudoun County, Virginia",
+   "k": "place",
+   "note": "Northern Virginia county with large data center concentration"
+  },
+  {
+   "id": "louisiana-public-service-commission",
+   "n": "Louisiana Public Service Commission",
+   "k": "agency",
+   "note": "State utility regulator"
+  },
+  {
+   "id": "lyft",
+   "n": "Lyft",
+   "k": "company",
+   "note": "Ride-hailing platform"
+  },
+  {
+   "id": "massachusetts-dlr",
+   "n": "Massachusetts Department of Labor Relations",
+   "k": "agency",
+   "note": "State agency administering collective bargaining law"
+  },
+  {
+   "id": "meta",
+   "n": "Meta",
+   "k": "company",
+   "note": "Owner of Facebook, Instagram and WhatsApp; builds large AI data centers."
+  },
+  {
+   "id": "microsoft",
+   "n": "Microsoft",
+   "k": "company",
+   "note": "Software and cloud company"
+  },
+  {
+   "id": "miso",
+   "n": "Midcontinent Independent System Operator",
+   "k": "utility",
+   "note": "Regional grid operator"
+  },
+  {
+   "id": "monday-com",
+   "n": "monday.com",
+   "k": "company",
+   "note": "Tel Aviv-based work-management software company"
+  },
+  {
+   "id": "mount-pleasant-wi",
+   "n": "Village of Mount Pleasant, Wisconsin",
+   "k": "place",
+   "note": "Site of Microsoft's Fairwater data center campus"
+  },
+  {
+   "id": "naacp",
+   "n": "NAACP",
+   "k": "group",
+   "note": "Civil rights organization; plaintiff against xAI"
+  },
+  {
+   "id": "nd-cal",
+   "n": "U.S. District Court, Northern District of California",
+   "k": "court",
+   "note": "Federal trial court in San Francisco/Oakland/San Jose"
+  },
+  {
+   "id": "nd-okla",
+   "n": "U.S. District Court, Northern District of Oklahoma",
+   "k": "court",
+   "note": "Federal trial court in Tulsa"
+  },
+  {
+   "id": "new-jersey-bpu",
+   "n": "New Jersey Board of Public Utilities",
+   "k": "agency",
+   "note": "State utility regulator"
+  },
+  {
+   "id": "new-jersey-governor",
+   "n": "Office of the Governor of New Jersey",
+   "k": "official",
+   "note": "Gov. Mikie Sherrill"
+  },
+  {
+   "id": "north-carolina-utilities-commission",
+   "n": "North Carolina Utilities Commission",
+   "k": "agency",
+   "note": "State utility regulator"
+  },
+  {
+   "id": "nv-energy",
+   "n": "NV Energy",
+   "k": "utility",
+   "note": "Nevada's main electric utility"
+  },
+  {
+   "id": "nvidia",
+   "n": "Nvidia",
+   "k": "company",
+   "note": "Largest maker of AI chips; invests in customers and data center developers."
+  },
+  {
+   "id": "nyiso",
+   "n": "New York Independent System Operator",
+   "k": "utility",
+   "note": "Regional grid operator"
+  },
+  {
+   "id": "openai",
+   "n": "OpenAI",
+   "k": "company",
+   "note": "Developer of ChatGPT"
+  },
+  {
+   "id": "oracle",
+   "n": "Oracle",
+   "k": "company",
+   "note": "Cloud and database company"
+  },
+  {
+   "id": "palantir",
+   "n": "Palantir Technologies",
+   "k": "company",
+   "note": "Data analytics and AI software contractor"
+  },
+  {
+   "id": "penske-media",
+   "n": "Penske Media Corporation",
+   "k": "company",
+   "note": "Publisher of Rolling Stone, Variety, Billboard and others; sued Google over AI Overviews"
+  },
+  {
+   "id": "pike-county-oh",
+   "n": "Pike County, Ohio",
+   "k": "place",
+   "note": "Site of PORTS-Pike Technology Campus at the former Portsmouth Gaseous Diffusion Plant"
+  },
+  {
+   "id": "pima-county-az",
+   "n": "Pima County, Arizona",
+   "k": "place",
+   "note": "County where Project Blue is under construction"
+  },
+  {
+   "id": "pjm-interconnection",
+   "n": "PJM Interconnection",
+   "k": "utility",
+   "note": "Regional grid operator for 13 states and D.C."
+  },
+  {
+   "id": "poe-companies",
+   "n": "Poe Companies",
+   "k": "company",
+   "note": "Louisville-based developer proposing Carroll County data center"
+  },
+  {
+   "id": "powerhouse-data-centers",
+   "n": "PowerHouse Data Centers",
+   "k": "company",
+   "note": "Data center developer partnered with Poe Companies"
+  },
+  {
+   "id": "prince-william-county-va",
+   "n": "Prince William County, Virginia",
+   "k": "place",
+   "note": "Northern Virginia county"
+  },
+  {
+   "id": "public-first-action",
+   "n": "Public First Action",
+   "k": "group",
+   "note": "AI-policy 501(c)(4) led by former Reps. Brad Carson and Chris Stewart; funded in part by Anthropic"
+  },
+  {
+   "id": "public-first-pac",
+   "n": "Public First PAC",
+   "k": "group",
+   "note": "Super PAC tied to Public First Action"
+  },
+  {
+   "id": "public-utilities-commission-of-nevada",
+   "n": "Public Utilities Commission of Nevada",
+   "k": "agency",
+   "note": "State utility regulator"
+  },
+  {
+   "id": "qts",
+   "n": "QTS Data Centers",
+   "k": "company",
+   "note": "Data center developer (Blackstone-owned)"
+  },
+  {
+   "id": "reflection-ai",
+   "n": "Reflection AI",
+   "k": "company",
+   "note": "AI model developer"
+  },
+  {
+   "id": "richland-parish-la",
+   "n": "Richland Parish, Louisiana",
+   "k": "place",
+   "note": "Site of Meta's Hyperion data center"
+  },
+  {
+   "id": "salesintel",
+   "n": "SalesIntel Research, Inc.",
+   "k": "company",
+   "note": "Virginia-based B2B contact data broker"
+  },
+  {
+   "id": "sb-energy",
+   "n": "SB Energy",
+   "k": "company",
+   "note": "SoftBank Group subsidiary developing the PORTS-Pike campus in Ohio"
+  },
+  {
+   "id": "sec",
+   "n": "U.S. Securities and Exchange Commission",
+   "k": "agency",
+   "note": "Securities regulator; customer in AiNET case"
+  },
+  {
+   "id": "softbank",
+   "n": "SoftBank Group",
+   "k": "company",
+   "note": "Japanese investment conglomerate; parent of SB Energy"
+  },
+  {
+   "id": "south-bend-in",
+   "n": "South Bend, Indiana",
+   "k": "place",
+   "note": "City whose mayor barred officials from signing data center NDAs"
+  },
+  {
+   "id": "spacex",
+   "n": "SpaceX",
+   "k": "company",
+   "note": "Space and satellite company"
+  },
+  {
+   "id": "spp",
+   "n": "Southwest Power Pool",
+   "k": "utility",
+   "note": "Regional grid operator"
+  },
+  {
+   "id": "state-attorneys-general",
+   "n": "State attorneys general (multistate)",
+   "k": "group",
+   "note": "Coalition of state and territorial attorneys general"
+  },
+  {
+   "id": "stephen-feinberg",
+   "n": "Stephen Feinberg",
+   "k": "official",
+   "note": "Deputy Secretary of Defense"
+  },
+  {
+   "id": "storey-county-nv",
+   "n": "Storey County, Nevada",
+   "k": "place",
+   "note": "Home of the Tahoe Reno Industrial Center"
+  },
+  {
+   "id": "talen-energy",
+   "n": "Talen Energy",
+   "k": "company",
+   "note": "Power producer; majority owner of Susquehanna nuclear plant"
+  },
+  {
+   "id": "think-big-pac",
+   "n": "Think Big PAC",
+   "k": "group",
+   "note": "Super PAC affiliated with Leading the Future"
+  },
+  {
+   "id": "thomson-reuters",
+   "n": "Thomson Reuters Special Services",
+   "k": "company",
+   "note": "Government services unit of Thomson Reuters; sells CLEAR data platform"
+  },
+  {
+   "id": "tiktok",
+   "n": "TikTok",
+   "k": "company",
+   "note": "Short-video social media platform"
+  },
+  {
+   "id": "tract-capital",
+   "n": "Tract Capital Management",
+   "k": "company",
+   "note": "Denver-based digital infrastructure company"
+  },
+  {
+   "id": "tucson-az",
+   "n": "City of Tucson, Arizona",
+   "k": "place",
+   "note": "City that rejected Project Blue's use of city water"
+  },
+  {
+   "id": "tulsa-county-sheriff",
+   "n": "Tulsa County Sheriff's Office",
+   "k": "agency",
+   "note": "Oklahoma county law enforcement agency"
+  },
+  {
+   "id": "uber",
+   "n": "Uber",
+   "k": "company",
+   "note": "Ride-hailing and delivery platform"
+  },
+  {
+   "id": "us-army",
+   "n": "U.S. Army",
+   "k": "agency",
+   "note": "Army; U.S. Army Pacific funded the Hawaii-Pacific Innovation Campus"
+  },
+  {
+   "id": "us-district-court-dc",
+   "n": "U.S. District Court for the District of Columbia",
+   "k": "court",
+   "note": "Heard U.S. v. Google search case and publisher AI Overviews suits (Judge Amit Mehta)"
+  },
+  {
+   "id": "us-district-court-edva",
+   "n": "U.S. District Court for the Eastern District of Virginia",
+   "k": "court",
+   "note": "Heard U.S. v. Google ad tech case (Judge Leonie Brinkema)"
+  },
+  {
+   "id": "verisk",
+   "n": "Verisk Analytics",
+   "k": "company",
+   "note": "Insurance data and analytics company"
+  },
+  {
+   "id": "world-labs",
+   "n": "World Labs",
+   "k": "company",
+   "note": "San Francisco AI lab founded by Fei-Fei Li; being acquired by AMD"
+  },
+  {
+   "id": "xai",
+   "n": "xAI",
+   "k": "company",
+   "note": "Elon Musk's AI company; operates Colossus data centers in Memphis area"
+  }
+ ]
+}

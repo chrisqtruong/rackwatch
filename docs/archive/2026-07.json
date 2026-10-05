@@ -1,0 +1,35 @@
+{
+ "month": "2026-07",
+ "feed": [
+  {
+   "d": "2026-07-02",
+   "added": "2026-10-05T12:00:00-04:00",
+   "id": "2026-07-02-prince-william-digital-gateway-data-center-project",
+   "c": "Data centers",
+   "s": "confirmed",
+   "h": "Prince William Digital Gateway data center project ends after QTS drops Virginia Supreme Court appeal",
+   "b": "QTS withdrew its appeal at the Virginia Supreme Court, ending the roughly 2,000-acre Digital Gateway data center plan near Manassas National Battlefield Park. Courts had voided the county's rezonings over improper public notice, in suits brought by the Oak Valley Homeowners Association, residents and the American Battlefield Trust; Compass and Prince William County had already withdrawn.",
+   "src": [
+    {
+     "o": "WTOP News",
+     "t": "Digital Gateway data center project dies after final developer withdraws appeal",
+     "u": "https://wtop.com/prince-william-county/2026/07/digital-gateway-data-center-project-dies-after-final-developer-withdraws-appeal/"
+    },
+    {
+     "o": "American Battlefield Trust",
+     "t": "Victory at Manassas! Prince William Digital Gateway Project Dead After Developer Drops Appeal",
+     "u": "https://www.battlefields.org/news/victory-manassas-prince-william-digital-gateway-project-dead-after-developer-drops-appeal"
+    }
+   ],
+   "e": [
+    "qts",
+    "compass-datacenters",
+    "prince-william-county-va",
+    "american-battlefield-trust"
+   ],
+   "st": [
+    "VA"
+   ]
+  }
+ ]
+}

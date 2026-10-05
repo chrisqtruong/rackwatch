@@ -65,7 +65,7 @@ nav.tabs a{flex:0 0 auto;min-height:46px;display:flex;align-items:center;padding
 nav.tabs a[aria-current="page"]{color:var(--text);border-bottom-color:var(--accent)}
 nav.tabs a:hover{color:var(--text)}
 
-main{padding:18px 0 40px;min-height:60vh}
+main.wrap{padding-top:18px;padding-bottom:40px;min-height:60vh}
 h2{font-size:20px;margin:6px 0 10px;letter-spacing:-.01em}
 h3{font-size:17px;margin:0}
 .muted{color:var(--muted)}
@@ -84,7 +84,7 @@ h3{font-size:17px;margin:0}
 .chip.plain::before,.chip.lane::before{display:none}
 
 /* layout */
-.split{display:grid;gap:18px}
+.split{display:grid;gap:18px;grid-template-columns:minmax(0,1fr)}
 @media(min-width:900px){.split{grid-template-columns:minmax(0,1fr) 340px}}
 .panel{border:1px solid var(--line);border-radius:12px;background:var(--panel);box-shadow:var(--shadow)}
 .panel-h{display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--line)}
@@ -138,6 +138,11 @@ figcaption{font-size:12.5px;color:var(--muted)}
 .lane{font-size:11px}
 .wire-note{font-size:13px;color:var(--muted);padding:10px 14px;border-bottom:1px solid var(--line);background:var(--rep-soft)}
 .side-wire{max-height:none}
+.wire-strip{display:flex;gap:10px;align-items:center;margin:0 0 12px;padding:10px 12px;min-height:48px;border:1px dashed var(--rep);border-radius:10px;color:var(--text);text-decoration:none;font-size:14px;background:var(--rep-soft)}
+.wire-strip b{color:var(--rep);font-family:"JetBrains Mono",monospace;font-size:12px;text-transform:uppercase;letter-spacing:.05em;flex:0 0 auto}
+.wire-strip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+@media(min-width:900px){.wire-strip{display:none!important}}
+@media(max-width:899px){.side-wire{order:2}}
 @media(min-width:900px){.side-wire .list{max-height:1100px;overflow:auto}}
 
 /* tables */
@@ -323,7 +328,8 @@ function matches(p,q){
 }
 const byDate=(a,b)=>(a.d<b.d?1:a.d>b.d?-1:(a.added||"")<(b.added||"")?1:-1);
 function filterBar(q,withState=true){
- const ents=S.ents.slice().sort((a,b)=>a.n.localeCompare(b.n));
+ const inPosts=new Set(S.data.feed.concat(Object.values(S.arch).flatMap(m=>m.feed)).flatMap(p=>p.e||[]));
+ const ents=S.ents.filter(x=>inPosts.has(x.id)||x.id===q.e).sort((a,b)=>a.n.localeCompare(b.n));
  const st=[...new Set(S.data.feed.flatMap(p=>p.st||[]).concat(Object.values(S.arch).flatMap(m=>m.feed.flatMap(p=>p.st||[]))))].sort();
  return`<form class="filters" role="search" onsubmit="return false">
  <label class="q"><span class="sr">Search</span><input type="search" id="f-q" placeholder="Search posts, companies, places" value="${esc(q.q||"")}"></label>
@@ -345,7 +351,7 @@ function activeLine(q,n){
 function vFeed(r){
  const q=r.q;
  $("#main").innerHTML=`<div class="legend" role="note"><span><b>Feed</b> = checked against sources.</span><span><b>Wire</b> = raw headlines, not yet checked.</span><span>${chip("confirmed")} primary record</span><span>${chip("reported")} not yet confirmed</span><span>${chip("disputed")} denied by the subject</span></div>
- <div class="split"><section aria-labelledby="feed-h"><h2 id="feed-h" class="sr">Verified feed</h2>${filterBar(q)}<div id="pins"></div><div id="f-active"></div><div class="panel" id="feed-list"></div></section>
+ <div class="split"><section aria-labelledby="feed-h"><h2 id="feed-h" class="sr">Verified feed</h2>${filterBar(q)}<a class="wire-strip" href="#/wire" id="wire-strip" hidden></a><div id="pins"></div><div id="f-active"></div><div class="panel" id="feed-list"></div></section>
  <aside class="panel side-wire" aria-labelledby="sw-h"><div class="panel-h"><h2 id="sw-h">Wire</h2><span class="chip unv">Unverified</span><a class="r" href="#/wire">All</a></div><div class="wire-note">Headlines pulled automatically from public feeds. Not checked yet.</div><div class="list" id="side-wire"></div></aside></div>`;
  bindFilters(paintFeed);paintFeed(q);paintWireLists();
  if(r.post)goToPost(r.post);
@@ -376,6 +382,7 @@ function paintWireLists(){
  const items=(S.wire&&S.wire.items)||[];
  const side=$("#side-wire");if(side)side.innerHTML=items.slice(0,25).map(wireHTML).join("")||`<p class="empty">The Wire has no headlines yet. It fills in once the GitHub Action runs.</p>`;
  const full=$("#wire-list");if(full)paintWire();
+ const st=$("#wire-strip");if(st){if(items.length){st.hidden=false;st.innerHTML=`<b>Wire</b><span>${esc(ago(items[0].at))}: ${esc(items[0].t)}</span><span class="faint" style="flex:0 0 auto">${items.length} unverified →</span>`}else st.hidden=true}
 }
 
 /* ---------- wire ---------- */
@@ -424,8 +431,8 @@ async function vEntity(r){
  <div class="stats"><div class="stat"><div class="v">${posts.length}</div><div class="k">posts</div></div><div class="stat"><div class="v">${deals.length}</div><div class="k">deals and contracts</div></div><div class="stat"><div class="v">${money(out||null)}</div><div class="k">money out (confirmed)</div></div><div class="stat"><div class="v">${money(inn||null)}</div><div class="k">money in (confirmed)</div></div></div>
  <p class="faint" style="font-size:13px">Money totals add confirmed ledger rows only and may mix different kinds of money (deals, fines, lobbying). See each row.</p>
  <div class="split"><section><h2 style="font-size:17px">Timeline</h2>${tl.length?`<ol class="tl">${tl.map(t=>`<li class="${t.m?"money":""}"><time datetime="${esc(t.d)}" class="faint" style="font-size:12.5px">${fmtDate(t.d)}</time><div>${t.h}</div></li>`).join("")}</ol>`:'<p class="muted">Nothing yet.</p>'}</section>
- <aside>${rows.length?`<h2 style="font-size:17px">Ledger rows</h2><div class="tbl-wrap">${ledgerTable(rows,true)}</div>`:""}
- ${projs.length?`<h2 style="font-size:17px;margin-top:16px">Data center projects</h2>${projs.map(projCard).join("")}`:""}</aside></div>
+ <aside>${projs.length?`<h2 style="font-size:17px">Data center projects</h2>${projs.map(projCard).join("")}`:`<h2 style="font-size:17px">About this page</h2><p class="muted" style="font-size:14px">Built from every post and confirmed ledger row tagged with ${esc(e.n)}. Tags are added by the verification run; if something is missing, say so in the comments or Discussions.</p>`}</aside></div>
+ ${rows.length?`<h2 style="font-size:17px;margin-top:20px">Ledger rows</h2><div class="tbl-wrap">${ledgerTable(rows)}</div>`:""}
  <h2 style="font-size:17px;margin-top:20px">Linked posts</h2><div class="panel">${posts.map(p=>postHTML(p)).join("")||'<p class="empty">No posts yet.</p>'}</div>`;
 }
 
@@ -477,7 +484,7 @@ function dealMap(){
   const w=x.amt?1.5+5*Math.sqrt(+x.amt/mx):1.2;return`<path d="M${x1},${y1} Q${mxp},${myp} ${x2},${y2}" stroke="${col[x.t]}" stroke-width="${w.toFixed(1)}" fill="none" opacity=".75" marker-end="url(#ah-${x.t})"><title>${esc(x.t)}: ${esc(x.from)} → ${esc(x.to)}, ${esc(moneyFull(x.amt))}</title></path>`}).join("");
  const nodes=ids.map(id=>{const [x,y,a]=pos[id];const lx=x+Math.cos(a)*14,ly=y+Math.sin(a)*14;const anc=Math.cos(a)>.3?"start":Math.cos(a)<-.3?"end":"middle";
   return`<a href="#/entity/${esc(id)}"><circle cx="${x}" cy="${y}" r="7" fill="var(--panel)" stroke="var(--text)" stroke-width="1.5"/><text x="${lx}" y="${ly+(Math.sin(a)>.3?10:Math.sin(a)<-.3?-4:4)}" text-anchor="${anc}" font-size="12.5">${esc(entName(id))}</text></a>`}).join("");
- const mk=Object.entries(col).map(([k,c])=>`<marker id="ah-${k}" viewBox="0 0 10 10" refX="16" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="${c}"/></marker>`).join("");
+ const mk=Object.entries(col).map(([k,c])=>`<marker id="ah-${k}" viewBox="0 0 10 10" refX="19" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="${c}"/></marker>`).join("");
  const alt=rows.slice().sort(byDate).map(x=>`<li><time datetime="${esc(x.d)}">${esc(x.d)}</time> ${esc(x.t)}: ${esc(x.from)} → ${esc(x.to)}, <span class="mono">${esc(moneyFull(x.amt))}</span>. ${esc(x.note)}</li>`).join("");
  return`<figure class="fig" aria-labelledby="m2"><h3 id="m2">Who is buying, investing in and partnering with whom</h3><p class="muted" style="font-size:14px">Arrows point from the payer or buyer to the target. Line width grows with the disclosed amount. <span class="legend-sw" style="background:var(--dis)"></span>acquisition · <span class="legend-sw" style="background:var(--accent)"></span>investment · <span class="legend-sw" style="background:var(--ok)"></span>partnership or compute deal. Confirmed ledger rows only.</p>
  <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Network diagram of deals between companies. Text version below."><defs>${mk}</defs>${edges}${nodes}</svg>

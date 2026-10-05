@@ -144,7 +144,8 @@ def due(s, force):
 def poll(s):
     t0 = time.time()
     try:
-        raw = get(s["url"])
+        url = s["url"].replace("{start}", (NOW - dt.timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%d")).replace("{end}", NOW.strftime("%Y-%m-%d"))
+        raw = get(url)
         items = PARSERS[s["kind"]](raw)
     except Exception as e:
         return s, None, "%s: %s" % (type(e).__name__, str(e)[:160]), time.time() - t0
@@ -152,6 +153,8 @@ def poll(s):
     kept = []
     for f in items:
         if flt and not flt.search(f["t"] + " " + f.get("x", "")):
+            continue
+        if s.get("exclude") and re.search(s["exclude"], f["u"]):
             continue
         kept.append(f)
     return s, (items, kept), None, time.time() - t0

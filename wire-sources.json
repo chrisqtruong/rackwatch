@@ -3,9 +3,9 @@
  "max_age_days": 7,
  "run_every_min": 10,
  "filters": {
-  "tech": "data ?cent(er|re)|hyperscal|\\bA\\.?I\\b|artificial intelligence|algorithm|antitrust|monopol|merger|acqui|Google|Alphabet|\\bMeta\\b|Facebook|Instagram|WhatsApp|Amazon|Apple|Microsoft|Nvidia|OpenAI|Anthropic|\\bxAI\\b|Oracle|Palantir|CoreWeave|semiconductor|\\bchips?\\b|cloud|data broker|privacy|personal data|surveillance|facial recognition|biometric|\\bgig\\b|Uber|Lyft|DoorDash|layoff|lobby|super PAC|broadband|spectrum|TikTok|social media|online|internet|software|tech",
+  "tech": "data ?cent(er|re)|hyperscal|\\bA\\.?I\\b|artificial intelligence|super ?intelligence|algorithm|antitrust|monopol|merger|acqui|Google|Alphabet|\\bMeta\\b|Facebook|Instagram|WhatsApp|Amazon|Apple|Microsoft|Nvidia|OpenAI|Anthropic|\\bxAI\\b|Oracle|Palantir|CoreWeave|semiconductor|\\bchips?\\b|cloud|data broker|privacy|personal data|surveillance|facial recognition|biometric|\\bgig\\b|Uber|Lyft|DoorDash|layoff|lobby|super PAC|broadband|spectrum|TikTok|social media|online|internet|software|tech",
   "power": "data ?cent(er|re)|hyperscal|antitrust|monopol|merger|acqui|lawsuit|sues|sued|settle|fine[sd]?\\b|ruling|judge|court|FTC|DOJ|regulator|attorney general|lobby|super PAC|PAC\\b|campaign|Pentagon|contract|ICE\\b|surveillance|privacy|data broker|layoff|job cuts|union|gig|moderator|utility|electric|power grid|\\bgrid\\b|water|tax break|incentive|zoning|billion",
-  "dc": "data ?cent(er|re)|hyperscal|large[- ]load|\\bA\\.?I\\b|artificial intelligence|Google|Meta|Amazon|Microsoft|OpenAI|xAI|Oracle|CoreWeave|crypto ?min",
+  "dc": "data ?cent(er|re)|hyperscal|large[- ]load|\\bA\\.?I\\b|artificial intelligence|super ?intelligence|Google|Meta|Amazon|Microsoft|OpenAI|xAI|Oracle|CoreWeave|crypto ?min",
   "community": "zoning|rezon|county|city council|commission|opposition|residents|lawsuit|sue|water|utility|tariff|rate|grid|tax|abatement|incentive|NDA|nondisclosure|moratorium|approv|reject|permit|gas|turbine|noise|PJM|ERCOT|acqui|merger|billion|lobby"
  },
  "sources": [
@@ -17,7 +17,8 @@
    "url": "https://www.ftc.gov/feeds/press-release.xml",
    "lane": "agency",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "ftc-competition",
@@ -27,7 +28,8 @@
    "url": "https://www.ftc.gov/feeds/press-release-competition.xml",
    "lane": "agency",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "ftc-consumer",
@@ -37,7 +39,8 @@
    "url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
    "lane": "agency",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "doj-news",
@@ -47,7 +50,8 @@
    "url": "https://www.justice.gov/news/rss?m=1",
    "lane": "agency",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "doj-opa",
@@ -57,17 +61,20 @@
    "url": "https://www.justice.gov/feeds/opa/justice-news.xml",
    "lane": "agency",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": false,
+   "why_off": "404 on 2026-10-05; doj-news is the same Justice News feed"
   },
   {
    "id": "doj-atr",
    "name": "DOJ Antitrust Division",
    "org": "DOJ Antitrust",
    "kind": "rss",
-   "url": "https://www.justice.gov/atr/press-releases/rss",
+   "url": "https://www.justice.gov/news/rss?type%5B0%5D=image_gallery&type%5B1%5D=press_release&type%5B2%5D=speech&type%5B3%5D=youtube_video&field_component=376&search_api_language=en&show_public_archived=0&require_all=0",
    "lane": "agency",
-   "filter": null,
-   "every": 10
+   "filter": "tech",
+   "every": 10,
+   "on": true
   },
   {
    "id": "sec-press",
@@ -77,27 +84,30 @@
    "url": "https://www.sec.gov/news/pressreleases.rss",
    "lane": "agency",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "sec-litigation",
    "name": "SEC litigation releases",
    "org": "SEC",
    "kind": "rss",
-   "url": "https://www.sec.gov/rss/litigation/litreleases.xml",
+   "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/rss",
    "lane": "agency",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "fcc-headlines",
-   "name": "FCC headlines",
+   "name": "FCC news releases",
    "org": "FCC",
    "kind": "rss",
-   "url": "https://www.fcc.gov/news-events/headlines.xml",
+   "url": "https://api2.fcc.gov/api/exp/v1.0.0/edocspublic/rss/docTypes/News_Release",
    "lane": "agency",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "fcc-edocs",
@@ -107,7 +117,9 @@
    "url": "https://www.fcc.gov/rss/headlines",
    "lane": "agency",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": false,
+   "why_off": "old URL redirects to page not found; same feed as fcc-headlines after fix"
   },
   {
    "id": "ferc-news",
@@ -117,7 +129,9 @@
    "url": "https://www.ferc.gov/rss.xml",
    "lane": "agency",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": false,
+   "why_off": "404 on 2026-10-05; FERC publishes no news RSS. Routine reads the news page; Wire uses fr-ferc"
   },
   {
    "id": "ferc-news2",
@@ -127,7 +141,9 @@
    "url": "https://www.ferc.gov/news-events/news/rss.xml",
    "lane": "agency",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": false,
+   "why_off": "404 on 2026-10-05; see ferc-news"
   },
   {
    "id": "doe-news",
@@ -137,17 +153,19 @@
    "url": "https://www.energy.gov/rss/newsroom.xml",
    "lane": "agency",
    "filter": "dc",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "cppa-news",
-   "name": "California Privacy Protection Agency",
+   "name": "California Privacy Protection Agency (CalPrivacy)",
    "org": "CPPA",
    "kind": "rss",
-   "url": "https://cppa.ca.gov/announcements/rss.xml",
+   "url": "https://privacy.ca.gov/feed/",
    "lane": "agency",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "nlrb-news",
@@ -157,7 +175,8 @@
    "url": "https://www.nlrb.gov/rss/rssPressReleases.xml",
    "lane": "agency",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "gao-reports",
@@ -167,7 +186,8 @@
    "url": "https://www.gao.gov/rss/reports.xml",
    "lane": "agency",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "fr-datacenter",
@@ -177,37 +197,42 @@
    "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=%22data+center%22+OR+%22data+centers%22&order=newest&per_page=20",
    "lane": "agency",
    "filter": null,
-   "every": 30
+   "every": 30,
+   "on": true
   },
   {
    "id": "fr-ai",
    "name": "Federal Register: artificial intelligence",
    "org": "Federal Register",
    "kind": "federalregister",
-   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=%22artificial+intelligence%22&order=newest&per_page=20",
+   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=%22artificial+intelligence%22+%7C+%22super+intelligence%22+%7C+superintelligence&order=newest&per_page=20",
    "lane": "agency",
    "filter": null,
-   "every": 30
+   "every": 30,
+   "on": true
   },
   {
    "id": "fr-largeload",
-   "name": "Federal Register: large load / co-location",
+   "name": "Federal Register: FERC documents",
    "org": "Federal Register",
    "kind": "federalregister",
-   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=%22large+load%22+OR+%22co-location%22&order=newest&per_page=20",
+   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission&order=newest&per_page=20",
    "lane": "agency",
-   "filter": null,
-   "every": 30
+   "filter": "dc",
+   "every": 30,
+   "id_note": "replaced \"large load\" term search (1 match ever) with all FERC documents filtered for data center terms; agency-filter variant not yet tested",
+   "on": true
   },
   {
    "id": "edgar-8k-datacenter",
    "name": "SEC EDGAR full-text: 8-K data center",
    "org": "SEC EDGAR",
    "kind": "edgar_fts",
-   "url": "https://efts.sec.gov/LATEST/search-index?q=%22data%20center%22&forms=8-K&dateRange=custom",
+   "url": "https://efts.sec.gov/LATEST/search-index?q=%22data%20center%22&forms=8-K&dateRange=custom&startdt={start}&enddt={end}",
    "lane": "filing",
    "filter": null,
-   "every": 30
+   "every": 30,
+   "on": true
   },
   {
    "id": "courtlistener-dc",
@@ -217,7 +242,8 @@
    "url": "https://www.courtlistener.com/feed/search/?q=%22data+center%22&type=o&order_by=dateFiled+desc",
    "lane": "court",
    "filter": null,
-   "every": 60
+   "every": 60,
+   "on": true
   },
   {
    "id": "courtlistener-antitrust",
@@ -227,7 +253,8 @@
    "url": "https://www.courtlistener.com/feed/search/?q=antitrust+AND+(Google+OR+Meta+OR+Amazon+OR+Apple+OR+Microsoft+OR+Nvidia)&type=o&order_by=dateFiled+desc",
    "lane": "court",
    "filter": null,
-   "every": 60
+   "every": 60,
+   "on": true
   },
   {
    "id": "verge-policy",
@@ -237,7 +264,8 @@
    "url": "https://www.theverge.com/rss/policy/index.xml",
    "lane": "news",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "verge",
@@ -247,7 +275,8 @@
    "url": "https://www.theverge.com/rss/index.xml",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "ars-policy",
@@ -257,7 +286,8 @@
    "url": "https://feeds.arstechnica.com/arstechnica/tech-policy",
    "lane": "news",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "techcrunch",
@@ -267,7 +297,8 @@
    "url": "https://techcrunch.com/feed/",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "dcd",
@@ -277,7 +308,8 @@
    "url": "https://www.datacenterdynamics.com/en/rss/",
    "lane": "news",
    "filter": "community",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "dck",
@@ -287,7 +319,8 @@
    "url": "https://www.datacenterknowledge.com/rss.xml",
    "lane": "news",
    "filter": "community",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "utilitydive",
@@ -297,7 +330,9 @@
    "url": "https://www.utilitydive.com/feeds/news/",
    "lane": "news",
    "filter": "dc",
-   "every": 10
+   "every": 10,
+   "exclude": "/spons/",
+   "on": true
   },
   {
    "id": "canary",
@@ -307,7 +342,8 @@
    "url": "https://www.canarymedia.com/rss.rss",
    "lane": "news",
    "filter": "dc",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "icn",
@@ -317,7 +353,8 @@
    "url": "https://insideclimatenews.org/feed/",
    "lane": "news",
    "filter": "dc",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "propublica",
@@ -327,7 +364,8 @@
    "url": "https://www.propublica.org/feeds/propublica/main",
    "lane": "news",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "markup",
@@ -337,7 +375,8 @@
    "url": "https://themarkup.org/feeds/rss.xml",
    "lane": "news",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "404media",
@@ -347,7 +386,8 @@
    "url": "https://www.404media.co/rss/",
    "lane": "news",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "wired",
@@ -357,7 +397,8 @@
    "url": "https://www.wired.com/feed/rss",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "npr-tech",
@@ -367,7 +408,8 @@
    "url": "https://feeds.npr.org/1019/rss.xml",
    "lane": "news",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "nyt-tech",
@@ -377,7 +419,8 @@
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "wapo-tech",
@@ -387,7 +430,8 @@
    "url": "https://feeds.washingtonpost.com/rss/business/technology",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "cnbc-tech",
@@ -397,7 +441,8 @@
    "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "politico-tech",
@@ -407,7 +452,8 @@
    "url": "https://rss.politico.com/technology.xml",
    "lane": "news",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "axios",
@@ -417,7 +463,8 @@
    "url": "https://api.axios.com/feed/",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "techpolicypress",
@@ -427,7 +474,8 @@
    "url": "https://www.techpolicy.press/rss/",
    "lane": "news",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "courthousenews",
@@ -437,7 +485,8 @@
    "url": "https://www.courthousenews.com/feed/",
    "lane": "news",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "opensecrets",
@@ -447,7 +496,8 @@
    "url": "https://www.opensecrets.org/news/feed/",
    "lane": "news",
    "filter": "tech",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "guardian-tech",
@@ -457,7 +507,8 @@
    "url": "https://www.theguardian.com/us-news/technology/rss",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "bbc-tech",
@@ -467,7 +518,8 @@
    "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "ap-tech",
@@ -477,7 +529,8 @@
    "url": "https://apnews.com/hub/technology?output=rss",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "reuters-tech",
@@ -487,7 +540,8 @@
    "url": "https://www.reuters.com/arc/outboundfeeds/v3/category/technology/?outputType=xml",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "hn-dc",
@@ -497,7 +551,8 @@
    "url": "https://heatmap.news/rss",
    "lane": "news",
    "filter": "dc",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "restofworld",
@@ -507,7 +562,8 @@
    "url": "https://restofworld.org/feed/latest",
    "lane": "news",
    "filter": "power",
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "eff",
@@ -517,7 +573,8 @@
    "url": "https://www.eff.org/rss/updates.xml",
    "lane": "news",
    "filter": null,
-   "every": 10
+   "every": 10,
+   "on": true
   },
   {
    "id": "gn-dc-zoning",
@@ -527,7 +584,8 @@
    "url": "https://news.google.com/rss/search?q=%22data+center%22+%28rezoning+OR+zoning+OR+moratorium+OR+%22county+commission%22+OR+%22planning+commission%22%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-dc-utility",
@@ -537,7 +595,8 @@
    "url": "https://news.google.com/rss/search?q=%22data+center%22+%28%22public+service+commission%22+OR+%22utility+commission%22+OR+%22rate+case%22+OR+tariff+OR+PJM+OR+ERCOT%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-dc-incent",
@@ -547,7 +606,8 @@
    "url": "https://news.google.com/rss/search?q=%22data+center%22+%28%22tax+abatement%22+OR+%22tax+break%22+OR+incentive+OR+%22nondisclosure+agreement%22+OR+NDA%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-dc-water",
@@ -557,7 +617,8 @@
    "url": "https://news.google.com/rss/search?q=%22data+center%22+%28water+OR+drought+OR+aquifer+OR+%22gas+plant%22+OR+turbines%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-ai-deals",
@@ -567,7 +628,8 @@
    "url": "https://news.google.com/rss/search?q=%28acquire+OR+acquisition+OR+merger+OR+%22acqui-hire%22%29+%28AI+OR+chip+OR+cloud%29+billion+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-antitrust",
@@ -577,7 +639,8 @@
    "url": "https://news.google.com/rss/search?q=antitrust+%28Google+OR+Meta+OR+Amazon+OR+Apple+OR+Microsoft+OR+Nvidia+OR+OpenAI%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-money",
@@ -587,7 +650,8 @@
    "url": "https://news.google.com/rss/search?q=%28%22super+PAC%22+OR+lobbying+OR+%22campaign+contributions%22%29+%28AI+OR+%22tech+industry%22+OR+OpenAI+OR+Meta+OR+Google%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-contracts",
@@ -597,7 +661,8 @@
    "url": "https://news.google.com/rss/search?q=%28Pentagon+OR+ICE+OR+DHS+OR+%22Department+of+Defense%22%29+contract+%28AI+OR+Palantir+OR+surveillance+OR+%22facial+recognition%22%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-labor",
@@ -607,7 +672,8 @@
    "url": "https://news.google.com/rss/search?q=%28layoffs+AI%29+OR+%28%22gig+workers%22+ruling%29+OR+%28%22content+moderators%22+lawsuit%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-privacy",
@@ -617,7 +683,8 @@
    "url": "https://news.google.com/rss/search?q=%28%22data+broker%22+OR+privacy%29+%28settlement+OR+fine+OR+%22attorney+general%22+OR+FTC%29+tech+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   },
   {
    "id": "gn-corruption",
@@ -627,7 +694,8 @@
    "url": "https://news.google.com/rss/search?q=%28bribery+OR+indicted+OR+%22ethics+complaint%22+OR+%22conflict+of+interest%22%29+%28%22data+center%22+OR+%22tech+contract%22+OR+broadband%29+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
    "lane": "search",
    "filter": null,
-   "every": 20
+   "every": 20,
+   "on": true
   }
  ]
 }
