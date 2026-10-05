@@ -1,6 +1,6 @@
 {
  "name": "Tracewire",
- "slug": "rackwatch",
+ "slug": "tracewire",
  "tagline": "The tech, AI and data-center deals and decisions that affect ordinary people, with a source for every fact.",
  "categories": [
   "Data centers",
@@ -28,15 +28,15 @@
  ],
  "archive_days": 90,
  "tz": "America/New_York",
- "site_url": "https://chrisqtruong.github.io/rackwatch/",
- "repo_url": "https://github.com/chrisqtruong/rackwatch",
+ "site_url": "https://chrisqtruong.github.io/tracewire/",
+ "repo_url": "https://github.com/chrisqtruong/tracewire",
  "sister": {
   "name": "Bankrolled",
   "note": "a tracker of sports-gambling money and power",
   "url": "https://chrisqtruong.github.io/bankrolled/"
  },
  "giscus": {
-  "repo": "chrisqtruong/rackwatch",
+  "repo": "chrisqtruong/tracewire",
   "repo_id": "GISCUS_REPO_ID",
   "category": "Announcements",
   "category_id": "GISCUS_CATEGORY_ID"

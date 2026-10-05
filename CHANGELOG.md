@@ -2,6 +2,9 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-05 (repository renamed)
+- Repository renamed to `chrisqtruong/tracewire`; the site moved to https://chrisqtruong.github.io/tracewire/ . Updated the config (slug, site and repo links, giscus repository), README, license credit, launch steps and routine prompt. The old address chrisqtruong.github.io/rackwatch no longer serves the site.
+
 ## 2026-10-05 (new name and header)
 - Renamed from Rackwatch to **Tracewire**: on a circuit board a trace is the path that carries the signal; here it also means following the money and the deals, and the Wire is the live headline lane. The name is set in `tracker.config.json`. Repository and site URLs still say `rackwatch` until the GitHub repository is renamed.
 - New logo: a halftone dot grid (after Bankrolled's halftone dot) with two lit circuit traces; matching favicon.
