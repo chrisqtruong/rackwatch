@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-05T22:44:09+00:00",
+ "updated": "2026-10-06T03:05:43+00:00",
  "total": 113,
- "saved": 24,
+ "saved": 36,
  "urls": {
   "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/": {
    "a": "https://web.archive.org/web/20261005063939/https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/?",
@@ -64,9 +64,8 @@
    "at": "2026-09-29"
   },
   "https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier": {
-   "tries": 1,
-   "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-05T22:44:09+00:00"
+   "a": "https://web.archive.org/web/20261004200732/https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier",
+   "at": "2026-10-04"
   },
   "https://www.alabamaag.gov/attorney-general-marshall-announces-historic-multi-million-dollar-settlement-with-tiktok/": {
    "a": "https://web.archive.org/web/20260930144814/https://www.alabamaag.gov/attorney-general-marshall-announces-historic-multi-million-dollar-settlement-with-tiktok/",
@@ -85,18 +84,17 @@
    "at": "2026-09-25"
   },
   "https://www.wunc.org/environment/2026-09-21/nc-utilities-commission-denies-duke-energy-gas-plant": {
-   "tries": 1,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-05T22:44:09+00:00"
+   "a": "https://web.archive.org/web/20260923015438/https://www.wunc.org/environment/2026-09-21/nc-utilities-commission-denies-duke-energy-gas-plant",
+   "at": "2026-09-23"
   },
   "https://www.canarymedia.com/articles/fossil-fuels/regulators-reject-duke-gas-plant-north-carolina": {
    "a": "https://web.archive.org/web/20261003232111/https://www.canarymedia.com/articles/fossil-fuels/regulators-reject-duke-gas-plant-north-carolina",
    "at": "2026-10-03"
   },
   "https://nevadacurrent.com/2026/09/18/public-utility-commission-approves-gas-plants-to-power-data-centers/": {
-   "tries": 1,
-   "err": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
-   "last": "2026-10-05T22:44:09+00:00"
+   "tries": 2,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-06T03:05:43+00:00"
   },
   "https://www.reviewjournal.com/business/energy/nevada-data-center-growth-drives-approval-of-temporary-gas-plants-3890109/": {
    "a": "https://web.archive.org/web/20260929123455/https://www.reviewjournal.com/business/energy/nevada-data-center-growth-drives-approval-of-temporary-gas-plants-3890109/",
@@ -115,14 +113,54 @@
    "at": "2026-09-21"
   },
   "https://www.biometricupdate.com/202609/ices-125m-thomson-reuters-deal-adds-data-layer-to-identity-targeting-systems": {
-   "tries": 1,
-   "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-05T22:44:09+00:00"
+   "a": "https://web.archive.org/web/20261002153206/https://www.biometricupdate.com/202609/ices-125m-thomson-reuters-deal-adds-data-layer-to-identity-targeting-systems",
+   "at": "2026-10-02"
   },
   "https://www.whas11.com/article/news/politics/commission-opens-ethics-investigation-into-carroll-county-data-center-project/417-2184fd8c-8d0a-4b13-83e3-88612cf6e6e0": {
-   "tries": 1,
+   "tries": 2,
    "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-05T22:44:09+00:00"
+   "last": "2026-10-06T03:05:43+00:00"
+  },
+  "https://www.lpm.org/news/2026-09-28/frustration-over-kentucky-data-center-has-found-another-target-ethics-complaints": {
+   "a": "https://web.archive.org/web/20261001055306/https://www.lpm.org/news/2026-09-28/frustration-over-kentucky-data-center-has-found-another-target-ethics-complaints",
+   "at": "2026-10-01"
+  },
+  "https://www.nbcwashington.com/news/local/northern-virginia/loudoun-county-board-pauses-data-center-applications/4155005/": {
+   "a": "https://web.archive.org/web/20260918185917/https://www.nbcwashington.com/news/local/northern-virginia/loudoun-county-board-pauses-data-center-applications/4155005/",
+   "at": "2026-09-18"
+  },
+  "https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-board-votes-to-pause-new-data-center-applications/": {
+   "a": "https://web.archive.org/web/20261003061722/https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-board-votes-to-pause-new-data-center-applications/",
+   "at": "2026-10-03"
+  },
+  "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-expands-onegov-ai-offerings-with-discounted-openais-chatgpt-09102026": {
+   "a": "https://web.archive.org/web/20260929211627/https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-expands-onegov-ai-offerings-with-discounted-openais-chatgpt-09102026",
+   "at": "2026-09-29"
+  },
+  "https://www.nextgov.com/acquisition/2026/09/gsa-unveils-new-token-based-onegov-discount-openai/415908/": {
+   "a": "https://web.archive.org/web/20260911202050/https://www.nextgov.com/acquisition/2026/09/gsa-unveils-new-token-based-onegov-discount-openai/415908/",
+   "at": "2026-09-11"
+  },
+  "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/": {
+   "a": "https://web.archive.org/web/20261004152337/https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+   "at": "2026-10-04"
+  },
+  "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000078/nvda-20260902.htm": {
+   "tries": 1,
+   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
+   "last": "2026-10-06T03:05:43+00:00"
+  },
+  "https://www.phoronix.com/news/NVIDIA-Hugging-Face": {
+   "a": "https://web.archive.org/web/20261004114530/https://www.phoronix.com/news/NVIDIA-Hugging-Face",
+   "at": "2026-10-04"
+  },
+  "https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google": {
+   "a": "https://web.archive.org/web/20261003081648/https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google",
+   "at": "2026-10-03"
+  },
+  "https://www.adexchanger.com/antitrust/google-wont-have-to-break-up-its-ad-tech-business-judge-brinkema-rules/": {
+   "a": "https://web.archive.org/web/20260908062041/https://www.adexchanger.com/antitrust/google-wont-have-to-break-up-its-ad-tech-business-judge-brinkema-rules/",
+   "at": "2026-09-08"
   }
  }
 }
