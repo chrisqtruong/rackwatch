@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-06T17:16:14+00:00",
+ "updated": "2026-10-06T21:44:36+00:00",
  "total": 113,
- "saved": 50,
+ "saved": 58,
  "urls": {
   "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/": {
    "a": "https://web.archive.org/web/20261005063939/https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/?",
@@ -116,9 +116,9 @@
    "at": "2026-10-02"
   },
   "https://www.whas11.com/article/news/politics/commission-opens-ethics-investigation-into-carroll-county-data-center-project/417-2184fd8c-8d0a-4b13-83e3-88612cf6e6e0": {
-   "tries": 4,
+   "tries": 5,
    "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-06T17:16:14+00:00"
+   "last": "2026-10-06T21:44:36+00:00"
   },
   "https://www.lpm.org/news/2026-09-28/frustration-over-kentucky-data-center-has-found-another-target-ethics-complaints": {
    "a": "https://web.archive.org/web/20261001055306/https://www.lpm.org/news/2026-09-28/frustration-over-kentucky-data-center-has-found-another-target-ethics-complaints",
@@ -145,9 +145,9 @@
    "at": "2026-10-04"
   },
   "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000078/nvda-20260902.htm": {
-   "tries": 3,
+   "tries": 4,
    "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-06T17:16:14+00:00"
+   "last": "2026-10-06T21:44:36+00:00"
   },
   "https://www.phoronix.com/news/NVIDIA-Hugging-Face": {
    "a": "https://web.archive.org/web/20261004114530/https://www.phoronix.com/news/NVIDIA-Hugging-Face",
@@ -166,18 +166,16 @@
    "at": "2026-10-06"
   },
   "https://www.dataprotectionreport.com/2026/09/internet-privacy-updates-calprivacy-fines-data-brokers-colorado-proposes-new-ai-regulations/": {
-   "tries": 2,
-   "err": "URLError: <urlopen error timed out>",
-   "last": "2026-10-06T17:16:14+00:00"
+   "a": "https://web.archive.org/web/20261006172106/https://www.dataprotectionreport.com/2026/09/internet-privacy-updates-calprivacy-fines-data-brokers-colorado-proposes-new-ai-regulations/",
+   "at": "2026-10-06"
   },
   "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme": {
    "a": "https://web.archive.org/web/20260923043524/https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme",
    "at": "2026-09-23"
   },
   "https://courthousenews.com/ftc-22-states-sue-amazon-over-advertising-surcharges/": {
-   "tries": 2,
-   "err": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
-   "last": "2026-10-06T17:16:14+00:00"
+   "a": "https://web.archive.org/web/20261006214716/https://courthousenews.com/ftc-22-states-sue-amazon-over-advertising-surcharges/",
+   "at": "2026-10-06"
   },
   "https://newjerseymonitor.com/2026/08/27/data-centers-water-energy-use-law/": {
    "a": "https://web.archive.org/web/20260831163614/https://newjerseymonitor.com/2026/08/27/data-centers-water-energy-use-law/",
@@ -200,9 +198,9 @@
    "at": "2026-08-25"
   },
   "https://www.washingtontimes.com/news/2026/aug/24/maryland-data-center-contractor-former-ceo-settle-sec-fraud/": {
-   "tries": 2,
-   "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-06T17:16:14+00:00"
+   "tries": 3,
+   "err": "URLError: <urlopen error timed out>",
+   "last": "2026-10-06T21:44:36+00:00"
   },
   "https://www.justice.gov/opa/pr/justice-department-secures-400m-settlement-tiktok-and-bytedance-resolve-childrens-privacy": {
    "a": "https://web.archive.org/web/20260927214943/https://www.justice.gov/opa/pr/justice-department-secures-400m-settlement-tiktok-and-bytedance-resolve-childrens-privacy",
@@ -217,14 +215,12 @@
    "at": "2026-10-06"
   },
   "https://www.upi.com/Top_News/US/2026/08/17/nvidia-openai-sb-energy-ports-pike-data-center-ohio/4201786985547/": {
-   "tries": 1,
-   "err": "URLError: <urlopen error timed out>",
-   "last": "2026-10-06T17:16:14+00:00"
+   "a": "https://web.archive.org/web/20260828082306/https://www.upi.com/Top_News/US/2026/08/17/nvidia-openai-sb-energy-ports-pike-data-center-ohio/4201786985547/",
+   "at": "2026-08-28"
   },
   "https://privacy.ca.gov/2026/08/calprivacy-announces-second-data-broker-enforcement-action-in-less-than-a-week/": {
-   "tries": 1,
-   "err": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
-   "last": "2026-10-06T17:16:14+00:00"
+   "a": "https://web.archive.org/web/20260823225404/https://privacy.ca.gov/2026/08/calprivacy-announces-second-data-broker-enforcement-action-in-less-than-a-week/",
+   "at": "2026-08-23"
   },
   "https://lailluminator.com/2026/08/13/meta-data-center-private/": {
    "a": "https://web.archive.org/web/20261006173437/https://lailluminator.com/2026/08/13/meta-data-center-private/",
@@ -235,18 +231,44 @@
    "at": "2026-09-11"
   },
   "https://infobytes.orrick.com/2026-08-13/calprivacy-fines-data-broker-for-alleged-opt-out-and-registration-violations/": {
-   "tries": 1,
-   "err": "URLError: <urlopen error timed out>",
-   "last": "2026-10-06T17:16:14+00:00"
+   "tries": 2,
+   "err": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
+   "last": "2026-10-06T21:44:36+00:00"
   },
   "https://www.theregister.com/public-sector/2026/08/11/palantir-could-receive-244m-pentagon-no-bid-contract/5286438": {
-   "tries": 1,
-   "err": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
-   "last": "2026-10-06T17:16:14+00:00"
+   "tries": 2,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-06T21:44:36+00:00"
   },
   "https://defensescoop.com/2026/08/13/feinberg-funding-palantir-memo-pentagon-bond-program/": {
    "a": "https://web.archive.org/web/20261006174003/https://defensescoop.com/2026/08/13/feinberg-funding-palantir-memo-pentagon-bond-program/",
    "at": "2026-10-06"
+  },
+  "https://www.courthousenews.com/doj-urges-dc-circuit-to-beef-up-remedies-in-google-monopoly-ruling/": {
+   "a": "https://web.archive.org/web/20260925170347/https://www.courthousenews.com/doj-urges-dc-circuit-to-beef-up-remedies-in-google-monopoly-ruling/",
+   "at": "2026-09-25"
+  },
+  "https://www.mediapost.com/publications/article/416888/google-search-remedies-too-weak-feds-tell-appeals.html": {
+   "tries": 1,
+   "err": "URLError: <urlopen error timed out>",
+   "last": "2026-10-06T21:44:36+00:00"
+  },
+  "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1670": {
+   "a": "https://web.archive.org/web/20260926025420/https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1670",
+   "at": "2026-09-26"
+  },
+  "https://securityaffairs.com/195963/laws-and-regulations/google-fined-e890m-under-eu-digital-markets-act-over-search-and-play-store-practices.html": {
+   "a": "https://web.archive.org/web/20260730200339/https://securityaffairs.com/195963/laws-and-regulations/google-fined-e890m-under-eu-digital-markets-act-over-search-and-play-store-practices.html",
+   "at": "2026-07-30"
+  },
+  "https://www.sec.gov/Archives/edgar/data/0001845338/000117891326003553/zk2635715.htm": {
+   "tries": 1,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-06T21:44:36+00:00"
+  },
+  "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/": {
+   "a": "https://web.archive.org/web/20260930085120/https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+   "at": "2026-09-30"
   }
  }
 }
