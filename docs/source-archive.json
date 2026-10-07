@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-06T21:44:36+00:00",
+ "updated": "2026-10-07T01:38:02+00:00",
  "total": 113,
- "saved": 58,
+ "saved": 66,
  "urls": {
   "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/": {
    "a": "https://web.archive.org/web/20261005063939/https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/?",
@@ -145,9 +145,9 @@
    "at": "2026-10-04"
   },
   "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000078/nvda-20260902.htm": {
-   "tries": 4,
+   "tries": 5,
    "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-06T21:44:36+00:00"
+   "last": "2026-10-07T01:38:02+00:00"
   },
   "https://www.phoronix.com/news/NVIDIA-Hugging-Face": {
    "a": "https://web.archive.org/web/20261004114530/https://www.phoronix.com/news/NVIDIA-Hugging-Face",
@@ -198,9 +198,9 @@
    "at": "2026-08-25"
   },
   "https://www.washingtontimes.com/news/2026/aug/24/maryland-data-center-contractor-former-ceo-settle-sec-fraud/": {
-   "tries": 3,
-   "err": "URLError: <urlopen error timed out>",
-   "last": "2026-10-06T21:44:36+00:00"
+   "tries": 4,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-07T01:38:02+00:00"
   },
   "https://www.justice.gov/opa/pr/justice-department-secures-400m-settlement-tiktok-and-bytedance-resolve-childrens-privacy": {
    "a": "https://web.archive.org/web/20260927214943/https://www.justice.gov/opa/pr/justice-department-secures-400m-settlement-tiktok-and-bytedance-resolve-childrens-privacy",
@@ -231,14 +231,13 @@
    "at": "2026-09-11"
   },
   "https://infobytes.orrick.com/2026-08-13/calprivacy-fines-data-broker-for-alleged-opt-out-and-registration-violations/": {
-   "tries": 2,
-   "err": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
-   "last": "2026-10-06T21:44:36+00:00"
+   "tries": 3,
+   "err": "URLError: <urlopen error timed out>",
+   "last": "2026-10-07T01:38:02+00:00"
   },
   "https://www.theregister.com/public-sector/2026/08/11/palantir-could-receive-244m-pentagon-no-bid-contract/5286438": {
-   "tries": 2,
-   "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-06T21:44:36+00:00"
+   "a": "https://web.archive.org/web/20260909082137/https://www.theregister.com/public-sector/2026/08/11/palantir-could-receive-244m-pentagon-no-bid-contract/5286438",
+   "at": "2026-09-09"
   },
   "https://defensescoop.com/2026/08/13/feinberg-funding-palantir-memo-pentagon-bond-program/": {
    "a": "https://web.archive.org/web/20261006174003/https://defensescoop.com/2026/08/13/feinberg-funding-palantir-memo-pentagon-bond-program/",
@@ -249,9 +248,8 @@
    "at": "2026-09-25"
   },
   "https://www.mediapost.com/publications/article/416888/google-search-remedies-too-weak-feds-tell-appeals.html": {
-   "tries": 1,
-   "err": "URLError: <urlopen error timed out>",
-   "last": "2026-10-06T21:44:36+00:00"
+   "a": "https://web.archive.org/web/20261006215315/https://www.mediapost.com/publications/article/416888/google-search-remedies-too-weak-feds-tell-appeals.html",
+   "at": "2026-10-06"
   },
   "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1670": {
    "a": "https://web.archive.org/web/20260926025420/https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1670",
@@ -262,13 +260,52 @@
    "at": "2026-07-30"
   },
   "https://www.sec.gov/Archives/edgar/data/0001845338/000117891326003553/zk2635715.htm": {
-   "tries": 1,
+   "tries": 2,
    "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-06T21:44:36+00:00"
+   "last": "2026-10-07T01:38:02+00:00"
   },
   "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/": {
    "a": "https://web.archive.org/web/20260930085120/https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
    "at": "2026-09-30"
+  },
+  "https://www.anthropic.com/news/donation-public-first-action": {
+   "a": "https://web.archive.org/web/20260924181046/https://www.anthropic.com/news/donation-public-first-action",
+   "at": "2026-09-24"
+  },
+  "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-gives-40-million-to-ai-regulation-group/": {
+   "a": "https://web.archive.org/web/20260723110541/https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-gives-40-million-to-ai-regulation-group/",
+   "at": "2026-07-23"
+  },
+  "https://lda.gov/api/v1/filings/?client_name=Anthropic&filing_year=2026&filing_period=second_quarter": {
+   "tries": 1,
+   "err": "URLError: <urlopen error timed out>",
+   "last": "2026-10-07T01:38:02+00:00"
+  },
+  "https://lda.gov/api/v1/filings/?registrant_name=OpenAI&filing_year=2026&filing_period=second_quarter": {
+   "tries": 1,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-07T01:38:02+00:00"
+  },
+  "https://qz.com/openai-anthropic-lobbying-records-q2-2026-072126": {
+   "a": "https://web.archive.org/web/20260722081349/https://qz.com/openai-anthropic-lobbying-records-q2-2026-072126",
+   "at": "2026-07-22"
+  },
+  "https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/": {
+   "a": "https://web.archive.org/web/20260914220444/https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/",
+   "at": "2026-09-14"
+  },
+  "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/": {
+   "a": "https://web.archive.org/web/20260924202238/https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/",
+   "at": "2026-09-24"
+  },
+  "https://docquery.fec.gov/cgi-bin/forms/C00916114/1993396/": {
+   "tries": 1,
+   "err": "URLError: <urlopen error timed out>",
+   "last": "2026-10-07T01:38:02+00:00"
+  },
+  "https://api.open.fec.gov/v1/filings/?api_key=DEMO_KEY&committee_id=C00916114&sort=-receipt_date&per_page=6": {
+   "a": "https://web.archive.org/web/20261007014734/https://api.open.fec.gov/v1/filings/?api_key=DEMO_KEY&committee_id=C00916114&sort=-receipt_date&per_page=6",
+   "at": "2026-10-07"
   }
  }
 }
