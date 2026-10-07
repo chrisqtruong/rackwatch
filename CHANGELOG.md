@@ -2,6 +2,9 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-07 (paused)
+- Verified updates paused (out of Firecrawl credits). A `paused` field in `docs/data.json` shows a "Tracewire is paused" banner on every page, switches the header to "Verified updates paused · last checked …", and makes the scheduled check stop at step 0. The Wire and the source archiver keep running. Delete the field to resume.
+
 ## 2026-10-05 (players: even grid)
 - Players (beta): circles replaced with same-size tiles. Each tile shows the number of verified moves, with shading that darkens as the number rises, and the disclosed amount below; rows and columns now line up evenly. Legend shows the shading scale.
 - The "beta" label stays visible on the selected Players tab (it takes the tab's text color).

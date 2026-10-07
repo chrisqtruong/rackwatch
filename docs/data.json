@@ -2127,5 +2127,6 @@
    ],
    "note": "Launch seed: backfilled posts with true dates."
   }
- ]
+ ],
+ "paused": "Verified updates are switched off because we've run out of Firecrawl credits, so no new posts are being checked or added for now. Everything already published stays up, the Wire keeps collecting unverified headlines, and we plan to bring updates back."
 }

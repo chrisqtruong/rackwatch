@@ -97,6 +97,7 @@ for pr in data.get("projects", []):
     ents_ok(w, pr.get("e"))
     src_ok(w, pr.get("src"), need_title=False)
 
+if "paused" in data and not (isinstance(data["paused"], str) and data["paused"].strip()): err("paused must be a sentence for readers; delete the field to resume")
 for c in data.get("checks", []):
     if not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", c.get("t", "")): err("checks: bad time %r" % c.get("t"))
     for k in ("triaged", "opened", "added", "corrected", "ledger", "rejected"):
