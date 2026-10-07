@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-07T16:37:24+00:00",
+ "updated": "2026-10-07T22:03:41+00:00",
  "total": 113,
- "saved": 76,
+ "saved": 83,
  "urls": {
   "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/": {
    "a": "https://web.archive.org/web/20261005063939/https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/?",
@@ -260,9 +260,9 @@
    "at": "2026-07-30"
   },
   "https://www.sec.gov/Archives/edgar/data/0001845338/000117891326003553/zk2635715.htm": {
-   "tries": 4,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T16:37:24+00:00"
+   "tries": 5,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-07T22:03:41+00:00"
   },
   "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/": {
    "a": "https://web.archive.org/web/20260930085120/https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
@@ -281,9 +281,9 @@
    "at": "2026-10-07"
   },
   "https://lda.gov/api/v1/filings/?registrant_name=OpenAI&filing_year=2026&filing_period=second_quarter": {
-   "tries": 3,
+   "tries": 4,
    "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T16:37:24+00:00"
+   "last": "2026-10-07T22:03:41+00:00"
   },
   "https://qz.com/openai-anthropic-lobbying-records-q2-2026-072126": {
    "a": "https://web.archive.org/web/20260722081349/https://qz.com/openai-anthropic-lobbying-records-q2-2026-072126",
@@ -298,9 +298,9 @@
    "at": "2026-09-24"
   },
   "https://docquery.fec.gov/cgi-bin/forms/C00916114/1993396/": {
-   "tries": 3,
+   "tries": 4,
    "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T16:37:24+00:00"
+   "last": "2026-10-07T22:03:41+00:00"
   },
   "https://api.open.fec.gov/v1/filings/?api_key=DEMO_KEY&committee_id=C00916114&sort=-receipt_date&per_page=6": {
    "a": "https://web.archive.org/web/20261007014734/https://api.open.fec.gov/v1/filings/?api_key=DEMO_KEY&committee_id=C00916114&sort=-receipt_date&per_page=6",
@@ -319,14 +319,14 @@
    "at": "2026-08-31"
   },
   "https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html": {
-   "tries": 2,
+   "tries": 3,
    "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T16:37:24+00:00"
+   "last": "2026-10-07T22:03:41+00:00"
   },
   "https://thehill.com/policy/technology/5965840-meta-louisiana-datacenter-expansion/": {
-   "tries": 2,
+   "tries": 3,
    "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T16:37:24+00:00"
+   "last": "2026-10-07T22:03:41+00:00"
   },
   "https://virginiamercury.com/2026/07/09/after-digital-gateway-project-fails-prince-william-supervisors-reject-dulles-cloud-south-data-center-proposal/": {
    "a": "https://web.archive.org/web/20261007164156/https://virginiamercury.com/2026/07/09/after-digital-gateway-project-fails-prince-william-supervisors-reject-dulles-cloud-south-data-center-proposal/",
@@ -345,19 +345,16 @@
    "at": "2026-08-19"
   },
   "https://www.anthropic.com/news/series-h?hl=en-US": {
-   "tries": 1,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T16:37:24+00:00"
+   "a": "https://web.archive.org/web/20261007220641/https://www.anthropic.com/news/series-h?hl=en-US",
+   "at": "2026-10-07"
   },
   "https://da.lacounty.gov/media/news/general-motors-pay-1275m-settle-california-consumer-protection-lawsuit-alleging-data": {
-   "tries": 1,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T16:37:24+00:00"
+   "a": "https://web.archive.org/web/20260616032925/https://da.lacounty.gov/media/news/general-motors-pay-1275m-settle-california-consumer-protection-lawsuit-alleging-data",
+   "at": "2026-06-16"
   },
   "https://www.war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements/": {
-   "tries": 1,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T16:37:24+00:00"
+   "a": "https://web.archive.org/web/20261001023527/https://www.war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements/",
+   "at": "2026-10-01"
   },
   "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai": {
    "a": "https://web.archive.org/web/20261002113329/https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai",
@@ -368,9 +365,35 @@
    "at": "2026-09-28"
   },
   "https://thelensnola.org/2026/03/30/meta-triples-order-of-gas-fired-power-plants-for-its-ai-campus-in-louisiana/": {
+   "a": "https://web.archive.org/web/20260903223350/https://thelensnola.org/2026/03/30/meta-triples-order-of-gas-fired-power-plants-for-its-ai-campus-in-louisiana/",
+   "at": "2026-09-03"
+  },
+  "https://wtop.com/prince-william-county/2026/07/digital-gateway-data-center-project-dies-after-final-developer-withdraws-appeal/": {
+   "a": "https://web.archive.org/web/20260818125305/https://wtop.com/prince-william-county/2026/07/digital-gateway-data-center-project-dies-after-final-developer-withdraws-appeal/",
+   "at": "2026-08-18"
+  },
+  "https://www.battlefields.org/news/victory-manassas-prince-william-digital-gateway-project-dead-after-developer-drops-appeal": {
    "tries": 1,
    "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T16:37:24+00:00"
+   "last": "2026-10-07T22:03:41+00:00"
+  },
+  "https://thehill.com/policy/energy-environment/5926181-xai-naacp-memphis-grok/": {
+   "tries": 1,
+   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
+   "last": "2026-10-07T22:03:41+00:00"
+  },
+  "https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726": {
+   "a": "https://web.archive.org/web/20260617123210/https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726",
+   "at": "2026-06-17"
+  },
+  "https://news.azpm.org/p/azpmnews/2026/5/28/229919-arizona-water-officials-approve-wells-tied-to-project-blue-data-center/": {
+   "tries": 1,
+   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
+   "last": "2026-10-07T22:03:41+00:00"
+  },
+  "https://www.kjzz.org/fronteras-desk/2026-05-29/project-blue-data-center-could-use-up-to-31-million-gallons-of-water-per-year": {
+   "a": "https://web.archive.org/web/20260722092908/https://www.kjzz.org/fronteras-desk/2026-05-29/project-blue-data-center-could-use-up-to-31-million-gallons-of-water-per-year",
+   "at": "2026-07-22"
   }
  }
 }
