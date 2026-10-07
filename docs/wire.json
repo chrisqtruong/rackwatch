@@ -1,8 +1,29 @@
 {
 "name": "Tracewire",
-"updated": "2026-10-06T20:48:53+00:00",
+"updated": "2026-10-07T00:12:19+00:00",
 "note": "Unverified headlines collected automatically from public feeds. Not checked by Tracewire. Verified items appear in the Feed.",
 "items": [
+{
+"id": "bc387a16fb49",
+"t": "Australia's privacy watchdog probes maker of smart glasses app used by Kmart products - Reuters",
+"u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYXNlTks5RURvU0E5MmlhRV9JQTFVNG4tQUZNb3BZTlh5VVRELU1rcTN1UzhVY3IyRWVPQzBZZl8telAtWnk1TDlGX2p1aGIwakdXcUk5RWx1NFluajdkZENOczlPMW94SF80M29vWDNmUXFhamRYS29wazA5VENHbGxicFhBbnVOeEZTa091U2g3Tms4a3Qtel9oMDBvSG84bi1lT1pfMnNJcDZWTEt6ZGYtUnNLOFlCT1ZR?oc=5",
+"o": "Reuters",
+"via": "Google News: reuters.com/technology",
+"lane": "search",
+"at": "2026-10-07T00:01:00+00:00",
+"seen": "2026-10-07T00:12:19+00:00",
+"status": "unverified headline"
+},
+{
+"id": "fc821a3c7f71",
+"t": "Exclusive: Data Center Cancellations Top $260 Billion in 2026",
+"u": "https://heatmap.news/daily/260-billion-data-center-opposition",
+"o": "Heatmap",
+"lane": "news",
+"at": "2026-10-06T22:16:22+00:00",
+"seen": "2026-10-07T00:12:19+00:00",
+"status": "unverified headline"
+},
 {
 "id": "7cf96c35df1f",
 "t": "State advocates welcome new data center moratorium in Clarendon but say gaps remain - The Sumter Item",
@@ -2154,28 +2175,6 @@
 "via": "Google News: contracts",
 "lane": "search",
 "at": "2026-10-06T11:02:00+00:00",
-"seen": "2026-10-06T20:48:53+00:00",
-"status": "unverified headline"
-},
-{
-"id": "407792d020ed",
-"t": "Joe Holberg: Data centers are hot. We should use Lake Michigan to cool them. - Chicago Tribune",
-"u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNemplWE9FUHVsTjgxVkc4VGJ2RFhpY0N5T1FTOHpudnlPakp4aURUTnpWeTM1SnBSQU1WUy1Xb3FwRW1TVFRhME5yb2ZMNnNUcVRlY2NnZmZoWHNKN21KekF2eXBlZ3o2NDVXTzdqQjFMRDVuRGJPOTlMeldQYi1kNklZRDRYcTNCa2lMVEFR?oc=5",
-"o": "Chicago Tribune",
-"via": "Google News: dc-water",
-"lane": "search",
-"at": "2026-10-06T11:00:48+00:00",
-"seen": "2026-10-06T20:48:53+00:00",
-"status": "unverified headline"
-},
-{
-"id": "33d21e29a851",
-"t": "Aberdeen City Council Sets Hearing To Discuss Data Center Moratorium Extension - Aberdeen Insider",
-"u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNVV0d0UxWlpMTTFsbWlGTFVDVGtpTmtNX21GcEVhMGdjMUpWSEtWekZ1aERkcm9sa2tYTmFpSVhCQ3U1SGNBSlVYd0xHemc2UmRCS0d5UkhCODZiVzczbDNkdkN1ZlVTV0JLeUNQMUFINmRNbFBqYmZIWFdhRFVWSkt6TlMtNUpNRWstc2V1OHU3M08zOGkzbWE5djRjLXctOHc?oc=5",
-"o": "Aberdeen Insider",
-"via": "Google News: dc-zoning",
-"lane": "search",
-"at": "2026-10-06T11:00:46+00:00",
 "seen": "2026-10-06T20:48:53+00:00",
 "status": "unverified headline"
 }
