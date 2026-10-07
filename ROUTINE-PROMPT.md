@@ -21,6 +21,8 @@ WHERE IT LIVES
 - ledger.csv, reports/YYYY-MM-DD.md, sources.md, METHOD.md, PINNING.md, IMAGES.md.
 - Never create, edit or delete GitHub discussions.
 
+STEP 0 Paused? Pull main and read docs/data.json. If it has a "paused" field, stop here: make no edits, no commits and no Firecrawl calls, and send no notification. (Resuming means a person deletes that field.)
+
 STEP 1 Load state. Pull main; confirm `git push --dry-run origin main`. Parse docs/data.json and docs/entities.json. Collect every existing feed id, headline and source URL from data.json AND docs/archive/*.json so nothing is duplicated. Get the time with `TZ=America/New_York date -Iseconds`. Read the last report to learn when the previous check ran.
 
 STEP 2 Triage the Wire. Read docs/wire.json: every item whose `seen` is after the previous check (overlap by 2 hours). Also read docs/wire-status.json and note failing sources in the report. Sort candidate headlines into: MAJOR, in scope, out of scope, duplicate of an existing post (then it may be an update to that post). Headlines are leads only: never post from a headline.

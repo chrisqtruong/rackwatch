@@ -198,6 +198,8 @@ figcaption{font-size:12.5px;color:var(--muted)}
 .pl-item .meta{margin-bottom:4px}
 .pl-item h3{font-size:15.5px;line-height:1.4;font-weight:600}
 .pl-item h3 a{color:var(--text)}
+.paused{border:1px solid var(--line);border-left:3px solid var(--rep);background:var(--rep-soft);border-radius:0 10px 10px 0;padding:12px 16px;margin:0 0 16px;font-size:15px;line-height:1.5;color:var(--text)}
+.paused b{font-weight:600}
 .wire-strip{display:flex;gap:10px;align-items:center;margin:0 0 12px;padding:10px 12px;min-height:48px;border:1px dashed var(--rep);border-radius:10px;color:var(--text);text-decoration:none;font-size:14px;background:var(--rep-soft)}
 .wire-strip b{color:var(--rep);font-family:"JetBrains Mono",monospace;font-size:12px;text-transform:uppercase;letter-spacing:.05em;flex:0 0 auto}
 .wire-strip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
@@ -316,9 +318,9 @@ function paintFresh(){
  const w=S.wire&&S.wire.updated, f=S.data.lastCheck;
  const wm=w?(Date.now()-new Date(w))/60000:1e9, fm=f?(Date.now()-new Date(f))/60000:1e9;
  $("#wire-age").textContent=w?`Wire updated ${ago(w)}`:"Wire: not yet running";
- $("#feed-age").textContent=f?`Verified feed updated ${ago(f)}`:"Verified feed: no check yet";
+ $("#feed-age").textContent=S.data.paused?`Verified updates paused · last checked ${f?fmtDate(f):"—"}`:f?`Verified feed updated ${ago(f)}`:"Verified feed: no check yet";
  $("#wire-dot").className="dot "+(wm<30?"live":wm<180?"":"stale");
- $("#feed-dot").className="dot "+(fm<90?"live":fm<360?"":"stale");
+ $("#feed-dot").className="dot "+(S.data.paused?"":fm<90?"live":fm<360?"":"stale");
 }
 async function refreshWire(){try{S.wire=await getJSON("wire.json",true)}catch(e){S.wire=S.wire||{items:[]}}paintFresh();if(route().v==="wire"||route().v==="feed")paintWireLists()}
 
@@ -331,12 +333,13 @@ function route(){
  return{v:parts[0]||"feed",arg:decodeURIComponent(parts[1]||""),q:Object.fromEntries(new URLSearchParams(qs||""))};
 }
 function setQ(q){const r=route();const p=new URLSearchParams(Object.entries(q).filter(([,v])=>v));const s=p.toString();history.replaceState(null,"","#/"+r.v+(r.arg?"/"+encodeURIComponent(r.arg):"")+(s?"?"+s:""));}
+function pausedBanner(){const p=S.data&&S.data.paused;if(!p)return;const n=S.cfg.name||"Tracewire";$("#main").insertAdjacentHTML("afterbegin",`<p class="paused" role="status"><b>${esc(n)} is paused.</b> ${esc(p)}</p>`)}
 function render(){
  const r=route();
  $$("nav.tabs a").forEach(a=>a.toggleAttribute("aria-current",false));
  const tab=r.v==="entity"?"entities":r.v;const a=$(`nav.tabs a[data-v="${tab}"]`);if(a)a.setAttribute("aria-current","page");
  const V={feed:vFeed,wire:vWire,entities:vEntities,entity:vEntity,ledger:vLedger,maps:vMaps,archive:vArchive,about:vAbout,status:vStatus}[r.v]||vFeed;
- V(r);
+ Promise.resolve(V(r)).then(pausedBanner);
  const t={feed:"Feed",wire:"Wire",entities:"Entities",entity:entName(r.arg),ledger:"Ledger",maps:"Maps and diagrams",archive:"Archive",about:"About",status:"Status"}[r.v]||"Feed";
  document.title=`${t} · ${S.cfg.name||"Tracewire"}`;
 }
@@ -769,7 +772,7 @@ async function vStatus(){
  const off=Object.values(ws.off||{});
  $("#main").innerHTML=`<h2>Status</h2><p class="muted" style="max-width:760px">How the record is being kept: when each part last ran, what the verification checks did, which automatic sources are working, and how many source links have a saved copy.</p>
  <div class="statgrid">
-  <div class="stat"><div class="v">${lc?esc(ago(lc)):"—"}</div><div class="k">last verification check (${esc(S.cfg.routine_interval||"scheduled")})</div></div>
+  <div class="stat"><div class="v">${lc?esc(ago(lc)):"—"}</div><div class="k">${S.data.paused?"last verification check (checks paused)":`last verification check (${esc(S.cfg.routine_interval||"scheduled")})`}</div></div>
   <div class="stat"><div class="v">${wu?esc(ago(wu)):"—"}</div><div class="k">Wire last found new headlines (runs ${esc(S.cfg.wire_interval||"often")})</div></div>
   <div class="stat"><div class="v">${src.length?`${good.length}/${src.length}`:"—"}</div><div class="k">Wire sources working on their last run</div></div>
   <div class="stat"><div class="v">${arc.total?`${arc.saved||0}/${arc.total}`:"—"}</div><div class="k">source links with a saved copy</div></div>
