@@ -1,7 +1,7 @@
 // Live population lookup: Census ACS 5-year estimates, all places in one state.
 // The Census API now asks for a key. Get a free one at https://api.census.gov/data/key_signup.html
 // and paste it below. Without a key (or if the request fails) the page asks people to type the population.
-export const CENSUS_KEY = "";
+export const CENSUS_KEY = "eabdf44bc2ee2cd926ba1c77654dc3cb8ca77a09";
 export const ACS_YEAR = 2024; // 2020–2024 5-year estimates
 
 export function placesUrl(fips, key = CENSUS_KEY) {
