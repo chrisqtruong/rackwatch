@@ -99,14 +99,14 @@
 
   /* form */
   form { background: var(--wash); padding: 20px; display: grid; gap: 20px; }
-  @media (min-width: 640px) { form { grid-template-columns: 1fr 1fr; } .full { grid-column: 1 / -1; } }
+  @media (min-width: 640px) { form { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; } .full { grid-column: 1 / -1; } }
   label.f { display: grid; gap: 4px; }
   .field { width: 100%; border: 0; border-bottom: 1.5px solid var(--bar); border-radius: 0; background: transparent; color: var(--ink); font: 400 20px/1.3 var(--body); padding: 8px 0; min-height: 44px; }
   .field:focus { outline: none; border-bottom-color: var(--accent); }
   select.field { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--mute) 50%), linear-gradient(135deg, var(--mute) 50%, transparent 50%); background-position: calc(100% - 14px) 22px, calc(100% - 9px) 22px; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 28px; }
   .field::placeholder { color: var(--bar); }
   .hint { font: 400 14px/1.45 var(--sans); color: var(--mute); }
-  .hint.ok { color: var(--ink); }
+  .hint.found { color: var(--ink); }
   .presets { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
   .pill { font: 500 13px/1 var(--sans); padding: 8px 11px; border: 1px solid var(--rule); border-radius: 99px; background: var(--paper); color: var(--mute); cursor: pointer; min-height: 34px; }
   .pill:hover { color: var(--accent); border-color: var(--accent); }
@@ -322,7 +322,7 @@ const codes = Object.keys(STATES).sort((a, b) => STATES[a].name.localeCompare(ST
 $("#state").innerHTML = `<option value="">Choose a state</option>` + codes.map((c) => `<option value="${c}">${esc(STATES[c].name)}</option>`).join("");
 
 let places = [], autoPop = false;
-const popHint = (text, ok) => { $("#pop-hint").textContent = text; $("#pop-hint").classList.toggle("ok", !!ok); };
+const popHint = (text, ok) => { $("#pop-hint").textContent = text; $("#pop-hint").classList.toggle("found", !!ok); };
 
 async function lookupState() {
   const code = $("#state").value, st = STATES[code];
