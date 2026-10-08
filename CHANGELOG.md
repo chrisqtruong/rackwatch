@@ -2,6 +2,9 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-08 (fewer tabs)
+- Nine tabs down to six: **Feed · Wire · Ledger · Explore · Tools · About**. Archive is now "Older posts" inside Feed; Entities, Players and Maps & diagrams are sub-tabs of Explore; Status is a sub-tab of About (and still opens from the update times in the header). Every old link (#/archive, #/entities, #/maps, #/status and entity pages) still works and highlights its new parent tab.
+
 ## 2026-10-08 (Tools tab)
 - New **Tools** tab on the main page, listing Next Door with a short description, its visuals and sources (like Bankrolled's Research tab for the Kalshi project). Next Door's breadcrumb now reads "Tracewire / Tools" and links back to it.
 - Next Door: fixed the population note, which picked up the "Checked" badge style and pushed the form out of line; the form and page now keep to the screen width on phones whatever text appears.

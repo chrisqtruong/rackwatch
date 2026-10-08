@@ -280,7 +280,7 @@ footer .row{display:flex;flex-wrap:wrap;gap:8px 18px}
    <span><i class="dot" id="feed-dot"></i><span id="feed-age">Verified feed: loading…</span></span>
   </a></div>
   <nav class="tabs" aria-label="Sections">
-   <a href="#/feed" data-v="feed">Feed</a><a href="#/wire" data-v="wire">Wire</a><a href="#/entities" data-v="entities">Entities</a><a href="#/ledger" data-v="ledger">Ledger</a><a href="#/maps" data-v="maps">Maps &amp; diagrams</a><a href="#/tools" data-v="tools">Tools</a><a href="#/archive" data-v="archive">Archive</a><a href="#/about" data-v="about">About</a><a href="#/status" data-v="status">Status</a>
+   <a href="#/feed" data-v="feed">Feed</a><a href="#/wire" data-v="wire">Wire</a><a href="#/ledger" data-v="ledger">Ledger</a><a href="#/entities" data-v="explore">Explore</a><a href="#/tools" data-v="tools">Tools</a><a href="#/about" data-v="about">About</a>
   </nav>
  </div>
 </header>
@@ -337,7 +337,7 @@ function pausedBanner(){const p=S.data&&S.data.paused;if(!p)return;const n=S.cfg
 function render(){
  const r=route();
  $$("nav.tabs a").forEach(a=>a.toggleAttribute("aria-current",false));
- const tab=r.v==="entity"?"entities":r.v;const a=$(`nav.tabs a[data-v="${tab}"]`);if(a)a.setAttribute("aria-current","page");
+ const tab={entity:"explore",entities:"explore",maps:"explore",archive:"feed",status:"about"}[r.v]||r.v;const a=$(`nav.tabs a[data-v="${tab}"]`);if(a)a.setAttribute("aria-current","page");
  const V={feed:vFeed,wire:vWire,entities:vEntities,entity:vEntity,ledger:vLedger,maps:vMaps,tools:vTools,archive:vArchive,about:vAbout,status:vStatus}[r.v]||vFeed;
  Promise.resolve(V(r)).then(pausedBanner);
  const t={feed:"Feed",wire:"Wire",entities:"Entities",entity:entName(r.arg),ledger:"Ledger",maps:"Maps and diagrams",tools:"Tools",archive:"Archive",about:"About",status:"Status"}[r.v]||"Feed";
@@ -434,7 +434,7 @@ function activeLine(q,n){
 }
 function vFeed(r){
  const q=r.q;
- $("#main").innerHTML=`<div class="legend" role="note"><span><b>Feed</b> = checked against sources.</span><span><b>Wire</b> = raw headlines, not yet checked.</span><span>${chip("confirmed")} primary record</span><span>${chip("reported")} not yet confirmed</span><span>${chip("disputed")} denied by the subject</span></div>
+ $("#main").innerHTML=`${feedTabs("feed")}<div class="legend" role="note"><span><b>Feed</b> = checked against sources.</span><span><b>Wire</b> = raw headlines, not yet checked.</span><span>${chip("confirmed")} primary record</span><span>${chip("reported")} not yet confirmed</span><span>${chip("disputed")} denied by the subject</span></div>
  <div class="split"><section aria-labelledby="feed-h"><h2 id="feed-h" class="sr">Verified feed</h2>${filterBar(q)}<a class="wire-strip" href="#/wire" id="wire-strip" hidden></a><div id="pins"></div><div id="f-active"></div><div class="panel" id="feed-list" data-pgtop="feed"></div></section>
  <aside class="panel side-wire" aria-labelledby="sw-h"><div class="panel-h"><h2 id="sw-h">Wire</h2><span class="chip unv">Unverified</span><a class="r" href="#/wire">All</a></div><div class="wire-note">Headlines pulled automatically from public feeds. Not checked yet.</div><div class="list" id="side-wire"></div><a class="side-foot" href="#/wire" id="side-foot">Open the full Wire →</a></aside></div>`;
  bindFilters(paintFeed);paintWireLists();
@@ -500,13 +500,15 @@ function entStats(id){
  const rows=S.data.ledger.filter(x=>(x.e||[]).includes(id)||x.fe===id||x.te===id);
  return{posts,rows:rows.length};
 }
-function entTabs(cur){return`<div class="subtabs"><a href="#/entities" aria-current="${cur==="dir"}">Directory</a><a href="#/entities/players" aria-current="${cur==="pl"}">Players <span class="chip beta plain" style="margin-left:6px;font-size:10.5px;padding:0 6px">beta</span></a></div>`}
+function entTabs(cur){return`<div class="subtabs"><a href="#/entities" aria-current="${cur==="dir"}">Entities</a><a href="#/entities/players" aria-current="${cur==="pl"}">Players <span class="chip beta plain" style="margin-left:6px;font-size:10.5px;padding:0 6px">beta</span></a><a href="#/maps" aria-current="${cur==="maps"}">Maps &amp; diagrams</a></div>`}
+function feedTabs(cur){return`<div class="subtabs"><a href="#/feed" aria-current="${cur==="feed"}">Latest</a><a href="#/archive" aria-current="${cur==="archive"}">Older posts</a></div>`}
+function aboutTabs(cur){return`<div class="subtabs"><a href="#/about" aria-current="${cur==="about"}">About</a><a href="#/status" aria-current="${cur==="status"}">Status</a></div>`}
 function vEntities(r){
  if(r.arg==="players")return vPlayers(r);
  const q=r.q,k=q.k||"";
  const kinds=[...new Set(S.ents.map(e=>e.k))].sort((a,b)=>(KINDS[a]||a).localeCompare(KINDS[b]||b));
  const all=S.ents.map(e=>({...e,...entStats(e.id)}));
- $("#main").innerHTML=`<h2>Entities</h2>${entTabs("dir")}<p class="muted">Companies, agencies, officials, utilities and places named in the Feed and Ledger. Each page shows its timeline, deals, money in and out, and linked posts.</p>
+ $("#main").innerHTML=`<h2>Explore</h2>${entTabs("dir")}<p class="muted">Companies, agencies, officials, utilities and places named in the Feed and Ledger. Each page shows its timeline, deals, money in and out, and linked posts.</p>
  <div class="subtabs">${[["","All"]].concat(kinds.map(x=>[x,KINDS[x]||x])).map(([x,n])=>`<a href="#/entities${x?"?k="+x:""}" aria-current="${k===x}">${esc(n)} (${all.filter(e=>!x||e.k===x).length})</a>`).join("")}</div>
  <form class="toolbar" role="search" onsubmit="return false"><label><span class="sr">Search entities</span><input type="search" id="e-q" placeholder="Search names and notes" value="${esc(q.q||"")}"></label>
  <label><span class="sr">Sort</span><select id="e-s"><option value="act">Most activity first</option><option value="az"${q.s==="az"?" selected":""}>A to Z</option><option value="new"${q.s==="new"?" selected":""}>Most recent activity</option></select></label></form>
@@ -557,7 +559,7 @@ async function vPlayers(r){
   return`<button class="pl-c" type="button" data-pl="${esc(x.e.id)}" data-lane="${k}" aria-pressed="false" aria-label="${esc(tip)}. Show them." data-tip="${esc(tip)}" style="--t:${tint(L.n)}%"><span class="pl-n"${L.n?"":' style="color:var(--faint);font-weight:400"'}>${L.n||"–"}</span><span class="pl-m">${L.amt?money(L.amt):""}</span></button>`};
  const row=x=>`<div class="pl-row"><div class="pl-nm"><a href="#/entity/${encodeURIComponent(x.e.id)}">${esc(x.e.n)}</a><small>${x.moves} move${x.moves===1?"":"s"} · latest ${esc(fmtLast(x.last))}</small></div>${LANES.map(([k,lab])=>cell(x,k,lab)).join("")}</div>`;
  const groups=(sec?[sec]:secs).map(g=>`<div class="pl-sec">${esc(g)}</div>`+shown.filter(x=>x.e.sec===g).sort((a,b)=>b.moves-a.moves||a.e.n.localeCompare(b.e.n)).map(row).join("")).join("");
- $("#main").innerHTML=`<h2>Entities</h2>${entTabs("pl")}
+ $("#main").innerHTML=`<h2>Explore</h2>${entTabs("pl")}
  <p class="muted" style="max-width:780px">What the largest companies and groups are doing, sorted into five kinds of moves. Each number counts verified posts, and the shading gets darker as it rises; the dollar figure under it adds the amounts disclosed in the confirmed ledger (money in or out). Select any cell to see the items behind it, each with its sources. This reflects what Tracewire has recorded, not everything a company did. <span class="chip beta plain">Beta</span></p>
  <div class="subtabs" style="margin-top:16px"><a href="#/entities/players" aria-current="${!sec}">All sectors</a>${secs.map(g=>`<a href="#/entities/players?s=${encodeURIComponent(g)}" aria-current="${sec===g}">${esc(g)}</a>`).join("")}</div>
  <div class="pl-sum">${LANES.map(([k,lab,desc])=>`<div class="stat" title="${esc(desc)}"><div class="v">${sum[k].n}</div><div class="k"><b>${lab}</b>${sum[k].amt?` · <span class="mono">${money(sum[k].amt)}</span>`:""}<br>${esc(desc)}</div></div>`).join("")}</div>
@@ -693,7 +695,7 @@ function moneyBars(){
  <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Bar chart of lobbying and political money by payer. Text version below.">${bars}</svg><details><summary>Text version</summary><ul>${alt}</ul></details></figure>`;
 }
 function vMaps(){
- $("#main").innerHTML=`<h2>Maps &amp; diagrams</h2><p class="muted">Drawn from the confirmed ledger and the project tracker, so they update as the record grows. Every diagram has a text version.</p>${stateMap()}${dealMap()}${moneyBars()}`;
+ $("#main").innerHTML=`<h2>Explore</h2>${entTabs("maps")}<p class="muted">Drawn from the confirmed ledger and the project tracker, so they update as the record grows. Every diagram has a text version.</p>${stateMap()}${dealMap()}${moneyBars()}`;
 }
 
 /* ---------- tools ---------- */
@@ -712,7 +714,7 @@ async function loadAllArchive(){if(S.archAll)return;const i=await loadArchIdx();
 async function vArchive(r){
  const idx=await loadArchIdx();const m=r.arg;
  const recent=S.data.feed.length;
- $("#main").innerHTML=`<h2>Archive</h2><p class="muted">Posts stay in the Feed for ${esc(S.cfg.archive_days||90)} days, then move to a monthly archive file. Nothing is deleted. Search covers the Feed and every archive month.</p>
+ $("#main").innerHTML=`${feedTabs("archive")}<h2>Older posts</h2><p class="muted">Posts stay in the Feed for ${esc(S.cfg.archive_days||90)} days, then move to a monthly archive file. Nothing is deleted. Search covers the Feed and every archive month.</p>
  <form class="filters" role="search" onsubmit="return false" style="grid-template-columns:1fr"><label class="q"><span class="sr">Search everything</span><input type="search" id="a-q" placeholder="Search all posts, including the archive" value="${esc(r.q.q||"")}"></label></form>
  <div class="subtabs"><a href="#/archive" aria-current="${!m}">Last ${esc(S.cfg.archive_days||90)} days (${recent})</a>${idx.months.map(x=>`<a href="#/archive/${esc(x.m)}" aria-current="${m===x.m}">${new Date(x.m+"-15").toLocaleDateString("en-US",{month:"short",year:"numeric"})} (${x.n})</a>`).join("")}</div>
  <div id="a-active"></div><div class="panel" id="a-list" data-pgtop="arch"><p class="empty">Loading…</p></div>`;
@@ -738,7 +740,7 @@ async function vAbout(){
  let blind=S.blind;
  if(!blind){try{blind=S.blind=await getJSON("blindspots.json")}catch(e){blind=S.blind={items:[]}}}
  const n=S.cfg.name||"Tracewire";
- $("#main").innerHTML=`<div class="prose"><h2>About ${esc(n)}</h2>
+ $("#main").innerHTML=`<h2>About ${esc(n)}</h2>${aboutTabs("about")}<div class="prose">
  <p>${esc(n)} uses AI to keep a permanent, sourced public record of how big tech and infrastructure deals affect communities: where data centers go and what they draw from local power and water, who buys whom, who pays to influence the rules, which public contracts go to which companies, and what courts and regulators decide.</p>
  <h2>How it works</h2>
  <ul><li><b>Saved copies</b>: every source link is also saved to the Internet Archive, so it stays readable if the page moves or disappears. Look for “saved copy” next to a source.</li>
@@ -779,7 +781,7 @@ async function vStatus(){
  const srow=x=>`<tr><td>${esc(x.name||x.id)}</td><td class="${x.ok?"ok-t":"bad-t"}">${x.ok?"working":"failing"}</td><td>${x.last_ok?esc(ago(x.last_ok)):"never"}</td><td class="num mono">${x.n??"—"}</td><td class="faint" style="font-size:13px">${esc(x.err||"")}</td></tr>`;
  const sh=`<thead><tr><th>Source</th><th>Status</th><th>Last worked</th><th class="num">Items</th><th>Error</th></tr></thead>`;
  const off=Object.values(ws.off||{});
- $("#main").innerHTML=`<h2>Status</h2><p class="muted" style="max-width:760px">How the record is being kept: when each part last ran, what the verification checks did, which automatic sources are working, and how many source links have a saved copy.</p>
+ $("#main").innerHTML=`<h2>About ${esc(S.cfg.name||"Tracewire")}</h2>${aboutTabs("status")}<p class="muted" style="max-width:760px">How the record is being kept: when each part last ran, what the verification checks did, which automatic sources are working, and how many source links have a saved copy.</p>
  <div class="statgrid">
   <div class="stat"><div class="v">${lc?esc(ago(lc)):"—"}</div><div class="k">${S.data.paused?"last verification check (checks paused)":`last verification check (${esc(S.cfg.routine_interval||"scheduled")})`}</div></div>
   <div class="stat"><div class="v">${wu?esc(ago(wu)):"—"}</div><div class="k">Wire last found new headlines (runs ${esc(S.cfg.wire_interval||"often")})</div></div>
