@@ -27,6 +27,7 @@ The page shows "Wire updated X min ago" and "Verified feed updated X min ago" se
 | Path | What it is |
 |---|---|
 | `docs/index.html` | The whole site (no build step, no libraries): Feed, Wire, Entities, Ledger, Maps & diagrams, Archive, About |
+| `docs/next-door/` | Next Door, at [/tracewire/next-door/](https://chrisqtruong.github.io/tracewire/next-door/): what a proposed data center would mean for a town (electricity, water, jobs, tax break). Formulas, assumptions and sources in `estimates.js` (every assumption checked, per `METHOD.md`); Census population lookup in `census.js` (needs a free Census API key in `CENSUS_KEY`, otherwise people type the population in). Tests: `node --test tests/test_next_door.mjs` |
 | `docs/data.json` | Feed (last 90 days), ledger, data center projects, `lastCheck` |
 | `docs/entities.json` | Companies, agencies, officials, utilities, places, courts and groups that posts and ledger rows are tagged with |
 | `docs/wire.json`, `docs/wire-status.json` | Wire headlines and per-source health (written only by the Action) |
@@ -58,6 +59,7 @@ The pause is one field: `"paused"` in `docs/data.json`, holding the sentence sho
 ```bash
 cd docs && python3 -m http.server 8000   # then open http://localhost:8000
 python3 scripts/validate.py && python3 tests/test_wire.py
+node --test tests/test_next_door.mjs  # Next Door formulas (Node 18+)
 python3 scripts/wire.py --test           # poll every Wire source once and print a health table
 ```
 

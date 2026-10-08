@@ -12,3 +12,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: python3 scripts/validate.py
       - run: python3 tests/test_wire.py
+      - run: node --test tests/test_next_door.mjs
