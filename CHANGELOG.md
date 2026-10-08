@@ -2,6 +2,10 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-08 (Tools tab)
+- New **Tools** tab on the main page, listing Next Door with a short description, its visuals and sources (like Bankrolled's Research tab for the Kalshi project). Next Door's breadcrumb now reads "Tracewire / Tools" and links back to it.
+- Next Door: fixed the population note, which picked up the "Checked" badge style and pushed the form out of line; the form and page now keep to the screen width on phones whatever text appears.
+
 ## 2026-10-08 (Next Door redesign)
 - Next Door now follows Bankrolled's research-page design: Young Serif headlines, Source Serif body, IBM Plex labels, a double-rule masthead, an "On this page" list down the left on wide screens (a row of links on phones) that marks the section being read, and an Auto / Light / Dark switch.
 - New visuals, all hand-drawn SVG that redraw to fit: blocks of 100 squares showing how many times over the facility's electricity would cover every home in town; a water bar against residents' home use with its range; a year of cooling water in USGS million-gallon pools; workers as dots; a step chart from investment to sales tax not collected; and a map of state exemptions with the chosen state outlined. Every number shows its range as an always-visible strip instead of a tap-to-open box.

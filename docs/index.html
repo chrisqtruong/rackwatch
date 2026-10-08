@@ -280,7 +280,7 @@ footer .row{display:flex;flex-wrap:wrap;gap:8px 18px}
    <span><i class="dot" id="feed-dot"></i><span id="feed-age">Verified feed: loading…</span></span>
   </a></div>
   <nav class="tabs" aria-label="Sections">
-   <a href="#/feed" data-v="feed">Feed</a><a href="#/wire" data-v="wire">Wire</a><a href="#/entities" data-v="entities">Entities</a><a href="#/ledger" data-v="ledger">Ledger</a><a href="#/maps" data-v="maps">Maps &amp; diagrams</a><a href="#/archive" data-v="archive">Archive</a><a href="#/about" data-v="about">About</a><a href="#/status" data-v="status">Status</a>
+   <a href="#/feed" data-v="feed">Feed</a><a href="#/wire" data-v="wire">Wire</a><a href="#/entities" data-v="entities">Entities</a><a href="#/ledger" data-v="ledger">Ledger</a><a href="#/maps" data-v="maps">Maps &amp; diagrams</a><a href="#/tools" data-v="tools">Tools</a><a href="#/archive" data-v="archive">Archive</a><a href="#/about" data-v="about">About</a><a href="#/status" data-v="status">Status</a>
   </nav>
  </div>
 </header>
@@ -338,9 +338,9 @@ function render(){
  const r=route();
  $$("nav.tabs a").forEach(a=>a.toggleAttribute("aria-current",false));
  const tab=r.v==="entity"?"entities":r.v;const a=$(`nav.tabs a[data-v="${tab}"]`);if(a)a.setAttribute("aria-current","page");
- const V={feed:vFeed,wire:vWire,entities:vEntities,entity:vEntity,ledger:vLedger,maps:vMaps,archive:vArchive,about:vAbout,status:vStatus}[r.v]||vFeed;
+ const V={feed:vFeed,wire:vWire,entities:vEntities,entity:vEntity,ledger:vLedger,maps:vMaps,tools:vTools,archive:vArchive,about:vAbout,status:vStatus}[r.v]||vFeed;
  Promise.resolve(V(r)).then(pausedBanner);
- const t={feed:"Feed",wire:"Wire",entities:"Entities",entity:entName(r.arg),ledger:"Ledger",maps:"Maps and diagrams",archive:"Archive",about:"About",status:"Status"}[r.v]||"Feed";
+ const t={feed:"Feed",wire:"Wire",entities:"Entities",entity:entName(r.arg),ledger:"Ledger",maps:"Maps and diagrams",tools:"Tools",archive:"Archive",about:"About",status:"Status"}[r.v]||"Feed";
  document.title=`${t} · ${S.cfg.name||"Tracewire"}`;
 }
 
@@ -694,6 +694,15 @@ function moneyBars(){
 }
 function vMaps(){
  $("#main").innerHTML=`<h2>Maps &amp; diagrams</h2><p class="muted">Drawn from the confirmed ledger and the project tracker, so they update as the record grows. Every diagram has a text version.</p>${stateMap()}${dealMap()}${moneyBars()}`;
+}
+
+/* ---------- tools ---------- */
+function vTools(){
+ $("#main").innerHTML=`<h2>Tools</h2><p class="muted" style="max-width:760px">Interactive tools that turn the public record into something you can use where you live. Each one shows every assumption, marks how it was checked and links every source. Tools are built with <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>, Anthropic's AI assistant, and reviewed by Chris Truong before publishing.</p>
+ <div class="panel"><article class="post"><div class="meta"><span class="chip confirmed">Every figure checked</span><span class="chip plain">Civic tool</span><time datetime="2026-10-07">Oct 7, 2026</time></div>
+ <h3><a href="next-door/">Next Door: what a proposed data center would mean for your town</a></h3>
+ <p>Enter a town, its state and the facility's size in megawatts. Next Door estimates the electricity (in homes' worth), the cooling water (against what residents use at home), the permanent and construction jobs, and the sales tax break, with a plausible range for each and questions to ask at the public hearing.</p>
+ <p class="muted" style="font-size:14px">Visuals: every home in town as blocks of squares, a year of cooling water in million-gallon pools, workers as dots, the tax break step by step and a map of state exemptions. Sources include Lawrence Berkeley National Laboratory, Virginia's JLARC, the EIA, the EPA and the Census. <a href="next-door/">Open Next Door →</a></p></article></div>`;
 }
 
 /* ---------- archive ---------- */
