@@ -2,6 +2,10 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-07 (Next Door)
+- New: **Next Door** at `/tracewire/next-door/`. Enter a town, state, facility size and population (looked up from the Census when a key is set) to see a proposed data center's electricity, water, jobs and sales tax break, each with a tap-to-see range, a "How we got this" panel and a shareable link. Plain HTML, CSS and JavaScript; scroll-in visuals respect reduced motion; light and dark themes.
+- Ported from the Lovable prototype with every assumption checked against its source (`docs/next-door/estimates.js`). Corrections from the prototype: cooling water per kWh (LBNL publishes liters per kWh of computer power, not gallons per kWh of facility power), average utilization (LBNL uses 50%), people per household (2.53, Census 2020–2024), and the list of states with a data center sales tax exemption (JLARC 2024). Figures no source supports were dropped: construction workers per MW (replaced by JLARC's per-facility figure), equipment spending per MW (replaced by an optional announced-investment field) and the Olympic pool (replaced by USGS's million-gallon pool).
+
 ## 2026-10-07 (paused)
 - Verified updates paused (out of Firecrawl credits). A `paused` field in `docs/data.json` shows a "Tracewire is paused" banner on every page, switches the header to "Verified updates paused · last checked …", and makes the scheduled check stop at step 0. The Wire and the source archiver keep running. Delete the field to resume.
 
