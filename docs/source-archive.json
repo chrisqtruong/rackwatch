@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-07T23:57:15+00:00",
+ "updated": "2026-10-08T02:02:23+00:00",
  "total": 113,
- "saved": 92,
+ "saved": 99,
  "urls": {
   "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/": {
    "a": "https://web.archive.org/web/20261005063939/https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/?",
@@ -322,9 +322,9 @@
    "at": "2026-10-03"
   },
   "https://thehill.com/policy/technology/5965840-meta-louisiana-datacenter-expansion/": {
-   "tries": 4,
+   "tries": 5,
    "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-07T23:57:15+00:00"
+   "last": "2026-10-08T02:02:23+00:00"
   },
   "https://virginiamercury.com/2026/07/09/after-digital-gateway-project-fails-prince-william-supervisors-reject-dulles-cloud-south-data-center-proposal/": {
    "a": "https://web.archive.org/web/20261007164156/https://virginiamercury.com/2026/07/09/after-digital-gateway-project-fails-prince-william-supervisors-reject-dulles-cloud-south-data-center-proposal/",
@@ -375,27 +375,26 @@
    "at": "2026-07-20"
   },
   "https://thehill.com/policy/energy-environment/5926181-xai-naacp-memphis-grok/": {
-   "tries": 2,
-   "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-07T23:57:15+00:00"
+   "tries": 3,
+   "err": "URLError: <urlopen error timed out>",
+   "last": "2026-10-08T02:02:23+00:00"
   },
   "https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726": {
    "a": "https://web.archive.org/web/20260617123210/https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726",
    "at": "2026-06-17"
   },
   "https://news.azpm.org/p/azpmnews/2026/5/28/229919-arizona-water-officials-approve-wells-tied-to-project-blue-data-center/": {
-   "tries": 2,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T23:57:15+00:00"
+   "a": "https://web.archive.org/web/20261008020450/https://news.azpm.org/p/azpmnews/2026/5/28/229919-arizona-water-officials-approve-wells-tied-to-project-blue-data-center/",
+   "at": "2026-10-08"
   },
   "https://www.kjzz.org/fronteras-desk/2026-05-29/project-blue-data-center-could-use-up-to-31-million-gallons-of-water-per-year": {
    "a": "https://web.archive.org/web/20260722092908/https://www.kjzz.org/fronteras-desk/2026-05-29/project-blue-data-center-could-use-up-to-31-million-gallons-of-water-per-year",
    "at": "2026-07-22"
   },
   "https://www.sec.gov/Archives/edgar/data/0001622536/000162253626000066/tln-20260630.htm": {
-   "tries": 1,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T23:57:15+00:00"
+   "tries": 2,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-08T02:02:23+00:00"
   },
   "https://fox56.com/news/local/amazon-seeks-state-permit-for-cooling-water-discharge-into-susquehanna-river": {
    "a": "https://web.archive.org/web/20260112234005/https://fox56.com/news/local/amazon-seeks-state-permit-for-cooling-water-discharge-into-susquehanna-river",
@@ -418,13 +417,57 @@
    "at": "2026-07-17"
   },
   "https://builtin.com/articles/anthropic-raises-65b-series-h-965b-valuation-20260601": {
-   "tries": 1,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T23:57:15+00:00"
+   "tries": 2,
+   "err": "URLError: <urlopen error timed out>",
+   "last": "2026-10-08T02:02:23+00:00"
   },
   "https://www.mass.gov/info-details/rideshare-driver-unionization": {
    "a": "https://web.archive.org/web/20260726174241/https://www.mass.gov/info-details/rideshare-driver-unionization",
    "at": "2026-07-26"
+  },
+  "https://www.wbur.org/news/2026/05/26/massachusetts-app-drivers-union-uber-lyft": {
+   "tries": 1,
+   "err": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
+   "last": "2026-10-08T02:02:23+00:00"
+  },
+  "https://www.justice.gov/opa/pr/two-defense-contractors-arrested-bribery-and-major-fraud-conspiracy-scheme-affecting": {
+   "a": "https://web.archive.org/web/20260914041209/https://www.justice.gov/opa/pr/two-defense-contractors-arrested-bribery-and-major-fraud-conspiracy-scheme-affecting",
+   "at": "2026-09-14"
+  },
+  "https://www.stripes.com/theaters/asia_pacific/2026-05-27/bribery-fraud-charges-army-innovation-hub-21801070.html": {
+   "a": "https://web.archive.org/web/20260720032612/https://www.stripes.com/theaters/asia_pacific/2026-05-27/bribery-fraud-charges-army-innovation-hub-21801070.html",
+   "at": "2026-07-20"
+  },
+  "https://calmatters.org/economy/technology/2026/05/gm-record-california-penalty-onstar-data/": {
+   "a": "https://web.archive.org/web/20260624053748/https://calmatters.org/economy/technology/2026/05/gm-record-california-penalty-onstar-data/",
+   "at": "2026-06-24"
+  },
+  "https://www.theregister.com/off-prem/2026/05/08/cloudflare-to-fire-1100-staff-whose-jobs-just-arent-ai-enough/5235536": {
+   "a": "https://web.archive.org/web/20260825061952/https://www.theregister.com/off-prem/2026/05/08/cloudflare-to-fire-1100-staff-whose-jobs-just-arent-ai-enough/5235536",
+   "at": "2026-08-25"
+  },
+  "https://www.washingtontimes.com/news/2026/may/1/pentagon-partners-major-ai-companies-use-classified-networks/": {
+   "tries": 1,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-08T02:02:23+00:00"
+  },
+  "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526277521/orcl-20260531.htm": {
+   "tries": 1,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-08T02:02:23+00:00"
+  },
+  "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration": {
+   "tries": 1,
+   "err": "URLError: <urlopen error timed out>",
+   "last": "2026-10-08T02:02:23+00:00"
+  },
+  "https://www.mcguirewoods.com/client-resources/alerts/2026/6/ferc-issues-section-206-show-cause-orders-directing-all-six-rtos-isos-to-justify-or-reform-large-load-integration-rules/": {
+   "a": "https://web.archive.org/web/20260927213542/https://www.mcguirewoods.com/client-resources/alerts/2026/6/ferc-issues-section-206-show-cause-orders-directing-all-six-rtos-isos-to-justify-or-reform-large-load-integration-rules/",
+   "at": "2026-09-27"
+  },
+  "https://www.usnews.com/news/business/articles/2026-06-17/a-new-york-house-primary-has-become-an-ai-industry-family-feud-with-millions-in-corporate-spending": {
+   "a": "https://web.archive.org/web/20260913091941/https://www.usnews.com/news/business/articles/2026-06-17/a-new-york-house-primary-has-become-an-ai-industry-family-feud-with-millions-in-corporate-spending",
+   "at": "2026-09-13"
   }
  }
 }
