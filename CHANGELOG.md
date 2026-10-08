@@ -2,6 +2,9 @@
 
 Content updates are committed as "Update YYYY-MM-DD HH:MM" and summarized in `reports/`. Wire commits are "Wire <time>". Design and feature changes are listed here, newest first.
 
+## 2026-10-08 (Deep dives)
+- The Tools tab is now **Deep dives**, matching Bankrolled and Chris Truong's site: longer, dated pieces that go deep on one question. Next Door is the first; its label and breadcrumb say "Deep dive". Old `#/tools` links still work.
+
 ## 2026-10-08 (fewer tabs)
 - Nine tabs down to six: **Feed · Wire · Ledger · Explore · Tools · About**. Archive is now "Older posts" inside Feed; Entities, Players and Maps & diagrams are sub-tabs of Explore; Status is a sub-tab of About (and still opens from the update times in the header). Every old link (#/archive, #/entities, #/maps, #/status and entity pages) still works and highlights its new parent tab.
 
