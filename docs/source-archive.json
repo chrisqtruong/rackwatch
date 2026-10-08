@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-07T22:03:41+00:00",
+ "updated": "2026-10-07T23:57:15+00:00",
  "total": 113,
- "saved": 83,
+ "saved": 92,
  "urls": {
   "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/": {
    "a": "https://web.archive.org/web/20261005063939/https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/?",
@@ -281,9 +281,8 @@
    "at": "2026-10-07"
   },
   "https://lda.gov/api/v1/filings/?registrant_name=OpenAI&filing_year=2026&filing_period=second_quarter": {
-   "tries": 4,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T22:03:41+00:00"
+   "a": "https://web.archive.org/web/20261007220409/https://lda.gov/api/v1/filings/?registrant_name=OpenAI&filing_year=2026&filing_period=second_quarter",
+   "at": "2026-10-07"
   },
   "https://qz.com/openai-anthropic-lobbying-records-q2-2026-072126": {
    "a": "https://web.archive.org/web/20260722081349/https://qz.com/openai-anthropic-lobbying-records-q2-2026-072126",
@@ -298,9 +297,9 @@
    "at": "2026-09-24"
   },
   "https://docquery.fec.gov/cgi-bin/forms/C00916114/1993396/": {
-   "tries": 4,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T22:03:41+00:00"
+   "tries": 5,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-07T23:57:15+00:00"
   },
   "https://api.open.fec.gov/v1/filings/?api_key=DEMO_KEY&committee_id=C00916114&sort=-receipt_date&per_page=6": {
    "a": "https://web.archive.org/web/20261007014734/https://api.open.fec.gov/v1/filings/?api_key=DEMO_KEY&committee_id=C00916114&sort=-receipt_date&per_page=6",
@@ -319,14 +318,13 @@
    "at": "2026-08-31"
   },
   "https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html": {
-   "tries": 3,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T22:03:41+00:00"
+   "a": "https://web.archive.org/web/20261003234112/https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html",
+   "at": "2026-10-03"
   },
   "https://thehill.com/policy/technology/5965840-meta-louisiana-datacenter-expansion/": {
-   "tries": 3,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T22:03:41+00:00"
+   "tries": 4,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-07T23:57:15+00:00"
   },
   "https://virginiamercury.com/2026/07/09/after-digital-gateway-project-fails-prince-william-supervisors-reject-dulles-cloud-south-data-center-proposal/": {
    "a": "https://web.archive.org/web/20261007164156/https://virginiamercury.com/2026/07/09/after-digital-gateway-project-fails-prince-william-supervisors-reject-dulles-cloud-south-data-center-proposal/",
@@ -373,27 +371,60 @@
    "at": "2026-08-18"
   },
   "https://www.battlefields.org/news/victory-manassas-prince-william-digital-gateway-project-dead-after-developer-drops-appeal": {
-   "tries": 1,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T22:03:41+00:00"
+   "a": "https://web.archive.org/web/20260720134626/https://www.battlefields.org/news/victory-manassas-prince-william-digital-gateway-project-dead-after-developer-drops-appeal",
+   "at": "2026-07-20"
   },
   "https://thehill.com/policy/energy-environment/5926181-xai-naacp-memphis-grok/": {
-   "tries": 1,
-   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T22:03:41+00:00"
+   "tries": 2,
+   "err": "HTTPError: HTTP Error 520: UNKNOWN",
+   "last": "2026-10-07T23:57:15+00:00"
   },
   "https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726": {
    "a": "https://web.archive.org/web/20260617123210/https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726",
    "at": "2026-06-17"
   },
   "https://news.azpm.org/p/azpmnews/2026/5/28/229919-arizona-water-officials-approve-wells-tied-to-project-blue-data-center/": {
-   "tries": 1,
+   "tries": 2,
    "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-07T22:03:41+00:00"
+   "last": "2026-10-07T23:57:15+00:00"
   },
   "https://www.kjzz.org/fronteras-desk/2026-05-29/project-blue-data-center-could-use-up-to-31-million-gallons-of-water-per-year": {
    "a": "https://web.archive.org/web/20260722092908/https://www.kjzz.org/fronteras-desk/2026-05-29/project-blue-data-center-could-use-up-to-31-million-gallons-of-water-per-year",
    "at": "2026-07-22"
+  },
+  "https://www.sec.gov/Archives/edgar/data/0001622536/000162253626000066/tln-20260630.htm": {
+   "tries": 1,
+   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
+   "last": "2026-10-07T23:57:15+00:00"
+  },
+  "https://fox56.com/news/local/amazon-seeks-state-permit-for-cooling-water-discharge-into-susquehanna-river": {
+   "a": "https://web.archive.org/web/20260112234005/https://fox56.com/news/local/amazon-seeks-state-permit-for-cooling-water-discharge-into-susquehanna-river",
+   "at": "2026-01-12"
+  },
+  "https://www.datacenterdynamics.com/en/news/oracleopenai-drop-plans-to-expand-flagship-abilene-stargate-site-meta-in-talks-to-pick-up-crusoe-capacity-with-nvidias-help/": {
+   "a": "https://web.archive.org/web/20260807074042/https://www.datacenterdynamics.com/en/news/oracleopenai-drop-plans-to-expand-flagship-abilene-stargate-site-meta-in-talks-to-pick-up-crusoe-capacity-with-nvidias-help/",
+   "at": "2026-08-07"
+  },
+  "https://www.crusoe.ai/resources/blog/an-inside-look-at-the-abilene-ai-data-center": {
+   "a": "https://web.archive.org/web/20260928222457/https://www.crusoe.ai/resources/blog/an-inside-look-at-the-abilene-ai-data-center",
+   "at": "2026-09-28"
+  },
+  "https://thenextweb.com/news/amazon-anthropic-25-billion-investment": {
+   "a": "https://web.archive.org/web/20260630160431/https://thenextweb.com/news/amazon-anthropic-25-billion-investment",
+   "at": "2026-06-30"
+  },
+  "https://www.datacenterdynamics.com/en/news/broadcom-to-develop-google-tpus-until-2031-anthropic-signs-deal-with-both-companies-for-35gw-of-tpus/": {
+   "a": "https://web.archive.org/web/20260717001822/https://www.datacenterdynamics.com/en/news/broadcom-to-develop-google-tpus-until-2031-anthropic-signs-deal-with-both-companies-for-35gw-of-tpus/",
+   "at": "2026-07-17"
+  },
+  "https://builtin.com/articles/anthropic-raises-65b-series-h-965b-valuation-20260601": {
+   "tries": 1,
+   "err": "URLError: <urlopen error [Errno 111] Connection refused>",
+   "last": "2026-10-07T23:57:15+00:00"
+  },
+  "https://www.mass.gov/info-details/rideshare-driver-unionization": {
+   "a": "https://web.archive.org/web/20260726174241/https://www.mass.gov/info-details/rideshare-driver-unionization",
+   "at": "2026-07-26"
   }
  }
 }
