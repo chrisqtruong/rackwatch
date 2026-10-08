@@ -1,8 +1,28 @@
 {
 "name": "Tracewire",
-"updated": "2026-10-07T23:40:21+00:00",
+"updated": "2026-10-08T02:58:20+00:00",
 "note": "Unverified headlines collected automatically from public feeds. Not checked by Tracewire. Verified items appear in the Feed.",
 "items": [
+{
+"id": "eb720872d7b7",
+"t": "OpenAI used AI to help write email warning Australian government AI had hacked its websites",
+"u": "https://www.theguardian.com/australia-news/2026/oct/08/openai-used-ai-to-help-write-email-warning-australian-government-ai-had-hacked-its-websites",
+"o": "The Guardian",
+"lane": "news",
+"at": "2026-10-08T02:05:33+00:00",
+"seen": "2026-10-08T02:58:20+00:00",
+"status": "unverified headline"
+},
+{
+"id": "4f9780f83c88",
+"t": "Fuel prices added to Google Maps as petrol and diesel costs soar",
+"u": "https://www.bbc.co.uk/news/articles/ckx2d4ddjn2eo?at_medium=RSS&at_campaign=rss",
+"o": "BBC",
+"lane": "news",
+"at": "2026-10-07T23:50:29+00:00",
+"seen": "2026-10-08T02:58:20+00:00",
+"status": "unverified headline"
+},
 {
 "id": "196b37bb7ac0",
 "t": "Chairman Carr Proposes Transformation in Connectivity",
@@ -1156,6 +1176,16 @@
 "status": "unverified headline"
 },
 {
+"id": "94f4ac4792d3",
+"t": "Google ordered to halt work on two data centers in ‘Texas of Europe’",
+"u": "https://www.cnbc.com/2026/10/07/google-finland-data-center-halt.html",
+"o": "CNBC",
+"lane": "news",
+"at": "2026-10-07T17:16:28+00:00",
+"seen": "2026-10-08T02:58:20+00:00",
+"status": "unverified headline"
+},
+{
 "id": "16b22e16df92",
 "t": "California’s Data Center Boom Meets Local Resistance - California City News",
 "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTEdGMTJocDNaby00YTk3b0dXRDVnXzBMSEVUbXBXNkNPZkdKenRQdDkxTHMwZTRQM2owN3lxNC1oSHVmVllrYUNyWEZfUjQwQ2ppR1ZxaVpPRU5mM2Uzalp1ZncySGswNV9ZQnVxSFNNTTNveGtIRmdTZ19hRWd5WW5sOWNzWVI3NVBleVF6U1h6LXUwQUZkZWMxTHNTSktO?oc=5",
@@ -2146,39 +2176,6 @@
 "via": "Google News: dc-zoning",
 "lane": "search",
 "at": "2026-10-07T12:36:00+00:00",
-"seen": "2026-10-07T19:23:25+00:00",
-"status": "unverified headline"
-},
-{
-"id": "f60bf1433664",
-"t": "Pennsylvania data center moratorium pushed at Capitol rally - Erie Times-News",
-"u": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcVRhRXVCcldGX01XQ2p6WGpsVEk2V0hjVEV6bVpZNnFlTVNzOFktQi1zS0ZldlhoLUl0cmMwaTBOcmY5RTdsNTI0d0tGOFRkQWpJWFdETG5GLUp1WUszLXVySGV4V1pKbTc4QjRhX2o4bkZ3WDFWRWZ4dm5pM3EyX05nMkhSNmhlTS0tVlBYTzhQOU5ZRWRjZVRydTFzbTR4V05sSFB6Z3h6SmtqUVFsZ01mdEFIUWwxeVJIMmttRUYwWmhIQkE?oc=5",
-"o": "Erie Times-News",
-"via": "Google News: dc-zoning",
-"lane": "search",
-"at": "2026-10-07T12:35:00+00:00",
-"seen": "2026-10-07T19:23:25+00:00",
-"status": "unverified headline"
-},
-{
-"id": "f7feb01be961",
-"t": "Pennsylvania data center moratorium pushed at Capitol rally - The Evening Sun",
-"u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTGZ2NGQ4OXhYQkxoTm9nR1Vrb3Z2VEw2WmlQNjhsbWRyTWpvS3pTNjlHR2VGaVdKSG45WXFfZFB1NWZWTHVqNVR1MXJMYzJieU9udS1IemtucEVRY0VIVFIxNzdsbjlvN3FjdzdheDFhZXprYkRyOFZrZTBmdlpXRkJUMzFDSUZOV3B2Sk1aeFpkay1wc1JERTVaemNlV24wLWJOaXJMa2tlMm1hVlotVlcxUlhZYVBqV2lEdS1ELTVabF8tVERrNjRtQQ?oc=5",
-"o": "The Evening Sun",
-"via": "Google News: dc-zoning",
-"lane": "search",
-"at": "2026-10-07T12:35:00+00:00",
-"seen": "2026-10-07T19:23:25+00:00",
-"status": "unverified headline"
-},
-{
-"id": "7c8b0ac0219f",
-"t": "Pennsylvania data center moratorium pushed at Capitol rally - Tri-County Independent",
-"u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRmNuRE1vSXdWTTdlNjVOWjljTmFRV1hudUNsTldwT29RZndpMVhCM2kzWjBndl9sbUFzQm5SbWxPVTd6QmR3dTAxUXQtSTBfTU96S0VGQ2tWR0J3S1BGeVp2SkhTdGNzN09DUFZORXlJdllmWXZydkRRREloODBtaTdGYl9rWERWdTJCcmhBZWxnajdPcnYyUjNMeGVScWZuX2VkWHpjQmZXeFRUZllMcG0wLVpRTkQwb3JUVmpkRC1vdXZjb2dNOWRJZ1BYbWNfb29MRnRmcTU?oc=5",
-"o": "Tri-County Independent",
-"via": "Google News: dc-zoning",
-"lane": "search",
-"at": "2026-10-07T12:35:00+00:00",
 "seen": "2026-10-07T19:23:25+00:00",
 "status": "unverified headline"
 }

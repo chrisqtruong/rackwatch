@@ -1,260 +1,260 @@
 {
- "updated": "2026-10-07T23:40:21+00:00",
+ "updated": "2026-10-08T02:58:20+00:00",
  "sources": {
   "doj-news": {
    "name": "DOJ news",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 25
   },
   "doj-atr": {
    "name": "DOJ Antitrust Division",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 25
   },
   "sec-press": {
    "name": "SEC press releases",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 25
   },
   "fcc-headlines": {
    "name": "FCC news releases",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 5
   },
   "doe-news": {
    "name": "DOE newsroom",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 10
   },
   "nlrb-news": {
    "name": "NLRB news",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 10
   },
   "gao-reports": {
    "name": "GAO reports",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 25
   },
   "verge-policy": {
    "name": "The Verge policy",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 10
   },
   "verge": {
    "name": "The Verge",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 10
   },
   "ars-policy": {
    "name": "Ars Technica policy",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 20
   },
   "techcrunch": {
    "name": "TechCrunch",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 20
   },
   "dcd": {
    "name": "DatacenterDynamics",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 20
   },
   "dck": {
    "name": "Data Center Knowledge",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 50
   },
   "utilitydive": {
    "name": "Utility Dive",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 10
   },
   "canary": {
    "name": "Canary Media",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 100
   },
   "icn": {
    "name": "Inside Climate News",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 10
   },
   "propublica": {
    "name": "ProPublica",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 20
   },
   "markup": {
    "name": "The Markup",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 20
   },
   "404media": {
    "name": "404 Media",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 15
   },
   "wired": {
    "name": "Wired",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 50
   },
   "npr-tech": {
    "name": "NPR Technology",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 10
   },
   "wapo-tech": {
    "name": "Google News: washingtonpost.com/technology",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 5
   },
   "cnbc-tech": {
    "name": "CNBC Technology",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 30
   },
   "politico-tech": {
    "name": "Politico Technology",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 30
   },
   "axios": {
    "name": "Axios",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 100
   },
   "courthousenews": {
    "name": "Courthouse News",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 10
   },
   "guardian-tech": {
    "name": "The Guardian Technology",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 36
   },
   "bbc-tech": {
    "name": "BBC Technology",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 21
   },
   "reuters-tech": {
    "name": "Google News: reuters.com/technology",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
-   "n": 11
+   "last_ok": "2026-10-08T02:58:20+00:00",
+   "n": 10
   },
   "hn-dc": {
    "name": "Heatmap News",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 30
   },
   "restofworld": {
    "name": "Rest of World",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 12
   },
   "eff": {
    "name": "EFF Deeplinks",
-   "checked": "2026-10-07T23:40:21+00:00",
+   "checked": "2026-10-08T02:58:20+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T23:40:21+00:00",
+   "last_ok": "2026-10-08T02:58:20+00:00",
    "n": 50
   },
   "fr-datacenter": {
