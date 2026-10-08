@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T09:07:15+00:00",
+ "updated": "2026-10-08T16:36:02+00:00",
  "total": 113,
  "saved": 102,
  "urls": {
@@ -375,9 +375,9 @@
    "at": "2026-07-20"
   },
   "https://thehill.com/policy/energy-environment/5926181-xai-naacp-memphis-grok/": {
-   "tries": 4,
+   "tries": 5,
    "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-08T09:07:15+00:00"
+   "last": "2026-10-08T16:36:02+00:00"
   },
   "https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726": {
    "a": "https://web.archive.org/web/20260617123210/https://qz.com/trump-doj-naacp-xai-clean-air-act-lawsuit-memphis-061726",
@@ -392,9 +392,9 @@
    "at": "2026-07-22"
   },
   "https://www.sec.gov/Archives/edgar/data/0001622536/000162253626000066/tln-20260630.htm": {
-   "tries": 3,
+   "tries": 4,
    "err": "HTTPError: HTTP Error 520: UNKNOWN",
-   "last": "2026-10-08T09:07:15+00:00"
+   "last": "2026-10-08T16:36:02+00:00"
   },
   "https://fox56.com/news/local/amazon-seeks-state-permit-for-cooling-water-discharge-into-susquehanna-river": {
    "a": "https://web.archive.org/web/20260112234005/https://fox56.com/news/local/amazon-seeks-state-permit-for-cooling-water-discharge-into-susquehanna-river",
@@ -417,9 +417,9 @@
    "at": "2026-07-17"
   },
   "https://builtin.com/articles/anthropic-raises-65b-series-h-965b-valuation-20260601": {
-   "tries": 3,
+   "tries": 4,
    "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-08T09:07:15+00:00"
+   "last": "2026-10-08T16:36:02+00:00"
   },
   "https://www.mass.gov/info-details/rideshare-driver-unionization": {
    "a": "https://web.archive.org/web/20260726174241/https://www.mass.gov/info-details/rideshare-driver-unionization",
@@ -450,9 +450,9 @@
    "at": "2026-05-07"
   },
   "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526277521/orcl-20260531.htm": {
-   "tries": 2,
+   "tries": 3,
    "err": "URLError: <urlopen error [Errno 111] Connection refused>",
-   "last": "2026-10-08T09:07:15+00:00"
+   "last": "2026-10-08T16:36:02+00:00"
   },
   "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration": {
    "a": "https://web.archive.org/web/20260916022534/https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
