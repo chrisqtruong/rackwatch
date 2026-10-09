@@ -1,417 +1,417 @@
 {
- "updated": "2026-10-09T16:26:44+00:00",
+ "updated": "2026-10-09T21:09:00+00:00",
  "sources": {
   "doj-news": {
    "name": "DOJ news",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 25
   },
   "doj-atr": {
    "name": "DOJ Antitrust Division",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 25
   },
   "sec-press": {
    "name": "SEC press releases",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 25
   },
   "fcc-headlines": {
    "name": "FCC news releases",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 3
   },
   "doe-news": {
    "name": "DOE newsroom",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 10
   },
   "nlrb-news": {
    "name": "NLRB news",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 10
   },
   "gao-reports": {
    "name": "GAO reports",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 25
   },
   "verge-policy": {
    "name": "The Verge policy",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 10
   },
   "verge": {
    "name": "The Verge",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 10
   },
   "ars-policy": {
    "name": "Ars Technica policy",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 20
   },
   "techcrunch": {
    "name": "TechCrunch",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 20
   },
   "dcd": {
    "name": "DatacenterDynamics",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 20
   },
   "dck": {
    "name": "Data Center Knowledge",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 50
   },
   "utilitydive": {
    "name": "Utility Dive",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 10
   },
   "canary": {
    "name": "Canary Media",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 100
   },
   "icn": {
    "name": "Inside Climate News",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 10
   },
   "propublica": {
    "name": "ProPublica",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 20
   },
   "markup": {
    "name": "The Markup",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 20
   },
   "404media": {
    "name": "404 Media",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 15
   },
   "wired": {
    "name": "Wired",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 50
   },
   "npr-tech": {
    "name": "NPR Technology",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 10
   },
   "wapo-tech": {
    "name": "Google News: washingtonpost.com/technology",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
-   "n": 7
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 8
   },
   "cnbc-tech": {
    "name": "CNBC Technology",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 30
   },
   "politico-tech": {
    "name": "Politico Technology",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 30
   },
   "axios": {
    "name": "Axios",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 100
   },
   "courthousenews": {
    "name": "Courthouse News",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 10
   },
   "guardian-tech": {
    "name": "The Guardian Technology",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 36
   },
   "bbc-tech": {
    "name": "BBC Technology",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 21
   },
   "reuters-tech": {
    "name": "Google News: reuters.com/technology",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
-   "n": 7
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 6
   },
   "hn-dc": {
    "name": "Heatmap News",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 30
   },
   "restofworld": {
    "name": "Rest of World",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 12
   },
   "eff": {
    "name": "EFF Deeplinks",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 50
   },
   "fr-datacenter": {
    "name": "Federal Register: data center",
-   "checked": "2026-10-07T06:05:41+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T06:05:41+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 20
   },
   "fr-ai": {
    "name": "Federal Register: artificial intelligence",
-   "checked": "2026-10-07T06:05:41+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T06:05:41+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 20
   },
   "fr-largeload": {
    "name": "Federal Register: FERC documents",
-   "checked": "2026-10-07T06:05:41+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T06:05:41+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 20
   },
   "edgar-8k-datacenter": {
    "name": "SEC EDGAR full-text: 8-K data center",
-   "checked": "2026-10-07T06:05:41+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": false,
    "err": "HTTPError: HTTP Error 403: Forbidden"
   },
   "courtlistener-dc": {
    "name": "CourtListener: data center opinions",
-   "checked": "2026-10-07T06:05:41+00:00",
-   "ok": true,
-   "err": null,
+   "checked": "2026-10-09T21:09:00+00:00",
+   "ok": false,
+   "err": "TimeoutError: The read operation timed out",
    "last_ok": "2026-10-07T06:05:41+00:00",
    "n": 20
   },
   "courtlistener-antitrust": {
    "name": "CourtListener: tech antitrust opinions",
-   "checked": "2026-10-07T06:05:41+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T06:05:41+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 20
   },
   "techpolicypress": {
    "name": "Tech Policy Press",
-   "checked": "2026-10-07T06:05:41+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T06:05:41+00:00",
-   "n": 4026
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 4036
   },
   "gn-dc-zoning": {
    "name": "Google News: dc-zoning",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 100
   },
   "gn-dc-utility": {
    "name": "Google News: dc-utility",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
-   "n": 52
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 46
   },
   "gn-dc-incent": {
    "name": "Google News: dc-incent",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
-   "n": 57
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 61
   },
   "gn-dc-water": {
    "name": "Google News: dc-water",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 100
   },
   "gn-ai-deals": {
    "name": "Google News: ai-deals",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 51
   },
   "gn-antitrust": {
    "name": "Google News: antitrust",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
-   "n": 42
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 43
   },
   "gn-money": {
    "name": "Google News: money",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 47
   },
   "gn-contracts": {
    "name": "Google News: contracts",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
-   "n": 52
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 50
   },
   "gn-labor": {
    "name": "Google News: labor",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
+   "last_ok": "2026-10-09T21:09:00+00:00",
    "n": 52
   },
   "gn-privacy": {
    "name": "Google News: privacy",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
-   "n": 23
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 21
   },
   "datacenterwatch": {
    "name": "Data Center Watch",
-   "checked": "2026-10-07T06:05:41+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": false,
    "err": "HTTPError: HTTP Error 403: Forbidden"
   },
   "gn-ftc": {
    "name": "Google News: site:ftc.gov",
-   "checked": "2026-10-09T16:26:44+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-09T16:26:44+00:00",
-   "n": 56
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 54
   },
   "gn-calprivacy": {
    "name": "Google News: California privacy agency",
-   "checked": "2026-10-07T06:05:41+00:00",
+   "checked": "2026-10-09T21:09:00+00:00",
    "ok": true,
    "err": null,
-   "last_ok": "2026-10-07T06:05:41+00:00",
-   "n": 3
+   "last_ok": "2026-10-09T21:09:00+00:00",
+   "n": 5
   }
  },
  "off": {
