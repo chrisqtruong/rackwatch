@@ -1,8 +1,18 @@
 {
 "name": "Tracewire",
-"updated": "2026-10-09T21:09:00+00:00",
+"updated": "2026-10-10T00:50:32+00:00",
 "note": "Unverified headlines collected automatically from public feeds. Not checked by Tracewire. Verified items appear in the Feed.",
 "items": [
+{
+"id": "b0e83be7355c",
+"t": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+"u": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+"o": "TechCrunch",
+"lane": "news",
+"at": "2026-10-09T21:41:29+00:00",
+"seen": "2026-10-10T00:50:32+00:00",
+"status": "unverified headline"
+},
 {
 "id": "9b52de2761ed",
 "t": "FCC Announces Tentative Agenda for October Open Meeting",
@@ -2155,17 +2165,6 @@
 "lane": "search",
 "at": "2026-10-09T08:51:00+00:00",
 "seen": "2026-10-09T09:24:25+00:00",
-"status": "unverified headline"
-},
-{
-"id": "0ce8e9d01fab",
-"t": "Manus Raises Over $500 Million Following Collapse of Meta’s $2 Billion Acquisition - entARABI",
-"u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNU5BR3VENzZIWFpBM0NFWXc2RWN0VnJVSmkyME51SFRUTUtIY1RyMUpOOXJUZmJqQW9oUko4UTNoem5rVy0zbVdvUndMTUNva3RlZThpR0d6a0JjX21SREZpYlN3aC1SeWRFMWhGYk9FOXNJSmVyWlZUa1JWbjVlN090bW9hazVUdlR4eWZRTmkzdnJtMjJMUS02VklOVFRfN1MyVFNfcjR5WWFyRC1JR09n?oc=5",
-"o": "entARABI",
-"via": "Google News: ai-deals",
-"lane": "search",
-"at": "2026-10-09T08:45:57+00:00",
-"seen": "2026-10-09T16:26:44+00:00",
 "status": "unverified headline"
 }
 ]
