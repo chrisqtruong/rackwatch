@@ -1,8 +1,28 @@
 {
 "name": "Tracewire",
-"updated": "2026-10-10T06:30:36+00:00",
+"updated": "2026-10-10T12:59:35+00:00",
 "note": "Unverified headlines collected automatically from public feeds. Not checked by Tracewire. Verified items appear in the Feed.",
 "items": [
+{
+"id": "1481c7514cda",
+"t": "Ex-OpenAI safety lead David Robinson warns of 'broken' tech culture",
+"u": "https://www.npr.org/2026/10/10/nx-s1-5992872/ex-openai-safety-lead-david-robinson-warns-of-broken-tech-culture",
+"o": "NPR",
+"lane": "news",
+"at": "2026-10-10T11:40:46+00:00",
+"seen": "2026-10-10T12:59:35+00:00",
+"status": "unverified headline"
+},
+{
+"id": "71e6ddfe4dc5",
+"t": "As Trump’s Wall Closes in, DHS Intimidates a Border Tribe With Surveillance, Masked Agents and Drones",
+"u": "https://www.propublica.org/article/tohono-oodham-nation-arizona-border-wall",
+"o": "ProPublica",
+"lane": "news",
+"at": "2026-10-10T10:00:00+00:00",
+"seen": "2026-10-10T12:59:35+00:00",
+"status": "unverified headline"
+},
 {
 "id": "b0e83be7355c",
 "t": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
@@ -2143,28 +2163,6 @@
 "lane": "search",
 "at": "2026-10-09T08:54:23+00:00",
 "seen": "2026-10-09T16:26:44+00:00",
-"status": "unverified headline"
-},
-{
-"id": "9eb9949bebb4",
-"t": "TCS Q2 lifts sentiment: Stock logs biggest gain in 3 months; brokerages weigh $3.1-billion AI revenue agains.. - ET Enterprise AI",
-"u": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPSEJSR29xeTBLX2RMbDl1NkoxRWg5bXpaSTRUU0Z5VUE1N2NzTi05Vld5QkpWV295WHpsLWhaSDNMbGNlc1VUTExUc25aSmtnS2JSWk9GUFpTVGdSNGV2ZWxFd1g0MEx4TW0ydFRjNzRBdDZpWVl6eDNHZ1FFRlZNb2EzN1pFVFk5ODNYdl9VNERkYkhCQjFTVHZBV0Q5ZUZxc2t1RFI1UlJqWkx3LWxKQTRrdzlqazhkbjlMQ2FDMzdXQ3V4OUF1QXdGZm1fV1UzOExRRVZmdk9GTWVuR0g0SWR6SkNLMXFWVkJSQjFVNHBPam9SUTlvWXFHcmstUlowNC1PQTRWU0NGZURnREZfRVNjMW8tTGVGYTFUVXJOeG83QdIBpwJBVV95cUxOZkdHZVpwYzYtb2tHRkplbV9EbDhWdFR6RmdkNnpISmVUU3Q0V1dsaGZoN1pGaGdRM1hCM0MxR0JOMUZ1MHJMd19Yb1ZoZnBYQTFDVVpIZmFZSDQ0MlVtTlF3Z2ZSWi1TdlhXenk4bG9pNUJ1enIwQWdrQXdjMmhHOVI5eTFTbHBvRk9XNGdnU2J4YThaM2k5NU91c3I0bDZySU1NdFIwbkNienkzOWtSZHdNQURXb0ZUUklyVE1zTXpzcF9PYThLb21MdmE4akdhZ3kwQXdlRzFrb3lBdXlqT0xXOURweG5yNnJXdDZXMG1nOVB1NC1NUjktakpoOWItV2hyX2c2VWZrRGg1czlEQ1BQLV82ME5iVTNJVVNjZEMyT3QtNG84?oc=5",
-"o": "ET Enterprise AI",
-"via": "Google News: ai-deals",
-"lane": "search",
-"at": "2026-10-09T08:51:28+00:00",
-"seen": "2026-10-09T16:26:44+00:00",
-"status": "unverified headline"
-},
-{
-"id": "ba3b49f76644",
-"t": "WI Rapids officially in data center moratorium after legal posting - Daily Tribune Media",
-"u": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPTGNmSnk1UUVqZDhQQnlQamszS2Qxd054d0pXSmQxOGhLbFl1NnZDSXpTbU1NTDRmWUtfaXVEVFlyMEhWcDJsNEdrZ1FLNHRoUEZ3SEtac1g2eTNYb2FpMlZyOG9BRlNkNXRvOVlDX0JRcmZKc2ZpYkZwUnJDaEoyWUtEaHpNX19pSEpJVjZWQmlocUptQ3RPWDRQbDVkbVhVLWRReTNuTjVzcEp2OEtPbFJpZFNZQVJ0UXZ5OHlOeWdnLVBUOFVFR2s0SDROR3AtMVVocjNlTmp0TzRyZE15X3BOLTg1UHdiWTBWcWdpeFNaTWQzRDdlaklqZUJKYUE?oc=5",
-"o": "Daily Tribune Media",
-"via": "Google News: dc-zoning",
-"lane": "search",
-"at": "2026-10-09T08:51:00+00:00",
-"seen": "2026-10-09T09:24:25+00:00",
 "status": "unverified headline"
 }
 ]
